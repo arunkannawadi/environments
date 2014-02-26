@@ -415,19 +415,19 @@ Color $M_{NUV} - M_R$
   
     <tr><th>0.35-0.4 (OD) <br>$N_{gal}$=1000</th></tr>
     <tr><th>0.55-0.6 (UD) <br> $N_{gal}$=7277 </th> <td></td> <td></td> <td></td> <td></td> 
-            <td rowspan=2 colspan=2> <center><a href="plots_20140219/color(KS)_0.55-0.65_0.65-0.75.png" target="_tab"> <img src="plots_20140219/color(KS)_0.55-0.65_0.65-0.75.png" width=200 height=200> </a></center> 
+            <td rowspan=2 colspan=2> <center><a href="plots_20140226/mnuvmr(KS)_0.55-0.65_0.65-0.75.png" target="_tab"> <img src="plots_20140226/mnuvmr(KS)_0.55-0.65_0.65-0.75.png" width=200 height=200> </a></center> 
                 <table>
                  <tr><td> 0.09396 </td><td> 0.0 </td><td> 19.41447 </td><td> 0.0 </td></tr>
                  <tr><td> 0.09245 </td><td> 0.0 </td><td> 18.79919 </td><td> 0.0 </td></tr>
                  <tr><td> 0.08176 </td><td> 0.0 </td><td> 15.03607 </td><td> 0.0 </td></tr>   
                 </table></td>
-            <td rowspan=2> <center><a href="plots_20140219/color(KS)_0.55-0.65_0.75-0.8.png" target="_tab"> <img src="plots_20140219/color(KS)_0.55-0.65_0.75-0.8.png" width=200 height=200> </a> </center>
+            <td rowspan=2> <center><a href="plots_20140226/mnuvmr(KS)_0.55-0.65_0.75-0.8.png" target="_tab"> <img src="plots_20140226/mnuvmr(KS)_0.55-0.65_0.75-0.8.png" width=200 height=200> </a> </center>
                 <table>
                  <tr><td> 0.27397 </td><td> 0.0 </td><td> 114.5078 </td><td> 0.0 </td></tr>
                  <tr><td> 0.27131 </td><td> 0.0 </td><td> 110.9359 </td><td> 0.0 </td></tr>
                  <tr><td> 0.25251 </td><td> 0.0 </td><td> 88.71325 </td><td> 0.0 </td></tr>   
                 </table></td>
-                <td rowspan=2> <center><a href="plots_20140219/color(KS)_0.55-0.65_0.8-0.85.png" target="_tab"> <img src="plots_20140219/color(KS)_0.55-0.65_0.8-0.85.png" width=200 height=200> </a></center>
+                <td rowspan=2> <center><a href="plots_20140226/mnuvmr(KS)_0.55-0.65_0.8-0.85.png" target="_tab"> <img src="plots_20140226/mnuvmr(KS)_0.55-0.65_0.8-0.85.png" width=200 height=200> </a></center>
                     <table>
                       <tr><td> 0.16564 </td><td> 0.0 </td><td> 38.9476 </td><td> 0.0 </td></tr>
                       <tr><td> 0.16367 </td><td> 0.0 </td><td> 37.81522 </td><td> 0.0 </td></tr>
@@ -439,13 +439,13 @@ Color $M_{NUV} - M_R$
         <td colspan=2></td>
         
         <td></td><td></td><td></td><td></td>
-        <td rowspan=2> <center><a href="plots_20140219/color(KS)_0.65-0.75_0.75-0.8.png" target="_tab"> <img src="plots_20140219/color(KS)_0.65-0.75_0.75-0.8.png" width=200 height=200> </a></center>
+        <td rowspan=2> <center><a href="plots_20140226/mnuvmr(KS)_0.65-0.75_0.75-0.8.png" target="_tab"> <img src="plots_20140226/mnuvmr(KS)_0.65-0.75_0.75-0.8.png" width=200 height=200> </a></center>
             <table>
              <tr><td> 0.18441 </td><td> 0.0 </td><td> 63.13361 </td><td> 0.0 </td></tr>
              <tr><td> 0.18369 </td><td> 0.0 </td><td> 62.50836 </td><td> 0.0 </td></tr>
              <tr><td> 0.1797 </td><td> 0.0 </td><td> 56.74945 </td><td> 0.0 </td></tr>
             </table></td>
-        <td rowspan=2> <center><a href="plots_20140219/color(KS)_0.65-0.75_0.8-0.85.png" target="_tab"> <img src="plots_20140219/color(KS)_0.65-0.75_0.8-0.85.png" width=200 height=200> </a></center>
+        <td rowspan=2> <center><a href="plots_20140226/mnuvmr(KS)_0.65-0.75_0.8-0.85.png" target="_tab"> <img src="plots_20140226/mnuvmr(KS)_0.65-0.75_0.8-0.85.png" width=200 height=200> </a></center>
             <table>
              <tr><td> 0.08137 </td><td> 0.0 </td><td> 13.10545 </td><td> 1e-05 </td></tr>
              <tr><td> 0.07944 </td><td> 0.0 </td><td> 12.61783 </td><td> 1e-05 </td></tr>
@@ -456,7 +456,7 @@ Color $M_{NUV} - M_R$
         <td colspan=2><center></center></td>
     </tr>
     <tr><th>0.75-0.80 (UD) <br> $N_{gal}$=1159 </th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
-        <td> <center><a href="plots_20140219/color(KS)_0.75-0.8_0.8-0.85.png" target="_tab"> <img src="plots_20140219/color(KS)_0.75-0.8_0.8-0.85.png" width=200 height=200> </a></center> 
+        <td> <center><a href="plots_20140226/mnuvmr(KS)_0.75-0.8_0.8-0.85.png" target="_tab"> <img src="plots_20140226/mnuvmr(KS)_0.75-0.8_0.8-0.85.png" width=200 height=200> </a></center> 
             <table>
              <tr><td> 0.13057 </td><td> 0.0 </td><td> 32.95877 </td><td> 0.0 </td></tr>
              <tr><td> 0.13128 </td><td> 0.0 </td><td> 33.47254 </td><td> 0.0 </td></tr>

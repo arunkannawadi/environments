@@ -283,7 +283,7 @@ For the following tables, no density cut is applied.
     <tr><th>0.8-0.85 (OD) <br>$N_{gal}$=2428</th></tr>      
 </table>
 
-Color
+Color $M_G-M_I$ 
 
 For the following tables, no density cut is applied.
 
@@ -374,4 +374,134 @@ For the following tables, no density cut is applied.
             </table></td>
     </tr>
     <tr><th>0.8-0.85 (OD) <br>$N_{gal}$=2428</th></tr>  
-</table>            
+</table>   
+
+Color $M_{NUV} - M_R$
+<table>
+    <tr><th> </th><th>0.3-0.35 (OD) <br>$N_{gal}$=726 </th> <th>0.35-0.4 (OD) <br>$N_{gal}$=1000</th> <th>0.55-0.60 (UD) <br> $N_{gal}$=727 </th> <th> 0.60-0.65 (UD) <br> $N_{gal}$=1070 </th> <th>0.65-0.7 (OD) <br>$N_{gal}$=2089</th><th>0.7-0.75 (OD)<br>$N_{gal}$=1970</th> <th> 0.75-0.8 (UD) <br> $N_{gal}$=1159 </th><th>0.8-0.85 (OD) <br>$N_{gal}$=2428</th></tr>
+    
+    <tr><th>0.3-0.35 (OD) <br>$N_{gal}$=726</th> <td></td> 
+        <td><center><a href="files/plots_20140226/mnuvmr(KS)_0.3-0.35_0.35-0.4.png" target="_tab"> <img src="files/plots_20140226/mnuvmr(KS)_0.3-0.35_0.35-0.4.png" width=100 height=100> </a> </center>
+            <table>
+              
+            </table></td> 
+        <td rowspan=2 colspan=2> <center><a href="plots_20140226/mnuvmr(KS)_0.3-0.4_0.55-0.65.png" target="_tab"> <img src="files/plots_20140226/mnuvmr(KS)_0.3-0.4_0.55-0.65.png" width=200 height=200> </a></center>
+            <table>
+             <tr><td> 0.13105 </td><td> 0.0 </td><td> 27.10995 </td><td> 0.0 </td></tr>
+             <tr><td> 0.13058 </td><td> 0.0 </td><td> 27.00882 </td><td> 0.0 </td></tr>
+             <tr><td> 0.14034 </td><td> 0.0 </td><td> 28.8191 </td><td> 0.0 </td></tr>     
+            </table></td> 
+        <td rowspan="2" colspan=2> <center><a href="files/plots_20140226/mnuvmr(KS)_0.3-0.4_0.65-0.75.png" target="_tab"> <img src="files/plots_20140226/mnuvmr(KS)_0.3-0.4_0.65-0.75.png" width=200 height=200> </a> </center>
+            <table>
+             <tr><td> 0.05341 </td><td> 0.00139 </td><td> 5.43004 </td><td> 0.00261 </td></tr>
+             <tr><td> 0.05751 </td><td> 0.00045 </td><td> 5.54303 </td><td> 0.00239 </td></tr>
+             <tr><td> 0.08819 </td><td> 0.0 </td><td> 10.30927 </td><td> 5e-05 </td></tr>
+            </table>
+        </td>
+        <td rowspan=2> <center><a href="files/plots_20140226/mnuvmr(KS)_0.3-0.4_0.75-0.8.png" target="_tab"> <img src="files/plots_20140226/mnuvmr(KS)_0.3-0.4_0.75-0.8.png" width=200 height=200> </a> </center>
+            <table>
+              <tr><td> 0.19344 </td><td> 0.0 </td><td> 73.72291 </td><td> 0.0 </td></tr>
+              <tr><td> 0.18827 </td><td> 0.0 </td><td> 68.44805 </td><td> 0.0 </td></tr>
+              <tr><td> 0.13289 </td><td> 0.0 </td><td> 29.52494 </td><td> 0.0 </td></tr> 
+            </table>
+        </td>
+        <td rowspan=2> <center><a href="files/plots_20140226/mnuvmr(KS)_0.3-0.4_0.8-0.85.png" target="_tab"> <img src="files/plots_20140226/mnuvmr(KS)_0.3-0.4_0.8-0.85.png" width=200 height=200> </a> </center>
+        <table>
+           <tr><td> 0.07885 </td><td> 0.0 </td><td> 9.41055 </td><td> 0.00011 </td></tr>
+           <tr><td> 0.07771 </td><td> 1e-05 </td><td> 8.74301 </td><td> 0.00018 </td></tr>
+           <tr><td> 0.09619 </td><td> 0.0 </td><td> 5.88892 </td><td> 0.00181 </td></tr>          
+        </table></td>
+    </tr>
+  
+    <tr><th>0.35-0.4 (OD) <br>$N_{gal}$=1000</th></tr>
+    <tr><th>0.55-0.6 (UD) <br> $N_{gal}$=7277 </th> <td></td> <td></td> <td></td> <td></td> 
+            <td rowspan=2 colspan=2> <center><a href="files/plots_20140219/color(KS)_0.55-0.65_0.65-0.75.png" target="_tab"> <img src="files/plots_20140219/color(KS)_0.55-0.65_0.65-0.75.png" width=200 height=200> </a></center> 
+                <table>
+                 <tr><td> 0.09396 </td><td> 0.0 </td><td> 19.41447 </td><td> 0.0 </td></tr>
+                 <tr><td> 0.09245 </td><td> 0.0 </td><td> 18.79919 </td><td> 0.0 </td></tr>
+                 <tr><td> 0.08176 </td><td> 0.0 </td><td> 15.03607 </td><td> 0.0 </td></tr>   
+                </table></td>
+            <td rowspan=2> <center><a href="files/plots_20140219/color(KS)_0.55-0.65_0.75-0.8.png" target="_tab"> <img src="files/plots_20140219/color(KS)_0.55-0.65_0.75-0.8.png" width=200 height=200> </a> </center>
+                <table>
+                 <tr><td> 0.27397 </td><td> 0.0 </td><td> 114.5078 </td><td> 0.0 </td></tr>
+                 <tr><td> 0.27131 </td><td> 0.0 </td><td> 110.9359 </td><td> 0.0 </td></tr>
+                 <tr><td> 0.25251 </td><td> 0.0 </td><td> 88.71325 </td><td> 0.0 </td></tr>   
+                </table></td>
+                <td rowspan=2> <center><a href="files/plots_20140219/color(KS)_0.55-0.65_0.8-0.85.png" target="_tab"> <img src="files/plots_20140219/color(KS)_0.55-0.65_0.8-0.85.png" width=200 height=200> </a></center>
+                    <table>
+                      <tr><td> 0.16564 </td><td> 0.0 </td><td> 38.9476 </td><td> 0.0 </td></tr>
+                      <tr><td> 0.16367 </td><td> 0.0 </td><td> 37.81522 </td><td> 0.0 </td></tr>
+                      <tr><td> 0.14231 </td><td> 0.0 </td><td> 26.92882 </td><td> 0.0 </td></tr>  
+                    </table></td>          
+        </tr>    
+    <tr><th>0.6-0.65 (UD) <br> $N_{gal}$=727 </th></tr>    
+    <tr><th>0.65-0.7 (OD) <br>$N_{gal}$=2089</th> 
+        <td colspan=2></td>
+        
+        <td></td><td></td><td></td><td></td>
+        <td rowspan=2> <center><a href="files/plots_20140219/color(KS)_0.65-0.75_0.75-0.8.png" target="_tab"> <img src="files/plots_20140219/color(KS)_0.65-0.75_0.75-0.8.png" width=200 height=200> </a></center>
+            <table>
+             <tr><td> 0.18441 </td><td> 0.0 </td><td> 63.13361 </td><td> 0.0 </td></tr>
+             <tr><td> 0.18369 </td><td> 0.0 </td><td> 62.50836 </td><td> 0.0 </td></tr>
+             <tr><td> 0.1797 </td><td> 0.0 </td><td> 56.74945 </td><td> 0.0 </td></tr>
+            </table></td>
+        <td rowspan=2> <center><a href="files/plots_20140219/color(KS)_0.65-0.75_0.8-0.85.png" target="_tab"> <img src="files/plots_20140219/color(KS)_0.65-0.75_0.8-0.85.png" width=200 height=200> </a></center>
+            <table>
+             <tr><td> 0.08137 </td><td> 0.0 </td><td> 13.10545 </td><td> 1e-05 </td></tr>
+             <tr><td> 0.07944 </td><td> 0.0 </td><td> 12.61783 </td><td> 1e-05 </td></tr>
+             <tr><td> 0.06839 </td><td> 0.0 </td><td> 9.73182 </td><td> 8e-05 </td></tr>
+            </table></td>
+    </tr>
+    <tr><th>0.7-0.75 (UD) <br>$N_{gal}$=1970</th>
+        <td colspan=2><center></center></td>
+    </tr>
+    <tr><th>0.75-0.80 (UD) <br> $N_{gal}$=1159 </th><td></td><td></td><td></td><td></td><td></td><td></td><td></td>
+        <td> <center><a href="files/plots_20140219/color(KS)_0.75-0.8_0.8-0.85.png" target="_tab"> <img src="files/plots_20140219/color(KS)_0.75-0.8_0.8-0.85.png" width=200 height=200> </a></center> 
+            <table>
+             <tr><td> 0.13057 </td><td> 0.0 </td><td> 32.95877 </td><td> 0.0 </td></tr>
+             <tr><td> 0.13128 </td><td> 0.0 </td><td> 33.47254 </td><td> 0.0 </td></tr>
+             <tr><td> 0.13484 </td><td> 0.0 </td><td> 35.57755 </td><td> 0.0 </td></tr>
+            </table></td>
+    </tr>
+    <tr><th>0.8-0.85 (OD) <br>$N_{gal}$=2428</th></tr>  
+</table>    
+
+$M_{NUV} - M_R$
+
+<table>
+    <tr><th> </th> <th> 0.30-0.50 (OD) </th> <th> 0.50-0.65 </th> <th> 0.65-0.85 </th></tr>
+    <tr><th> 0.30-0.50 (OD) </th> <td> </td>
+        <td> 
+        <center> <a href="files/plots_20140226/mnuvmr(0)_0.3-0.5_0.5-0.65.png" target="_tab">
+                 <img src="files/plots_20140226/mnuvmr(0)_0.3-0.5_0.5-0.65.png" width=250 height=250 >
+                 </a> </center>
+        <table>
+          <tr><td> 0.07691 </td><td> 0.0 </td><td> 12.19837 </td><td> 1e-05 </td></tr>
+          <tr><td> 0.07944 </td><td> 0.0 </td><td> 13.06003 </td><td> 1e-05 </td></tr>
+          <tr><td> 0.07826 </td><td> 0.0 </td><td> 13.27143 </td><td> 0.0 </td></tr>
+        </table>
+        </td> 
+         
+        <td>
+        <center> <a href="files/plots_20140226/mnuvmr(0)_0.3-0.5_0.65-0.85.png" target="_tab">
+                 <img src="files/plots_20140226/mnuvmr(0)_0.3-0.5_0.65-0.85.png" width=250 height=250 >
+                 </a> </center>
+         <table>
+          <tr><td> 0.08158 </td><td> 0.0 </td><td> 37.15321 </td><td> 0.0 </td></tr>
+          <tr><td> 0.07738 </td><td> 0.0 </td><td> 33.53805 </td><td> 0.0 </td></tr>
+          <tr><td> 0.05109 </td><td> 2e-05 </td><td> 13.54789 </td><td> 0.0 </td></tr>
+         </table>
+        </td>  
+   </tr>
+   <tr><th> 0.50-0.65 (UD) </th> <td></td> <td></td>
+   <td>
+   <center> <a href="files/plots_20140226/mnuvmr(0)_0.5-0.65_0.65-0.85.png" target="_tab">
+                 <img src="files/plots_20140226/mnuvmr(0)_0.5-0.65_0.65-0.85.png" width=250 height=250 >
+                 </a> </center>
+     <table>
+      <tr><td> 0.12346 </td><td> 0.0 </td><td> 52.0893 </td><td> 0.0 </td></tr>
+      <tr><td> 0.12107 </td><td> 0.0 </td><td> 49.76 </td><td> 0.0 </td></tr>
+      <tr><td> 0.10404 </td><td> 0.0 </td><td> 35.00411 </td><td> 0.0 </td></tr>
+     </table>
+     </td></tr>
+</table>     

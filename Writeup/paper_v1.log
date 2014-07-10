@@ -1,11 +1,11 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2013.11.12)  19 FEB 2014 12:51
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.30)  10 JUL 2014 00:09
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **paper_v1.tex
 (./paper_v1.tex
 LaTeX2e <2011/06/27>
-Babel <3.9f> and hyphenation patterns for 2 languages loaded.
+Babel <3.9h> and hyphenation patterns for 2 languages loaded.
 (/home/arunkannawadi/texmf/tex/latex/mn2e.cls
 Document Class: mn2e 2001/02/06 v2.2 LaTeX2e MN document class
 Document Style `MN' v2.2, released 2001 February 20
@@ -217,18 +217,18 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 ) (./paper_v1.aux)
 \openout1 = `paper_v1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 122.
-LaTeX Font Info:    ... okay on input line 122.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 124.
+LaTeX Font Info:    ... okay on input line 124.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -295,106 +295,237 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Try loading font information for U+eur on input line 123.
+LaTeX Font Info:    Try loading font information for U+eur on input line 125.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueur.fd
 File: ueur.fd 2013/01/14 v3.01 Euler Roman
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 123.
+LaTeX Font Info:    Try loading font information for U+msa on input line 125.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 123.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 125.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \hbox (badness 10000) in paragraph at lines 125--126
-
+Overfull \hbox (70.7104pt too wide) in paragraph at lines 125--125
+[][]  
  []
 
-<Figures/fig3.png, id=1, 1156.32pt x 872.2989pt>
-File: Figures/fig3.png Graphic file (type png)
- <use Figures/fig3.png>
-Package pdftex.def Info: Figures/fig3.png used on input line 179.
-(pdftex.def)             Requested size: 240.0pt x 181.04523pt.
 
-<Figures/fig4.png, id=3, 1233.6489pt x 641.0349pt>
-File: Figures/fig4.png Graphic file (type png)
- <use Figures/fig4.png>
-Package pdftex.def Info: Figures/fig4.png used on input line 190.
+Package natbib Warning: Citation `Claire_Fits' on page 1 undefined on input lin
+e 146.
+
+<Figures/fig1.png, id=1, 1233.6489pt x 641.0349pt>
+File: Figures/fig1.png Graphic file (type png)
+ <use Figures/fig1.png>
+Package pdftex.def Info: Figures/fig1.png used on input line 157.
 (pdftex.def)             Requested size: 240.0pt x 124.70296pt.
 
-<../plots_20140219/comoving_densities(2b).png, id=4, 1156.32pt x 872.2989pt>
-File: ../plots_20140219/comoving_densities(2b).png Graphic file (type png)
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use ../plots_20140219/comoving_densities(2b).png>
-Package pdftex.def Info: ../plots_20140219/comoving_densities(2b).png used on i
-nput line 201.
-(pdftex.def)             Requested size: 240.0pt x 181.04523pt.
-
-Underfull \vbox (badness 6978) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 223.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 189.
 
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 223.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 189.
  [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./Figures/fig3.png>]
-Underfull \hbox (badness 1383) in paragraph at lines 223--225
+ <./Figures/fig1.png>]
+<Figures/fig3.png, id=30, 1156.32pt x 872.2989pt>
+File: Figures/fig3.png Graphic file (type png)
+ <use Figures/fig3.png>
+Package pdftex.def Info: Figures/fig3.png used on input line 196.
+(pdftex.def)             Requested size: 240.0pt x 181.04523pt.
+
+<Figures/fig4.png, id=31, 1233.6489pt x 641.0349pt>
+File: Figures/fig4.png Graphic file (type png)
+ <use Figures/fig4.png>
+Package pdftex.def Info: Figures/fig4.png used on input line 208.
+(pdftex.def)             Requested size: 240.0pt x 124.70296pt.
+
+
+LaTeX Warning: Reference `fig3' on page 2 undefined on input line 217.
+
+<../plots_20140219/comoving_densities(2b).png, id=32, 1156.32pt x 872.2989pt>
+File: ../plots_20140219/comoving_densities(2b).png Graphic file (type png)
+
+<use ../plots_20140219/comoving_densities(2b).png>
+Package pdftex.def Info: ../plots_20140219/comoving_densities(2b).png used on i
+nput line 237.
+(pdftex.def)             Requested size: 240.0pt x 181.04523pt.
+ [2 <./Figures/fig3.png> <./Figures/fig4.png> <../plots_20140219/comoving_densi
+ties(2b).png>]
+Underfull \hbox (badness 1383) in paragraph at lines 263--265
 \OT1/cmr/m/n/9 in \OT1/cmr/bx/n/9 Ta-ble 1\OT1/cmr/m/n/9 . Test statis-tic and 
 $\OML/cmm/m/it/9 p$\OT1/cmr/m/n/9 -values are ob-tained
  []
 
 
-Underfull \hbox (badness 1173) in paragraph at lines 223--225
+Underfull \hbox (badness 1173) in paragraph at lines 263--265
 \OT1/cmr/m/n/9 from Kolmogorov-Smirnov test (KS-test) and 2-sample
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 234--246
-[]\OT1/cmr/bx/n/9 Table 1  \OT1/cmr/m/n/9 - $\OML/cmm/m/it/9 p$\OT1/cmr/m/n/9 -
-value ma-trix
+Underfull \hbox (badness 4859) in paragraph at lines 274--286
+[]\OT1/cmr/bx/n/9 Table 1 (needs up-date)  \OT1/cmr/m/n/9 - $\OML/cmm/m/it/9 p$
+\OT1/cmr/m/n/9 -value ma-trix
  []
 
-[2 <./Figures/fig4.png> <../plots_20140219/comoving_densities(2b).png>]
-(./paper_v1.aux) ) 
+
+<Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png, id=40, 1445.4pt x 1031.292
+9pt>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png Graphic file (type png
+)
+ <use Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png use
+d on input line 308.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png, id=41, 1445.4pt x 1031.292
+9pt>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png Graphic file (type png
+)
+ <use Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png use
+d on input line 309.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png, id=42, 1445.4pt x 1031.29
+29pt>
+File: Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png Graphic file (type pn
+g)
+ <use Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png us
+ed on input line 310.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png, id=43, 1445.4pt x 1031.29
+29pt>
+File: Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png Graphic file (type pn
+g)
+ <use Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png us
+ed on input line 311.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png, id=44, 1445.4pt x 1031.2
+929pt>
+File: Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png Graphic file (type p
+ng)
+ <use Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png u
+sed on input line 318.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png, id=45, 1445.4pt x 1031.292
+9pt>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png Graphic file (type png
+)
+ <use Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png use
+d on input line 319.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png, id=46, 1445.4pt x 1031.2929
+pt>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png Graphic file (type png)
+
+ <use Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png used
+ on input line 320.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png, id=47, 1445.4pt x 1031.29
+29pt>
+File: Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png Graphic file (type pn
+g)
+ <use Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png>
+Package pdftex.def Info: Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png us
+ed on input line 321.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+
+Package caption Warning: \label without proper \caption on input line 335.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:rms_ellip' on page 3 undefined on input line 329.
+
+
+<Figures/rms_ellip1.png, id=48, 1445.4pt x 1031.2929pt>
+File: Figures/rms_ellip1.png Graphic file (type png)
+
+<use Figures/rms_ellip1.png>
+Package pdftex.def Info: Figures/rms_ellip1.png used on input line 333.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+
+<Figures/rms_ellip2.png, id=49, 1445.4pt x 1031.2929pt>
+File: Figures/rms_ellip2.png Graphic file (type png)
+
+<use Figures/rms_ellip2.png>
+Package pdftex.def Info: Figures/rms_ellip2.png used on input line 334.
+(pdftex.def)             Requested size: 215.99854pt x 154.10501pt.
+ (./paper_v1.bbl)
+
+Package natbib Warning: There were undefined citations.
+
+[3]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png> <./Figures/axisratio
+(0)_0dot3-0dot4_0dot80-0dot85.png> <./Figures/axisratio(0)_0dot65-0dot75_0dot8-
+0dot85.png> <./Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png> <./Figures/axisrat
+io(0)_0dot3-0dot4_0dot55-0dot65.png> <./Figures/axisratio(0)_0dot3-0dot4_0dot75
+-0dot8.png> <./Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png> <./Figures/
+rms_ellip1.png> <./Figures/rms_ellip2.png>] (./paper_v1.aux)
+
+LaTeX Warning: There were undefined references.
+
+ ) 
 Here is how much of TeX's memory you used:
- 4131 strings out of 495031
- 58819 string characters out of 6181530
- 126420 words of memory out of 5000000
- 7261 multiletter control sequences out of 15000+600000
- 19007 words of font info for 72 fonts, out of 8000000 for 9000
+ 4200 strings out of 495028
+ 61436 string characters out of 6181497
+ 127943 words of memory out of 5000000
+ 7318 multiletter control sequences out of 15000+600000
+ 19174 words of font info for 73 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 44i,14n,42p,255b,311s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
-2.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-di
-st/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/font
-s/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
-8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti8.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti9.pfb></usr/share/texlive/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmtt8.pfb>
-Output written on paper_v1.pdf (2 pages, 337640 bytes).
+ 44i,14n,42p,1088b,316s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr
+5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf
+-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt
+9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10
+.pfb>
+Output written on paper_v1.pdf (5 pages, 1226554 bytes).
 PDF statistics:
- 90 PDF objects out of 1000 (max. 8388607)
- 61 compressed objects within 1 object stream
+ 141 PDF objects out of 1000 (max. 8388607)
+ 82 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

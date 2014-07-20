@@ -1,4 +1,4 @@
-@ARTICLE{2012MNRAS.421.2277L,
+@article{Claire_Fits,
    author = {{Lackner}, C.~N. and {Gunn}, J.~E.},
     title = "{Astrophysically motivated bulge-disc decompositions of Sloan Digital Sky Survey galaxies}",
   journal = {\mnras},
@@ -12,5 +12,144 @@ archivePrefix = "arXiv",
     pages = {2277-2302},
       doi = {10.1111/j.1365-2966.2012.20450.x},
    adsurl = {http://adsabs.harvard.edu/abs/2012MNRAS.421.2277L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{COSMOS_overview,
+   author = {{Scoville}, N. and {Aussel}, H. and {Brusa}, M. and {Capak}, P. and 
+	{Carollo}, C.~M. and {Elvis}, M. and {Giavalisco}, M. and {Guzzo}, L. and 
+	{Hasinger}, G. and {Impey}, C. and {Kneib}, J.-P. and {LeFevre}, O. and 
+	{Lilly}, S.~J. and {Mobasher}, B. and {Renzini}, A. and {Rich}, R.~M. and 
+	{Sanders}, D.~B. and {Schinnerer}, E. and {Schminovich}, D. and 
+	{Shopbell}, P. and {Taniguchi}, Y. and {Tyson}, N.~D.},
+    title = "{The Cosmic Evolution Survey (COSMOS): Overview}",
+  journal = {\apjs},
+   eprint = {astro-ph/0612305},
+ keywords = {Cosmology: Observations, Cosmology: Dark Matter, Galaxies: Evolution, Galaxies: Formation, Cosmology: Large-Scale Structure of Universe, Surveys},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {1-8},
+      doi = {10.1086/516585},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172....1S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{COSMOS_generic,
+   author = {{Koekemoer}, A.~M. and {Aussel}, H. and {Calzetti}, D. and {Capak}, P. and 
+	{Giavalisco}, M. and {Kneib}, J.-P. and {Leauthaud}, A. and 
+	{Le F{\`e}vre}, O. and {McCracken}, H.~J. and {Massey}, R. and 
+	{Mobasher}, B. and {Rhodes}, J. and {Scoville}, N. and {Shopbell}, P.~L.
+	},
+    title = "{The COSMOS Survey: Hubble Space Telescope Advanced Camera for Surveys Observations and Data Processing}",
+  journal = {\apjs},
+   eprint = {astro-ph/0703095},
+ keywords = {Cosmology: Observations, Cosmology: Dark Matter, Galaxies: Evolution, Galaxies: Formation, Cosmology: Large-Scale Structure of Universe, Surveys},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {196-202},
+      doi = {10.1086/520086},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172..196K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{COSMOS_Alexie,
+   author = {{Leauthaud}, A. and {Massey}, R. and {Kneib}, J.-P. and {Rhodes}, J. and 
+	{Johnston}, D.~E. and {Capak}, P. and {Heymans}, C. and {Ellis}, R.~S. and 
+	{Koekemoer}, A.~M. and {Le F{\`e}vre}, O. and {Mellier}, Y. and 
+	{R{\'e}fr{\'e}gier}, A. and {Robin}, A.~C. and {Scoville}, N. and 
+	{Tasca}, L. and {Taylor}, J.~E. and {Van Waerbeke}, L.},
+    title = "{Weak Gravitational Lensing with COSMOS: Galaxy Selection and Shape Measurements}",
+  journal = {\apjs},
+   eprint = {astro-ph/0702359},
+ keywords = {Cosmology: Observations, Cosmology: Gravitational Lensing, Cosmology: Large-Scale Structure of Universe},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {219-238},
+      doi = {10.1086/516598},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172..219L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{COSMOS_photoz,
+   author = {{Mobasher}, B. and {Capak}, P. and {Scoville}, N.~Z. and {Dahlen}, T. and 
+	{Salvato}, M. and {Aussel}, H. and {Thompson}, D.~J. and {Feldmann}, R. and 
+	{Tasca}, L. and {Le Fevre}, O. and {Lilly}, S. and {Carollo}, C.~M. and 
+	{Kartaltepe}, J.~S. and {McCracken}, H. and {Mould}, J. and 
+	{Renzini}, A. and {Sanders}, D.~B. and {Shopbell}, P.~L. and 
+	{Taniguchi}, Y. and {Ajiki}, M. and {Shioya}, Y. and {Contini}, T. and 
+	{Giavalisco}, M. and {Ilbert}, O. and {Iovino}, A. and {Le Brun}, V. and 
+	{Mainieri}, V. and {Mignoli}, M. and {Scodeggio}, M.},
+    title = "{Photometric Redshifts of Galaxies in COSMOS}",
+  journal = {\apjs},
+   eprint = {astro-ph/0612344},
+ keywords = {Galaxies: Distances and Redshifts, Galaxies: Evolution, Galaxies: Starburst, Surveys},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {117-131},
+      doi = {10.1086/516590},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172..117M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Kovac_Density10k,
+   author = {{Kova{\v c}}, K. and {Lilly}, S.~J. and {Cucciati}, O. and {Porciani}, C. and 
+	{Iovino}, A. and {Zamorani}, G. and {Oesch}, P. and {Bolzonella}, M. and 
+	{Knobel}, C. and {Finoguenov}, A. and {Peng}, Y. and {Carollo}, C.~M. and 
+	{Pozzetti}, L. and {Caputi}, K. and {Silverman}, J.~D. and {Tasca}, L.~A.~M. and 
+	{Scodeggio}, M. and {Vergani}, D. and {Scoville}, N.~Z. and 
+	{Capak}, P. and {Contini}, T. and {Kneib}, J.-P. and {Le F{\`e}vre}, O. and 
+	{Mainieri}, V. and {Renzini}, A. and {Bardelli}, S. and {Bongiorno}, A. and 
+	{Coppa}, G. and {de la Torre}, S. and {de Ravel}, L. and {Franzetti}, P. and 
+	{Garilli}, B. and {Guzzo}, L. and {Kampczyk}, P. and {Lamareille}, F. and 
+	{Le Borgne}, J.-F. and {Le Brun}, V. and {Maier}, C. and {Mignoli}, M. and 
+	{Pello}, R. and {Perez Montero}, E. and {Ricciardelli}, E. and 
+	{Tanaka}, M. and {Tresse}, L. and {Zucca}, E. and {Abbas}, U. and 
+	{Bottini}, D. and {Cappi}, A. and {Cassata}, P. and {Cimatti}, A. and 
+	{Fumana}, M. and {Koekemoer}, A.~M. and {Maccagni}, D. and {Marinoni}, C. and 
+	{McCracken}, H.~J. and {Memeo}, P. and {Meneux}, B. and {Scaramella}, R.
+	},
+    title = "{The Density Field of the 10k zCOSMOS Galaxies}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {0903.3409},
+ primaryClass = "astro-ph.CO",
+ keywords = {galaxies: high-redshift, large-scale structure of universe, surveys},
+     year = 2010,
+    month = jan,
+   volume = 708,
+    pages = {505-533},
+      doi = {10.1088/0004-637X/708/1/505},
+   adsurl = {http://adsabs.harvard.edu/abs/2010ApJ...708..505K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Redshift_modelling,
+   author = {{Baugh}, C.~M. and {Efstathiou}, G.},
+    title = "{The Three-Dimensional Power Spectrum Measured from the APM Galaxy Survey - Part One - Use of the Angular Correlation Function}",
+  journal = {\mnras},
+     year = 1993,
+    month = nov,
+   volume = 265,
+    pages = {145},
+   adsurl = {http://adsabs.harvard.edu/abs/1993MNRAS.265..145B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@MISC{SHERA,
+   author = {{Mandelbaum}, R. and {Hirata}, C.~M. and {Leauthaud}, A. and 
+	{Massey}, R.~J. and {Rhodes}, J.},
+    title = "{SHERA: SHEar Reconvolution Analysis}",
+     note = {Astrophysics Source Code Library},
+     year = 2011,
+archivePrefix = "ascl",
+   eprint = {1108.002},
+    month = aug,
+   adsurl = {http://adsabs.harvard.edu/abs/2011ascl.soft08002M},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }

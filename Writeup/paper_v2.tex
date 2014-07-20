@@ -107,6 +107,7 @@
 \newcommand{\mg}{\ensuremath{M_G}}
 \newcommand{\mi}{\ensuremath{M_I}}
 \newcommand{\sersicn}{S\'{e}rsic $n$ }
+\newcommand{\sersic}{S\'{e}rsic }
 \newcommand{\btt}{Bulge-to-Total }
 
 \title[WL simulation]{Environmental factors affecting Galaxy Morphology}
@@ -135,7 +136,24 @@ According to our current understanding, galaxy shapes and morphologies should de
 
 \section{Introduction}
 \label{S:intro}
+{\bf \emph{Stress on the importance of WL:}} We are currently in the era of precision cosmology, where systematic errors typically dominate over statistical errors. In almost all branches of observational cosmology,
+weak lensing introduces systematic error, in addition to itself being a probe of the dark matter and eventually the large scale structure of the universe.
+As light from the background sources passes through the foreground cluster of galaxies and dark matter profiles, the shapes get distorted. Weak lensing also causes magnification in addition to introducing a shear.
+Weak lensing effects need to be removed from the Cosmic Microwave Background (CMB) analysis to understand the initial conditions of the universe.
 
+Previous studies have shown that any shape measurement method that uses second moments cannot be independent of the morphology and substructure of the galaxies involved. ({\bf rephrased from GREAT3}).
+Hence, it is important to check any method that is proposed to measure the shape of the galaxies to check against a simulation that generates images as realistic as possible.  
+With this in mind, the GREAT3 challenge~\cite{great3} was held with the aim to test and faciliate methods for measuring weak gravitational lensing by analyzing astronomical images.
+Software packages like GalSim\footnote{https://github.com/GalSim-developers/GalSim} can generate galaxy images fairly accurately, given realistic input parametes.
+The training dataset used in the challenge comes from the COSMOS survey, which we describe in sufficient detail in Sec.~\ref{S:data}.
+While providing a good quality (high $S/N$) images to be trained over, there could be some bias introduced due to the survey being a narrow one.
+It is known {\bf cite refs.} that the shape and morphology of galaxies depend very much on their local environment. Hence, local overdensities or underdensities
+observed in the COSMOS' field of view may cause the properties of the galaxies to be associated with the redshift, thus unable to distinguish between redshift evolution and large scale structure.
+
+%The structure of the paper is as follows. In Sec.~\ref{S:data}, we briefly describe the COSMOS catalog that we use for our analysis.
+In this paper, we show that these large scale structure effects mentioned are indeed present in the data. The rest of the paper is structured as follows.
+In Sec.~\ref{sub:overdensities}, we explain how we volume-limit our data and identify overdensities and underdensities and in Sec.~\ref{sub:axisratio},
+ we explain how we obtain axis-ratios from the images of the galaxies. Finally, we present our results in Sec.~\ref{S:results} and end with conclusions in Sec.~\ref{S:conclusion}.
 \section{Data}
 \label{S:data}
 %In this analysis, we consider the COSMOS sample of galaxies. 
@@ -147,7 +165,7 @@ is $0.12''$. High resolution images taken through the wide F814W filter (broad \
 Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
 
 Photometric redshifts were determined by~\cite{COSMOS_photoz}.The accuracy of photometric redshifts for F814W $\le$ 22.5 is $\sigma_{\Delta z} = 0.031(1+z_s)$.
-The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. 
+The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. ($S/N \sim 50$ {\bf ?} )
 
 We apply the following set of initial cuts to the data, all of which is definited in~\cite{COSMOS_Alexie}:
 \begin{enumerate}
@@ -168,7 +186,7 @@ We will analyze how these intrinsic shape of the galaxies depends on the environ
 \subsection{Finding overdensities}
 \label{sub:overdensities}
 Every survey is flux-limited and so is COSMOS and is affected by Malmquist bias.
-We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered.
+We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on $K$-corrected $i$-band magnitudes, denoted as $M_I$.
 Since the parent sample contains fainter galaxies, upto F814W=25.2, we compare the distribution of the F814W=23.5 sample with the samples containing fainter galaxies for high redshift bins, where the incompleteness affects first.
 \begin{figure}
  \centering
@@ -221,7 +239,9 @@ nor too underdense and we call them as `unclassified regions'  and discard them 
 \end{figure}
 
 We thus identify the regions $z=0.30-0.40, 0.65-0.75, 0.80-0.85$ as overdense, $z=0.55-0.65, 0.75-0.80$ as underdense and $z=0.40-0.55$ as unclassified.
-The classification of overdensities and underdensities agrees with the work done by~\cite{Kovac_Density10k} except for the last two redshift bins. 
+The classification of overdensities and underdensities agrees with the work done by~\cite{Kovac_Density10k} on the zCOSMOS field using spectra and 3D density field reconstruction , except for the last two high redshift bins.
+We believe that this disagreement is due to the errors in our photometric redshifts and the overdensity reported in $z=0.875-1$ slice
+is observed by us in $z=0.80-0.85$ slice.
 
 We see that the region between $0.85<z<1.0$ is neither overdense nor underdense according to our model and hence is not going to be considered for further analysis.
 
@@ -264,7 +284,7 @@ In the following section, we will compare and analyze the distribution of proper
 %\section{Implications/Comparisons}
 %\section{Results}
 \subsection{Finding axis ratios $(b/a)$}
-\label{s:axisratio}
+\label{sub:axisratio}
 {\bf Should explain in brief Claire's work.} \\
 If galaxies have elliptical isophotes, its shape and size could be defined by the axis ratio and the area enclosed by a boundary isophote. However, in real galaxy images,
 the boundary may not be well defined and the shape may not be well approximated by an ellipse. Given the surface brightness (intensity) $I(\vec{\theta})$ of a galaxy image at every angular position $\vec{\theta}$,
@@ -278,18 +298,30 @@ It is common to find in literature two kinds of \emph{complex }ellipticities tha
  \chi &= \frac{Q_{11}-Q_{12}+2iQ_{12}}{Q_{11}+Q_{22}} \\ \epsilon &= \frac{Q_{11}-Q_{22}+2iQ_{12}}{Q_{11}+Q_{22}+2(Q_{11}Q_{22}-Q_{12})^{1/2}}
 \end{align}
 If the image has elliptical isophotes with axis ratio $q$, then 
-\begin{align}
- |\chi| &= \frac{1-q^2}{1+q^2}, \\ |\epsilon| &= \frac{1-q}{1+q}. 
-\end{align}
+\begin{equation}
+ |\chi| = \frac{1-q^2}{1+q^2}, \;\;\; |\epsilon| = \frac{1-q}{1+q}. 
+\end{equation}
 
-Conversely, if we can compute $\chi$ or $\epsilon$ for a galaxy, we can obtain an effective, azimuthally averaged {\bf(?)} axis-ratio $q$. 
+
+Conversely, one could compute $\chi$ or $\epsilon$ for a galaxy, and obtain an effective, azimuthally averaged {\bf(?)} axis-ratio $q$. 
+However, our method of finding the value of $q$ is little more complicated. Briefly, we fit
+two models to each image:
+\begin{enumerate}
+ \item a \sersic profile given by the expression 
+       \begin{equation} 
+    S = \Sigma_{1/2}\exp{\left( -k(R/R_{\text{eff}})^{1/n} -1 \right)},
+       \end{equation}
+       \item two \sersic component fits: de Vaucoulers bulge $(n=4)$ + exponential disc profile $(n=1)$,
+\end{enumerate}
+where \begin{align*} R^2 = & ((x-x_0)\cos\Phi+(y-y_0)\sin\Phi)^2  \\ & + ((y-y_0)\cos\Phi-(x-x_0)\sin\Phi)^2/q^2, \end{align*}
+$R_{\text{eff}}$ is the half-light radius of the profile, $\Sigma_{1/2}$ is the surface brightness at $R=R_{\text{eff}}$, $(x_0,y_0)$ is the centroid of the image,
+$\Phi$ is the profile rotation angle, $n$ is the \sersic index, $k$ is a $n$-dependent normalization factor and $q$ is the axis ratio of the elliptical isophotes,
+which is the quantity of interest to us. We find the best-fit parameters \emph{simultaneously}, by minimizing the weighted
+sum of the difference between the image and the PSF-convolved model. More details about the fit can be found in~\cite{Claire_Fits}.
+
+\section{Results}
+\label{S:results}
 The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
-\begin{figure}
- \centering
- \includegraphics[width=\columnwidth]{axis_ratio_all.eps}
- \caption{KS p-value = 0.004 \& AD p-value = 0.001}
- \label{fig:axisratio_all}
-\end{figure}
 
 We first compare the distribution of the axis ratio in \emph{all} overdense bins and \emph{all} underdense bins. The p-value from both the KS and AD tests are below 0.05, 
 so we believe (95\% level) in the `alternate hypothesis' that the overdense and underdense regions have different axis ratio distributions.
@@ -297,6 +329,41 @@ Next, we will compare distributions between two overdense / underdense regions, 
 where we expect the distributions to differ.
 Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} show that the distributions are similar when the environments are similar and different when the environments are different.
 The cumulative distinction functions are also plotted alongside in order to be able to visualize the `distance' between the distributions.
+
+
+%The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
+%or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
+It is useful to consider the root mean square ellipticity since it can characterize the shape of the population/sample of galaxies.
+
+
+The RMS ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}. As one can see, the underdense regions
+have significantly higher values for RMS ellipticities when compared to the overdense regions. Note that the narrow overdense bin $0.\le z < 0.80$ 
+This is consistent with {\bf give physical argument.}. 
+From Figs.~\ref{fig:overdensities} and~\ref{fig:comoving_densities},
+the region $0.4\le z < 0.55$ show signs of being marginally underdense but have low RMS ellipticities too that agree with the rest of the overdense regions.
+
+\section{Conclusion}
+\label{S:conclusion}
+
+We have shown that 
+\section*{Acknowledgments}
+
+AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and
+program HST-AR-12857.01-A, provided by NASA through a grant from the
+Space Telescope Science Institute, which is operated by the
+Association of Universities for Research in Astronomy, Incorporated,
+under NASA contract NAS5-26555. AK and RM thank Alexie Leauthaud for many useful discussions.
+
+%\begin{thebibliography}
+\bibliography{ref}
+%\end{thebibliography}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=\columnwidth]{axis_ratio_all.eps}
+ \caption{KS p-value = 0.004 \& AD p-value = 0.001}
+ \label{fig:axisratio_all}
+\end{figure}
 
 
 \begin{figure*}
@@ -320,10 +387,6 @@ The cumulative distinction functions are also plotted alongside in order to be a
 \end{figure*}
 
 
-%The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
-%or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
-It is useful to consider the root mean square ellipticity since it can characterize the shape of the population/sample of galaxies.
-
 \begin{figure*}
  \centering
  a) \includegraphics[width=0.9\columnwidth]{rms_ellip1.png} \
@@ -332,27 +395,6 @@ It is useful to consider the root mean square ellipticity since it can character
           Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$. }
  \label{fig:rms_ellip}
 \end{figure*}
-
-The RMS ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}. As one can see, the underdense regions
-have significantly higher values for RMS ellipticities when compared to the overdense regions. Note that the narrow overdense bin $0.\le z < 0.80$ 
-This is consistent with {\bf give physical argument.}. 
-From Figs.~\ref{fig:overdensities} and~\ref{fig:comoving_densities},
-the region $0.4\le z < 0.55$ show signs of being marginally underdense but have low RMS ellipticities too that agree with the rest of the overdense regions.
-
-\section{Conclusion}
-
-We have shown that 
-\section*{Acknowledgments}
-
-AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and
-program HST-AR-12857.01-A, provided by NASA through a grant from the
-Space Telescope Science Institute, which is operated by the
-Association of Universities for Research in Astronomy, Incorporated,
-under NASA contract NAS5-26555
-
-%\begin{thebibliography}
-\bibliography{ref}
-%\end{thebibliography}
 
 \end{document}
 

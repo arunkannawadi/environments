@@ -1,4 +1,4 @@
-\begin{thebibliography}{9}
+\begin{thebibliography}{11}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,24 @@ C.~M. {Baugh} and G.~{Efstathiou}.
 \newblock {The Three-Dimensional Power Spectrum Measured from the APM Galaxy
   Survey - Part One - Use of the Angular Correlation Function}.
 \newblock \emph{\mnras}, 265:\penalty0 145, November 1993.
+
+\bibitem[{Faber} et~al.(2007){Faber}, {Willmer}, {Wolf}, {Koo}, {Weiner},
+  {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis}, {Finkbeiner}, {Gerke},
+  {Gebhardt}, {Groth}, {Guhathakurta}, {Harker}, {Kaiser}, {Kassin},
+  {Kleinheinrich}, {Konidaris}, {Kron}, {Lin}, {Luppino}, {Madgwick},
+  {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon}, {Simard},
+  {Szalay}, {Vogt}, and {Yan}]{Faber2007}
+S.~M. {Faber}, C.~N.~A. {Willmer}, C.~{Wolf}, D.~C. {Koo}, B.~J. {Weiner},
+  J.~A. {Newman}, M.~{Im}, A.~L. {Coil}, C.~{Conroy}, M.~C. {Cooper},
+  M.~{Davis}, D.~P. {Finkbeiner}, B.~F. {Gerke}, K.~{Gebhardt}, E.~J. {Groth},
+  P.~{Guhathakurta}, J.~{Harker}, N.~{Kaiser}, S.~{Kassin}, M.~{Kleinheinrich},
+  N.~P. {Konidaris}, R.~G. {Kron}, L.~{Lin}, G.~{Luppino}, D.~S. {Madgwick},
+  K.~{Meisenheimer}, K.~G. {Noeske}, A.~C. {Phillips}, V.~L. {Sarajedini},
+  R.~P. {Schiavon}, L.~{Simard}, A.~S. {Szalay}, N.~P. {Vogt}, and R.~{Yan}.
+\newblock {Galaxy Luminosity Functions to z\~{}1 from DEEP2 and COMBO-17:
+  Implications for Red Galaxy Formation}.
+\newblock \emph{\apj}, 665:\penalty0 265--294, August 2007.
+\newblock \doi{10.1086/519294}.
 
 \bibitem[{Koekemoer} et~al.(2007){Koekemoer}, {Aussel}, {Calzetti}, {Capak},
   {Giavalisco}, {Kneib}, {Leauthaud}, {Le F{\`e}vre}, {McCracken}, {Massey},
@@ -120,5 +138,19 @@ N.~{Scoville}, H.~{Aussel}, M.~{Brusa}, P.~{Capak}, C.~M. {Carollo},
 \newblock {The Cosmic Evolution Survey (COSMOS): Overview}.
 \newblock \emph{\apjs}, 172:\penalty0 1--8, September 2007.
 \newblock \doi{10.1086/516585}.
+
+\bibitem[{Tomczak} et~al.(2014){Tomczak}, {Quadri}, {Tran}, {Labb{\'e}},
+  {Straatman}, {Papovich}, {Glazebrook}, {Allen}, {Brammer}, {Kacprzak},
+  {Kawinwanichakij}, {Kelson}, {McCarthy}, {Mehrtens}, {Monson}, {Persson},
+  {Spitler}, {Tilvi}, and {van Dokkum}]{Tomczak_SMF}
+A.~R. {Tomczak}, R.~F. {Quadri}, K.-V.~H. {Tran}, I.~{Labb{\'e}}, C.~M.~S.
+  {Straatman}, C.~{Papovich}, K.~{Glazebrook}, R.~{Allen}, G.~B. {Brammer},
+  G.~G. {Kacprzak}, L.~{Kawinwanichakij}, D.~D. {Kelson}, P.~J. {McCarthy},
+  N.~{Mehrtens}, A.~J. {Monson}, S.~E. {Persson}, L.~R. {Spitler}, V.~{Tilvi},
+  and P.~{van Dokkum}.
+\newblock {Galaxy Stellar Mass Functions from ZFOURGE/CANDELS: An Excess of
+  Low-mass Galaxies since z = 2 and the Rapid Buildup of Quiescent Galaxies}.
+\newblock \emph{\apj}, 783:\penalty0 85, March 2014.
+\newblock \doi{10.1088/0004-637X/783/2/85}.
 
 \end{thebibliography}

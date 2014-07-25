@@ -153,3 +153,74 @@ archivePrefix = "ascl",
    adsurl = {http://adsabs.harvard.edu/abs/2011ascl.soft08002M},
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
+
+@ARTICLE{great3,
+   author = {{Mandelbaum}, R. and {Rowe}, B. and {Bosch}, J. and {Chang}, C. and 
+	{Courbin}, F. and {Gill}, M. and {Jarvis}, M. and {Kannawadi}, A. and 
+	{Kacprzak}, T. and {Lackner}, C. and {Leauthaud}, A. and {Miyatake}, H. and 
+	{Nakajima}, R. and {Rhodes}, J. and {Simet}, M. and {Zuntz}, J. and 
+	{Armstrong}, B. and {Bridle}, S. and {Coupon}, J. and {Dietrich}, J.~P. and 
+	{Gentile}, M. and {Heymans}, C. and {Jurling}, A.~S. and {Kent}, S.~M. and 
+	{Kirkby}, D. and {Margala}, D. and {Massey}, R. and {Melchior}, P. and 
+	{Peterson}, J. and {Roodman}, A. and {Schrabback}, T.},
+    title = "{The Third Gravitational Lensing Accuracy Testing (GREAT3) Challenge Handbook}",
+  journal = {\apjs},
+archivePrefix = "arXiv",
+   eprint = {1308.4982},
+ keywords = {gravitational lensing: weak, methods: data analysis, methods: statistical, techniques: image processing },
+     year = 2014,
+    month = may,
+   volume = 212,
+      eid = {5},
+    pages = {5},
+      doi = {10.1088/0067-0049/212/1/5},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJS..212....5M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Tomczak_SMF,
+   author = {{Tomczak}, A.~R. and {Quadri}, R.~F. and {Tran}, K.-V.~H. and 
+	{Labb{\'e}}, I. and {Straatman}, C.~M.~S. and {Papovich}, C. and 
+	{Glazebrook}, K. and {Allen}, R. and {Brammer}, G.~B. and {Kacprzak}, G.~G. and 
+	{Kawinwanichakij}, L. and {Kelson}, D.~D. and {McCarthy}, P.~J. and 
+	{Mehrtens}, N. and {Monson}, A.~J. and {Persson}, S.~E. and 
+	{Spitler}, L.~R. and {Tilvi}, V. and {van Dokkum}, P.},
+    title = "{Galaxy Stellar Mass Functions from ZFOURGE/CANDELS: An Excess of Low-mass Galaxies since z = 2 and the Rapid Buildup of Quiescent Galaxies}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1309.5972},
+ primaryClass = "astro-ph.CO",
+ keywords = {galaxies: evolution, galaxies: high-redshift, galaxies: luminosity function, mass function},
+     year = 2014,
+    month = mar,
+   volume = 783,
+      eid = {85},
+    pages = {85},
+      doi = {10.1088/0004-637X/783/2/85},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJ...783...85T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Faber2007,
+   author = {{Faber}, S.~M. and {Willmer}, C.~N.~A. and {Wolf}, C. and {Koo}, D.~C. and 
+	{Weiner}, B.~J. and {Newman}, J.~A. and {Im}, M. and {Coil}, A.~L. and 
+	{Conroy}, C. and {Cooper}, M.~C. and {Davis}, M. and {Finkbeiner}, D.~P. and 
+	{Gerke}, B.~F. and {Gebhardt}, K. and {Groth}, E.~J. and {Guhathakurta}, P. and 
+	{Harker}, J. and {Kaiser}, N. and {Kassin}, S. and {Kleinheinrich}, M. and 
+	{Konidaris}, N.~P. and {Kron}, R.~G. and {Lin}, L. and {Luppino}, G. and 
+	{Madgwick}, D.~S. and {Meisenheimer}, K. and {Noeske}, K.~G. and 
+	{Phillips}, A.~C. and {Sarajedini}, V.~L. and {Schiavon}, R.~P. and 
+	{Simard}, L. and {Szalay}, A.~S. and {Vogt}, N.~P. and {Yan}, R.
+	},
+    title = "{Galaxy Luminosity Functions to z\~{}1 from DEEP2 and COMBO-17: Implications for Red Galaxy Formation}",
+  journal = {\apj},
+   eprint = {astro-ph/0506044},
+ keywords = {Galaxies: Distances and Redshifts, Galaxies: Evolution, Galaxies: Luminosity Function, Mass Function},
+     year = 2007,
+    month = aug,
+   volume = 665,
+    pages = {265-294},
+      doi = {10.1086/519294},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJ...665..265F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

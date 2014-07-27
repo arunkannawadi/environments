@@ -1,4 +1,4 @@
-This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  27 JUL 2014 10:53
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=pdflatex 2008.12.28)  27 JUL 2014 11:43
 entering extended mode
  %&-line parsing enabled.
 **paper_v2.tex
@@ -273,37 +273,35 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 130.
 (/usr/local/texlive/2008/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (70.7104pt too wide) in paragraph at lines 130--130
-[][]  
- []
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 194.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 174.
 
 (/usr/local/texlive/2008/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 174.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 194.
  [1{/usr/local/texlive/2008/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
 ]
-Underfull \hbox (badness 10000) in paragraph at lines 182--182
+Underfull \hbox (badness 10000) in paragraph at lines 213--213
 $[]$ []\OT1/cmr/m/n/8 http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 192--194
+Underfull \hbox (badness 10000) in paragraph at lines 243--245
 []\OT1/cmtt/m/n/9 MU[]CLASS=1\OT1/cmr/m/n/9 : Un-like SEx-trac-tor's stel-lar i
 n-dex
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 192--194
+Underfull \hbox (badness 3312) in paragraph at lines 243--245
 \OT1/cmtt/m/n/9 CLASS[]STAR \OT1/cmr/m/n/9 which is con-tin-u-ous, the \OT1/cmt
 t/m/n/9 MU[]MAX \OT1/cmr/m/n/9 method
  []
 
+[2]
 
 ! LaTeX Error: File `volume_limiting_pdf' not found.
 
@@ -311,7 +309,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.213 ...[width=\columnwidth]{volume_limiting_pdf}
+l.282 ...[width=\columnwidth]{volume_limiting_pdf}
                                                   
 ? 
 
@@ -321,47 +319,49 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.214 ...[width=\columnwidth]{volume_limiting_cdf}
+l.283 ...[width=\columnwidth]{volume_limiting_cdf}
                                                   
 ? 
-<Figures/fig1.png, id=22, 1233.6489pt x 641.0349pt>
+<Figures/fig1.png, id=30, 1233.6489pt x 641.0349pt>
 File: Figures/fig1.png Graphic file (type png)
  <use Figures/fig1.png>
-[2 <./Figures/fig1.png>] <Figures/fig3.png, id=34, 1156.32pt x 872.2989pt>
+<Figures/fig3.png, id=32, 1156.32pt x 872.2989pt>
 File: Figures/fig3.png Graphic file (type png)
-
-<use Figures/fig3.png> <Figures/fig4.png, id=35, 1233.6489pt x 641.0349pt>
+ <use Figures/fig3.png>
+<Figures/fig4.png, id=33, 1233.6489pt x 641.0349pt>
 File: Figures/fig4.png Graphic file (type png)
+ <use Figures/fig4.png>
+[3 <./Figures/fig1.png> <./Figures/fig3.png>]
 
-<use Figures/fig4.png>
-
-Package caption Warning: \label before \caption on input line 296.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:comoving_densities' on page 3 undefined on input 
-line 272.
-
-<../plots_20140219/comoving_densities(2b).png, id=36, 1156.32pt x 872.2989pt>
-File: ../plots_20140219/comoving_densities(2b).png Graphic file (type png)
-
-<use ../plots_20140219/comoving_densities(2b).png> [3 <./Figures/fig3.png> <./F
-igures/fig4.png>]
-
-Package caption Warning: \label before \caption on input line 244.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:overdensities' on page 4 undefined on input line 
-362.
-
-
-Package caption Warning: \label before \caption on input line 296.
+Package caption Warning: \label before \caption on input line 327.
 See the caption package documentation for explanation.
 
 
 LaTeX Warning: Reference `fig:comoving_densities' on page 4 undefined on input 
-line 362.
+line 349.
+
+<../plots_20140219/comoving_densities(2b).png, id=40, 1156.32pt x 872.2989pt>
+File: ../plots_20140219/comoving_densities(2b).png Graphic file (type png)
+
+<use ../plots_20140219/comoving_densities(2b).png>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./Figures/fig4.png> <../plots_20140219/comoving_densities(2b).png>]
+
+Package caption Warning: \label before \caption on input line 275.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:overdensities' on page 5 undefined on input line 
+439.
+
+
+Package caption Warning: \label before \caption on input line 327.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:comoving_densities' on page 5 undefined on input 
+line 439.
 
 
 ! LaTeX Error: File `SMF1' not found.
@@ -370,7 +370,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.376 ...udegraphics[width=0.66\columnwidth]{SMF1}
+l.453 ...udegraphics[width=0.66\columnwidth]{SMF1}
                                                    \
 ? 
 
@@ -380,7 +380,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.377 ...udegraphics[width=0.66\columnwidth]{SMF2}
+l.454 ...udegraphics[width=0.66\columnwidth]{SMF2}
                                                    \
 ? 
 
@@ -390,18 +390,15 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.378 ...udegraphics[width=0.66\columnwidth]{SMF3}
+l.455 ...udegraphics[width=0.66\columnwidth]{SMF3}
                                                   
 ? 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [4 <../plots_20140219/comoving_densities(2b).png>] (./paper_v2.bbl
+(./paper_v2.bbl
 Underfull \hbox (badness 1675) in paragraph at lines 53--68
 \OT1/cmr/m/n/9 G. Zamorani, P. Oesch, M. Bol-zonella, C. Kno-bel,
  []
 
-
+[5]
 Underfull \hbox (badness 1953) in paragraph at lines 146--155
 \OT1/cmr/m/n/9 C. M. S. Straat-man, C. Pa-povich, K. Glaze-brook,
  []
@@ -414,55 +411,55 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.404 ...s[width=\columnwidth]{axis_ratio_all.eps}
+l.481 ...s[width=\columnwidth]{axis_ratio_all.eps}
                                                   
 ? 
 
-<Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png, id=47, 1445.4pt x 1031.292
+<Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png, id=50, 1445.4pt x 1031.292
 9pt>
 File: Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png Graphic file (type png
 )
  <use Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png>
-<Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png, id=48, 1445.4pt x 1031.292
+<Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png, id=51, 1445.4pt x 1031.292
 9pt>
 File: Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png Graphic file (type png
 )
  <use Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.png>
-<Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png, id=49, 1445.4pt x 1031.29
+<Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png, id=52, 1445.4pt x 1031.29
 29pt>
 File: Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png Graphic file (type pn
 g)
  <use Figures/axisratio(0)_0dot65-0dot75_0dot8-0dot85.png>
-<Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png, id=50, 1445.4pt x 1031.29
+<Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png, id=53, 1445.4pt x 1031.29
 29pt>
 File: Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png Graphic file (type pn
 g)
  <use Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png>
-<Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png, id=51, 1445.4pt x 1031.2
+<Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png, id=54, 1445.4pt x 1031.2
 929pt>
 File: Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png Graphic file (type p
 ng)
  <use Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png>
-<Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png, id=52, 1445.4pt x 1031.292
+<Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png, id=55, 1445.4pt x 1031.292
 9pt>
 File: Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png Graphic file (type png
 )
  <use Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.png>
-<Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png, id=53, 1445.4pt x 1031.2929
+<Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png, id=56, 1445.4pt x 1031.2929
 pt>
 File: Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png Graphic file (type png)
 
  <use Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.png>
-<Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png, id=54, 1445.4pt x 1031.29
+<Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png, id=57, 1445.4pt x 1031.29
 29pt>
 File: Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png Graphic file (type pn
 g)
  <use Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png>
-<Figures/rms_ellip1.png, id=55, 1445.4pt x 1031.2929pt>
+<Figures/rms_ellip1.png, id=58, 1445.4pt x 1031.2929pt>
 File: Figures/rms_ellip1.png Graphic file (type png)
 
 <use Figures/rms_ellip1.png>
-<Figures/rms_ellip2.png, id=56, 1445.4pt x 1031.2929pt>
+<Figures/rms_ellip2.png, id=59, 1445.4pt x 1031.2929pt>
 File: Figures/rms_ellip2.png Graphic file (type png)
 
 <use Figures/rms_ellip2.png>
@@ -473,7 +470,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.443 ...h]{rms_ellip1_Bbandevolution_masscut.eps}
+l.520 ...h]{rms_ellip1_Bbandevolution_masscut.eps}
                                                    \
 ? 
 
@@ -483,18 +480,21 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.444 ...h]{rms_ellip2_Bbandevolution_masscut.eps}
+l.521 ...h]{rms_ellip2_Bbandevolution_masscut.eps}
                                                    \\
 ? 
-[5]
+
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png> <./Figures/axisratio
+ [6]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [7 <./Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.png> <./Figures/axisratio
 (0)_0dot3-0dot4_0dot80-0dot85.png> <./Figures/axisratio(0)_0dot65-0dot75_0dot8-
 0dot85.png> <./Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.png>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [7 <./Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png> <./Figures/axisrat
+ [8 <./Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.png> <./Figures/axisrat
 io(0)_0dot3-0dot4_0dot55-0dot65.png> <./Figures/axisratio(0)_0dot3-0dot4_0dot75
 -0dot8.png> <./Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot8.png> <./Figures/
 rms_ellip1.png> <./Figures/rms_ellip2.png>] (./paper_v2.aux)
@@ -508,11 +508,11 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  3595 strings out of 493876
  50932 string characters out of 1150567
- 127291 words of memory out of 3000000
+ 126291 words of memory out of 3000000
  6786 multiletter control sequences out of 10000+50000
  19535 words of font info for 74 fonts, out of 3000000 for 5000
  714 hyphenation exceptions out of 8191
- 44i,15n,42p,1088b,303s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 44i,15n,42p,1088b,317s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx10.pfb></usr/l
 ocal/texlive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx12.pfb></usr/local/texl
 ive/2008/texmf-dist/fonts/type1/bluesky/cm/cmbx8.pfb></usr/local/texlive/2008/t
@@ -535,9 +535,9 @@ onts/type1/bluesky/cm/cmti9.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1
 /bluesky/cm/cmtt8.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/c
 m/cmtt9.pfb></usr/local/texlive/2008/texmf-dist/fonts/type1/public/cmex/fmex9.p
 fb></usr/local/texlive/2008/texmf-dist/fonts/type1/bluesky/ams/msam10.pfb>
-Output written on paper_v2.pdf (7 pages, 1151086 bytes).
+Output written on paper_v2.pdf (8 pages, 1156515 bytes).
 PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
+ 158 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 131072)
  71 words of extra memory for PDF output out of 10000 (max. 10000000)
 

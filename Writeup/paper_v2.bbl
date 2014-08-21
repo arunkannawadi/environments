@@ -1,4 +1,4 @@
-\begin{thebibliography}{11}
+\begin{thebibliography}{13}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -10,6 +10,16 @@ C.~M. {Baugh} and G.~{Efstathiou}.
 \newblock {The Three-Dimensional Power Spectrum Measured from the APM Galaxy
   Survey - Part One - Use of the Angular Correlation Function}.
 \newblock \emph{\mnras}, 265:\penalty0 145, November 1993.
+
+\bibitem[{Bundy} et~al.(2006){Bundy}, {Ellis}, {Conselice}, {Taylor}, {Cooper},
+  {Willmer}, {Weiner}, {Coil}, {Noeske}, and {Eisenhardt}]{KEVIN_MSTAR}
+K.~{Bundy}, R.~S. {Ellis}, C.~J. {Conselice}, J.~E. {Taylor}, M.~C. {Cooper},
+  C.~N.~A. {Willmer}, B.~J. {Weiner}, A.~L. {Coil}, K.~G. {Noeske}, and
+  P.~R.~M. {Eisenhardt}.
+\newblock {The Mass Assembly History of Field Galaxies: Detection of an
+  Evolving Mass Limit for Star-Forming Galaxies}.
+\newblock \emph{\apj}, 651:\penalty0 120--141, November 2006.
+\newblock \doi{10.1086/507456}.
 
 \bibitem[{Faber} et~al.(2007){Faber}, {Willmer}, {Wolf}, {Koo}, {Weiner},
   {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis}, {Finkbeiner}, {Gerke},
@@ -28,6 +38,34 @@ S.~M. {Faber}, C.~N.~A. {Willmer}, C.~{Wolf}, D.~C. {Koo}, B.~J. {Weiner},
   Implications for Red Galaxy Formation}.
 \newblock \emph{\apj}, 665:\penalty0 265--294, August 2007.
 \newblock \doi{10.1086/519294}.
+
+\bibitem[{Ilbert} et~al.(2009){Ilbert}, {Capak}, {Salvato}, {Aussel},
+  {McCracken}, {Sanders}, {Scoville}, {Kartaltepe}, {Arnouts}, {Le Floc'h},
+  {Mobasher}, {Taniguchi}, {Lamareille}, {Leauthaud}, {Sasaki}, {Thompson},
+  {Zamojski}, {Zamorani}, {Bardelli}, {Bolzonella}, {Bongiorno}, {Brusa},
+  {Caputi}, {Carollo}, {Contini}, {Cook}, {Coppa}, {Cucciati}, {de la Torre},
+  {de Ravel}, {Franzetti}, {Garilli}, {Hasinger}, {Iovino}, {Kampczyk},
+  {Kneib}, {Knobel}, {Kovac}, {Le Borgne}, {Le Brun}, {F{\`e}vre}, {Lilly},
+  {Looper}, {Maier}, {Mainieri}, {Mellier}, {Mignoli}, {Murayama}, {Pell{\`o}},
+  {Peng}, {P{\'e}rez-Montero}, {Renzini}, {Ricciardelli}, {Schiminovich},
+  {Scodeggio}, {Shioya}, {Silverman}, {Surace}, {Tanaka}, {Tasca}, {Tresse},
+  {Vergani}, and {Zucca}]{COSMOS_Photoz_30band}
+O.~{Ilbert}, P.~{Capak}, M.~{Salvato}, H.~{Aussel}, H.~J. {McCracken}, D.~B.
+  {Sanders}, N.~{Scoville}, J.~{Kartaltepe}, S.~{Arnouts}, E.~{Le Floc'h},
+  B.~{Mobasher}, Y.~{Taniguchi}, F.~{Lamareille}, A.~{Leauthaud}, S.~{Sasaki},
+  D.~{Thompson}, M.~{Zamojski}, G.~{Zamorani}, S.~{Bardelli}, M.~{Bolzonella},
+  A.~{Bongiorno}, M.~{Brusa}, K.~I. {Caputi}, C.~M. {Carollo}, T.~{Contini},
+  R.~{Cook}, G.~{Coppa}, O.~{Cucciati}, S.~{de la Torre}, L.~{de Ravel},
+  P.~{Franzetti}, B.~{Garilli}, G.~{Hasinger}, A.~{Iovino}, P.~{Kampczyk},
+  J.-P. {Kneib}, C.~{Knobel}, K.~{Kovac}, J.~F. {Le Borgne}, V.~{Le Brun},
+  O.~L. {F{\`e}vre}, S.~{Lilly}, D.~{Looper}, C.~{Maier}, V.~{Mainieri},
+  Y.~{Mellier}, M.~{Mignoli}, T.~{Murayama}, R.~{Pell{\`o}}, Y.~{Peng},
+  E.~{P{\'e}rez-Montero}, A.~{Renzini}, E.~{Ricciardelli}, D.~{Schiminovich},
+  M.~{Scodeggio}, Y.~{Shioya}, J.~{Silverman}, J.~{Surace}, M.~{Tanaka},
+  L.~{Tasca}, L.~{Tresse}, D.~{Vergani}, and E.~{Zucca}.
+\newblock {Cosmos Photometric Redshifts with 30-Bands for 2-deg$^{2}$}.
+\newblock \emph{\apj}, 690:\penalty0 1236--1249, January 2009.
+\newblock \doi{10.1088/0004-637X/690/2/1236}.
 
 \bibitem[{Koekemoer} et~al.(2007){Koekemoer}, {Aussel}, {Calzetti}, {Capak},
   {Giavalisco}, {Kneib}, {Leauthaud}, {Le F{\`e}vre}, {McCracken}, {Massey},
@@ -86,6 +124,24 @@ A.~{Leauthaud}, R.~{Massey}, J.-P. {Kneib}, J.~{Rhodes}, D.~E. {Johnston},
 \newblock \emph{\apjs}, 172:\penalty0 219--238, September 2007.
 \newblock \doi{10.1086/516598}.
 
+\bibitem[{Leauthaud} et~al.(2010){Leauthaud}, {Finoguenov}, {Kneib}, {Taylor},
+  {Massey}, {Rhodes}, {Ilbert}, {Bundy}, {Tinker}, {George}, {Capak},
+  {Koekemoer}, {Johnston}, {Zhang}, {Cappelluti}, {Ellis}, {Elvis}, {Giodini},
+  {Heymans}, {Le F{\`e}vre}, {Lilly}, {McCracken}, {Mellier},
+  {R{\'e}fr{\'e}gier}, {Salvato}, {Scoville}, {Smoot}, {Tanaka}, {Van
+  Waerbeke}, and {Wolk}]{COSMOS_XRAY}
+A.~{Leauthaud}, A.~{Finoguenov}, J.-P. {Kneib}, J.~E. {Taylor}, R.~{Massey},
+  J.~{Rhodes}, O.~{Ilbert}, K.~{Bundy}, J.~{Tinker}, M.~R. {George},
+  P.~{Capak}, A.~M. {Koekemoer}, D.~E. {Johnston}, Y.-Y. {Zhang},
+  N.~{Cappelluti}, R.~S. {Ellis}, M.~{Elvis}, S.~{Giodini}, C.~{Heymans},
+  O.~{Le F{\`e}vre}, S.~{Lilly}, H.~J. {McCracken}, Y.~{Mellier},
+  A.~{R{\'e}fr{\'e}gier}, M.~{Salvato}, N.~{Scoville}, G.~{Smoot}, M.~{Tanaka},
+  L.~{Van Waerbeke}, and M.~{Wolk}.
+\newblock {A Weak Lensing Study of X-ray Groups in the Cosmos Survey: Form and
+  Evolution of the Mass-Luminosity Relation}.
+\newblock \emph{\apj}, 709:\penalty0 97--114, January 2010.
+\newblock \doi{10.1088/0004-637X/709/1/97}.
+
 \bibitem[{Mandelbaum} et~al.(2011){Mandelbaum}, {Hirata}, {Leauthaud},
   {Massey}, and {Rhodes}]{SHERA}
 R.~{Mandelbaum}, C.~M. {Hirata}, A.~{Leauthaud}, R.~J. {Massey}, and
@@ -109,22 +165,6 @@ R.~{Mandelbaum}, B.~{Rowe}, J.~{Bosch}, C.~{Chang}, F.~{Courbin}, M.~{Gill},
   Handbook}.
 \newblock \emph{\apjs}, 212:\penalty0 5, May 2014.
 \newblock \doi{10.1088/0067-0049/212/1/5}.
-
-\bibitem[{Mobasher} et~al.(2007){Mobasher}, {Capak}, {Scoville}, {Dahlen},
-  {Salvato}, {Aussel}, {Thompson}, {Feldmann}, {Tasca}, {Le Fevre}, {Lilly},
-  {Carollo}, {Kartaltepe}, {McCracken}, {Mould}, {Renzini}, {Sanders},
-  {Shopbell}, {Taniguchi}, {Ajiki}, {Shioya}, {Contini}, {Giavalisco},
-  {Ilbert}, {Iovino}, {Le Brun}, {Mainieri}, {Mignoli}, and
-  {Scodeggio}]{COSMOS_photoz}
-B.~{Mobasher}, P.~{Capak}, N.~Z. {Scoville}, T.~{Dahlen}, M.~{Salvato},
-  H.~{Aussel}, D.~J. {Thompson}, R.~{Feldmann}, L.~{Tasca}, O.~{Le Fevre},
-  S.~{Lilly}, C.~M. {Carollo}, J.~S. {Kartaltepe}, H.~{McCracken}, J.~{Mould},
-  A.~{Renzini}, D.~B. {Sanders}, P.~L. {Shopbell}, Y.~{Taniguchi}, M.~{Ajiki},
-  Y.~{Shioya}, T.~{Contini}, M.~{Giavalisco}, O.~{Ilbert}, A.~{Iovino}, V.~{Le
-  Brun}, V.~{Mainieri}, M.~{Mignoli}, and M.~{Scodeggio}.
-\newblock {Photometric Redshifts of Galaxies in COSMOS}.
-\newblock \emph{\apjs}, 172:\penalty0 117--131, September 2007.
-\newblock \doi{10.1086/516590}.
 
 \bibitem[{Scoville} et~al.(2007){Scoville}, {Aussel}, {Brusa}, {Capak},
   {Carollo}, {Elvis}, {Giavalisco}, {Guzzo}, {Hasinger}, {Impey}, {Kneib},

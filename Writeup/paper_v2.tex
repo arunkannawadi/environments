@@ -140,6 +140,18 @@ According to our current understanding, galaxy shapes and morphologies should de
  Gravitational lensing: weak, Cosmology: Large-scale structure of Universe, Galaxies: evolution {\bf ?} \rachel{Are these from the MNRAS list?}
 \end{keywords}
 
+\rachel{Overall comment: the figures need a {\em lot} of work.  First,
+  they should be in the same order as they are referenced in the
+  text.  Second, they need to be sensibly referenced in the text; you
+  can't say ``as we see\dots'' without having a clear statement that
+  we should be looking at Fig.~4 (or whatever).  In all
+  cases, the font size is way too small, so you should enlarge it.
+  The rule of thumb for MNRAS and other journals is that the font size
+  in the figures should appear the same size as the font in the text
+  of the paper.  (This is true for axis labels, tick labels, and text
+  in the legend.)  You also need to write good captions, because some
+  people will not really read the paper, just the captions.}
+
 \section{Introduction}
 \label{S:intro}
 
@@ -180,7 +192,7 @@ Parametric models to most of these galaxies including \sersicn profile fits,
 Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
 	      
 Photometric redshifts were determined by~\cite{COSMOS_Photoz_30band}.The accuracy of photometric redshifts for F814W $\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z_s)$ and at fainter magnitudes, i.e. F814W $\le$ 24, $\sigma_{\Delta z} = 0.012(1+z_s)$.
-The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. \rachel{Make a clear and explicit statement that we always require $z<1$, we require the MAG\_AUTO in F814W to be $<23.5$, and we use the parent sample that goes to $25.2$ for stellar masses and luminosities only.}
+The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. \rachel{Make a clear and explicit statement that we always require $z<1$ (or is it $1.2$?), we require the MAG\_AUTO in F814W to be $<23.5$, and we use the parent sample that goes to $25.2$ for stellar masses and luminosities only.}
 % ($S/N \sim 50$ {\bf ?} )
 % \rachel{Our catalog has the more up-to-date Ilbert et al. photo-$z$,
 %   not the older Mobasher ones.  Need to fix citations. Also, we care
@@ -241,6 +253,12 @@ In order to study the variation in the intrinsic ellipticity distribution and ot
 
 Weak lensing simulations will use galaxies selected in 2D redshift slices and
 we split our sample in a similar way to assign overdensities.
+\rachel{You need a clear and unambiguous statement here as to whether
+  or not you are using flux-limited or volume-limited samples.  If the
+  latter, then the section on volume-limiting needs to come {\em
+    before} this one!  As is, you definitely refer to volume-limiting
+  later in this subsection, so the volume-limiting subsection has to
+  go first.}
 
 %In a wide-field survey, regions of overdensities are selected  identified by computing 3-dimensional comoving densities. But in narrow field surveys like COSMOS, previous work {\bf cite } have shown
 %that regions of overdensities can be identified from a 1-dimensional histogram of redshifts, at least for low redshifts. 
@@ -252,7 +270,8 @@ we split our sample in a similar way to assign overdensities.
 
 %\rachel{I thought we were only going up to $z=0.85$ but here you say $1$?}
 %For our sample of galaxies, volume-limited upto $z=1$ by imposing an $M_I$ cut, we fit parametric models to the histogram of photometric redshifts in order to assign values of overdensity. The figures show chi-squared and gamma functions fitted to the histogram~\citep{Redshift_modelling}.
-For our sample of galaxies, upto $z=1.2$, we fit parametric models to the histogram of photometric redshift in order to assign values of overdensity. Figures show Chi-Squared and the functional form given in~\cite{Redshift_modelling} fits to the histograms.
+For our sample of galaxies, up to $z=1.2$, we fit parametric models to the histogram of photometric redshift in order to assign values of overdensity. Figures show Chi-Squared and the functional form given in~\cite{Redshift_modelling} fits to the histograms.
+\rachel{You cannot expect people to look these up.  Give them equations in which you define $p(z)$ for each case, with labels like $p_1(z)$ and $p_2(z)$.}
 For low $z$, the volume is too small to rely the overdensity values from our model fits and hence the fit is made for $z \ge 0.3$. Our binning width, $\Delta z$ must be small enough so as to be able to identify localized overdensities/underdensities but large enough to not let our conclusions be affected by the errors in photometric redshift. 
 We choose our bins to be $0.05$ wide starting from $z=0.3$. 
 \rachel{Were you going to use other fitting functions as a test of the
@@ -264,15 +283,17 @@ The curves are normalized such that the area under the curves is equal to the nu
  \centering
   \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   \label{fig:redshift_fluxlimited}
-  \caption{}
+  \caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
 \end{figure}
 
-Overdensity in a redshift bin is defined as the ratio of the difference between the value given by the histogram and the value predicted by the model to the latter: $\delta=(N-N_{\text{mod}})/N_{\text{mod}}$. 
+Overdensity in a redshift bin is defined as the ratio of the
+difference between the value given by the histogram and the value
+predicted by the model to the latter:
+$\delta=(N-N_{\text{mod}})/N_{\text{mod}}$.  (\rachel{This $\delta$
+  definition is important, so it should be in an equation environment.})
 We leave a 10\% margin of safety i.e. iff $\delta$ from both the fits is greater than $0.1$, then we call that redshift bin as an
 overdense region whereas if $\delta$ from both the fits is less than $-0.1$, then we call that as an underdense region. Redshift bins with $-0.1 < \delta < 0.1$ are neither too overdense
 nor too underdense and we call them as `unclassified regions'  and discard them from our analysis.{\bf Fig 4 - overdensities vs redshift bins}.
-\rachel{Let's not discard them.  We should just treat them as
-  ``environmentally neutral.''  You do after all show them on your plots.}
 
 % \begin{figure}
 %  \centering
@@ -286,19 +307,13 @@ We thus identify the regions $z=0.30-0.40, 0.65-0.75, 0.80-0.85$ as overdense, $
 The classification of overdensities and underdensities agrees with the work done by~\cite{Kovac_Density10k} on the zCOSMOS field using spectra and 3D density field reconstruction , except for the last two high redshift bins.
 We believe that this disagreement is due to the errors in our photometric redshifts and the overdensity reported in $z=0.875-1$ slice
 is observed by us in $z=0.80-0.85$ slice.
+\rachel{Say why you are doing this comparison with Kovac et al.}
 
 We see that the region between $0.85<z<1.0$ is neither overdense nor underdense according to our model and hence is not going to be considered for further analysis.
 
 We use therefore relax our luminosity cut %to $-20.8$
 so that the sample is volume-limited \emph{not} until $z=1$ but until $z=0.85$. 
 We choose to impose the cut at $M_I=-20.8$, with 95.3\% completeness. This increases the sample size significantly, from 7,418 galaxies to 11,169.
-
-\rachel{I think ``arbitrary'' is not the right word ot use in this
-  paragraph.  It's obviously well-motivated in a general sense, and
-  the question is whether it's robust or not.  Comparison with a more
-  robust 3d method is what we use as validation to say that it's
-  robust enough for our purposes.}
-\arun{Done.}
 
 \subsection{Volume limiting}
 \label{sub:volumelimiting}

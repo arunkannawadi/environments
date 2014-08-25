@@ -1,11 +1,17 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.30)  21 AUG 2014 03:38
+This is pdfTeXk, Version 3.1415926-1.40.9 (Web2C 7.5.7) (format=latex 2008.12.28)  25 AUG 2014 14:51
 entering extended mode
- restricted \write18 enabled.
  %&-line parsing enabled.
 **paper_v2.tex
 (./paper_v2.tex
-LaTeX2e <2011/06/27>
-Babel <3.9h> and hyphenation patterns for 2 languages loaded.
+LaTeX2e <2005/12/01>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, german-x-2008-06-18, ngerman-x-2008-06-18, ancientgreek, ibycus, ar
+abic, basque, bulgarian, catalan, pinyin, coptic, croatian, czech, danish, dutc
+h, esperanto, estonian, farsi, finnish, french, galician, german, ngerman, mono
+greek, greek, hungarian, icelandic, indonesian, interlingua, irish, italian, la
+tin, lithuanian, mongolian, mongolian2a, bokmal, nynorsk, polish, portuguese, r
+omanian, russian, sanskrit, serbian, slovak, slovenian, spanish, swedish, turki
+sh, ukenglish, ukrainian, uppersorbian, welsh, loaded.
 (./mn2e.cls
 Document Class: mn2e 2001/02/06 v2.2 LaTeX2e MN document class
 Document Style `MN' v2.2, released 2001 February 20
@@ -30,8 +36,8 @@ LaTeX Font Info:    Overwriting symbol font `UPM' in version `bold'
 \@footindent=\skip44
 \@leftskip=\skip45
 \c@dummy=\count85
-(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
-Package: natbib 2010/09/13 8.31b (PWD, AO)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2009/02/02 8.3 (PWD, AO)
 \bibhang=\skip46
 \bibsep=\skip47
 LaTeX Info: Redefining \cite on input line 694.
@@ -41,41 +47,41 @@ LaTeX Info: Redefining \cite on input line 694.
 \c@figure=\count88
 \mathindent=\dimen103
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
-Package: amsmath 2013/01/14 v2.14 AMS math features
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
 \@mathmargin=\skip48
 
 For additional information on amsmath, use the `?' option.
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks15
 \ex@=\dimen104
 ))
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
 \pmbraise@=\dimen105
 )
-(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
 \inf@bad=\count89
-LaTeX Info: Redefining \frac on input line 210.
+LaTeX Info: Redefining \frac on input line 211.
 \uproot@=\count90
 \leftroot@=\count91
-LaTeX Info: Redefining \overline on input line 306.
+LaTeX Info: Redefining \overline on input line 307.
 \classnum@=\count92
 \DOTSCASE@=\count93
-LaTeX Info: Redefining \ldots on input line 378.
-LaTeX Info: Redefining \dots on input line 381.
-LaTeX Info: Redefining \cdots on input line 466.
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
 \Mathstrutbox@=\box26
 \strutbox@=\box27
 \big@size=\dimen106
-LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
-LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
 \macc@depth=\count94
 \c@MaxMatrixCols=\count95
 \dotsspace@=\muskip10
@@ -96,46 +102,38 @@ LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
 \multlinegap=\skip49
 \multlinetaggap=\skip50
 \mathdisplay@stack=\toks19
-LaTeX Info: Redefining \[ on input line 2665.
-LaTeX Info: Redefining \] on input line 2666.
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/latexsym.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/latexsym.sty
 Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
 \symlasy=\mathgroup7
 LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
 (Font)                  U/lasy/m/n --> U/lasy/b/n on input line 47.
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/epsfig.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/epsfig.sty
 Package: epsfig 1999/02/16 v1.7a (e)psfig emulation (SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks20
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
-Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2006/02/20 v1.0o Standard LaTeX Graphics (DPC,SPQR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 )
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
-File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+(/usr/local/texlive/2008/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2007/01/18 v1.5 graphics configuration of teTeX/TeXLive
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 90.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count101
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen113
 \Gin@req@width=\dimen114
@@ -143,7 +141,7 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \epsfxsize=\dimen115
 \epsfysize=\dimen116
 )
-(/usr/share/texlive/texmf-dist/tex/latex/subfig/subfig.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/subfig/subfig.sty
 Package: subfig 2005/06/28 ver: 1.3 subfig package
 
 
@@ -168,23 +166,21 @@ Package subfig Warning: Your document class has a bad definition
  can't take effect on \endtable.
  Please complain to your document class author.
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
-Package: caption 2013/05/02 v3.3-89 Customizing captions (AR)
+(/usr/local/texlive/2008/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2008/08/24 v3.1j Customizing captions (AR)
 
-(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
-Package: caption3 2013/05/02 v1.6-88 caption3 kernel (AR)
-Package caption3 Info: TeX engine: e-TeX on input line 57.
+(/usr/local/texlive/2008/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2008/08/24 v3.1j caption3 kernel (AR)
 \captionmargin=\dimen117
 \captionmargin@=\dimen118
 \captionwidth=\dimen119
-\caption@tempdima=\dimen120
-\caption@indent=\dimen121
-\caption@parindent=\dimen122
-\caption@hangindent=\dimen123
+\caption@indent=\dimen120
+\caption@parindent=\dimen121
+\caption@hangindent=\dimen122
 \abovecaptionskip=\skip51
 \belowcaptionskip=\skip52
 Package caption Info: Unknown document class (or package),
-(caption)             standard defaults will be used.
+(caption)             standard defaults will be used on input line 1027.
 )
 
 Package caption Warning: Unsupported document class (or package) detected,
@@ -192,43 +188,43 @@ Package caption Warning: Unsupported document class (or package) detected,
 See the caption package documentation for explanation.
 
 Package caption Info: \@makecaption = undefined.
-\c@ContinuedFloat=\count102
+\c@ContinuedFloat=\count101
 )
-\c@KVtest=\count103
+\c@KVtest=\count102
 \sf@farskip=\skip53
-\sf@captopadj=\dimen124
+\sf@captopadj=\dimen123
 \sf@capskip=\skip54
 \sf@nearskip=\skip55
-\c@subfigure=\count104
-\c@subfigure@save=\count105
-\c@lofdepth=\count106
-\c@subtable=\count107
-\c@subtable@save=\count108
-\c@lotdepth=\count109
+\c@subfigure=\count103
+\c@subfigure@save=\count104
+\c@lofdepth=\count105
+\c@subtable=\count106
+\c@subtable@save=\count107
+\c@lotdepth=\count108
 \sf@top=\skip56
 \sf@bottom=\skip57
-) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+) (/usr/local/texlive/2008/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count110
+\c@float@type=\count109
 \float@exts=\toks21
 \float@box=\box28
 \@float@everytoks=\toks22
 \@floatcapt=\box29
 )
-(/usr/share/texlive/texmf-dist/tex/latex/graphics/color.sty
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/color.sty
 Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+(/usr/local/texlive/2008/texmf/tex/latex/config/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
-)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/local/texlive/2008/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
 (./paper_v2.aux
 
 LaTeX Warning: Label `fig:redshift_fluxlimited' multiply defined.
-
-
-LaTeX Warning: Label `fig:comoving_densities' multiply defined.
 
 
 LaTeX Warning: Label `fig:rms_ellip' multiply defined.
@@ -248,390 +244,98 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 129.
 LaTeX Font Info:    ... okay on input line 129.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count111
-\scratchdimen=\dimen125
-\scratchbox=\box30
-\nofMPsegments=\count112
-\nofMParguments=\count113
-\everyMPshowfont=\toks23
-\MPscratchCnt=\count114
-\MPscratchDim=\dimen126
-\MPnumerator=\count115
-\makeMPintoPDFobject=\count116
-\everyMPtoPDFconversion=\toks24
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
 Package caption Info: Begin \AtBeginDocument code.
-Package caption Info: subfig package v1.3 is loaded.
+Package caption3 Info: subfig package 1.2 or 1.3 is loaded.
+LaTeX Info: Redefining \subref on input line 129.
 Package caption Info: float package is loaded.
 Package caption Info: End \AtBeginDocument code.
 LaTeX Font Info:    Try loading font information for U+eur on input line 131.
-
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/ueur.fd
-File: ueur.fd 2013/01/14 v3.01 Euler Roman
+ (/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/ueur.fd
+File: ueur.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+msa on input line 131.
 
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+(/usr/local/texlive/2008/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2002/01/19 v2.2g AMS font definitions
 )
 LaTeX Font Info:    Try loading font information for U+lasy on input line 131.
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/ulasy.fd
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 192.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 162.
 
 
-(/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+(/usr/local/texlive/2008/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 162.
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <8> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 192.
- [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 166.
+ [1
 
 
 ]
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <9> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 208.
-
-Underfull \hbox (badness 10000) in paragraph at lines 222--222
+Underfull \hbox (badness 10000) in paragraph at lines 176--176
 $[]$ []\OT1/cmr/m/n/8 http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-
  []
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 260--262
+
+Underfull \hbox (badness 10000) in paragraph at lines 214--216
 []\OT1/cmtt/m/n/9 MU[]CLASS=1\OT1/cmr/m/n/9 : Un-like SEx-trac-tor's stel-lar i
 n-dex
  []
 
 
-Underfull \hbox (badness 3312) in paragraph at lines 260--262
+Underfull \hbox (badness 3312) in paragraph at lines 214--216
 \OT1/cmtt/m/n/9 CLASS[]STAR \OT1/cmr/m/n/9 which is con-tin-u-ous, the \OT1/cmt
 t/m/n/9 MU[]MAX \OT1/cmr/m/n/9 method
  []
 
-Package epstopdf Info: Source file: <Figures/redshift_fluxlimited.eps>
-(epstopdf)                    date: 2014-08-20 23:55:34
-(epstopdf)                    size: 48036 bytes
-(epstopdf)             Output file: <Figures/redshift_fluxlimited-eps-converted
--to.pdf>
-(epstopdf)                    date: 2014-08-21 01:05:04
-(epstopdf)                    size: 29312 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/redshift_fluxlimit
-ed-eps-converted-to.pdf Figures/redshift_fluxlimited.eps>
-(epstopdf)             \includegraphics on input line 327.
-Package epstopdf Info: Output file is already uptodate.
+[2]
+File: Figures/redshift_fluxlimited.eps Graphic file (type eps)
+ <Figures/redshift_fluxlimited.eps>
+File: Figures/volume_limiting_pdf.eps Graphic file (type eps)
+ <Figures/volume_limiting_pdf.eps>
+File: Figures/volume_limiting_cdf.eps Graphic file (type eps)
 
-<Figures/redshift_fluxlimited-eps-converted-to.pdf, id=29, 1232.605pt x 641.396
-26pt>
-File: Figures/redshift_fluxlimited-eps-converted-to.pdf Graphic file (type pdf)
+<Figures/volume_limiting_cdf.eps> [3]
+File: Figures/SMF1.eps Graphic file (type eps)
+ <Figures/SMF1.eps>
+File: Figures/SMF2.eps Graphic file (type eps)
+ <Figures/SMF2.eps>
+File: Figures/SMF3.eps Graphic file (type eps)
 
- <use Figures/redshift_fluxlimited-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/redshift_fluxlimited-eps-converted-to.pdf used
- on input line 327.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
+<Figures/SMF3.eps>
+File: Figures/redshift_fluxlimited.eps Graphic file (type eps)
+ <Figures/redshift_fluxlimited.eps>
+File: Figures/hist2d_mag_mi.eps Graphic file (type eps)
 
-<Figures/fig4.png, id=30, 1233.6489pt x 641.0349pt>
-File: Figures/fig4.png Graphic file (type png)
- <use Figures/fig4.png>
-Package pdftex.def Info: Figures/fig4.png used on input line 341.
-(pdftex.def)             Requested size: 240.0pt x 124.70296pt.
-
-[3 <./Figures/redshift_fluxlimited-eps-converted-to.pdf> <./Figures/fig4.png>]
-Package epstopdf Info: Source file: <Figures/volume_limiting_pdf.eps>
-(epstopdf)                    date: 2014-07-18 18:20:54
-(epstopdf)                    size: 45595 bytes
-(epstopdf)             Output file: <Figures/volume_limiting_pdf-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2014-07-18 18:26:35
-(epstopdf)                    size: 28184 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/volume_limiting_pd
-f-eps-converted-to.pdf Figures/volume_limiting_pdf.eps>
-(epstopdf)             \includegraphics on input line 377.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/volume_limiting_pdf-eps-converted-to.pdf, id=81, 1232.605pt x 641.3962
-6pt>
-File: Figures/volume_limiting_pdf-eps-converted-to.pdf Graphic file (type pdf)
- <use Figures/volume_limiting_pdf-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/volume_limiting_pdf-eps-converted-to.pdf used 
-on input line 377.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
-Package epstopdf Info: Source file: <Figures/volume_limiting_cdf.eps>
-(epstopdf)                    date: 2014-07-18 18:13:52
-(epstopdf)                    size: 41379 bytes
-(epstopdf)             Output file: <Figures/volume_limiting_cdf-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2014-07-18 18:26:36
-(epstopdf)                    size: 26736 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/volume_limiting_cd
-f-eps-converted-to.pdf Figures/volume_limiting_cdf.eps>
-(epstopdf)             \includegraphics on input line 378.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/volume_limiting_cdf-eps-converted-to.pdf, id=82, 1232.605pt x 641.3962
-6pt>
-File: Figures/volume_limiting_cdf-eps-converted-to.pdf Graphic file (type pdf)
- <use Figures/volume_limiting_cdf-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/volume_limiting_cdf-eps-converted-to.pdf used 
-on input line 378.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
-Package epstopdf Info: Source file: <Figures/SMF1.eps>
-(epstopdf)                    date: 2014-07-24 04:31:04
-(epstopdf)                    size: 53298 bytes
-(epstopdf)             Output file: <Figures/SMF1-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-07-24 13:09:07
-(epstopdf)                    size: 38821 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/SMF1-eps-converted
--to.pdf Figures/SMF1.eps>
-(epstopdf)             \includegraphics on input line 409.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/SMF1-eps-converted-to.pdf, id=83, 1232.605pt x 641.39626pt>
-File: Figures/SMF1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/SMF1-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/SMF1-eps-converted-to.pdf used on input line 4
-09.
-(pdftex.def)             Requested size: 158.40088pt x 82.42532pt.
-Package epstopdf Info: Source file: <Figures/SMF2.eps>
-(epstopdf)                    date: 2014-07-24 04:44:09
-(epstopdf)                    size: 53936 bytes
-(epstopdf)             Output file: <Figures/SMF2-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-07-24 13:09:07
-(epstopdf)                    size: 38305 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/SMF2-eps-converted
--to.pdf Figures/SMF2.eps>
-(epstopdf)             \includegraphics on input line 410.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/SMF2-eps-converted-to.pdf, id=84, 1232.605pt x 641.39626pt>
-File: Figures/SMF2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/SMF2-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/SMF2-eps-converted-to.pdf used on input line 4
-10.
-(pdftex.def)             Requested size: 158.40088pt x 82.42532pt.
-Package epstopdf Info: Source file: <Figures/SMF3.eps>
-(epstopdf)                    date: 2014-07-24 04:47:59
-(epstopdf)                    size: 53515 bytes
-(epstopdf)             Output file: <Figures/SMF3-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-07-24 13:09:07
-(epstopdf)                    size: 38330 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/SMF3-eps-converted
--to.pdf Figures/SMF3.eps>
-(epstopdf)             \includegraphics on input line 411.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/SMF3-eps-converted-to.pdf, id=85, 1232.605pt x 641.39626pt>
-File: Figures/SMF3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/SMF3-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/SMF3-eps-converted-to.pdf used on input line 4
-11.
-(pdftex.def)             Requested size: 158.40088pt x 82.42532pt.
-
-
-Package caption Warning: \label without proper \caption on input line 435.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:comoving_densities' on page 4 undefined on input 
-line 421.
-
-Package epstopdf Info: Source file: <Figures/redshift_fluxlimited.eps>
-(epstopdf)                    date: 2014-08-20 23:55:34
-(epstopdf)                    size: 48036 bytes
-(epstopdf)             Output file: <Figures/redshift_fluxlimited-eps-converted
--to.pdf>
-(epstopdf)                    date: 2014-08-21 01:05:04
-(epstopdf)                    size: 29312 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/redshift_fluxlimit
-ed-eps-converted-to.pdf Figures/redshift_fluxlimited.eps>
-(epstopdf)             \includegraphics on input line 427.
-Package epstopdf Info: Output file is already uptodate.
-File: Figures/redshift_fluxlimited-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/redshift_fluxlimited-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/redshift_fluxlimited-eps-converted-to.pdf used
- on input line 427.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
- [4 <./Figures/volume_limiting_pdf-eps-converted-to.pdf> <./Figures/volume_limi
-ting_cdf-eps-converted-to.pdf>]
-<../plots_20140219/comoving_densities(2b).png, id=190, 1156.32pt x 872.2989pt>
-File: ../plots_20140219/comoving_densities(2b).png Graphic file (type png)
-
-<use ../plots_20140219/comoving_densities(2b).png>
-Package pdftex.def Info: ../plots_20140219/comoving_densities(2b).png used on i
-nput line 434.
-(pdftex.def)             Requested size: 240.0pt x 181.04523pt.
-Package epstopdf Info: Source file: <Figures/hist2d_mag_mi.eps>
-(epstopdf)                    date: 2014-08-21 03:34:19
-(epstopdf)                    size: 210250 bytes
-(epstopdf)             Output file: <Figures/hist2d_mag_mi-eps-converted-to.pdf
->
-(epstopdf)                    date: 2014-08-21 03:35:14
-(epstopdf)                    size: 57042 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/hist2d_mag_mi-eps-
-converted-to.pdf Figures/hist2d_mag_mi.eps>
-(epstopdf)             \includegraphics on input line 441.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/hist2d_mag_mi-eps-converted-to.pdf, id=191, 1232.605pt x 641.39626pt>
-File: Figures/hist2d_mag_mi-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/hist2d_mag_mi-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/hist2d_mag_mi-eps-converted-to.pdf used on inp
-ut line 441.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
-
+<Figures/hist2d_mag_mi.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./Figures/SMF1-eps-converted-to.pdf> <./Figures/SMF2-eps-converted-to.pdf>
- <./Figures/SMF3-eps-converted-to.pdf> <../plots_20140219/comoving_densities(2b
-).png> <./Figures/hist2d_mag_mi-eps-converted-to.pdf>]
+ [4]
 
-LaTeX Warning: Reference `fig:overdensities' on page 6 undefined on input line 
-528.
+LaTeX Warning: Reference `fig:overdensities' on page 5 undefined on input line 
+482.
 
 
-Package caption Warning: \label without proper \caption on input line 435.
-See the caption package documentation for explanation.
+LaTeX Warning: Reference `fig:comoving_densities' on page 5 undefined on input 
+line 482.
 
 
-LaTeX Warning: Reference `fig:comoving_densities' on page 6 undefined on input 
-line 528.
+LaTeX Warning: Reference `' on page 5 undefined on input line 487.
 
+File: Figures/median_sersicn.eps Graphic file (type eps)
+<Figures/median_sersicn.eps>
+File: Figures/median_sersicn(2).eps Graphic file (type eps)
+ <Figures/median_sersicn(2).eps>
+File: Figures/median_dvcbtt.eps Graphic file (type eps)
 
-LaTeX Warning: Reference `' on page 6 undefined on input line 533.
-
-Package epstopdf Info: Source file: <Figures/median_sersicn.eps>
-(epstopdf)                    date: 2014-08-19 16:22:42
-(epstopdf)                    size: 51733 bytes
-(epstopdf)             Output file: <Figures/median_sersicn-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2014-08-19 17:10:18
-(epstopdf)                    size: 26511 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/median_sersicn-eps
--converted-to.pdf Figures/median_sersicn.eps>
-(epstopdf)             \includegraphics on input line 537.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/median_sersicn-eps-converted-to.pdf, id=429, 1232.605pt x 641.39626pt>
-File: Figures/median_sersicn-eps-converted-to.pdf Graphic file (type pdf)
-<use Figures/median_sersicn-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/median_sersicn-eps-converted-to.pdf used on in
-put line 537.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
-Package epstopdf Info: Source file: <Figures/median_sersicn(2).eps>
-(epstopdf)                    date: 2014-08-19 16:24:29
-(epstopdf)                    size: 52567 bytes
-(epstopdf)             Output file: <Figures/median_sersicn(2)-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2014-08-19 17:10:19
-(epstopdf)                    size: 25572 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/median_sersicn(2)-
-eps-converted-to.pdf Figures/median_sersicn(2).eps>
-(epstopdf)             \includegraphics on input line 538.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/median_sersicn(2)-eps-converted-to.pdf, id=430, 1232.605pt x 641.39626
-pt>
-File: Figures/median_sersicn(2)-eps-converted-to.pdf Graphic file (type pdf)
- <use Figures/median_sersicn(2)-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/median_sersicn(2)-eps-converted-to.pdf used on
- input line 538.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
-Package epstopdf Info: Source file: <Figures/median_dvcbtt.eps>
-(epstopdf)                    date: 2014-08-19 17:16:57
-(epstopdf)                    size: 48089 bytes
-(epstopdf)             Output file: <Figures/median_dvcbtt-eps-converted-to.pdf
->
-(epstopdf)                    date: 2014-08-19 17:17:02
-(epstopdf)                    size: 24274 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/median_dvcbtt-eps-
-converted-to.pdf Figures/median_dvcbtt.eps>
-(epstopdf)             \includegraphics on input line 545.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/median_dvcbtt-eps-converted-to.pdf, id=431, 1232.605pt x 641.39626pt>
-File: Figures/median_dvcbtt-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/median_dvcbtt-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/median_dvcbtt-eps-converted-to.pdf used on inp
-ut line 545.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
-Package epstopdf Info: Source file: <Figures/median_dvcbtt(2).eps>
-(epstopdf)                    date: 2014-08-19 16:56:33
-(epstopdf)                    size: 48529 bytes
-(epstopdf)             Output file: <Figures/median_dvcbtt(2)-eps-converted-to.
-pdf>
-(epstopdf)                    date: 2014-08-19 17:16:14
-(epstopdf)                    size: 23811 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/median_dvcbtt(2)-e
-ps-converted-to.pdf Figures/median_dvcbtt(2).eps>
-(epstopdf)             \includegraphics on input line 546.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/median_dvcbtt(2)-eps-converted-to.pdf, id=432, 1232.605pt x 641.39626p
-t>
-File: Figures/median_dvcbtt(2)-eps-converted-to.pdf Graphic file (type pdf)
- <use Figures/median_dvcbtt(2)-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/median_dvcbtt(2)-eps-converted-to.pdf used on 
-input line 546.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
- (./paper_v2.bbl [6]
+<Figures/median_dvcbtt.eps>
+File: Figures/median_dvcbtt(2).eps Graphic file (type eps)
+ <Figures/median_dvcbtt(2).eps> [5] (./paper_v2.bbl
 Underfull \hbox (badness 1308) in paragraph at lines 53--69
 \OT1/cmr/m/n/9 Cracken, D. B. Sanders, N. Scov-ille, J. Kar-tal-tepe,
  []
@@ -644,322 +348,66 @@ Underfull \hbox (badness 1675) in paragraph at lines 91--106
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [7 <./Figures/median_sersicn-eps-converted-to.pdf> <./Figures/median_sersicn(2
-)-eps-converted-to.pdf> <./Figures/median_dvcbtt-eps-converted-to.pdf> <./Figur
-es/median_dvcbtt(2)-eps-converted-to.pdf>]
+ [6]
 Underfull \hbox (badness 1953) in paragraph at lines 186--195
 \OT1/cmr/m/n/9 C. M. S. Straat-man, C. Pa-povich, K. Glaze-brook,
  []
 
 )
-Package epstopdf Info: Source file: <Figures/axis_ratio_all.eps>
-(epstopdf)                    date: 2014-07-19 00:49:28
-(epstopdf)                    size: 38775 bytes
-(epstopdf)             Output file: <Figures/axis_ratio_all-eps-converted-to.pd
-f>
-(epstopdf)                    date: 2014-07-19 00:53:18
-(epstopdf)                    size: 21238 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axis_ratio_all-eps
--converted-to.pdf Figures/axis_ratio_all.eps>
-(epstopdf)             \includegraphics on input line 569.
-Package epstopdf Info: Output file is already uptodate.
+File: Figures/axis_ratio_all.eps Graphic file (type eps)
+ <Figures/axis_ratio_all.eps>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.eps Graphic file (type eps
+)
 
-<Figures/axis_ratio_all-eps-converted-to.pdf, id=616, 1232.605pt x 641.39626pt>
-File: Figures/axis_ratio_all-eps-converted-to.pdf Graphic file (type pdf)
-<use Figures/axis_ratio_all-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axis_ratio_all-eps-converted-to.pdf used on in
-put line 569.
-(pdftex.def)             Requested size: 240.0pt x 124.88092pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot3-0dot4_0dot65-0d
-ot75.eps>
-(epstopdf)                    date: 2014-08-20 03:13:01
-(epstopdf)                    size: 49627 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot3-0dot4_0dot65-0d
-ot75-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:01
-(epstopdf)                    size: 27694 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot3
--0dot4_0dot65-0dot75-eps-converted-to.pdf Figures/axisratio(0)_0dot3-0dot4_0dot
-65-0dot75.eps>
-(epstopdf)             \includegraphics on input line 577.
-Package epstopdf Info: Output file is already uptodate.
+<Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75.eps>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.eps Graphic file (type eps
+)
 
-<Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75-eps-converted-to.pdf, id=617, 1
-232.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75-eps-converted-to.pdf Graph
-ic file (type pdf)
+<Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85.eps>
+File: Figures/axisratio(0)_0dot65-0dot75_0dot80-0dot85.eps Graphic file (type e
+ps)
 
-<use Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75-eps-con
-verted-to.pdf used on input line 577.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot3-0dot4_0dot80-0d
-ot85.eps>
-(epstopdf)                    date: 2014-08-20 03:13:52
-(epstopdf)                    size: 50096 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot3-0dot4_0dot80-0d
-ot85-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:01
-(epstopdf)                    size: 27718 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot3
--0dot4_0dot80-0dot85-eps-converted-to.pdf Figures/axisratio(0)_0dot3-0dot4_0dot
-80-0dot85.eps>
-(epstopdf)             \includegraphics on input line 578.
-Package epstopdf Info: Output file is already uptodate.
+<Figures/axisratio(0)_0dot65-0dot75_0dot80-0dot85.eps>
+File: Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.eps Graphic file (type ep
+s)
 
-<Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85-eps-converted-to.pdf, id=618, 1
-232.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85-eps-converted-to.pdf Graph
-ic file (type pdf)
+<Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8.eps>
+File: Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.eps Graphic file (type e
+ps)
 
-<use Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85-eps-con
-verted-to.pdf used on input line 578.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot65-0dot75_0dot80-
-0dot85.eps>
-(epstopdf)                    date: 2014-08-20 03:14:36
-(epstopdf)                    size: 50142 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot65-0dot75_0dot80-
-0dot85-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:02
-(epstopdf)                    size: 27764 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot6
-5-0dot75_0dot80-0dot85-eps-converted-to.pdf Figures/axisratio(0)_0dot65-0dot75_
-0dot80-0dot85.eps>
-(epstopdf)             \includegraphics on input line 579.
-Package epstopdf Info: Output file is already uptodate.
+<Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75.eps>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.eps Graphic file (type eps
+)
 
-<Figures/axisratio(0)_0dot65-0dot75_0dot80-0dot85-eps-converted-to.pdf, id=619,
- 1232.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot65-0dot75_0dot80-0dot85-eps-converted-to.pdf Gra
-phic file (type pdf)
+<Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65.eps>
+File: Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.eps Graphic file (type eps)
 
-<use Figures/axisratio(0)_0dot65-0dot75_0dot80-0dot85-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot65-0dot75_0dot80-0dot85-eps-c
-onverted-to.pdf used on input line 579.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot55-0dot65_0dot75-
-0dot8.eps>
-(epstopdf)                    date: 2014-08-20 03:15:18
-(epstopdf)                    size: 53887 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot55-0dot65_0dot75-
-0dot8-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:02
-(epstopdf)                    size: 27948 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot5
-5-0dot65_0dot75-0dot8-eps-converted-to.pdf Figures/axisratio(0)_0dot55-0dot65_0
-dot75-0dot8.eps>
-(epstopdf)             \includegraphics on input line 580.
-Package epstopdf Info: Output file is already uptodate.
 
-<Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8-eps-converted-to.pdf, id=620, 
-1232.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8-eps-converted-to.pdf Grap
-hic file (type pdf)
+<Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8.eps>
+File: Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot80.eps Graphic file (type e
+ps)
 
-<use Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot55-0dot65_0dot75-0dot8-eps-co
-nverted-to.pdf used on input line 580.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot55-0dot65_0dot65-
-0dot75.eps>
-(epstopdf)                    date: 2014-08-20 03:16:59
-(epstopdf)                    size: 49449 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot55-0dot65_0dot65-
-0dot75-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:02
-(epstopdf)                    size: 27013 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot5
-5-0dot65_0dot65-0dot75-eps-converted-to.pdf Figures/axisratio(0)_0dot55-0dot65_
-0dot65-0dot75.eps>
-(epstopdf)             \includegraphics on input line 587.
-Package epstopdf Info: Output file is already uptodate.
+<Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot80.eps>
+File: Figures/rms_ellip1.eps Graphic file (type eps)
 
-<Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75-eps-converted-to.pdf, id=621,
- 1232.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75-eps-converted-to.pdf Gra
-phic file (type pdf)
+<Figures/rms_ellip1.eps>
+File: Figures/rms_ellip2_noevolution.eps Graphic file (type eps)
+ <Figures/rms_ellip2_noevolution.eps>
+File: Figures/rms_ellip1_Bbandevolution_masscut.eps Graphic file (type eps)
 
-<use Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot55-0dot65_0dot65-0dot75-eps-c
-onverted-to.pdf used on input line 587.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot3-0dot4_0dot55-0d
-ot65.eps>
-(epstopdf)                    date: 2014-08-20 03:17:36
-(epstopdf)                    size: 50155 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot3-0dot4_0dot55-0d
-ot65-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:02
-(epstopdf)                    size: 27641 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot3
--0dot4_0dot55-0dot65-eps-converted-to.pdf Figures/axisratio(0)_0dot3-0dot4_0dot
-55-0dot65.eps>
-(epstopdf)             \includegraphics on input line 588.
-Package epstopdf Info: Output file is already uptodate.
+<Figures/rms_ellip1_Bbandevolution_masscut.eps>
+File: Figures/rms_ellip2_Bbandevolution_masscut.eps Graphic file (type eps)
 
-<Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65-eps-converted-to.pdf, id=622, 1
-232.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65-eps-converted-to.pdf Graph
-ic file (type pdf)
-
-<use Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot55-0dot65-eps-con
-verted-to.pdf used on input line 588.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot3-0dot4_0dot75-0d
-ot8.eps>
-(epstopdf)                    date: 2014-08-20 03:18:15
-(epstopdf)                    size: 50112 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot3-0dot4_0dot75-0d
-ot8-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:03
-(epstopdf)                    size: 27704 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot3
--0dot4_0dot75-0dot8-eps-converted-to.pdf Figures/axisratio(0)_0dot3-0dot4_0dot7
-5-0dot8.eps>
-(epstopdf)             \includegraphics on input line 589.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8-eps-converted-to.pdf, id=623, 12
-32.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8-eps-converted-to.pdf Graphi
-c file (type pdf)
-
-<use Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot3-0dot4_0dot75-0dot8-eps-conv
-erted-to.pdf used on input line 589.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/axisratio(0)_0dot65-0dot75_0dot75-
-0dot80.eps>
-(epstopdf)                    date: 2014-08-20 03:19:55
-(epstopdf)                    size: 50086 bytes
-(epstopdf)             Output file: <Figures/axisratio(0)_0dot65-0dot75_0dot75-
-0dot80-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-08-20 03:20:03
-(epstopdf)                    size: 27773 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/axisratio(0)_0dot6
-5-0dot75_0dot75-0dot80-eps-converted-to.pdf Figures/axisratio(0)_0dot65-0dot75_
-0dot75-0dot80.eps>
-(epstopdf)             \includegraphics on input line 590.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot80-eps-converted-to.pdf, id=624,
- 1232.605pt x 641.39626pt>
-File: Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot80-eps-converted-to.pdf Gra
-phic file (type pdf)
-
-<use Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot80-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/axisratio(0)_0dot65-0dot75_0dot75-0dot80-eps-c
-onverted-to.pdf used on input line 590.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/rms_ellip1.eps>
-(epstopdf)                    date: 2014-07-28 11:34:12
-(epstopdf)                    size: 17349314 bytes
-(epstopdf)             Output file: <Figures/rms_ellip1-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-07-28 11:38:22
-(epstopdf)                    size: 55516 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/rms_ellip1-eps-con
-verted-to.pdf Figures/rms_ellip1.eps>
-(epstopdf)             \includegraphics on input line 598.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/rms_ellip1-eps-converted-to.pdf, id=625, 1445.4pt x 1030.85126pt>
-File: Figures/rms_ellip1-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Figures/rms_ellip1-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/rms_ellip1-eps-converted-to.pdf used on input 
-line 598.
-(pdftex.def)             Requested size: 215.99854pt x 154.03902pt.
-Package epstopdf Info: Source file: <Figures/rms_ellip2_noevolution.eps>
-(epstopdf)                    date: 2014-07-21 02:41:27
-(epstopdf)                    size: 57122 bytes
-(epstopdf)             Output file: <Figures/rms_ellip2_noevolution-eps-convert
-ed-to.pdf>
-(epstopdf)                    date: 2014-08-21 03:38:28
-(epstopdf)                    size: 31807 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/rms_ellip2_noevolu
-tion-eps-converted-to.pdf Figures/rms_ellip2_noevolution.eps>
-(epstopdf)             \includegraphics on input line 599.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/rms_ellip2_noevolution-eps-converted-to.pdf, id=626, 1232.605pt x 641.
-39626pt>
-File: Figures/rms_ellip2_noevolution-eps-converted-to.pdf Graphic file (type pd
-f)
- <use Figures/rms_ellip2_noevolution-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/rms_ellip2_noevolution-eps-converted-to.pdf us
-ed on input line 599.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/rms_ellip1_Bbandevolution_masscut.
-eps>
-(epstopdf)                    date: 2014-07-25 03:36:51
-(epstopdf)                    size: 61293 bytes
-(epstopdf)             Output file: <Figures/rms_ellip1_Bbandevolution_masscut-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-07-25 03:37:09
-(epstopdf)                    size: 32657 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/rms_ellip1_Bbandev
-olution_masscut-eps-converted-to.pdf Figures/rms_ellip1_Bbandevolution_masscut.
-eps>
-(epstopdf)             \includegraphics on input line 608.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/rms_ellip1_Bbandevolution_masscut-eps-converted-to.pdf, id=627, 1232.6
-05pt x 641.39626pt>
-File: Figures/rms_ellip1_Bbandevolution_masscut-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use Figures/rms_ellip1_Bbandevolution_masscut-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/rms_ellip1_Bbandevolution_masscut-eps-converte
-d-to.pdf used on input line 608.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
-Package epstopdf Info: Source file: <Figures/rms_ellip2_Bbandevolution_masscut.
-eps>
-(epstopdf)                    date: 2014-07-25 01:10:41
-(epstopdf)                    size: 62771 bytes
-(epstopdf)             Output file: <Figures/rms_ellip2_Bbandevolution_masscut-
-eps-converted-to.pdf>
-(epstopdf)                    date: 2014-07-25 03:37:10
-(epstopdf)                    size: 33005 bytes
-(epstopdf)             Command: <repstopdf --outfile=Figures/rms_ellip2_Bbandev
-olution_masscut-eps-converted-to.pdf Figures/rms_ellip2_Bbandevolution_masscut.
-eps>
-(epstopdf)             \includegraphics on input line 609.
-Package epstopdf Info: Output file is already uptodate.
-
-<Figures/rms_ellip2_Bbandevolution_masscut-eps-converted-to.pdf, id=628, 1232.6
-05pt x 641.39626pt>
-File: Figures/rms_ellip2_Bbandevolution_masscut-eps-converted-to.pdf Graphic fi
-le (type pdf)
-
-<use Figures/rms_ellip2_Bbandevolution_masscut-eps-converted-to.pdf>
-Package pdftex.def Info: Figures/rms_ellip2_Bbandevolution_masscut-eps-converte
-d-to.pdf used on input line 609.
-(pdftex.def)             Requested size: 215.99854pt x 112.39282pt.
- [8
-
- <./Figures/axis_ratio_all-eps-converted-to.pdf>]
+<Figures/rms_ellip2_Bbandevolution_masscut.eps>
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./Figures/axisratio(0)_0dot3-0dot4_0dot65-0dot75-eps-converted-to.pdf> <./
-Figures/axisratio(0)_0dot3-0dot4_0dot80-0dot85-eps-converted-to.pdf> <./Figures
-/axisratio(0)_0dot65-0dot75_0dot80-0dot85-eps-converted-to.pdf> <./Figures/axis
-ratio(0)_0dot55-0dot65_0dot75-0dot8-eps-converted-to.pdf> <./Figures/axisratio(
-0)_0dot55-0dot65_0dot65-0dot75-eps-converted-to.pdf> <./Figures/axisratio(0)_0d
-ot3-0dot4_0dot55-0dot65-eps-converted-to.pdf> <./Figures/axisratio(0)_0dot3-0do
-t4_0dot75-0dot8-eps-converted-to.pdf> <./Figures/axisratio(0)_0dot65-0dot75_0do
-t75-0dot80-eps-converted-to.pdf>]
+ [7]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [10 <./Figures/rms_ellip1-eps-converted-to.pdf> <./Figures/rms_ellip2_noevolut
-ion-eps-converted-to.pdf> <./Figures/rms_ellip1_Bbandevolution_masscut-eps-conv
-erted-to.pdf> <./Figures/rms_ellip2_Bbandevolution_masscut-eps-converted-to.pdf
->]
+ [8]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9]
 (./paper_v2.aux)
 
 LaTeX Warning: There were undefined references.
@@ -969,40 +417,12 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 4371 strings out of 495028
- 66740 string characters out of 6181497
- 137849 words of memory out of 5000000
- 7462 multiletter control sequences out of 15000+600000
- 19174 words of font info for 73 fonts, out of 8000000 for 9000
- 14 hyphenation exceptions out of 8191
- 44i,15n,42p,1088b,331s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmti8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/cm/cmti9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmtt8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.p
-fb>
-Output written on paper_v2.pdf (10 pages, 1040325 bytes).
-PDF statistics:
- 1371 PDF objects out of 1440 (max. 8388607)
- 275 compressed objects within 3 object streams
- 0 named destinations out of 1000 (max. 500000)
- 131 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 3345 strings out of 493877
+ 47124 string characters out of 1150590
+ 123550 words of memory out of 3000000
+ 6551 multiletter control sequences out of 10000+50000
+ 19176 words of font info for 73 fonts, out of 3000000 for 5000
+ 714 hyphenation exceptions out of 8191
+ 44i,15n,42p,1088b,327s stack positions out of 5000i,500n,10000p,200000b,50000s
 
+Output written on paper_v2.dvi (9 pages, 53112 bytes).

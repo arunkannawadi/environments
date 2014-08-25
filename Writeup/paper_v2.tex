@@ -174,27 +174,13 @@ In \S\ref{sub:overdensities}, we explain how we identify overdensities and under
 %In this analysis, we consider the COSMOS sample of galaxies. 
 COSMOS~\citep{COSMOS_overview, COSMOS_generic, COSMOS_Alexie} is a flux-limited, narrow deep field survey covering a contiguous area of $1.64 \text{ deg}^2$ of sky, with images taken using the Advanced Camera for Surveys (ACS) Wide Field Channel (WFC)
 in the Hubble Space Telescope (HST). Precise shape measurements, when compared to ground-based surveys, can be made since the full width half-maximum (FWHM) of the point-spread function (PSF)
-is $0.12''$. High resolution images taken through the wide F814W filter (broad \emph{I}), after correcting for the PSF, have led to collection of postage stamp images\footnote{http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-postage-stamps/} for the GREAT3 challenge~\citep{great3}, using the procedure described in ~\cite{SHERA}.
+is $0.12''$. High resolution images taken through the wide F814W filter (broad \emph{I}), after correcting for the PSF, have led to collection of postage stamp images\footnote{http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-postage-stamps/} for the GREAT3 challenge~\citep{great3}, using the procedure described in \cite{SHERA}.
 Parametric models to most of these galaxies including \sersicn profile fits, 
-2 component bulge+disk fits, axis ratios etc were done for GREAT3 challenge~\citep{great3} using the method described in \S\cite{Claire_Fits}. This is described briefly in~\ref{sub:axisratio}.In addition to the ACS/WFC (F814W) imaging, the COSMOS field has also been imaged by Subaru Suprime-Cam ($B_j, V_j, g^+,r^+,i^+,z^+,$ NB816), the
+2 component bulge+disk fits, axis ratios etc were done for GREAT3 challenge~\citep{great3} using the method described in \cite{Claire_Fits}. This is described briefly in Sec.~\ref{sub:axisratio}.In addition to the ACS/WFC (F814W) imaging, the COSMOS field has also been imaged by Subaru Suprime-Cam ($B_j, V_j, g^+,r^+,i^+,z^+,$ NB816), the
 Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
-\rachel{Technically speaking, \cite{Claire_Fits} did {\em not} fit
-  models to these data.  Claire fit models to these data using the
-  methodology of \cite{Claire_Fits}, and the appropriate reference
-  describing these specific fits is the GREAT3 handbook.  However,
-  given that you use them, you do need to say a bit more about them
-  then you have already done.  State clearly what models were fit,
-  with what free parameters. Finally, be clear about which sample you
-  are using.  The SHERA paper only went to 22.5, and the GREAT3
-  challenge used galaxies to 23.5.  Since you're using the latter
-  sample, you should be very clear about it; currently it seems
-  ambiguous. Should also mention the presence of the $I<25.2$ parent
-  sample, since you use it quite a bit. (Also, on a more minor note, it is not
-  common to call them \sersicn{} profiles, just \sersic{} profiles.)}
-\arun{I added GREAT3 reference. More about this is described in \S\ref{sub:axisratio}. Let me know if that's sufficient. The confusion about the sample is now gone, I hope.} 
 	      
 Photometric redshifts were determined by~\cite{COSMOS_Photoz_30band}.The accuracy of photometric redshifts for F814W $\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z_s)$ and at fainter magnitudes, i.e. F814W $\le$ 24, $\sigma_{\Delta z} = 0.012(1+z_s)$.
-The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5.
+The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. \rachel{Make a clear and explicit statement that we always require $z<1$, we require the MAG\_AUTO in F814W to be $<23.5$, and we use the parent sample that goes to $25.2$ for stellar masses and luminosities only.}
 % ($S/N \sim 50$ {\bf ?} )
 % \rachel{Our catalog has the more up-to-date Ilbert et al. photo-$z$,
 %   not the older Mobasher ones.  Need to fix citations. Also, we care
@@ -221,14 +207,11 @@ We apply the following set of initial cuts to the data, all of which is defined 
                                        the masked regions of the Subaru $BVIz$ imaging used for photometric redshifts, and that it have a successful match against an object in the Subaru imaging
                                        {\bf copied from Mandelbaum 2011.}
 \end{enumerate}
+\rachel{The cuts you just gave are really basic or fundamental ones.  Those should go before any discussion of more complicated derived quantities like redshifts, stellar mass, Sersic fits, etc.}
   
-We will analyze how these intrinsic shape of the galaxies depends on
+We will analyze how the galaxy morphology and intrinsic shape depends on
 the environment in which they reside.
 
-\rachel{If we decide to use stellar masses, then we need to describe
-  the stellar mass estimates.}
-
-\arun{Described in the paragraph above}
 \section{Methods}
 \label{S:methods}
 

@@ -150,7 +150,10 @@ According to our current understanding, galaxy shapes and morphologies should de
   in the figures should appear the same size as the font in the text
   of the paper.  (This is true for axis labels, tick labels, and text
   in the legend.)  You also need to write good captions, because some
-  people will not really read the paper, just the captions.}
+  people will not really read the paper, just the captions.  MNRAS
+  does not use the subfigure environment, so you should remove it.
+  Just have the figures on top of or next to each other, and then in
+  the caption refer to ``Top panel'' and ``Bottom panel'' or whatever.}
 
 \section{Introduction}
 \label{S:intro}
@@ -324,6 +327,8 @@ bright and faint galaxies at low redshifts. For a fair comparison, we must restr
 %  generate a volume-limited sample, explain {\em why} you are
 %  generating one.}
 We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on $K$-corrected $i$-band magnitudes, denoted as $M_I$.
+\rachel{Is it $i$ band, or $I$ band?  Check which one and then be
+  self-consistent throughout the text.}
 Since the parent sample contains fainter galaxies, upto F814W=25.2, we compare the distribution of the F814W=23.5 sample with the samples containing fainter galaxies for high redshift bins, to see where the sample is no longer complete.
 \begin{figure}
  \centering
@@ -353,7 +358,10 @@ Thus, by considering no evolution and an upper bound on the evolution, we can in
 %If we restrict to galaxies with masses $M$ such that $\log(M/M_\odot) \ge 10.15$, then we have at least {\bf 95.0\% } completeness.
 Alternatively, one could get around the problem of considering redshift evolution by imposing cuts on stellar mass instead of absolute luminosity in a particular band. In Fig.~\ref{fig:smf}, we show the stellar mass function (SMF) of our sample for various F814W flux limit.
 \cite{Tomczak_SMF} report the SMFs for the ZFOURGE survey, which includes COSMOS. They considered for this work, a single stellar population following a Chabrier{\bf cite} IMF. 
-We plot their SMF for \emph{all} in ~\ref{fig:smf} for reference. Their SMF is higher than ours since they reach $K_s$-band $5\sigma$ depth of 24.9 {\bf What exactly does this mean?}
+We plot their SMF for \emph{all} in Fig.~\ref{fig:smf} for
+reference. Their SMF is higher than ours since they reach $K_s$-band
+$5\sigma$ depth of 24.9 {\bf What exactly does this mean?}
+\rachel{We discussed this in our meeting, so I think you can fix this.}
 As in the case of $M_I$ s, we compare the stellar mass in the F814W$\le$23.5 sample with that of the F814W$\le$25.2 sample. 
 The sample $\log(M/M_\odot) > 10.15$ is about 95\% complete in the redshift bin $\left[ 0.75 - 0.85\right]$ and has 10,341 galaxies in total.
 
@@ -362,14 +370,22 @@ The sample $\log(M/M_\odot) > 10.15$ is about 95\% complete in the redshift bin 
  \includegraphics[width=0.66\columnwidth]{SMF1} \
  \includegraphics[width=0.66\columnwidth]{SMF2} \
  \includegraphics[width=0.66\columnwidth]{SMF3}
- \caption{SMF plots}
+ \caption{SMF plots \rachel{Legend labels need to be better, e.g., $M_I<25.2$.}}
  \label{fig:smf}
 \end{figure*}
 
 There is a minor pitfall with this method. We analyse only those galaxies for which postage stamp images exist.
-Postage stamps may not exist either because the image occurs near the edge of the CCD chips or because the image is too large to fit in a bounding box. \arun{Rachel, please correct my terminology here.}
-While the former is purely random and doesn't introduce bias, the latter is not. Typically galaxies that are nearby and intrinsically very bright do not have postage stamps associated with them and this effect is dominant at lower redshifts. 
-Thus, we use the full F814W$\le$23.5 sample, irrespective of the existence of postage stamps, and believe that our conclusions are not affected by this bias.
+Postage stamps may not exist because, given the size of the galaxy,
+the size of the postage stamp we want to draw around it (including
+enough blank space) intersects with the edge of the CCD.
+If all galaxies were the same size, this would be a purely random
+effect, but in fact bigger galaxies are more likely to get excluded by
+this cut. Typically galaxies that are nearby and intrinsically very bright do not have postage stamps associated with them and this effect is dominant at lower redshifts. 
+Thus, we use the full F814W$\le$23.5 sample, irrespective of the
+existence of postage stamps, and believe that our conclusions are not
+affected by this bias. \rachel{What do you mean we use the full sample
+  $<23.5$?  For what purpose?  We obviously don't use it for the fits
+  or shape estimates, so be specific.}
 
 Not surprisingly, we see the overdense and underdense regions obtained by the above method have local average number density higher than the global average number density after volume limiting. %Refer to Figure~\ref{fig:comoving_densities}.
 And the environmentally neutral regions fall below or at least lie close to the 10\% margin.
@@ -379,7 +395,7 @@ And the environmentally neutral regions fall below or at least lie close to the 
  \centering
   \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   \label{fig:redshift_fluxlimited}
-  \caption{}
+  \caption{\rachel{Why does this figure appear again?}}
 \end{figure}
 
 % \begin{figure}
@@ -397,6 +413,8 @@ And the environmentally neutral regions fall below or at least lie close to the 
  \end{figure}
   
 
+\rachel{Tables need to be in a table environment, with a caption.
+  Also, you should include the uncategorized slices in here.}
 \begin{tabular}{c|c|c|}
  \hline
  Redshift & \# of galaxies & Environment \\
@@ -418,8 +436,13 @@ In the following section, we will compare and analyze the distribution of proper
 
 %\section{Implications/Comparisons}
 %\section{Results}
-\subsection{Finding fit parameters}
+\subsection{Describing galaxy morphology and shape}
 \label{sub:axisratio}
+
+\rachel{As we discussed, you should get rid of the early parts of this
+  regarding second moments, and replace it with a brief description of
+  what shape estimates we use from GalSim (re-Gaussianization).}
+
 {\bf Should explain in brief Claire's work.} \\
 If galaxies have elliptical isophotes, its shape and size could be defined by the axis ratio and the area enclosed by a boundary isophote. However, in real galaxy images,
 the boundary may not be well defined and the shape may not be well approximated by an ellipse. Given the surface brightness (intensity) $I(\vec{\theta})$ of a galaxy image at every angular position $\vec{\theta}$,
@@ -456,14 +479,29 @@ $R_{\text{eff}}$ is the half-light radius of the profile, $\Sigma_{1/2}$ is the 
 $\Phi$ is the profile rotation angle, $n$ is the \sersic index, $k$ is a $n$-dependent normalization factor and $q$ is the axis ratio of the elliptical isophotes.
 Thus, the \sersic profile has 7 free parameters. The bulge+disk model has 10 free parameters since the \sersic indices are fixed as 1 and 4
 and both the profiles are required to have the same centroid $(x_0,y_0)$. Best-fit parameters were found, by minimizing the weighted
-sum of the difference between the image and the PSF-convolved mode using Levenberg-Marquardt minimization, \texttt{mpfit2fun} in IDL {\bf cite}. More details about the fit can be found in~\cite{Claire_Fits}.
+sum of the difference between the image and the PSF-convolved mode
+using Levenberg-Marquardt minimization, \texttt{mpfit2fun} in IDL {\bf
+  cite}. More details about the fit can be found
+in~\cite{Claire_Fits}.
+
+\rachel{This section must end with a clear list of the quantities we
+  are using from Claire's fits, and from the re-Gaussianization shear
+  estimation routine.}
 
 \section{Results}
 \label{S:results}
+\rachel{Give a big picture summary of the goal of this section.  You
+  are taking the results from the previous section and doing what with
+  them, and why?}
+
+\rachel{What is entirely missing from this section is the systematic presentation that we discussed in meetings and via e-mail, with clear statements about how the samples have been volume-limited and selected (i.e., luminosity without evolution, with $B$-band evolution, or stellar mass selection)!  That was a critical part of the plan - where did it go?}
+
 The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
 
-We first compare the distribution of the axis ratio in \emph{all} overdense bins and \emph{all} underdense bins. The p-value from both the KS and AD tests are below 0.05, 
-so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level.
+We first compare the distribution of the axis ratio in \emph{all}
+overdense bins and \emph{all} underdense bins. The p-value from both
+the KS and AD tests are below 0.05 (\rachel{give the actual numbers!}), 
+so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level (\rachel{this is a super important result - show the figure!}).
 Next, we will compare distributions between two overdense / underdense regions, where we expect to find similarity, and between an overdense and underdense regions,
 where we expect the distributions to differ.
 Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} show that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
@@ -531,7 +569,7 @@ under NASA contract NAS5-26555. AK and RM thank Alexie Leauthaud for many useful
  b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot80-0dot85.eps} \\
  c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot80-0dot85.eps} \
  d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot55-0dot65_0dot75-0dot8.eps} \
- \caption{Comparison of axis ratios of galaxies in similar environments. $p$-values from the KS and AD test are (will be) given in the plot.}
+ \caption{Comparison of axis ratios of galaxies in similar environments. $p$-values from the KS and AD test are (will be) given in the plot. \rachel{Legend must say whether the region is over or under-dense.  Choose colors that are more clearly distinct, like red vs. blue instead of green vs. blue.  Finally, there is really no reason to show all of these.  Just pick one pair, and then in the text you can point to this plot and say the conclusions are the same for the other pairs.}}
  \label{fig:axisratio_similar}
 \end{figure*}
 
@@ -541,7 +579,7 @@ under NASA contract NAS5-26555. AK and RM thank Alexie Leauthaud for many useful
  b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot55-0dot65.eps} \\
  c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot75-0dot8.eps} \
  d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot75-0dot80.eps} \
- \caption{Comparison of axis ratios of galaxies in contrasting environments. $p$-values from the KS and AD test are (will be) given in the plot.}
+ \caption{Comparison of axis ratios of galaxies in contrasting environments. $p$-values from the KS and AD test are (will be) given in the plot. \rachel{I find it strange that you don't have this plot for the overall sample, only for pairs of regions.  This seems completely backwards to me: I would show the results for the overall underdense and overdense samples, and then say that you consistently get the same results if you consider pairs of bins, i.e., that it's not just dominated by one bin but is a general result (the text can give $p$-values for the other cases).}}
  \label{fig:axisratio_contrasting}
 \end{figure*}
 

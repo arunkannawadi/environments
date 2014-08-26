@@ -1,4 +1,4 @@
-\begin{thebibliography}{13}
+\begin{thebibliography}{19}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -21,6 +21,33 @@ K.~{Bundy}, R.~S. {Ellis}, C.~J. {Conselice}, J.~E. {Taylor}, M.~C. {Cooper},
 \newblock \emph{\apj}, 651:\penalty0 120--141, November 2006.
 \newblock \doi{10.1086/507456}.
 
+\bibitem[{de Jong} et~al.(2013){de Jong}, {Kuijken}, {Applegate}, {Begeman},
+  {Belikov}, {Blake}, {Bout}, {Boxhoorn}, {Buddelmeijer}, {Buddendiek},
+  {Cacciato}, {Capaccioli}, {Choi}, {Cordes}, {Covone}, {Dall'Ora}, {Edge},
+  {Erben}, {Franse}, {Getman}, {Grado}, {Harnois-Deraps}, {Helmich},
+  {Herbonnet}, {Heymans}, {Hildebrandt}, {Hoekstra}, {Huang}, {Irisarri},
+  {Joachimi}, {K{\"o}hlinger}, {Kitching}, {La Barbera}, {Lacerda},
+  {McFarland}, {Miller}, {Nakajima}, {Napolitano}, {Paolillo}, {Peacock},
+  {Pila-Diez}, {Puddu}, {Radovich}, {Rifatto}, {Schneider}, {Schrabback},
+  {Sifon}, {Sikkema}, {Simon}, {Sutherland}, {Tudorica}, {Valentijn}, {van der
+  Burg}, {van Uitert}, {van Waerbeke}, {Velander}, {Kleijn}, {Viola}, and
+  {Vriend}]{KIDS}
+J.~T.~A. {de Jong}, K.~{Kuijken}, D.~{Applegate}, K.~{Begeman}, A.~{Belikov},
+  C.~{Blake}, J.~{Bout}, D.~{Boxhoorn}, H.~{Buddelmeijer}, A.~{Buddendiek},
+  M.~{Cacciato}, M.~{Capaccioli}, A.~{Choi}, O.~{Cordes}, G.~{Covone},
+  M.~{Dall'Ora}, A.~{Edge}, T.~{Erben}, J.~{Franse}, F.~{Getman}, A.~{Grado},
+  J.~{Harnois-Deraps}, E.~{Helmich}, R.~{Herbonnet}, C.~{Heymans},
+  H.~{Hildebrandt}, H.~{Hoekstra}, Z.~{Huang}, N.~{Irisarri}, B.~{Joachimi},
+  F.~{K{\"o}hlinger}, T.~{Kitching}, F.~{La Barbera}, P.~{Lacerda},
+  J.~{McFarland}, L.~{Miller}, R.~{Nakajima}, N.~R. {Napolitano},
+  M.~{Paolillo}, J.~{Peacock}, B.~{Pila-Diez}, E.~{Puddu}, M.~{Radovich},
+  A.~{Rifatto}, P.~{Schneider}, T.~{Schrabback}, C.~{Sifon}, G.~{Sikkema},
+  P.~{Simon}, W.~{Sutherland}, A.~{Tudorica}, E.~{Valentijn}, R.~{van der
+  Burg}, E.~{van Uitert}, L.~{van Waerbeke}, M.~{Velander}, G.~V. {Kleijn},
+  M.~{Viola}, and W.-J. {Vriend}.
+\newblock {The Kilo-Degree Survey}.
+\newblock \emph{The Messenger}, 154:\penalty0 44--46, December 2013.
+
 \bibitem[{Faber} et~al.(2007){Faber}, {Willmer}, {Wolf}, {Koo}, {Weiner},
   {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis}, {Finkbeiner}, {Gerke},
   {Gebhardt}, {Groth}, {Guhathakurta}, {Harker}, {Kaiser}, {Kassin},
@@ -38,6 +65,29 @@ S.~M. {Faber}, C.~N.~A. {Willmer}, C.~{Wolf}, D.~C. {Koo}, B.~J. {Weiner},
   Implications for Red Galaxy Formation}.
 \newblock \emph{\apj}, 665:\penalty0 265--294, August 2007.
 \newblock \doi{10.1086/519294}.
+
+\bibitem[{Green} et~al.(2012){Green}, {Schechter}, {Baltay}, {Bean}, {Bennett},
+  {Brown}, {Conselice}, {Donahue}, {Fan}, {Gaudi}, {Hirata}, {Kalirai},
+  {Lauer}, {Nichol}, {Padmanabhan}, {Perlmutter}, {Rauscher}, {Rhodes},
+  {Roellig}, {Stern}, {Sumi}, {Tanner}, {Wang}, {Weinberg}, {Wright},
+  {Gehrels}, {Sambruna}, {Traub}, {Anderson}, {Cook}, {Garnavich},
+  {Hillenbrand}, {Ivezic}, {Kerins}, {Lunine}, {McDonald}, {Penny}, {Phillips},
+  {Rieke}, {Riess}, {van der Marel}, {Barry}, {Cheng}, {Content}, {Cutri},
+  {Goullioud}, {Grady}, {Helou}, {Jackson}, {Kruk}, {Melton}, {Peddie},
+  {Rioux}, and {Seiffert}]{WFIRST_Final}
+J.~{Green}, P.~{Schechter}, C.~{Baltay}, R.~{Bean}, D.~{Bennett}, R.~{Brown},
+  C.~{Conselice}, M.~{Donahue}, X.~{Fan}, B.~S. {Gaudi}, C.~{Hirata},
+  J.~{Kalirai}, T.~{Lauer}, B.~{Nichol}, N.~{Padmanabhan}, S.~{Perlmutter},
+  B.~{Rauscher}, J.~{Rhodes}, T.~{Roellig}, D.~{Stern}, T.~{Sumi}, A.~{Tanner},
+  Y.~{Wang}, D.~{Weinberg}, E.~{Wright}, N.~{Gehrels}, R.~{Sambruna},
+  W.~{Traub}, J.~{Anderson}, K.~{Cook}, P.~{Garnavich}, L.~{Hillenbrand},
+  Z.~{Ivezic}, E.~{Kerins}, J.~{Lunine}, P.~{McDonald}, M.~{Penny},
+  M.~{Phillips}, G.~{Rieke}, A.~{Riess}, R.~{van der Marel}, R.~K. {Barry},
+  E.~{Cheng}, D.~{Content}, R.~{Cutri}, R.~{Goullioud}, K.~{Grady}, G.~{Helou},
+  C.~{Jackson}, J.~{Kruk}, M.~{Melton}, C.~{Peddie}, N.~{Rioux}, and
+  M.~{Seiffert}.
+\newblock {Wide-Field InfraRed Survey Telescope (WFIRST) Final Report}.
+\newblock \emph{ArXiv e-prints}, August 2012.
 
 \bibitem[{Ilbert} et~al.(2009){Ilbert}, {Capak}, {Salvato}, {Aussel},
   {McCracken}, {Sanders}, {Scoville}, {Kartaltepe}, {Arnouts}, {Le Floc'h},
@@ -66,6 +116,17 @@ O.~{Ilbert}, P.~{Capak}, M.~{Salvato}, H.~{Aussel}, H.~J. {McCracken}, D.~B.
 \newblock {Cosmos Photometric Redshifts with 30-Bands for 2-deg$^{2}$}.
 \newblock \emph{\apj}, 690:\penalty0 1236--1249, January 2009.
 \newblock \doi{10.1088/0004-637X/690/2/1236}.
+
+\bibitem[{Kaiser} et~al.(2010){Kaiser}, {Burgett}, {Chambers}, {Denneau},
+  {Heasley}, {Jedicke}, {Magnier}, {Morgan}, {Onaka}, and
+  {Tonry}]{PanSTARRS_2010}
+N.~{Kaiser}, W.~{Burgett}, K.~{Chambers}, L.~{Denneau}, J.~{Heasley},
+  R.~{Jedicke}, E.~{Magnier}, J.~{Morgan}, P.~{Onaka}, and J.~{Tonry}.
+\newblock {The Pan-STARRS wide-field optical/NIR imaging survey}.
+\newblock In \emph{Society of Photo-Optical Instrumentation Engineers (SPIE)
+  Conference Series}, volume 7733 of \emph{Society of Photo-Optical
+  Instrumentation Engineers (SPIE) Conference Series}, July 2010.
+\newblock \doi{10.1117/12.859188}.
 
 \bibitem[{Koekemoer} et~al.(2007){Koekemoer}, {Aussel}, {Calzetti}, {Capak},
   {Giavalisco}, {Kneib}, {Leauthaud}, {Le F{\`e}vre}, {McCracken}, {Massey},
@@ -142,6 +203,15 @@ A.~{Leauthaud}, A.~{Finoguenov}, J.-P. {Kneib}, J.~E. {Taylor}, R.~{Massey},
 \newblock \emph{\apj}, 709:\penalty0 97--114, January 2010.
 \newblock \doi{10.1088/0004-637X/709/1/97}.
 
+\bibitem[{LSST Science Collaboration} et~al.(2009){LSST Science Collaboration},
+  {Abell}, {Allison}, {Anderson}, {Andrew}, {Angel}, {Armus}, {Arnett},
+  {Asztalos}, {Axelrod}, and et~al.]{LSST_Book}
+{LSST Science Collaboration}, P.~A. {Abell}, J.~{Allison}, S.~F. {Anderson},
+  J.~R. {Andrew}, J.~R.~P. {Angel}, L.~{Armus}, D.~{Arnett}, S.~J. {Asztalos},
+  T.~S. {Axelrod}, and et~al.
+\newblock {LSST Science Book, Version 2.0}.
+\newblock \emph{ArXiv e-prints}, December 2009.
+
 \bibitem[{Mandelbaum} et~al.(2011){Mandelbaum}, {Hirata}, {Leauthaud},
   {Massey}, and {Rhodes}]{SHERA}
 R.~{Mandelbaum}, C.~M. {Hirata}, A.~{Leauthaud}, R.~J. {Massey}, and
@@ -166,6 +236,16 @@ R.~{Mandelbaum}, B.~{Rowe}, J.~{Bosch}, C.~{Chang}, F.~{Courbin}, M.~{Gill},
 \newblock \emph{\apjs}, 212:\penalty0 5, May 2014.
 \newblock \doi{10.1088/0067-0049/212/1/5}.
 
+\bibitem[{Miyazaki} et~al.(2006){Miyazaki}, {Komiyama}, {Nakaya}, {Doi},
+  {Furusawa}, {Gillingham}, {Kamata}, {Takeshi}, and {Nariai}]{HSC_Overview}
+S.~{Miyazaki}, Y.~{Komiyama}, H.~{Nakaya}, Y.~{Doi}, H.~{Furusawa},
+  P.~{Gillingham}, Y.~{Kamata}, K.~{Takeshi}, and K.~{Nariai}.
+\newblock {HyperSuprime: project overview}.
+\newblock In \emph{Society of Photo-Optical Instrumentation Engineers (SPIE)
+  Conference Series}, volume 6269 of \emph{Society of Photo-Optical
+  Instrumentation Engineers (SPIE) Conference Series}, June 2006.
+\newblock \doi{10.1117/12.672739}.
+
 \bibitem[{Scoville} et~al.(2007){Scoville}, {Aussel}, {Brusa}, {Capak},
   {Carollo}, {Elvis}, {Giavalisco}, {Guzzo}, {Hasinger}, {Impey}, {Kneib},
   {LeFevre}, {Lilly}, {Mobasher}, {Renzini}, {Rich}, {Sanders}, {Schinnerer},
@@ -178,6 +258,11 @@ N.~{Scoville}, H.~{Aussel}, M.~{Brusa}, P.~{Capak}, C.~M. {Carollo},
 \newblock {The Cosmic Evolution Survey (COSMOS): Overview}.
 \newblock \emph{\apjs}, 172:\penalty0 1--8, September 2007.
 \newblock \doi{10.1086/516585}.
+
+\bibitem[{The Dark Energy Survey Collaboration}(2005)]{DESC}
+{The Dark Energy Survey Collaboration}.
+\newblock {The Dark Energy Survey}.
+\newblock \emph{ArXiv Astrophysics e-prints}, October 2005.
 
 \bibitem[{Tomczak} et~al.(2014){Tomczak}, {Quadri}, {Tran}, {Labb{\'e}},
   {Straatman}, {Papovich}, {Glazebrook}, {Allen}, {Brammer}, {Kacprzak},

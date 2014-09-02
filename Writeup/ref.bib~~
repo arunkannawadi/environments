@@ -1,0 +1,300 @@
+@article{Claire_Fits,
+   author = {{Lackner}, C.~N. and {Gunn}, J.~E.},
+    title = "{Astrophysically motivated bulge-disc decompositions of Sloan Digital Sky Survey galaxies}",
+  journal = {\mnras},
+archivePrefix = "arXiv",
+   eprint = {1201.0763},
+ primaryClass = "astro-ph.CO",
+ keywords = {galaxies: bulges, galaxies: evolution, galaxies: photometry, galaxies: structure},
+     year = 2012,
+    month = apr,
+   volume = 421,
+    pages = {2277-2302},
+      doi = {10.1111/j.1365-2966.2012.20450.x},
+   adsurl = {http://adsabs.harvard.edu/abs/2012MNRAS.421.2277L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{COSMOS_overview,
+   author = {{Scoville}, N. and {Aussel}, H. and {Brusa}, M. and {Capak}, P. and 
+	{Carollo}, C.~M. and {Elvis}, M. and {Giavalisco}, M. and {Guzzo}, L. and 
+	{Hasinger}, G. and {Impey}, C. and {Kneib}, J.-P. and {LeFevre}, O. and 
+	{Lilly}, S.~J. and {Mobasher}, B. and {Renzini}, A. and {Rich}, R.~M. and 
+	{Sanders}, D.~B. and {Schinnerer}, E. and {Schminovich}, D. and 
+	{Shopbell}, P. and {Taniguchi}, Y. and {Tyson}, N.~D.},
+    title = "{The Cosmic Evolution Survey (COSMOS): Overview}",
+  journal = {\apjs},
+   eprint = {astro-ph/0612305},
+ keywords = {Cosmology: Observations, Cosmology: Dark Matter, Galaxies: Evolution, Galaxies: Formation, Cosmology: Large-Scale Structure of Universe, Surveys},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {1-8},
+      doi = {10.1086/516585},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172....1S},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{COSMOS_generic,
+   author = {{Koekemoer}, A.~M. and {Aussel}, H. and {Calzetti}, D. and {Capak}, P. and 
+	{Giavalisco}, M. and {Kneib}, J.-P. and {Leauthaud}, A. and 
+	{Le F{\`e}vre}, O. and {McCracken}, H.~J. and {Massey}, R. and 
+	{Mobasher}, B. and {Rhodes}, J. and {Scoville}, N. and {Shopbell}, P.~L.
+	},
+    title = "{The COSMOS Survey: Hubble Space Telescope Advanced Camera for Surveys Observations and Data Processing}",
+  journal = {\apjs},
+   eprint = {astro-ph/0703095},
+ keywords = {Cosmology: Observations, Cosmology: Dark Matter, Galaxies: Evolution, Galaxies: Formation, Cosmology: Large-Scale Structure of Universe, Surveys},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {196-202},
+      doi = {10.1086/520086},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172..196K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{COSMOS_Alexie,
+   author = {{Leauthaud}, A. and {Massey}, R. and {Kneib}, J.-P. and {Rhodes}, J. and 
+	{Johnston}, D.~E. and {Capak}, P. and {Heymans}, C. and {Ellis}, R.~S. and 
+	{Koekemoer}, A.~M. and {Le F{\`e}vre}, O. and {Mellier}, Y. and 
+	{R{\'e}fr{\'e}gier}, A. and {Robin}, A.~C. and {Scoville}, N. and 
+	{Tasca}, L. and {Taylor}, J.~E. and {Van Waerbeke}, L.},
+    title = "{Weak Gravitational Lensing with COSMOS: Galaxy Selection and Shape Measurements}",
+  journal = {\apjs},
+   eprint = {astro-ph/0702359},
+ keywords = {Cosmology: Observations, Cosmology: Gravitational Lensing, Cosmology: Large-Scale Structure of Universe},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {219-238},
+      doi = {10.1086/516598},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172..219L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{COSMOS_XRAY,
+   author = {{Leauthaud}, A. and {Finoguenov}, A. and {Kneib}, J.-P. and 
+	{Taylor}, J.~E. and {Massey}, R. and {Rhodes}, J. and {Ilbert}, O. and 
+	{Bundy}, K. and {Tinker}, J. and {George}, M.~R. and {Capak}, P. and 
+	{Koekemoer}, A.~M. and {Johnston}, D.~E. and {Zhang}, Y.-Y. and 
+	{Cappelluti}, N. and {Ellis}, R.~S. and {Elvis}, M. and {Giodini}, S. and 
+	{Heymans}, C. and {Le F{\`e}vre}, O. and {Lilly}, S. and {McCracken}, H.~J. and 
+	{Mellier}, Y. and {R{\'e}fr{\'e}gier}, A. and {Salvato}, M. and 
+	{Scoville}, N. and {Smoot}, G. and {Tanaka}, M. and {Van Waerbeke}, L. and 
+	{Wolk}, M.},
+    title = "{A Weak Lensing Study of X-ray Groups in the Cosmos Survey: Form and Evolution of the Mass-Luminosity Relation}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {0910.5219},
+ primaryClass = "astro-ph.CO",
+ keywords = {cosmology: observations, gravitational lensing, large-scale structure of universe},
+     year = 2010,
+    month = jan,
+   volume = 709,
+    pages = {97-114},
+      doi = {10.1088/0004-637X/709/1/97},
+   adsurl = {http://adsabs.harvard.edu/abs/2010ApJ...709...97L},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+
+@ARTICLE{COSMOS_photoz,
+   author = {{Mobasher}, B. and {Capak}, P. and {Scoville}, N.~Z. and {Dahlen}, T. and 
+	{Salvato}, M. and {Aussel}, H. and {Thompson}, D.~J. and {Feldmann}, R. and 
+	{Tasca}, L. and {Le Fevre}, O. and {Lilly}, S. and {Carollo}, C.~M. and 
+	{Kartaltepe}, J.~S. and {McCracken}, H. and {Mould}, J. and 
+	{Renzini}, A. and {Sanders}, D.~B. and {Shopbell}, P.~L. and 
+	{Taniguchi}, Y. and {Ajiki}, M. and {Shioya}, Y. and {Contini}, T. and 
+	{Giavalisco}, M. and {Ilbert}, O. and {Iovino}, A. and {Le Brun}, V. and 
+	{Mainieri}, V. and {Mignoli}, M. and {Scodeggio}, M.},
+    title = "{Photometric Redshifts of Galaxies in COSMOS}",
+  journal = {\apjs},
+   eprint = {astro-ph/0612344},
+ keywords = {Galaxies: Distances and Redshifts, Galaxies: Evolution, Galaxies: Starburst, Surveys},
+     year = 2007,
+    month = sep,
+   volume = 172,
+    pages = {117-131},
+      doi = {10.1086/516590},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJS..172..117M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{COSMOS_Photoz_30band,
+   author = {{Ilbert}, O. and {Capak}, P. and {Salvato}, M. and {Aussel}, H. and 
+	{McCracken}, H.~J. and {Sanders}, D.~B. and {Scoville}, N. and 
+	{Kartaltepe}, J. and {Arnouts}, S. and {Le Floc'h}, E. and {Mobasher}, B. and 
+	{Taniguchi}, Y. and {Lamareille}, F. and {Leauthaud}, A. and 
+	{Sasaki}, S. and {Thompson}, D. and {Zamojski}, M. and {Zamorani}, G. and 
+	{Bardelli}, S. and {Bolzonella}, M. and {Bongiorno}, A. and 
+	{Brusa}, M. and {Caputi}, K.~I. and {Carollo}, C.~M. and {Contini}, T. and 
+	{Cook}, R. and {Coppa}, G. and {Cucciati}, O. and {de la Torre}, S. and 
+	{de Ravel}, L. and {Franzetti}, P. and {Garilli}, B. and {Hasinger}, G. and 
+	{Iovino}, A. and {Kampczyk}, P. and {Kneib}, J.-P. and {Knobel}, C. and 
+	{Kovac}, K. and {Le Borgne}, J.~F. and {Le Brun}, V. and {F{\`e}vre}, O.~L. and 
+	{Lilly}, S. and {Looper}, D. and {Maier}, C. and {Mainieri}, V. and 
+	{Mellier}, Y. and {Mignoli}, M. and {Murayama}, T. and {Pell{\`o}}, R. and 
+	{Peng}, Y. and {P{\'e}rez-Montero}, E. and {Renzini}, A. and 
+	{Ricciardelli}, E. and {Schiminovich}, D. and {Scodeggio}, M. and 
+	{Shioya}, Y. and {Silverman}, J. and {Surace}, J. and {Tanaka}, M. and 
+	{Tasca}, L. and {Tresse}, L. and {Vergani}, D. and {Zucca}, E.
+	},
+    title = "{Cosmos Photometric Redshifts with 30-Bands for 2-deg$^{2}$}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {0809.2101},
+ keywords = {galaxies: distances and redshifts, galaxies: evolution, galaxies: formation},
+     year = 2009,
+    month = jan,
+   volume = 690,
+    pages = {1236-1249},
+      doi = {10.1088/0004-637X/690/2/1236},
+   adsurl = {http://adsabs.harvard.edu/abs/2009ApJ...690.1236I},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+@ARTICLE{Kovac_Density10k,
+   author = {{Kova{\v c}}, K. and {Lilly}, S.~J. and {Cucciati}, O. and {Porciani}, C. and 
+	{Iovino}, A. and {Zamorani}, G. and {Oesch}, P. and {Bolzonella}, M. and 
+	{Knobel}, C. and {Finoguenov}, A. and {Peng}, Y. and {Carollo}, C.~M. and 
+	{Pozzetti}, L. and {Caputi}, K. and {Silverman}, J.~D. and {Tasca}, L.~A.~M. and 
+	{Scodeggio}, M. and {Vergani}, D. and {Scoville}, N.~Z. and 
+	{Capak}, P. and {Contini}, T. and {Kneib}, J.-P. and {Le F{\`e}vre}, O. and 
+	{Mainieri}, V. and {Renzini}, A. and {Bardelli}, S. and {Bongiorno}, A. and 
+	{Coppa}, G. and {de la Torre}, S. and {de Ravel}, L. and {Franzetti}, P. and 
+	{Garilli}, B. and {Guzzo}, L. and {Kampczyk}, P. and {Lamareille}, F. and 
+	{Le Borgne}, J.-F. and {Le Brun}, V. and {Maier}, C. and {Mignoli}, M. and 
+	{Pello}, R. and {Perez Montero}, E. and {Ricciardelli}, E. and 
+	{Tanaka}, M. and {Tresse}, L. and {Zucca}, E. and {Abbas}, U. and 
+	{Bottini}, D. and {Cappi}, A. and {Cassata}, P. and {Cimatti}, A. and 
+	{Fumana}, M. and {Koekemoer}, A.~M. and {Maccagni}, D. and {Marinoni}, C. and 
+	{McCracken}, H.~J. and {Memeo}, P. and {Meneux}, B. and {Scaramella}, R.
+	},
+    title = "{The Density Field of the 10k zCOSMOS Galaxies}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {0903.3409},
+ primaryClass = "astro-ph.CO",
+ keywords = {galaxies: high-redshift, large-scale structure of universe, surveys},
+     year = 2010,
+    month = jan,
+   volume = 708,
+    pages = {505-533},
+      doi = {10.1088/0004-637X/708/1/505},
+   adsurl = {http://adsabs.harvard.edu/abs/2010ApJ...708..505K},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Redshift_modelling,
+   author = {{Baugh}, C.~M. and {Efstathiou}, G.},
+    title = "{The Three-Dimensional Power Spectrum Measured from the APM Galaxy Survey - Part One - Use of the Angular Correlation Function}",
+  journal = {\mnras},
+     year = 1993,
+    month = nov,
+   volume = 265,
+    pages = {145},
+   adsurl = {http://adsabs.harvard.edu/abs/1993MNRAS.265..145B},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@MISC{SHERA,
+   author = {{Mandelbaum}, R. and {Hirata}, C.~M. and {Leauthaud}, A. and 
+	{Massey}, R.~J. and {Rhodes}, J.},
+    title = "{SHERA: SHEar Reconvolution Analysis}",
+     note = {Astrophysics Source Code Library},
+     year = 2011,
+archivePrefix = "ascl",
+   eprint = {1108.002},
+    month = aug,
+   adsurl = {http://adsabs.harvard.edu/abs/2011ascl.soft08002M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{great3,
+   author = {{Mandelbaum}, R. and {Rowe}, B. and {Bosch}, J. and {Chang}, C. and 
+	{Courbin}, F. and {Gill}, M. and {Jarvis}, M. and {Kannawadi}, A. and 
+	{Kacprzak}, T. and {Lackner}, C. and {Leauthaud}, A. and {Miyatake}, H. and 
+	{Nakajima}, R. and {Rhodes}, J. and {Simet}, M. and {Zuntz}, J. and 
+	{Armstrong}, B. and {Bridle}, S. and {Coupon}, J. and {Dietrich}, J.~P. and 
+	{Gentile}, M. and {Heymans}, C. and {Jurling}, A.~S. and {Kent}, S.~M. and 
+	{Kirkby}, D. and {Margala}, D. and {Massey}, R. and {Melchior}, P. and 
+	{Peterson}, J. and {Roodman}, A. and {Schrabback}, T.},
+    title = "{The Third Gravitational Lensing Accuracy Testing (GREAT3) Challenge Handbook}",
+  journal = {\apjs},
+archivePrefix = "arXiv",
+   eprint = {1308.4982},
+ keywords = {gravitational lensing: weak, methods: data analysis, methods: statistical, techniques: image processing },
+     year = 2014,
+    month = may,
+   volume = 212,
+      eid = {5},
+    pages = {5},
+      doi = {10.1088/0067-0049/212/1/5},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJS..212....5M},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Tomczak_SMF,
+   author = {{Tomczak}, A.~R. and {Quadri}, R.~F. and {Tran}, K.-V.~H. and 
+	{Labb{\'e}}, I. and {Straatman}, C.~M.~S. and {Papovich}, C. and 
+	{Glazebrook}, K. and {Allen}, R. and {Brammer}, G.~B. and {Kacprzak}, G.~G. and 
+	{Kawinwanichakij}, L. and {Kelson}, D.~D. and {McCarthy}, P.~J. and 
+	{Mehrtens}, N. and {Monson}, A.~J. and {Persson}, S.~E. and 
+	{Spitler}, L.~R. and {Tilvi}, V. and {van Dokkum}, P.},
+    title = "{Galaxy Stellar Mass Functions from ZFOURGE/CANDELS: An Excess of Low-mass Galaxies since z = 2 and the Rapid Buildup of Quiescent Galaxies}",
+  journal = {\apj},
+archivePrefix = "arXiv",
+   eprint = {1309.5972},
+ primaryClass = "astro-ph.CO",
+ keywords = {galaxies: evolution, galaxies: high-redshift, galaxies: luminosity function, mass function},
+     year = 2014,
+    month = mar,
+   volume = 783,
+      eid = {85},
+    pages = {85},
+      doi = {10.1088/0004-637X/783/2/85},
+   adsurl = {http://adsabs.harvard.edu/abs/2014ApJ...783...85T},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@ARTICLE{Faber2007,
+   author = {{Faber}, S.~M. and {Willmer}, C.~N.~A. and {Wolf}, C. and {Koo}, D.~C. and 
+	{Weiner}, B.~J. and {Newman}, J.~A. and {Im}, M. and {Coil}, A.~L. and 
+	{Conroy}, C. and {Cooper}, M.~C. and {Davis}, M. and {Finkbeiner}, D.~P. and 
+	{Gerke}, B.~F. and {Gebhardt}, K. and {Groth}, E.~J. and {Guhathakurta}, P. and 
+	{Harker}, J. and {Kaiser}, N. and {Kassin}, S. and {Kleinheinrich}, M. and 
+	{Konidaris}, N.~P. and {Kron}, R.~G. and {Lin}, L. and {Luppino}, G. and 
+	{Madgwick}, D.~S. and {Meisenheimer}, K. and {Noeske}, K.~G. and 
+	{Phillips}, A.~C. and {Sarajedini}, V.~L. and {Schiavon}, R.~P. and 
+	{Simard}, L. and {Szalay}, A.~S. and {Vogt}, N.~P. and {Yan}, R.
+	},
+    title = "{Galaxy Luminosity Functions to z\~{}1 from DEEP2 and COMBO-17: Implications for Red Galaxy Formation}",
+  journal = {\apj},
+   eprint = {astro-ph/0506044},
+ keywords = {Galaxies: Distances and Redshifts, Galaxies: Evolution, Galaxies: Luminosity Function, Mass Function},
+     year = 2007,
+    month = aug,
+   volume = 665,
+    pages = {265-294},
+      doi = {10.1086/519294},
+   adsurl = {http://adsabs.harvard.edu/abs/2007ApJ...665..265F},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}
+
+@INPROCEEDINGS{HSC_Overview,
+   author = {{Miyazaki}, S. and {Komiyama}, Y. and {Nakaya}, H. and {Doi}, Y. and 
+	{Furusawa}, H. and {Gillingham}, P. and {Kamata}, Y. and {Takeshi}, K. and 
+	{Nariai}, K.},
+    title = "{HyperSuprime: project overview}",
+booktitle = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+     year = 2006,
+   series = {Society of Photo-Optical Instrumentation Engineers (SPIE) Conference Series},
+   volume = 6269,
+    month = jun,
+      eid = {62690B},
+      doi = {10.1117/12.672739},
+   adsurl = {http://adsabs.harvard.edu/abs/2006SPIE.6269E..0BM},
+  adsnote = {Provided by the SAO/NASA Astrophysics Data System}
+}

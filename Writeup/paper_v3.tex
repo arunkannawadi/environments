@@ -322,10 +322,15 @@ nor too underdense and we call them as `unclassified regions'  and discard them 
 % \end{figure}
 
 We thus identify the regions $z=0.30-0.40, 0.65-0.75, 0.80-0.85$ as overdense, $z=0.55-0.65, 0.75-0.80$ as underdense and $z=0.40-0.55$ as unclassified.
-The classification of overdensities and underdensities agrees with the work done by~\cite{Kovac_Density10k} on the zCOSMOS field using spectra and 3D density field reconstruction , except for the last two high redshift bins.
+
+Our classification is not very rigorous since it considers only the counts in redshift slices and compares with models that only approximately describe the redshift distribution of galaxies.
+Moreover, the photometric redshifts become less accurate as we go to higher redshifts (cf.~\S\ref{S:data}) and no information about structure in transverse direction has been taken into account.
+Thus, it is important to cross-check with a more careful study of the density fields in the same field of view.
+~\cite{Kovac_Density10k}, using a sample of $\sim 10,000$ zCOSMOS spectra sources with $I_{AB}<22.5$, have reconstructed the three dimensional overdensity field up to $z\sim 1$.
+In spite of the above mentioned shortcomings, our classification of overdensities and underdensities agrees with this work done, except for the last two high redshift bins.
 We believe that this disagreement is due to the errors in our photometric redshifts and the overdensity reported in $z=0.875-1$ slice
 is observed by us in $z=0.80-0.85$ slice.
-\rachel{Say why you are doing this comparison with Kovac et al.}
+\rachel{Say why you are doing this comparison with Kovac et al.} \arun{Done.}
 
 We see that the region between $0.85<z<1.0$ is neither overdense nor underdense according to our model and hence is not going to be considered for further analysis.
 
@@ -483,7 +488,7 @@ the boundary may not be well defined and the shape may not be well approximated 
 %   use a PSF correction scheme.  Recommend removing much of the above discussion.}
 % \arun{Should I remove these even if we plan to use the ellipticities from the second moments?} 
 
-The PSF correction scheme used on the observed images is that of 're-Gaussianization' method described in \S 2.4 of~\cite{HS03} (hereafter HS03).
+The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of~\cite{HS03} (hereafter HS03).
 This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
 intrinsic image of $f$, is $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
 estimate of $I'$ even if we use an approximate form for $f$. The form assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I - M_g$, where $M_I$ and $M_g$ are the adaptive

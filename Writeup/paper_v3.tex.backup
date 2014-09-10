@@ -1,0 +1,723 @@
+\documentclass[twocolumn,useAMS,usenatbib]{mn2e}
+\usepackage{natbib}
+\usepackage{amsmath}
+%\usepackage{amssymb}
+\usepackage{latexsym}
+\usepackage{epsfig,graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{color}
+\graphicspath{{Figures/}}
+\topmargin-1cm
+
+% For correct printing on US Letter, while still working on A4
+\topmargin-1cm
+
+\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
+\newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
+
+\def\a{\alpha}
+\def\reff@jnl#1{{\rm#1\/}}
+
+\def\aj{\reff@jnl{AJ}}                  % Astronomical Journal
+\def\araa{\reff@jnl{ARA\&A}}            % Annual Review of Astron and Astrophys
+\def\apj{\reff@jnl{ApJ}}                        % Astrophysical Journal
+\def\apjl{\reff@jnl{ApJ}}               % Astrophysical Journal, Letters
+\def\apjs{\reff@jnl{ApJS}}              % Astrophysical Journal, Supplement
+\def\apss{\reff@jnl{Ap\&SS}}            % Astrophysics and Space Science
+\def\aap{\reff@jnl{A\&A}}               % Astronomy and Astrophysics
+\def\aapr{\reff@jnl{A\&A~Rev.}}         % Astronomy and Astrophysics Reviews
+\def\aaps{\reff@jnl{A\&AS}}             % Astronomy and Astrophysics, Supplement
+\def\baas{\reff@jnl{BAAS}}              % Bulletin of the AAS
+\def\jrasc{\reff@jnl{JRASC}}            % Journal of the RAS of Canada
+\def\memras{\reff@jnl{MmRAS}}           % Memoirs of the RAS
+\def\mnras{\reff@jnl{MNRAS}}            % Monthly Notices of the RAS
+\def\physrep{\reff@jnl{Phys.Rep.}}
+\def\pra{\reff@jnl{Phys.Rev.A}}         % Physical Review A: General Physics
+\def\prb{\reff@jnl{Phys.Rev.B}}         % Physical Review B: Solid State
+\def\prc{\reff@jnl{Phys.Rev.C}}         % Physical Review C
+\def\prd{\reff@jnl{Phys.Rev.D}}         % Physical Review D
+\def\prl{\reff@jnl{Phys.Rev.Lett}}      % Physical Review Letters
+\def\pasp{\reff@jnl{PASP}}              % Publications of the ASP
+\def\pasj{\reff@jnl{PASJ}}              % Publications of the ASJ
+\def\skytel{\reff@jnl{S\&T}}            % Sky and Telescope
+\def\solphys{\reff@jnl{Solar~Phys.}}    % Solar Physics
+\def\sovast{\reff@jnl{Soviet~Ast.}}     % Soviet Astronomy
+\def\ssr{\reff@jnl{Space~Sci.Rev.}}     % Space Science Reviews
+\def\nat{\reff@jnl{Nature}}             % Nature
+
+\def\sun{\hbox{$\odot$}}
+\def\farcs{\hbox{$.\!\!^{\prime\prime}$}}
+\newcommand{\hvol}{h^{3}{\mathrm{Mpc}}^{-3}}
+\newcommand{\hmpc}{\ensuremath{h^{-1}\mathrm{Mpc}}}
+\newcommand{\hkpc}{\ensuremath{h^{-1}\mathrm{kpc}}}
+\newcommand{\hMsun}{h^{-1}M_{\odot}}
+\newcommand{\Msun}{M_{\odot}}
+\newcommand{\kms}{{\,{\rm km}\,{\rm s}^{-1}}}
+\newcommand{\Omegam}{\Omega_{m}}
+\newcommand{\Omegab}{\Omega_{b}}
+\newcommand{\Omegal}{\Omega_{\Lambda}}
+\newcommand{\xig}{\xi_{\rm gg}(r)}
+\newcommand{\xih}{\xi_{\rm hh}(r)}
+\newcommand{\xim}{\xi_{\rm mm}(r)}
+\newcommand{\ds}{\ensuremath{\Delta\Sigma}}
+\newcommand{\scinv}{\ensuremath{\Sigma_c^{-1}}}
+\newcommand{\avgscinv}{\ensuremath{\langle\Sigma_c^{-1}\rangle}}
+\newcommand{\hinvk}{$h^{-1}$kpc}
+\newcommand{\avgnm}{\ensuremath{\langle N(M)\rangle}}
+\newcommand{\fclust}{\ensuremath{f_\mathrm{clust}}}
+\newcommand{\fbcg}{\ensuremath{f_\mathrm{BCG}}}
+
+\newcommand{\beq}{\begin{equation}}
+\newcommand{\eeq}{\end{equation}}
+\newcommand{\beqa}{\begin{eqnarray}}
+\newcommand{\eeqa}{\end{eqnarray}}
+
+% upright d in integrals
+\newcommand{\rmd}{\mathrm{d}}
+\newcommand{\putcite}{\textbf{(CITE)}}
+\newcommand{\ic}{\ensuremath{I_\mathrm{C}}}
+\newcommand{\pc}{\ensuremath{G_\mathrm{C}}}
+\newcommand{\ps}{\ensuremath{G_\mathrm{T}}}
+\newcommand{\tic}{\ensuremath{\tilde{I}_\mathrm{C}}}
+\newcommand{\tpc}{\ensuremath{\tilde{G}_\mathrm{C}}}
+\newcommand{\tps}{\ensuremath{\tilde{G}_\mathrm{T}}}
+\newcommand{\tkpd}{\ensuremath{\tilde{T}}}
+\newcommand{\ticpd}{\ensuremath{\tilde{P}}}
+\newcommand{\ticpdr}{\ensuremath{\tilde{P}^\mathrm{(rot)}}}
+\newcommand{\ticpds}{\ensuremath{\tilde{P}^{(\gamma)}}}
+\newcommand{\ticpdrs}{\ensuremath{\tilde{P}^{(\mathrm{rot},\gamma)}}}
+\newcommand{\tks}{\ensuremath{\tilde{K}_\mathrm{T}}}
+\newcommand{\tksr}{\ensuremath{\tilde{K}_\mathrm{T}^\mathrm{(rot)}}}
+\newcommand{\tis}{\ensuremath{\tilde{I}^{(\gamma)}_\mathrm{T}}}
+\newcommand{\tisr}{\ensuremath{\tilde{I}^{(\mathrm{rot},\gamma)}_\mathrm{T}}}
+\newcommand{\is}{\ensuremath{I_\mathrm{T}}}
+\newcommand{\isr}{\ensuremath{I_\mathrm{T}^\mathrm{(rot)}}}
+\newcommand{\rpix}{\ensuremath{R_\mathrm{pix}}}
+\newcommand{\nimg}{\ensuremath{N_\mathrm{img}}}
+\newcommand{\nrand}{\ensuremath{N_\mathrm{rand}}}
+\newcommand{\nset}{\ensuremath{N_\mathrm{set}}}
+\newcommand{\nc}{\ensuremath{N_\mathrm{C}}}
+\newcommand{\ns}{\ensuremath{N_\mathrm{S}}}
+\newcommand{\nt}{\ensuremath{N_\mathrm{T}}}
+\newcommand{\erms}{\ensuremath{e_\mathrm{rms}}}
+\newcommand{\etot}{\ensuremath{e_\mathrm{tot}}}
+%\newcommand{\newtext}{\emph}
+\newcommand{\newtext}{}
+\newcommand{\reftext}[1]{\textbf{#1}}
+%\newcommand{\arcsec}{\ensuremath{^{\prime\prime}}}
+
+%More new commands by Arun Kannawadi
+\newcommand{\mg}{\ensuremath{M_G}}
+\newcommand{\mi}{\ensuremath{M_I}}
+\newcommand{\sersicn}{S\'{e}rsic $n$ }
+\newcommand{\sersic}{S\'{e}rsic }
+\newcommand{\btt}{Bulge-to-Total }
+\newcommand{\s}{\ensuremath{\mathcal{S}}}
+
+\title[WL simulation]{The impact of cosmic variance on simulating weak lensing surveys}
+
+\author[Kannawadi et al.]
+{Arun Kannawadi$^1$\thanks{\tt akannawa@andrew.cmu.edu}, 
+Rachel Mandelbaum$^1$,
+Claire Lackner$^2$, 
+\\$^1$McWilliams Center for Cosmology, Carnegie Mellon University, Pittsburgh, PA 15217, USA
+\\$^2$Kavli Institute for the Physics and Mathematics of the Universe (WPI), Todai Institutes for Advanced Study,\\ the University of Tokyo, Kashiwa, Japan.
+}
+
+\date{\today}
+
+\begin{document}
+\bibliographystyle{plainnat}
+\maketitle
+
+\begin{abstract}
+According to our current understanding, galaxy shapes and morphologies should depend on various factors such as the local environment. Realistic image simulations for calibration of weak lensing analysis methods that use training samples from the Hubble Space Telescope can therefore be affected by these trends, due to the limited volume of the universe that has been surveyed by Hubble. We will show how redshift slices in a volume-limited subsample of COSMOS can be classified as overdense or underdense (or neither), and how the statistical properties of various morphological parameters such as ellipticity, \sersicn, \btt ratio and color differ in these bins. This study requires a careful distinction between environment effects from large-scale structure, which we do not wish to include in simulations, and general trends in the galaxy population with redshift. We conclude with some guidance for how upcoming surveys can use COSMOS data as the basis for weak lensing simulations without having their conclusions overly affected by cosmic variance.  
+\rachel{I have some comments on this abtract, but prefer to do all
+  revision of the abstract at the end once the paper is finalized.}
+\end{abstract}
+
+\begin{keywords}
+ Gravitational lensing: weak, Cosmology: Large-scale structure of Universe, Galaxies: evolution {\bf ?} \rachel{Are these from the MNRAS list?} \arun{Yes.}
+\end{keywords}
+
+\rachel{Overall comment: the figures need a {\em lot} of work.  First,
+  they should be in the same order as they are referenced in the
+  text.  Second, they need to be sensibly referenced in the text; you
+  can't say ``as we see\dots'' without having a clear statement that
+  we should be looking at Fig.~4 (or whatever).  In all
+  cases, the font size is way too small, so you should enlarge it.
+  The rule of thumb for MNRAS and other journals is that the font size
+  in the figures should appear the same size as the font in the text
+  of the paper.  (This is true for axis labels, tick labels, and text
+  in the legend.)  You also need to write good captions, because some
+  people will not really read the paper, just the captions.  MNRAS
+  does not use the subfigure environment, so you should remove it.
+  Just have the figures on top of or next to each other, and then in
+  the caption refer to ``Top panel'' and ``Bottom panel'' or whatever.}
+\arun{Results have too many figures and they overlap with the bibliography. I think we should put some of the figures explicitly after the references?}
+\section{Introduction}
+\label{S:intro}
+
+\rachel{DES is far from the only survey; since I'm in HSC and the work was supported by Euclid project, it seems strange to only mention DES.  I recommend taking one of my papers (e.g., the one on image simulations from 2012) and lifting the entire list of references to surveys directly from there.}
+\arun{Done.}
+Major surveys such as the Hyper Suprime-Cam \arun{How to add shortforms?}~\citep{HSC_Overview}, Dark Energy Survey~\citep{DESC}, the KIlo-Degree Survey~\citep{KIDS}, the Panoramic Survey Telescope and Rapid Response System~\citep{PanSTARRS_2010},
+the Large Synoptic Survey Telescope~\citep{LSST_Book},Euclid\footnote{http://sci.esa.int/science-e/www/area/index.cfm?fareaid=102}, Wide-Field Infrared Survey Telescope~\citep{WFIRST_Final}
+are planned to be carried out over the next decade or two that will gather huge amounts of weak lensing data that can be used to constrain cosmological parameters more precisely than ever.
+Weak gravitational lensing probes the nature of dark energy through both the growth of structure in the universe with redshift and the dependence of distances on the expansion rate or the Hubble parameter.
+However, most of the matter in the universe is made up of dark matter which cannot be detected by most of the standard astronomical/cosmological probes. Weak lensing happens to be the cleanest probe for this purpose.
+As light from the background sources passes through the foreground cluster of galaxies and dark matter profiles, the shapes get distorted. Weak lensing also causes magnification in addition to introducing a shear.
+%Weak lensing effects need to be removed from the Cosmic Microwave Background (CMB) analysis to understand the initial conditions of the universe.
+
+For the upcoming surveys to acheive their promise, the systematic error budget must be below the statistical error budget. This would mean that the systematic errors need to be reduced from their current typical level.
+One method that is commonly used to test for the presence of systematics is image simulation. Realistic simulations use samples based on images taken from the Hubble Space Telescope (HST) such as COSMOS or UDF(Ultra Deep Field), which are deep (high redshift) surveys taken over small areas of the sky.
+The goal of this work is to understand the systematic uncertainties that might arise due to finite size of these areas when dividing the sample into redshift slices to test for 
+shear systematics as a function of redshift.
+%In almost all branches of observational cosmology, weak lensing introduces systematic error, in addition to itself being a probe of the dark matter and eventually the large scale structure of the universe.
+
+Previous studies have shown that any shape measurement method that uses second moments cannot be independent of the morphology and substructure of the galaxies involved. ({\bf rephrased from GREAT3}).
+Hence, it is important to check any method that is proposed to measure the shape of the galaxies to check against a simulation that generates images as realistic as possible.  
+With this in mind, the GREAT3 challenge~\citep{great3} was held with the aim to test and faciliate methods for measuring weak gravitational lensing by analyzing astronomical images.
+Software packages like GalSim\footnote{https://github.com/GalSim-developers/GalSim} can generate galaxy images fairly accurately, given realistic input parametes.
+The training dataset used in the challenge comes from the COSMOS survey, which we describe in sufficient detail in \S\ref{S:data}.
+While providing a good quality (high $S/N$) images to be trained over, there could be some bias introduced due to the survey being a narrow one.
+It is known \arun{cite refs.} that the shape and morphology of galaxies depend very much on their local environment. Hence, local overdensities or underdensities
+observed in the COSMOS' field of view (FOV) may cause the properties of the galaxies to be associated with the redshift, thus unable to distinguish between redshift evolution and large scale structure.
+
+%The structure of the paper is as follows. In \S\ref{S:data}, we briefly describe the COSMOS catalog that we use for our analysis.
+In this paper, we show that these large scale structure effects mentioned are indeed present in the data. The rest of the paper is structured as follows.
+In \S\ref{sub:overdensities}, we explain how we identify overdensities and underdensities, volume-limit our data in \S\ref{sub:volumelimiting} and in \S\ref{sub:axisratio},
+ we explain how we obtain axis-ratios from the images of the galaxies. Finally, we present our results in \S\ref{S:results} and end with conclusions in \S\ref{S:conclusion}.
+\section{Data}
+\label{S:data}
+%In this analysis, we consider the COSMOS sample of galaxies. 
+COSMOS~\citep{COSMOS_overview, COSMOS_generic, COSMOS_Alexie} is a flux-limited, narrow deep field survey covering a contiguous area of $1.64 \text{ deg}^2$ of sky, with images taken using the Advanced Camera for Surveys (ACS) Wide Field Channel (WFC)
+in the Hubble Space Telescope (HST). 
+
+We apply the following set of initial cuts to the data, all of which is defined in~\cite{COSMOS_Alexie}:
+\begin{enumerate}
+ \item \texttt{MU\_CLASS=1}: Unlike SExtractor's stellar index \texttt{CLASS\_STAR} which is continuous, the \texttt{MU\_MAX} method that compares the peak surface brightness to the background level,
+ provides a clear differentiation of galaxies (\texttt{MU\_CLASS=1}) from stars (\texttt{MU\_CLASS=2}) and other spurious objects like cosmic rays (\texttt{MU\_CLASS=3})
+ 
+ \item \texttt{CLEAN=1}: Objects near bright stars or those containing saturated pixels were removed and the rest classify as \emph{clean}.
+ 
+ \item \texttt{GOOD\_ZPHOT\_SOURCE=1}: This cut requires that there be a good photometric redshift, which typically is equivalent to requiring that the galaxy not be located within
+                                       the masked regions of the Subaru $BVIz$ imaging used for photometric redshifts, and that it have a successful match against an object in the Subaru imaging
+                                       \arun{copied from Mandelbaum 2011.}
+\end{enumerate}
+%\rachel{The cuts you just gave are really basic or fundamental ones.  Those should go before any discussion of more complicated derived quantities like redshifts, stellar mass, Sersic fits, etc.}
+
+Precise shape measurements, when compared to ground-based surveys, can be made since the full width half-maximum (FWHM) of the point-spread function (PSF)
+is $0.12''$. High resolution images taken through the wide F814W filter (broad \emph{I}), after correcting for the PSF, have led to collection of postage stamp images\footnote{http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-postage-stamps/} for the GREAT3 challenge~\citep{great3}, using the procedure described in \cite{SHERA}.
+Parametric models to most of these galaxies including \sersicn profile fits, 
+2 component bulge+disk fits, axis ratios etc were done for GREAT3 challenge~\citep{great3} using the method described in \cite{Claire_Fits}. This is described briefly in Sec.~\ref{sub:axisratio}.In addition to the ACS/WFC (F814W) imaging, the COSMOS field has also been imaged by Subaru Suprime-Cam ($B_j, V_j, g^+,r^+,i^+,z^+,$ NB816), the
+Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
+	      
+Photometric redshifts were determined by~\cite{COSMOS_Photoz_30band}.The accuracy of photometric redshifts for F814W $\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z_s)$ and at fainter magnitudes, i.e. F814W $\le$ 24, $\sigma_{\Delta z} = 0.012(1+z_s)$.
+The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. 
+Thus, we will exclude all galaxies that have F814W magnitude greater than 23.5. However, we will use F814W$\le 25.2$ sample in volume-limiting process (cf.~\S\ref{sub:volumelimiting}) to calculate completeness.  We take the $z<1.2$ flux-limited sample to fit redshift distribution models (cf.~\S\ref{sub:overdensities}) and then restrict ourselves to $z\le1$ sample for all further analysis.
+\rachel{Make a clear and explicit statement that we always require $z<1$ (or is it $1.2$?), we require the MAG\_AUTO in F814W to be $<23.5$, and we use the parent sample that goes to $25.2$ for stellar masses and luminosities only.}
+\arun{Done.}
+% ($S/N \sim 50$ {\bf ?} )
+% \rachel{Our catalog has the more up-to-date Ilbert et al. photo-$z$,
+%   not the older Mobasher ones.  Need to fix citations. Also, we care
+%   about the photo-$z$ accuracy beyond 22.5, so it's important to give
+%   some information about it to the depth that we actually use.  Finally, I
+%   recommend against mentioning the $S/N$ because the calculation is
+%   complicated by the correlated noise, so most people use use
+%   magnitude instead of $S/N$.}
+
+Stellar mass estimates were obtained~\citep{COSMOS_XRAY} using the Bayesian code described in~\cite{KEVIN_MSTAR}. Basically, a grid of models that vary in age, star formation history, dust content and metallicity
+are constructed to which the observed galaxy's spectral energy distribution (SED) and the photometric redshift are referenced to. At each grid point, the probability that the 
+SED fits the model are calculated and by marginalizing over all the parameters in the grid, the stellar mass probability distribution is obtained. The median of this distribution
+is taken as the stellar mass estimate. A Chabrier IMF~\citep{ChabrierIMF} is assumed.
+  
+We will analyze how the galaxy morphology and intrinsic shape depends on
+the environment in which they reside.
+
+\section{Methods}
+\label{S:methods}
+
+In order to study the variation in the intrinsic ellipticity distribution and other morphological indicators with environment, there are three main steps to be carried out.
+\begin{enumerate}
+ \item To identify overdense and underdense environments in our survey from the redshift distribution of galaxies (\S\ref{sub:overdensities}),
+ \item To limit the sample such that Malmquist bias is minimized before comparing galaxies in different redshift slices (\S\ref{sub:volumelimiting}),
+ \item To estimate the galaxy axis ratios and other morphological indicators such as  \sersic index and Bulge-to-Total ratios (\S\ref{sub:axisratio}).
+\end{enumerate}
+
+%\rachel{Here you should put a few introductory sentences about the purpose of this section. Could be something like ``To study the  variation in the intrinsic ellipticity distribution with environment, there are two main steps.  The first is to identify redshift ranges with overdense and underdense environments.  The second is to estimate galaxy axis ratios.  In this section we describe how these two steps were done.''}
+
+\subsection{Finding overdensities}
+\label{sub:overdensities}
+
+%\rachel{I am a bit confused here.  Our initial strategy was as follows: use all galaxies with $F814W<23.5$ or 25.2 to define a redshift distribution that we fit with one of our functional forms, use that to define overdensities, and then later when we're checking
+%  the variation of properties with redshift, we restrict to
+%  volume-limited subsamples.  But here you seem to be volume-limiting
+%  as the first step, which is not really appropriate. The functional
+%  forms that people have derived for surveys are predicated on the
+%  assumption that they are flux-limited.  What is the justification
+%  for volume-limiting first?  if there is none, then we should not be
+%  doing it. And then this section will have 3 subsection: finding
+%  overdensities, estimating axis ratios, and volume limiting,
+%  where we need to explain the two choices (using $B$-band evolution
+%  and using no evolution).}
+
+Weak lensing simulations will use galaxies selected in 2D redshift slices and
+we split our sample in a similar way to assign overdensities.
+\rachel{You need a clear and unambiguous statement here as to whether
+  or not you are using flux-limited or volume-limited samples.  If the
+  latter, then the section on volume-limiting needs to come {\em
+    before} this one!  As is, you definitely refer to volume-limiting
+  later in this subsection, so the volume-limiting subsection has to
+  go first.}
+\arun{It should be overdensities followed by volume limiting section. I believe there is no ambiguity now and read this paragraph a couple of times to verify that.}  
+
+%In a wide-field survey, regions of overdensities are selected  identified by computing 3-dimensional comoving densities. But in narrow field surveys like COSMOS, previous work {\bf cite } have shown
+%that regions of overdensities can be identified from a 1-dimensional histogram of redshifts, at least for low redshifts. 
+%\rachel{This is not entirely the point.  As we've discussed, the point
+%  is that we do not care about 3d densities for this particular science.  Weak lensing simulations
+%  will use galaxies selected in 2d slices, and hence we will simply do
+ % it that way as well.  But we use the comparison with a 3d analysis
+ % as a test of our method.}
+
+%\rachel{I thought we were only going up to $z=0.85$ but here you say $1$?}
+%For our sample of galaxies, volume-limited upto $z=1$ by imposing an $M_I$ cut, we fit parametric models to the histogram of photometric redshifts in order to assign values of overdensity. The figures show chi-squared and gamma functions fitted to the histogram~\citep{Redshift_modelling}.
+For our (flux-limited) sample of galaxies, up to $z=1.2$, we fit parametric models to the histogram of photometric redshift in order to assign values of overdensity. Figures show Chi-squared distribution given by
+\begin{equation}
+ p_1(z) = cz^{a-1}\exp({-bz})
+\end{equation}
+and the function given by
+\begin{equation}
+ p_2(z) = az^2\exp{(-bz^{1.5})}
+\end{equation}
+that was first presented by~\cite{Redshift_modelling} as fits to the redshift histograms. Here $a,b$ and $c$ are free parameters that are to be determined.
+%\rachel{You cannot expect people to look these up.  Give them equations in which you define $p(z)$ for each case, with labels like $p_1(z)$ and $p_2(z)$.}
+For low $z$, the volume is too small to rely the overdensity values from our model fits and hence the fit is made for $z \ge 0.3$. Our binning width, $\Delta z$ must be small enough so as to be able to identify localized overdensities/underdensities but large enough to not let our conclusions be affected by the errors in photometric redshift. 
+We choose our bins to be $0.05$ wide starting from $z=0.3$. 
+%\rachel{Were you going to use other fitting functions as a test of the method?  If so, you should introduce them here.}
+
+%The curves are normalized such that the area under the curves is equal to the number of galaxies considered. - no longer true if not using fithist.c
+
+\begin{figure}
+ \centering
+  \includegraphics[width=\columnwidth]{redshift_fluxlimited}
+  %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
+  \caption{Upper panel: Redshift distribution of flux-limited (F814W$\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+           Lower panel: Plot of $(1+\delta) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
+  \label{fig:redshift_fluxlimited}
+\end{figure}
+
+Overdensity in a redshift bin is defined as the ratio of the
+difference between the value given by the histogram and the value
+predicted by the model to the latter:
+\begin{equation}
+\delta=\frac{(N-N_{\text{mod}})}{N_{\text{mod}}}.  
+\end{equation}
+%(\rachel{This $\delta$ definition is important, so it should be in an equation environment.})
+We leave a 10\% margin of safety i.e. iff $\delta$ from both the fits is greater than $0.1$, then we call that redshift bin as an
+overdense region whereas if $\delta$ from both the fits is less than $-0.1$, then we call that as an underdense region. Redshift bins with $-0.1 < \delta < 0.1$ are neither too overdense
+nor too underdense and we call them as `neutral regions'.
+
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=\columnwidth]{fig4}
+%  \label{fig:comoving_densities}
+%  \caption{Differential comoving densities, integrated within a bin, are plotted. Red line refers to the average comoving density over the entire volume under consideration. 
+%           The green lines correspond to the 0.9 and 1.1 times the overall average.}
+% \end{figure}
+
+We thus identify the regions $z=0.30-0.40, 0.65-0.75, 0.80-0.85$ as overdense, $z=0.55-0.65, 0.75-0.80$ as underdense and $z=0.40-0.55$ as unclassified. Although, the $z=0.40-0.55$ bin
+appears to be underdense, for reasons mentioned in \S\ref{sub:volumelimiting}, we will not call them underdense.
+
+Our classification is not very rigorous since it considers only the counts in redshift slices and compares with models that only approximately describe the redshift distribution of galaxies.
+Moreover, the photometric redshifts become less accurate as we go to higher redshifts (cf.~\S\ref{S:data}) and no information about structure in transverse direction has been taken into account.
+Thus, it is important to cross-check with a more careful study of the density fields in the same field of view.
+~\cite{Kovac_Density10k}, using a sample of $\sim 10,000$ zCOSMOS spectra sources with $I_{AB}<22.5$, have reconstructed the three dimensional overdensity field up to $z\sim 1$.
+In spite of the above mentioned shortcomings, our classification of overdensities and underdensities agrees with this work done, except for the last two high redshift bins.
+We believe that this disagreement is due to the errors in our photometric redshifts and the overdensity reported in $z=0.875-1$ slice
+is observed by us in $z=0.80-0.85$ slice.
+\rachel{Say why you are doing this comparison with Kovac et al.} \arun{Done.}
+
+\subsection{Volume limiting}
+\label{sub:volumelimiting}
+COSMOS is a flux-limited survey and is therefore affected by Malmquist bias, i.e. at higher redshifts, the brighter galaxies are preferentially observed.
+Our analysis involves comparing galaxies in different redshift slices to find significant differences in morphology, if any, so with a flux-limited sample, we would be comparing only the bright galaxies at high redshifts with
+bright and faint galaxies at low redshifts. For a fair comparison, we must restrict ourselves to bright galaxies at all redshifts and this is acheived by volume-limiting the sample.
+%\rachel{Explain why you are doing this.  Before saying {\em how} you
+%  generate a volume-limited sample, explain {\em why} you are
+%  generating one.}
+We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on $K$-corrected $I$-band magnitudes, denoted as $M_I$.
+\rachel{Is it $i$ band, or $I$ band?  Check which one and then be  self-consistent throughout the text.}\arun{I think they call it $I_{814}$, so $I$.}
+Since the parent sample contains fainter galaxies, upto F814W=25.2, we compare the distribution of the F814W=23.5 sample with the samples containing fainter galaxies for high redshift bins, to see where the sample is no longer complete.
+% \begin{figure}
+%  \centering
+%  a) \includegraphics[width=\columnwidth]{volume_limiting_pdf}
+%  b) \includegraphics[width=\columnwidth]{volume_limiting_cdf}
+%  \label{fig:volume_limiting_dist}
+%  \caption{ ... }
+% \end{figure}
+
+At $M_I\sim-22.0$, we see the sample is beginning to be biased in the $0.9<z<1.0$ bin due to the flux limit. We obtain 97.84\% completeness in this bin for $M_I$, where completeness is defined as the ratio between the number of galaxies in F814W$\le$23.5 and in F814W$\le$25.2 samples.
+Thus the sample $z\le1$ and $M_I<-22$ is at least 97.84\% complete. Fig.~\ref{fig:2Dhist} shows that at $M_I<-22$, we are not affected by flux limit yet. 
+
+%We see that the region between $0.85<z<1.0$ is neither overdense nor underdense according to our model and hence is not going to be considered for further analysis.
+The region between $0.85<z<1.0$ is only moderately overdense and we do not seem to have as many underdense regions to compare with. It would rather be advantageous to disregard this region
+and redo the volume limiting procedure.
+We relax our luminosity cut %to $-20.8$
+so that the sample is volume-limited \emph{not} until $z=1$ but until $z=0.85$. 
+We choose to impose the cut at $M_I=-20.8$, with 95.3\% completeness in the $0.8 < z \le 0.85$ bin. This increases the sample size significantly, from 7,418 galaxies to 11,169. We call this sample \s$1$.
+
+\begin{figure}
+  \centering
+   \includegraphics[width=\columnwidth]{hist2d_mag_mi}
+   \caption{2-D histogram of galaxies in apparent magnitude ($m$) and absolute magnitude ($M_I$) space.}
+   \label{fig:2Dhist}
+ \end{figure}
+ 
+However, previous studies {\bf cite} have shown that absolute luminosities evolve with redshift. Thus, we must also let the luminosity cut evolve with the redshift. 
+There has been no published literature on the LF for the $I$-band, particularly for the COSMOS survey.
+We used the published result~\citep{Faber2007} for the `rate' of evolution of B-band magnitudes for DEEP2 and COMBO-17 surveys, which is $ \Delta M_B^* \sim -1.23$ mag per unit redshift, for both blue and red galaxies combined together.
+Typically, estimates of evolution in K-band are lesser than the estimates of evolution in B and V bands.
+Assuming that the evolution is a smooth function of the wavelength, the evolution in I-band is expected to be lesser than that of the B-band. 
+Therefore, by considering no evolution and an upper bound on the evolution, we can interpolate what the results would be like for the true $I$-band evolution.
+
+Thus, we construct a second volume-limited sample \s$2$, this time by letting the luminosity cut evolve. Starting from $M_I = -20.8$ for the $0.8<z\le0.85$ bin, we add to it $1.23$ times the difference between the
+bincenters to obtain the luminosity cut for the other (lower) redshift bins. At lower redshifts, we allow for fainter galaxies that wouldn't have passed the cut in \s$1$ and hence has more galaxies.
+
+%In our analysis, we imposed the cut on luminosity for all redshift bins while many studies have shown that the characteristic luminosity of galaxies evolve with redshift. 
+% The work that is at least close to what we expect is that of
+%~\cite{Faber2007}, who have studied the evolution of Schechter parameters in the B-band of DEEP2 and COMBO-17 surveys. We consider their reported value of $ \Delta M_B^* \sim -1.23$ per unit redshift, for both blue and red galaxies combined together.
+%Although it is the $I$-band that is of relevance to us, we expect the evolution in B-band to be an upper bound on the evolution in I-band. 
+
+
+%Alternatively, we can impose cuts on stellar mass of the galaxies instead of imposing on the luminosity. 
+%If we restrict to galaxies with masses $M$ such that $\log(M/M_\odot) \ge 10.15$, then we have at least {\bf 95.0\% } completeness.
+Alternatively, one could get around the problem of considering redshift evolution by imposing cuts on stellar mass instead of absolute luminosity in a particular band. In Fig.~\ref{fig:smf}, we show the stellar mass function (SMF) of our sample for various F814W flux limit.
+\cite{Tomczak_SMF} report the SMFs for the ZFOURGE survey, which includes COSMOS. They considered for this work, a single stellar population following a Chabrier IMF~\citep{ChabrierIMF}. 
+We plot their SMF for \emph{all} in Fig.~\ref{fig:smf} for
+reference. Their SMF is higher than ours since they reach $K_s$-band
+$5\sigma$ depth of 24.9. 
+As in the case of $M_I$ s, we compare the stellar mass in the F814W$\le$23.5 sample with that of the F814W$\le$25.2 sample. 
+The sample $\log(M/M_\odot) > 10.15$ is about 95\% complete in the redshift bin $\left[ 0.75 - 0.85\right]$ and has 10,341 galaxies in total.
+Thus, we construct a third volume-limited sample \s$3$ by imposing the stellar mass cut mentioned above. The number of galaxies in redshift slices
+are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a volume-limited sample. Stellar-mass limited sample happens to be the smallest one.
+
+\rachel{Tables need to be in a table environment, with a caption.  Also, you should include the uncategorized slices in here.} \arun{Done.}
+\begin{table} 
+\centering
+\begin{tabular}{|r|c|c|c|c|}
+ \hline
+ Redshift & Environment & \s$1$ & \s$2$ & \s$3$ \\
+ \hline
+ 0.3-0.4 & Overdense & 1726 & 2505 & 1260 \\
+ 0.4-0.475 & Neutral & 988 & 1317 & 710 \\
+ 0.475-0.55 & Neutral & 1410 & 1788 & 902 \\
+ 0.55-0.65 & Underdense & 1797 & 2193 & 1183 \\
+ 0.65-0.75 & Overdense & 4059 & 4476 & 2593 \\
+ 0.75-0.8 & Underdense & 1159 & 1196 & 675 \\
+ 0.8-0.85 & Overdense & 2428 & 2428 & 1630 \\
+\end{tabular}
+\caption{List of different redshift bins, their environmental classification and the number of galaxies in them for 3 different ways of constructing a volume-limited sample. See text for more details.}
+\label{table:GalaxyCounts}
+\end{table}
+
+\begin{figure*}
+ \centering
+ \includegraphics[width=2.4\columnwidth]{figure_generated}
+ \caption{Stellar-mass distribution for various flux-limited samples in three redshift ranges are plotted. Bins have been chosen so as to make the comparison easier with 
+          a study of SMF in the same FOV \citep{Tomczak_SMF}. At high mass, the distributions are the same for various flux limits indicating that the samples are complete in that mass range. The curves begin to separate at low masses on account of incompleteness, which determines where the mass cutoff should be to volume-limit the sample.}
+ \label{fig:smf}
+\end{figure*}
+
+There is a minor pitfall with this method. We analyse only those galaxies for which postage stamp images exist.
+12\% of galaxies that pass our cuts do not have an associated postage stamp image.
+Yet, we use the full F814W$\le$23.5 sample, irrespective of the existence of postage stamps, for identifying overdensities and in the completeness calculation for volume-limiting.
+\rachel{What do you mean we use the full sample  $<23.5$?  For what purpose?  We obviously don't use it for the fits  or shape estimates, so be specific.}
+\arun{Added saying we use the full sample for overdensity calculation and for volume-limiting.}
+Postage stamps may not exist because, given the size of the galaxy, the size of the postage stamp we want to draw around it (including enough blank space) intersects with the edge of the CCD.
+If all galaxies were the same size, this would be a purely random effect, but in fact bigger galaxies are more likely to get excluded by this cut. 
+Typically galaxies that are nearby and intrinsically very bright do not have postage stamps associated with them and this is an effect that is dominant at lower redshifts. 
+Our completeness calculation is done at high redshifts and thus we believe that our conclusions are not affected by this bias. 
+
+%Not surprisingly, we see the overdense and underdense regions obtained by the above method have local average number density higher than the global average number density after volume limiting. %Refer to Figure~\ref{fig:comoving_densities}.
+%And the environmentally neutral regions fall below or at least lie close to the 10\% margin.
+%Refitting the model to our new sample is consistent with the previous assignment of overdensities.
+
+The functional forms for the (flux-limited) redshift distribution that we used in \S\ref{sub:overdensities} are not physically motivated. We fit them again to the  
+redshift distribution of a volume-limited sample (\s$1$). Referring to Fig.~\ref{fig:redshift_vollimited}, the values of $\delta$ for the $z=0.40-0.55$ bin have increased and are within $\pm 10\%$ of 0. This is the reason why in \S\ref{sub:overdensities} we classified them as neutral as opposed to underdense.
+We will see in \S\ref{S:results} that they are more similar to overdense regions as opposed to underdense regions.
+The other redshift slices seem to exhibit a consistent behavior. 
+
+\begin{figure}
+ \centering
+  \includegraphics[width=\columnwidth]{redshift_vollimited}
+  \caption{Upper panel: Redshift distribution of volume-limited ($M_I <  -20.8$) \s$1$ sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+           Lower panel: Plot of $(1+\delta) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
+  \label{fig:redshift_vollimited}
+\end{figure}
+
+% \begin{figure}
+%  \centering
+%  \includegraphics[width=\columnwidth]{../plots_20140219/comoving_densities(2b).png}
+%  \label{fig:comoving_densities}
+%  \caption{In computing comoving densities, we have chosen the following values for the $\Lambda$CDM parameters: $\Omega_m = 0.3, \Omega_\Lambda = 0.7 \text{ and } \Omega_k = 0$ with the Hubble parameter $h = 0.72$.}
+% \end{figure}
+  
+% \begin{tabular}{c|c|c|c|c|}
+%  \hline
+%  Redshift & \# of galaxies & Environment \\
+%  \hline
+%  0.30-0.35 & 726 & 1092 & Overdense \\
+%  0.35-0.40 & 1000 1413 & & Overdense \\
+%  0.40-0.45 & .. &  \\
+%  0.45 - 0.50 & & \\
+%  0.50-0.55 & & \\
+%  0.55-0.60 & 727 & 905 & Underdense \\
+%  0.60-0.65 & 1070 & 1288 & Underdense \\
+%  0.65-0.70 & 2089 & 2321 & Overdense \\
+%  0.70-0.75 & 1970 & 2155 & Overdense \\
+%  0.75-0.80 & 1159 & 1196 & Underdense \\
+%  0.80-0.85 & 2428 & 2428 & Overdense \\
+%  \hline
+% \end{tabular}
+
+In the following section, we will compare and analyze the distribution of properties of the galaxies residing in the overdense regions.
+
+\arun{Talk more about environments - Nature and nurture?}
+
+%\section{Implications/Comparisons}
+%\section{Results}
+\subsection{Describing galaxy morphology and shape}
+\label{sub:axisratio}
+
+% \rachel{As we discussed, you should get rid of the early parts of this
+%   regarding second moments, and replace it with a brief description of
+%   what shape estimates we use from GalSim (re-Gaussianization).}
+% 
+% {\bf Should explain in brief Claire's work.} \\
+
+If galaxies have elliptical isophotes, its shape and size could be defined by the axis ratio and the area enclosed by a boundary isophote. However, in real galaxy images,
+the boundary may not be well defined and the shape may not be well approximated by an ellipse. More importantly, the effect of smearing due to the point-spread function (PSF) is larger. 
+% Given the surface brightness (intensity) $I(\vec{\theta})$ of a galaxy image at every angular position $\vec{\theta}$,
+% we can define the tensor of second brightness moments as
+% \begin{equation}
+%  Q_{ij} = \frac{\int\rmd^2\theta q_I (\theta_i - \overline{\theta_i})(\theta_j - \overline{\theta_j})}{\int\rmd^2\theta q_I},
+% \end{equation}
+% where $q_I$ is a suitable chosen kernel and $\overline{\vec{\theta}}$ is the average angular coordinate, weighted by the same kernel function and $i,j\in\lbrace 1,2 \rbrace$ are the components of $\vec{\theta}$.
+% It is common to find in literature two kinds of \emph{complex }ellipticities that quantify the shape of the galaxies - $\chi$ and $\epsilon$ defined as
+% \begin{align}
+%  \chi &= \frac{Q_{11}-Q_{12}+2iQ_{12}}{Q_{11}+Q_{22}} \\ \epsilon &= \frac{Q_{11}-Q_{22}+2iQ_{12}}{Q_{11}+Q_{22}+2(Q_{11}Q_{22}-Q_{12})^{1/2}}
+% \end{align}
+% If the image has elliptical isophotes with axis ratio $q$, then 
+% \begin{equation}
+%  |\chi| = \frac{1-q^2}{1+q^2}, \;\;\; |\epsilon| = \frac{1-q}{1+q}. 
+% \end{equation}
+% 
+% 
+% Conversely, one could compute $\chi$ or $\epsilon$ for a galaxy, and obtain an effective, azimuthally averaged {\bf(?)} axis-ratio $q$. 
+% \rachel{No, that isn't possible because of the PSF.  One would have to
+%   use a PSF correction scheme.  Recommend removing much of the above discussion.}
+% \arun{Should I remove these even if we plan to use the ellipticities from the second moments?} 
+
+The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of~\cite{HS03} (hereafter HS03).
+This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
+intrinsic image of $f$, is $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
+estimate of $I'$ even if we use an approximate form for $f$. The form assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I - M_g$, where $M_I$ and $M_g$ are the adaptive
+covariances of the measured object and PSF respectively, described in \S 2.1 of HS03, which is in turn based on~\cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
+of the galaxies, which we will refer to as `ellipticities based on moments'.
+
+Another method of estimate the ellipticities is to fit parametric models to each image. Two examples of the models are
+\begin{enumerate}
+ \item a \sersic profile given by the expression 
+       \begin{equation} 
+    S = \Sigma_{1/2}\exp{\left( -k(R/R_{\text{eff}})^{1/n} -1 \right)},
+       \end{equation}
+       \item two \sersic component fits: de Vaucoulers bulge $(n=4)$ + exponential disc profile $(n=1)$,
+\end{enumerate}
+where \begin{align*} R^2 = & ((x-x_0)\cos\Phi+(y-y_0)\sin\Phi)^2  \\ & + ((y-y_0)\cos\Phi-(x-x_0)\sin\Phi)^2/q^2, \end{align*}
+$R_{\text{eff}}$ is the half-light radius of the profile, $\Sigma_{1/2}$ is the surface brightness at $R=R_{\text{eff}}$, $(x_0,y_0)$ is the centroid of the image,
+$\Phi$ is the profile rotation angle, $n$ is the \sersic index, $k$ is a $n$-dependent normalization factor and $q$ is the axis ratio of the elliptical isophotes.
+Thus, the \sersic profile has 7 free parameters. The bulge+disk model has 10 free parameters since the \sersic indices are fixed as 1 and 4
+and both the profiles are required to have the same centroid $(x_0,y_0)$. Best-fit parameters were found, by minimizing the weighted
+sum of the difference between the image and the PSF-convolved mode
+using Levenberg-Marquardt minimization, \texttt{mpfit2fun} in IDL~\citep{mpfit2fun}. More details about the fit can be found
+in~\cite{Claire_Fits}.
+
+The quantities that we would use from the single \sersic profile fits are the \sersic index and axis ratio
+and from the bulge+disk fits will be the \btt ratio given by ${\Sigma_{1/2}(n=4)}/{\left(\Sigma_{1/2}(n=4)+\Sigma_{1/2}(n=1)\right)}$.
+
+
+\rachel{This section must end with a clear list of the quantities we
+  are using from Claire's fits, and from the re-Gaussianization shear
+  estimation routine.} \arun{It does.}
+
+\section{Results}
+\label{S:results}
+Having identified the overdense and underdense regions in a volume-limited sample (\S\ref{sub:overdensities}, \S\ref{sub:volumelimiting}), we will now see in this section if the morphological
+parameters of the galaxies, listed in \S\ref{sub:axisratio}, have any dependence on the environment that they reside in. We have 3 different ways of volume-limiting our sample
+\begin{enumerate}
+ \item no redshift evolution of luminosity cut
+ \item use $B$-band evolution rate for $I$-band luminosities
+ \item impose stellar mass cuts instead of luminosity
+\end{enumerate}
+and we will present our results in each of the 3 cases. 
+
+\rachel{Give a big picture summary of the goal of this section.  You
+  are taking the results from the previous section and doing what with
+  them, and why?}
+
+\rachel{What is entirely missing from this section is the systematic presentation that we discussed in meetings and via e-mail, with clear statements about how the samples have been volume-limited and selected (i.e., luminosity without evolution, with $B$-band evolution, or stellar mass selection)!  That was a critical part of the plan - where did it go?}
+\arun{I hope all the concerns are addressed now.}
+We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 
+%The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
+We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
+
+We first compare the distribution of the axis ratio in \emph{all}
+overdense bins and \emph{all} underdense bins in Fig.~\ref{fig:axisratio_all}. Unless otherwise mentioned, the axis ratios refer to the values obtained using the method of~\cite{Claire_Fits}.
+The cumulative distinction functions are also plotted alongside in order to be able to visualize the `distance' between the distributions.
+The p-value from both the KS and AD tests are well below 0.05 (\rachel{give the actual numbers!} \arun{It's in the table.}), 
+so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level.
+(\rachel{this is a super important result - show the figure!}) \arun{Fig.~\ref{fig:axisratio_all}}.
+It is possible that the disagreement between the distributions is, at least partly, due to the fact that the overdense and underdense sample have different redshift distributions.
+
+\begin{table}
+ \centering
+ \begin{tabular}[\columnwidth]{ | r | c | c | c | c | }
+  \hline
+  %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
+  Redshift bins & Tests & \s$1$ & \s$2$ & \s$3$ \\
+  \hline
+  All overdense vs. & K-S & 1.1e-4 & 3e-5 & 0.0 \\
+  All underdense    & A-D & 1e-5 & 0.0 & 0.0 \\ \hline 
+  $z:[0.65,0.75]$ (OD) vs. & K-S & 0.613 & 0.431 & 0.231 \\
+  $z:[0.80,0.85]$ (OD) & A-D & 0.494 & 0.237 & 0.130 \\ \hline
+  $z:[0.65,0.75]$ (OD) vs & K-S & 5.8e-4 & 2e-5 & 0.0 \\
+  $z:[0.55,0.65]$ (UD) & A-D & 9.8e-4 & 0.0 & 0.0 \\ \hline
+ \end{tabular}
+ \caption{\arun{I can't get the vertical lines in MNRAS:( \\}
+ $p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the three ways of generating a volume-limited sample (See \S\ref{sub:volumelimiting}).
+          }
+ \label{table:pvalues_all}
+\end{table}
+
+\begin{figure*}
+ \centering
+ \includegraphics[width=2.3\columnwidth]{axis_ratio_all_all}
+ %\includegraphics[width=0.66\columnwidth]{axis_ratio_all.eps}
+ %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
+ %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
+ \caption{The distributions of axis ratios in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
+ and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table.~\ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant.}
+ \label{fig:axisratio_all}
+\end{figure*}
+
+
+\begin{figure*}
+ \centering
+ \includegraphics[width=2.3\columnwidth]{axis_ratio_odod}
+ %a) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot65-0dot75.eps} \
+ %b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot80-0dot85.eps} \\
+ %c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot80-0dot85.eps} \
+ %d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot55-0dot65_0dot75-0dot8.eps} \
+ \caption{Comparison in similar environments: Axis ratios of galaxies in two overdense redshift bins, $z=0.65-0.75$ and $z=0.80-0.85$ are compared. $p$-values from the KS and AD test are given in Table.~\ref{table:pvalues_all}
+          \rachel{Legend must say whether the region is over or under-dense.  Choose colors that are more clearly distinct, like red vs. blue instead of green vs. blue.  Finally, there is really no reason to show all of these.  Just pick one pair, and then in the text you can point to this plot and say the conclusions are the same for the other pairs.}}
+ \label{fig:axisratio_similar}
+\end{figure*}
+
+\begin{figure*}
+ \centering
+ \includegraphics[width=2.3\columnwidth]{axis_ratio_odud}
+ %a) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot55-0dot65_0dot65-0dot75.eps} \
+ %#b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot55-0dot65.eps} \\
+ %c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot75-0dot8.eps} \
+ %d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot75-0dot80.eps} \
+ \caption{Comparison in contrasting environments: Axis ratios of galaxies in an underdense redshift bin, $z=0.55-0.65$ are compared with those in an overdense bin, $z=0.65-0.75$. $p$-values from the KS and AD test are given in Table.~\ref{table:pvalues_all}
+          \rachel{I find it strange that you don't have this plot for the overall sample, only for pairs of regions.  This seems completely backwards to me: I would show the results for the overall underdense and overdense samples, and then say that you consistently get the same results if you consider pairs of bins, i.e., that it's not just dominated by one bin but is a general result (the text can give $p$-values for the other cases).}}
+ \label{fig:axisratio_contrasting}
+\end{figure*}
+
+
+\begin{figure*}
+ \centering
+ a) \includegraphics[width=0.9\columnwidth]{rms_ellip1.eps} \
+ b) \includegraphics[width=0.9\columnwidth]{rms_ellip2_noevolution.eps} \\
+ \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
+          Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
+          are $1\sigma$ errorbars obtained by bootstrapping.}
+ \label{fig:rms_ellip}
+\end{figure*}
+
+\begin{figure*}
+ \centering
+ a) \includegraphics[width=0.9\columnwidth]{rms_ellip1_Bbandevolution_masscut.eps} \
+ b) \includegraphics[width=0.9\columnwidth]{rms_ellip2_Bbandevolution_masscut.eps} \\
+ \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
+          Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
+          are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the sample where the luminosity cut evolves by -1.23 per unit redshift (\s$2$) and the unfilled
+          points correspond to the sample obtained from stellar mass cuts (\s$3$).}
+ \label{fig:rms_ellip_Bband_mass}
+\end{figure*}
+
+To show that that is not the case, we will compare distributions between two overdense / underdense redshift bins, where we expect to find similarity, and between an overdense and underdense regions,
+where we expect the distributions to differ.
+Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} are examples showing that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
+Similar conclusion can be arrived at by comparing other redshift bins.
+
+%The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
+%or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
+It is useful to consider the root mean square ellipticity, a statistic that can characterize the shape of the population/sample of galaxies.
+For the luminosity-selected sample without any evolution, RMS ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}. As one can see, the underdense regions
+have significantly higher values for RMS ellipticities when compared to the overdense regions. Note in particular that we've been able to capture the narrow overdense bin $0.75\le z < 0.80$.  
+There is (almost) no redshift dependence in the figure.
+
+The dependence on the local environment seems to make sense. Overdense regions typically have young, spiral galaxies which have high $q$ and hence low RMS ellipticity. 
+On the contrary, the underdense regions typically have old, elliptical galaxies and thus low $q$ and high RMS ellipticity.
+
+From Figs.~\ref{fig:redshift_fluxlimited} and~\ref{fig:redshift_vollimited},
+the region $0.4\le z < 0.55$ show signs of being marginally underdense but have low RMS ellipticities too that agree with the rest of the overdense regions.
+
+When the B-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the ellipticity at lower redshifts can be observed. We plot these alongside with stellar-mass selected samples, where a similar trend is found, in Fig.~\ref{fig:rms_ellip_Bband_mass}. 
+
+For other morphological parameters, we do not the distributions themselves directly. For \sersic profile fits, it gets tricky since we truncate the \sersic index at 6. 
+For \btt ratios, we force the value to be greater than 0.05 \arun{What exactly do we do here?}. We will understand the dependence of these quantities on environment by computing the median values in different redshift bins.
+We choose median over mean since it is more robust to the truncation effects.
+Figure(s) \ref{fig:median_sersicn} show the median of the \sersic index with and without taking into account of the luminosity evolution. Median values obtained using stellar mass selected samples are plotted alongside for reference.
+We observe that the overdense regions tend to have higher \sersic index than the adjacent underdense ones.
+Figure(s) \ref{fig:median_dvcbtt} show the variation of median \btt ratio with redshift. We see that the bulge component is more in overdense regions than in the underdense regions.
+These two observations are consistent with each other since higher \sersic index implies higher bulge component which are typical in young galaxies found in overdense regions.
+%We chose median over mean since \sersic n greater than 6 are truncated to 6. This affects the mean statistic more than the median.
+\begin{figure*}
+ \centering
+ \includegraphics[width=\columnwidth]{median_sersicn}
+ \includegraphics[width=\columnwidth]{median_sersicn(2)}
+ \caption{Left:}
+ \label{fig:median_sersicn}
+\end{figure*}
+
+\begin{figure*}
+ \centering
+ \includegraphics[width=\columnwidth]{median_dvcbtt}
+ \includegraphics[width=\columnwidth]{median_dvcbtt(2)}
+ \caption{something else}
+ \label{fig:median_dvcbtt}
+\end{figure*}
+
+\section{Conclusion}
+\label{S:conclusion}
+
+We have shown that 
+\section*{Acknowledgments}
+
+AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and
+program HST-AR-12857.01-A, provided by NASA through a grant from the
+Space Telescope Science Institute, which is operated by the
+Association of Universities for Research in Astronomy, Incorporated,
+under NASA contract NAS5-26555. AK and RM thank Alexie Leauthaud for many useful discussions.
+
+
+%\begin{thebibliography}
+\bibliography{ref}
+%\end{thebibliography}
+\end{document}
+
+

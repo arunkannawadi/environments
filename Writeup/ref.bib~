@@ -447,7 +447,7 @@ archivePrefix = "arXiv",
   adsnote = {Provided by the SAO/NASA Astrophysics Data System}
 }
 
-@INPROCEEDINGS{mpfit2dfun,
+@INPROCEEDINGS{mpfit2fun,
    author = {{Markwardt}, C.~B.},
     title = "{Non-linear Least-squares Fitting in IDL with MPFIT}",
 booktitle = {Astronomical Data Analysis Software and Systems XVIII},

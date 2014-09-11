@@ -162,7 +162,7 @@ According to our current understanding, galaxy shapes and morphologies should de
 \rachel{DES is far from the only survey; since I'm in HSC and the work was supported by Euclid project, it seems strange to only mention DES.  I recommend taking one of my papers (e.g., the one on image simulations from 2012) and lifting the entire list of references to surveys directly from there.}
 \arun{Done.}
 Major surveys such as the Hyper Suprime-Cam \arun{How to add shortforms?}~\citep[HSC;][]{HSC_Overview}, Dark Energy Survey~\citep[DESC;][]{DESC}, the KIlo-Degree Survey~\citep[KIDS;][]{KIDS}, the Panoramic Survey Telescope and Rapid Response System~\citep[PanSTARRS;][]{PanSTARRS_2010},
-the Large Synoptic Survey Telescope~\citep[LSST;][]{LSST_Book},Euclid\footnote{http://sci.esa.int/science-e/www/area/index.cfm?fareaid=102}, Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_Final}
+the Large Synoptic Survey Telescope~\citep[LSST;][]{LSST_Book}, Euclid\footnote{http://sci.esa.int/science-e/www/area/index.cfm?fareaid=102}, Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_Final}
 are planned to be carried out over the next decade or two that will gather huge amounts of weak lensing data that can be used to constrain cosmological parameters more precisely than ever.
 Weak gravitational lensing probes the nature of dark energy through both the growth of structure in the universe with redshift and the dependence of distances on the expansion rate or the Hubble parameter.
 However, most of the matter in the universe is made up of dark matter which cannot be detected by most of the standard astronomical/cosmological probes. Weak lensing happens to be the cleanest probe for this purpose.
@@ -417,7 +417,7 @@ are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a vo
  0.75-0.8 & Underdense & 1159 & 1196 & 675 \\
  0.8-0.85 & Overdense & 2428 & 2428 & 1630 \\
 \end{tabular}
-\caption{List of different redshift bins, their environmental classification and the number of galaxies in them for 3 different ways of constructing a volume-limited sample. See text for more details.}
+\caption{List of different redshift bins, their environmental classification and the number of galaxies binwise for volume-limited samples constructed in three different ways: using hard luminosity cut (\s$1$), letting the luminosity cut evolve with redshift (\s$2$) and imposing stellar-mass cuts (\s$3$).}
 \label{table:GalaxyCounts}
 \end{table}
 
@@ -594,9 +594,7 @@ It is possible that the disagreement between the distributions is, at least part
   $z:[0.65,0.75]$ (OD) vs & K-S & 5.8e-4 & 2e-5 & 0.0 \\
   $z:[0.55,0.65]$ (UD) & A-D & 9.8e-4 & 0.0 & 0.0 \\ \hline
  \end{tabular}
- \caption{\arun{I can't get the vertical lines in MNRAS:( \\}
- $p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the three ways of generating a volume-limited sample (See \S\ref{sub:volumelimiting}).
-          }
+ \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.}
  \label{table:pvalues_all}
 \end{table}
 
@@ -606,7 +604,7 @@ It is possible that the disagreement between the distributions is, at least part
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
- \caption{The distributions of axis ratios in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
+ \caption{The distributions of axis ratios of galaxies in \emph{all} overdense (OD) and \emph{all} underdense (UD) regions in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
  and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table.~\ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant.}
  \label{fig:axisratio_all}
 \end{figure*}
@@ -679,7 +677,7 @@ From Figs.~\ref{fig:redshift_fluxlimited} and~\ref{fig:redshift_vollimited},
 the region $0.4\le z < 0.55$ show signs of being marginally underdense but have low RMS ellipticities too that agree with the rest of the overdense regions.
 
 When the B-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the ellipticity at lower redshifts can be observed. We plot these alongside with stellar-mass selected samples, where a similar trend is found, in Fig.~\ref{fig:rms_ellip_Bband_mass}. 
-
+Such a trend is not observed in axis ratios based on second moments. 
 For other morphological parameters, we do not the distributions themselves directly. For \sersic profile fits, it gets tricky since we truncate the \sersic index at 6. 
 For \btt ratios, we force the value to be greater than 0.05 \arun{What exactly do we do here?}. We will understand the dependence of these quantities on environment by computing the median values in different redshift bins.
 We choose median over mean since it is more robust to the truncation effects.

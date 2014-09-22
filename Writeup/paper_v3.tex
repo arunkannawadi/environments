@@ -281,15 +281,15 @@ we split our sample in a similar way to assign overdensities.
 %\rachel{I thought we were only going up to $z=0.85$ but here you say $1$?}
 %For our sample of galaxies, volume-limited upto $z=1$ by imposing an $M_I$ cut, we fit parametric models to the histogram of photometric redshifts in order to assign values of overdensity. The figures show chi-squared and gamma functions fitted to the histogram~\citep{Redshift_modelling}.
 For our (flux-limited) sample of galaxies, up to $z=1.2$, we fit parametric models to the histogram of photometric redshift in order to assign values of overdensity. Figures show Chi-squared distribution given by
-\begin{equation}
- p_1(z) = cz^{a-1}\exp({-bz})
-\end{equation}
+\begin{align}
+ &p_1(z) \sim z^{a-1}\exp({-bz}) \\
+\end{align}
 and the function given by
 \begin{equation}
- p_2(z) = az^2\exp{(-bz^{1.5})}
+ p_2(z) \sim z^2\exp{\left(-\left(\frac{z}{z_0}\right)^{1.5}\right)}
 \end{equation}
 that was first presented by~\cite{Redshift_modelling} as fits to the
-redshift histograms. \rachel{(To avoid ambiguity, you should use avoid
+redshift histograms. The normalization constants depend not only on the parameters but also on the lower and the upper limit of the redshifts considered. \rachel{(To avoid ambiguity, you should use avoid
   using the same symbol in both equations.  For example you could turn
   the $b$'s into $b_1$ and $b_2$.  Also, the normalization factors out
   front do not matter - they are not something that you fit for.  I

@@ -220,9 +220,9 @@ Parametric models to most of these galaxies including \sersicn profile fits,
 2 component bulge+disk fits, axis ratios etc were done for GREAT3 challenge~\citep{great3} using the method described in \cite{Claire_Fits}. This is described briefly in Sec.~\ref{sub:axisratio}.In addition to the ACS/WFC (F814W) imaging, the COSMOS field has also been imaged by Subaru Suprime-Cam ($B_j, V_j, g^+,r^+,i^+,z^+,$ NB816), the
 Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
 	      
-Photometric redshifts were determined by~\cite{COSMOS_Photoz_30band}.The accuracy of photometric redshifts for F814W $\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z_s)$ and at fainter magnitudes, i.e. F814W $\le$ 24, $\sigma_{\Delta z} = 0.012(1+z_s)$.
+Photometric redshifts were determined by~\cite{COSMOS_Photoz_30band}.The accuracy of photometric redshifts for $m_\text{F814W}\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z_s)$ and at fainter magnitudes, i.e. $m_\text{F814W}\le$ 24, $\sigma_{\Delta z} = 0.012(1+z_s)$.
 The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. 
-Thus, we will exclude all galaxies that have F814W magnitude greater than 23.5. However, we will use F814W$\le 25.2$ sample in volume-limiting process (cf.~\S\ref{sub:volumelimiting}) to calculate completeness.  We take the $z<1.2$ flux-limited sample to fit redshift distribution models (cf.~\S\ref{sub:overdensities}) and then restrict ourselves to $z\le1$ sample for all further analysis.
+Thus, we will exclude all galaxies that have F814W magnitude greater than 23.5. However, we will use $m_\text{F814W}\le 25.2$ sample in volume-limiting process (cf.~\S\ref{sub:volumelimiting}) to calculate completeness.  We take the $z<1.2$ flux-limited sample to fit redshift distribution models (cf.~\S\ref{sub:overdensities}) and then restrict ourselves to $z\le1$ sample for all further analysis.
 % ($S/N \sim 50$ {\bf ?} )
 % \rachel{Our catalog has the more up-to-date Ilbert et al. photo-$z$,
 %   not the older Mobasher ones.  Need to fix citations. Also, we care
@@ -306,7 +306,7 @@ We choose our bins to be $0.05$ wide starting from $z=0.3$.
  \centering
   \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
-  \caption{Upper panel: Redshift distribution of flux-limited (F814W$\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+  \caption{Upper panel: Redshift distribution of flux-limited ($m_\text{F814W}\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
            Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
   \label{fig:redshift_fluxlimited}
 \end{figure}
@@ -364,13 +364,13 @@ bright and faint galaxies at low redshifts. For a fair comparison, we must restr
 %\rachel{Explain why you are doing this.  Before saying {\em how} you
 %  generate a volume-limited sample, explain {\em why} you are
 %  generating one.}
-We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on $K$-corrected $I$-band magnitudes, denoted as $M_I$.
+We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on $K$-corrected $F814W$-band magnitudes, denoted as $M_\text{F814W}$.
 \rachel{Is it $i$ band, or $I$ band?  Check which one and then be
   self-consistent throughout the text.}\arun{I think they call it
   $I_{814}$, so $I$.}
 \rachel{But you are still being ambiguous in sometimes calling it $I$
   and other times F814W.  Pick one.}
-Since the parent sample contains fainter galaxies, upto F814W=25.2, we compare the distribution of the F814W=23.5 sample with the samples containing fainter galaxies for high redshift bins, to see where the sample is no longer complete.
+Since the parent sample contains fainter galaxies, upto $m_\text{F814W}=25.2$, we compare the distribution of the $m_\text{F814W}=23.5$ sample with the samples containing fainter galaxies for high redshift bins, to see where the sample is no longer complete.
 % \begin{figure}
 %  \centering
 %  a) \includegraphics[width=\columnwidth]{volume_limiting_pdf}
@@ -379,20 +379,20 @@ Since the parent sample contains fainter galaxies, upto F814W=25.2, we compare t
 %  \caption{ ... }
 % \end{figure}
 
-At $M_I\sim-22.0$, we see the sample is beginning to be biased in the $0.9<z<1.0$ bin due to the flux limit. We obtain 97.84\% completeness in this bin for $M_I$, where completeness is defined as the ratio between the number of galaxies in F814W$\le$23.5 and in F814W$\le$25.2 samples.
-Thus the sample $z\le1$ and $M_I<-22$ is at least 97.84\% complete. Fig.~\ref{fig:2Dhist} shows that at $M_I<-22$, we are not affected by flux limit yet. 
+At $M_\text{F814W}\sim-22.0$, we see the sample is beginning to be biased in the $0.9<z<1.0$ bin due to the flux limit. We obtain 97.84\% completeness in this bin for $M_\text{F814W}$, where completeness is defined as the ratio between the number of galaxies in $m_\text{F814W}\le 23.5$ and in $m_\text{F814W}\le25.2$ samples.
+Thus the sample $z\le1$ and $M_\text{F814W}<-22$ is at least 97.84\% complete. Fig.~\ref{fig:2Dhist} shows that at $M_\text{F814W}<-22$, we are not affected by flux limit yet. 
 
 %We see that the region between $0.85<z<1.0$ is neither overdense nor underdense according to our model and hence is not going to be considered for further analysis.
 The region between $0.85<z<1.0$ is only moderately overdense and we do not seem to have as many underdense regions to compare with. It would rather be advantageous to disregard this region
 and redo the volume limiting procedure.
 We relax our luminosity cut %to $-20.8$
 so that the sample is volume-limited \emph{not} until $z=1$ but until $z=0.85$. 
-We choose to impose the cut at $M_I=-20.8$, with 95.3\% completeness in the $0.8 < z \le 0.85$ bin. This increases the sample size significantly, from 7,418 galaxies to 11,169. We call this sample \s$1$.
+We choose to impose the cut at $M_\text{F814W}=-20.8$, with 95.3\% completeness in the $0.8 < z \le 0.85$ bin. This increases the sample size significantly, from 7,418 galaxies to 11,169. We call this sample \s$1$.
 
 \begin{figure}
   \centering
    \includegraphics[width=\columnwidth]{hist2d_mag_mi}
-   \caption{2-D histogram of galaxies in apparent magnitude ($m$) and absolute magnitude ($M_I$) space.}
+   \caption{2-D histogram of galaxies in apparent magnitude ($m$) and absolute magnitude ($M_\text{F814W}$) space.}
    \label{fig:2Dhist}
  \end{figure}
  
@@ -403,7 +403,7 @@ Typically, estimates of evolution in K-band are lesser than the estimates of evo
 Assuming that the evolution is a smooth function of the wavelength, the evolution in I-band is expected to be lesser than that of the B-band. 
 Therefore, by considering no evolution and an upper bound on the evolution, we can interpolate what the results would be like for the true $I$-band evolution.
 
-Thus, we construct a second volume-limited sample \s$2$, this time by letting the luminosity cut evolve. Starting from $M_I = -20.8$ for the $0.8<z\le0.85$ bin, we add to it $1.23$ times the difference between the
+Thus, we construct a second volume-limited sample \s$2$, this time by letting the luminosity cut evolve. Starting from $M_\text{F814W} = -20.8$ for the $0.8<z\le0.85$ bin, we add to it $1.23$ times the difference between the
 bincenters to obtain the luminosity cut for the other (lower) redshift bins. At lower redshifts, we allow for fainter galaxies that wouldn't have passed the cut in \s$1$ and hence has more galaxies.
 
 %In our analysis, we imposed the cut on luminosity for all redshift bins while many studies have shown that the characteristic luminosity of galaxies evolve with redshift. 
@@ -419,7 +419,7 @@ Alternatively, one could get around the problem of considering redshift evolutio
 We plot their SMF for \emph{all} in Fig.~\ref{fig:smf} for
 reference. Their SMF is higher than ours since they reach $K_s$-band
 $5\sigma$ depth of 24.9. 
-As in the case of $M_I$ s, we compare the stellar mass in the F814W$\le$23.5 sample with that of the F814W$\le$25.2 sample. 
+As in the case of $M_\text{F814W}$ s, we compare the stellar mass in the $m_\text{F814W}\le23.5$ sample with that of the $m_\text{F814W}\le25.2$ sample. 
 The sample $\log(M/M_\odot) > 10.15$ is about 95\% complete in the redshift bin $\left[ 0.75 - 0.85\right]$ and has 10,341 galaxies in total.
 Thus, we construct a third volume-limited sample \s$3$ by imposing the stellar mass cut mentioned above. The number of galaxies in redshift slices
 are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a volume-limited sample. Stellar-mass limited sample happens to be the smallest one.
@@ -452,7 +452,7 @@ are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a vo
 
 There is a minor pitfall with this method. We analyse only those galaxies for which postage stamp images exist.
 12\% of galaxies that pass our cuts do not have an associated postage stamp image.
-Yet, we use the full F814W$\le$23.5 sample, irrespective of the existence of postage stamps, for identifying overdensities and in the completeness calculation for volume-limiting.
+Yet, we use the full $m_\text{F814W}\le23.5$ sample, irrespective of the existence of postage stamps, for identifying overdensities and in the completeness calculation for volume-limiting.
 %\rachel{What do you mean we use the full sample  $<23.5$?  For what purpose?  We obviously don't use it for the fits  or shape estimates, so be specific.}
 %\arun{Added saying we use the full sample for overdensity calculation and for volume-limiting.}
 Postage stamps may not exist because, given the size of the galaxy, the size of the postage stamp we want to draw around it (including enough blank space) intersects with the edge of the CCD.
@@ -472,7 +472,7 @@ The other redshift slices seem to exhibit a consistent behavior.
 \begin{figure}
  \centering
   \includegraphics[width=\columnwidth]{redshift_vollimited}
-  \caption{Upper panel: Redshift distribution of volume-limited ($M_I <  -20.8$) \s$1$ sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+  \caption{Upper panel: Redshift distribution of volume-limited ($M_\text{F814W} <  -20.8$) \s$1$ sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
            Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
   \label{fig:redshift_vollimited}
 \end{figure}

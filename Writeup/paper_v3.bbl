@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{24}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -78,29 +78,6 @@ S.~M. {Faber}, C.~N.~A. {Willmer}, C.~{Wolf}, D.~C. {Koo}, B.~J. {Weiner},
   Implications for Red Galaxy Formation}.
 \newblock \emph{\apj}, 665:\penalty0 265--294, August 2007.
 \newblock \doi{10.1086/519294}.
-
-\bibitem[{Green} et~al.(2012){Green}, {Schechter}, {Baltay}, {Bean}, {Bennett},
-  {Brown}, {Conselice}, {Donahue}, {Fan}, {Gaudi}, {Hirata}, {Kalirai},
-  {Lauer}, {Nichol}, {Padmanabhan}, {Perlmutter}, {Rauscher}, {Rhodes},
-  {Roellig}, {Stern}, {Sumi}, {Tanner}, {Wang}, {Weinberg}, {Wright},
-  {Gehrels}, {Sambruna}, {Traub}, {Anderson}, {Cook}, {Garnavich},
-  {Hillenbrand}, {Ivezic}, {Kerins}, {Lunine}, {McDonald}, {Penny}, {Phillips},
-  {Rieke}, {Riess}, {van der Marel}, {Barry}, {Cheng}, {Content}, {Cutri},
-  {Goullioud}, {Grady}, {Helou}, {Jackson}, {Kruk}, {Melton}, {Peddie},
-  {Rioux}, and {Seiffert}]{WFIRST_Final}
-J.~{Green}, P.~{Schechter}, C.~{Baltay}, R.~{Bean}, D.~{Bennett}, R.~{Brown},
-  C.~{Conselice}, M.~{Donahue}, X.~{Fan}, B.~S. {Gaudi}, C.~{Hirata},
-  J.~{Kalirai}, T.~{Lauer}, B.~{Nichol}, N.~{Padmanabhan}, S.~{Perlmutter},
-  B.~{Rauscher}, J.~{Rhodes}, T.~{Roellig}, D.~{Stern}, T.~{Sumi}, A.~{Tanner},
-  Y.~{Wang}, D.~{Weinberg}, E.~{Wright}, N.~{Gehrels}, R.~{Sambruna},
-  W.~{Traub}, J.~{Anderson}, K.~{Cook}, P.~{Garnavich}, L.~{Hillenbrand},
-  Z.~{Ivezic}, E.~{Kerins}, J.~{Lunine}, P.~{McDonald}, M.~{Penny},
-  M.~{Phillips}, G.~{Rieke}, A.~{Riess}, R.~{van der Marel}, R.~K. {Barry},
-  E.~{Cheng}, D.~{Content}, R.~{Cutri}, R.~{Goullioud}, K.~{Grady}, G.~{Helou},
-  C.~{Jackson}, J.~{Kruk}, M.~{Melton}, C.~{Peddie}, N.~{Rioux}, and
-  M.~{Seiffert}.
-\newblock {Wide-Field InfraRed Survey Telescope (WFIRST) Final Report}.
-\newblock \emph{ArXiv e-prints}, August 2012.
 
 \bibitem[{Hirata} and {Seljak}(2003)]{HS03}
 C.~{Hirata} and U.~{Seljak}.
@@ -190,6 +167,14 @@ C.~N. {Lackner} and J.~E. {Gunn}.
   Sky Survey galaxies}.
 \newblock \emph{\mnras}, 421:\penalty0 2277--2302, April 2012.
 \newblock \doi{10.1111/j.1365-2966.2012.20450.x}.
+
+\bibitem[{Laureijs} et~al.(2011){Laureijs}, {Amiaux}, {Arduini},
+  {Augu{\`e}res}, {Brinchmann}, {Cole}, {Cropper}, {Dabin}, {Duvet}, {Ealet},
+  and et~al.]{EuclidReport}
+R.~{Laureijs}, J.~{Amiaux}, S.~{Arduini}, J.~. {Augu{\`e}res}, J.~{Brinchmann},
+  R.~{Cole}, M.~{Cropper}, C.~{Dabin}, L.~{Duvet}, A.~{Ealet}, and et~al.
+\newblock {Euclid Definition Study Report}.
+\newblock \emph{ArXiv e-prints}, October 2011.
 
 \bibitem[{Leauthaud} et~al.(2007){Leauthaud}, {Massey}, {Kneib}, {Rhodes},
   {Johnston}, {Capak}, {Heymans}, {Ellis}, {Koekemoer}, {Le F{\`e}vre},
@@ -285,6 +270,27 @@ N.~{Scoville}, H.~{Aussel}, M.~{Brusa}, P.~{Capak}, C.~M. {Carollo},
 \newblock {The Cosmic Evolution Survey (COSMOS): Overview}.
 \newblock \emph{\apjs}, 172:\penalty0 1--8, September 2007.
 \newblock \doi{10.1086/516585}.
+
+\bibitem[{Spergel} et~al.(2013){Spergel}, {Gehrels}, {Breckinridge}, {Donahue},
+  {Dressler}, {Gaudi}, {Greene}, {Guyon}, {Hirata}, {Kalirai}, {Kasdin},
+  {Moos}, {Perlmutter}, {Postman}, {Rauscher}, {Rhodes}, {Wang}, {Weinberg},
+  {Centrella}, {Traub}, {Baltay}, {Colbert}, {Bennett}, {Kiessling},
+  {Macintosh}, {Merten}, {Mortonson}, {Penny}, {Rozo}, {Savransky},
+  {Stapelfeldt}, {Zu}, {Baker}, {Cheng}, {Content}, {Dooley}, {Foote},
+  {Goullioud}, {Grady}, {Jackson}, {Kruk}, {Levine}, {Melton}, {Peddie},
+  {Ruffa}, and {Shaklan}]{WFIRST_Final}
+D.~{Spergel}, N.~{Gehrels}, J.~{Breckinridge}, M.~{Donahue}, A.~{Dressler},
+  B.~S. {Gaudi}, T.~{Greene}, O.~{Guyon}, C.~{Hirata}, J.~{Kalirai}, N.~J.
+  {Kasdin}, W.~{Moos}, S.~{Perlmutter}, M.~{Postman}, B.~{Rauscher},
+  J.~{Rhodes}, Y.~{Wang}, D.~{Weinberg}, J.~{Centrella}, W.~{Traub},
+  C.~{Baltay}, J.~{Colbert}, D.~{Bennett}, A.~{Kiessling}, B.~{Macintosh},
+  J.~{Merten}, M.~{Mortonson}, M.~{Penny}, E.~{Rozo}, D.~{Savransky},
+  K.~{Stapelfeldt}, Y.~{Zu}, C.~{Baker}, E.~{Cheng}, D.~{Content}, J.~{Dooley},
+  M.~{Foote}, R.~{Goullioud}, K.~{Grady}, C.~{Jackson}, J.~{Kruk}, M.~{Levine},
+  M.~{Melton}, C.~{Peddie}, J.~{Ruffa}, and S.~{Shaklan}.
+\newblock {Wide-Field InfraRed Survey Telescope-Astrophysics Focused Telescope
+  Assets WFIRST-AFTA Final Report}.
+\newblock \emph{ArXiv e-prints}, May 2013.
 
 \bibitem[{The Dark Energy Survey Collaboration}(2005)]{DESC}
 {The Dark Energy Survey Collaboration}.

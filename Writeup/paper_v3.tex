@@ -162,8 +162,10 @@ According to our current understanding, galaxy shapes and morphologies should de
 \label{S:intro}
 
 Major surveys such as the Hyper Suprime-Cam \citep[HSC;][]{HSC_Overview}, Dark Energy Survey~\citep[DES;][]{DESC}, the KIlo-Degree Survey~\citep[KIDS;][]{KIDS}, the Panoramic Survey Telescope and Rapid Response System~\citep[PanSTARRS;][]{PanSTARRS_2010},
-the Large Synoptic Survey Telescope~\citep[LSST;][]{LSST_Book}, Euclid\footnote{\url{http://sci.esa.int/euclid/}, \url{http://www.euclid-ec.org}} (\rachel{cite http://adsabs.harvard.edu/abs/2011arXiv1110.3193L}), Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_Final}
-(\rachel{for WFIRST, you should actually cite the Spergel et al report that was on the arxiv in the past year, not Green et al})
+the Large Synoptic Survey Telescope~\citep[LSST;][]{LSST_Book}, Euclid\footnote{\url{http://sci.esa.int/euclid/}, \url{http://www.euclid-ec.org}} \citep{EuclidReport},
+%(\rachel{cite http://adsabs.harvard.edu/abs/2011arXiv1110.3193L}),
+Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_Final}
+%(\rachel{for WFIRST, you should actually cite the Spergel et al report that was on the arxiv in the past year, not Green et al})
 are planned to be carried out over the next decade or two that will gather huge amounts of weak lensing data that can be used to constrain cosmological parameters more precisely than ever.
 Weak gravitational lensing probes the nature of dark energy through both the growth of structure in the universe with redshift and the dependence of distances on the expansion rate or the Hubble parameter.
 However, most of the matter in the universe is made up of dark matter which cannot be detected by most of the standard astronomical/cosmological probes. Weak lensing happens to be the cleanest probe for this purpose.
@@ -202,12 +204,13 @@ We apply the following set of initial cuts to the data, all of which is defined 
  
  \item \texttt{CLEAN=1}: Objects near bright stars or those containing saturated pixels were removed and the rest classify as \emph{clean}.
  
- \item \texttt{GOOD\_ZPHOT\_SOURCE=1}: This cut requires that there be a good photometric redshift, which typically is equivalent to requiring that the galaxy not be located within
-                                       the masked regions of the Subaru $BVIz$ imaging used for photometric redshifts, and that it have a successful match against an object in the Subaru imaging
-                                       \arun{copied from Mandelbaum
-                                         2011.}
+% \item \texttt{GOOD\_ZPHOT\_SOURCE=1}: This cut requires that there be a good photometric redshift, which typically is equivalent to requiring that the galaxy not be located within
+%                                       the masked regions of the Subaru $BVIz$ imaging used for photometric redshifts, and that it have a successful match against an object in the Subaru imaging
+%                                       \arun{copied from Mandelbaum
+%                                         2011.}
+ \item \texttt{GOOD\_ZPHOT\_SOURCE =1}: This cut requires that the photometric redshifts be reliable and good enough to draw conclusions about the population. More details on what `good' refers to can be found in \cite{SHERA}
 \rachel{Need to rephrase, at least a little.  I recommend being
-  briefer and saying to see that paper for more details.}
+  briefer and saying to see that paper for more details.} \arun{Done.}
 \end{enumerate}
 %\rachel{The cuts you just gave are really basic or fundamental ones.  Those should go before any discussion of more complicated derived quantities like redshifts, stellar mass, Sersic fits, etc.}
 
@@ -304,7 +307,7 @@ We choose our bins to be $0.05$ wide starting from $z=0.3$.
   \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
   \caption{Upper panel: Redshift distribution of flux-limited (F814W$\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
-           Lower panel: Plot of $(1+\delta) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
+           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
   \label{fig:redshift_fluxlimited}
 \end{figure}
 
@@ -312,15 +315,15 @@ Overdensity in a redshift bin is defined as the ratio of the
 difference between the value given by the histogram and the value
 predicted by the model to the latter:
 \begin{equation}
-\delta=\frac{(N-N_{\text{mod}})}{N_{\text{mod}}}.  
+\delta_{g,\text{1D}}=\frac{(N-N_{\text{mod}})}{N_{\text{mod}}}.  
 \end{equation}
 %(\rachel{This $\delta$ definition is important, so it should be in an equation environment.})
-(\rachel{Call it $\delta_g$, not $\delta$, which implies matter
+(\rachel{Call it $\delta_{g,\text{1D}}$, not $\delta$, which implies matter
   overdensity.  Better yet would be $\delta_{g,1D}$, to clearly
   indicate this is based on a 1-dimensional slice through redshift
   space rather than isolating 3D overdensities.})
-We leave a 10\% margin of safety i.e. iff $\delta$ from both the fits is greater than $0.1$, then we call that redshift bin as an
-overdense region whereas if $\delta$ from both the fits is less than $-0.1$, then we call that as an underdense region. Redshift bins with $-0.1 < \delta < 0.1$ are neither too overdense
+We leave a 10\% margin of safety i.e. iff $\delta_{g,\text{1D}}$ from both the fits is greater than $0.1$, then we call that redshift bin as an
+overdense region whereas if $\delta_{g,\text{1D}}$ from both the fits is less than $-0.1$, then we call that as an underdense region. Redshift bins with $-0.1 < \delta_{g,\text{1D}} < 0.1$ are neither too overdense
 nor too underdense and we call them as `neutral regions'.
 
 % \begin{figure}
@@ -462,7 +465,7 @@ Our completeness calculation is done at high redshifts and thus we believe that 
 %Refitting the model to our new sample is consistent with the previous assignment of overdensities.
 
 The functional forms for the (flux-limited) redshift distribution that we used in \S\ref{sub:overdensities} are not physically motivated. We fit them again to the  
-redshift distribution of a volume-limited sample (\s$1$). Referring to Fig.~\ref{fig:redshift_vollimited}, the values of $\delta$ for the $z=0.40-0.55$ bin have increased and are within $\pm 10\%$ of 0. This is the reason why in \S\ref{sub:overdensities} we classified them as neutral as opposed to underdense.
+redshift distribution of a volume-limited sample (\s$1$). Referring to Fig.~\ref{fig:redshift_vollimited}, the values of $\delta_{g,\text{1D}}$ for the $z=0.40-0.55$ bin have increased and are within $\pm 10\%$ of 0. This is the reason why in \S\ref{sub:overdensities} we classified them as neutral as opposed to underdense.
 We will see in \S\ref{S:results} that they are more similar to overdense regions as opposed to underdense regions.
 The other redshift slices seem to exhibit a consistent behavior. 
 
@@ -470,7 +473,7 @@ The other redshift slices seem to exhibit a consistent behavior.
  \centering
   \includegraphics[width=\columnwidth]{redshift_vollimited}
   \caption{Upper panel: Redshift distribution of volume-limited ($M_I <  -20.8$) \s$1$ sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
-           Lower panel: Plot of $(1+\delta) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
+           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
   \label{fig:redshift_vollimited}
 \end{figure}
 
@@ -639,7 +642,7 @@ Similar conclusion can be arrived at by comparing other redshift bins.
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
  \caption{The distributions of axis ratios of galaxies in \emph{all} overdense (OD) and \emph{all} underdense (UD) regions in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
- and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table.~\ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant.}
+ and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table. \ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant.}
  \label{fig:axisratio_all}
 \end{figure*}
 

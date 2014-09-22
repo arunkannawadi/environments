@@ -222,7 +222,7 @@ Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
 	      
 Photometric redshifts were determined by~\cite{COSMOS_Photoz_30band}.The accuracy of photometric redshifts for $m_\text{F814W}\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z_s)$ and at fainter magnitudes, i.e. $m_\text{F814W}\le$ 24, $\sigma_{\Delta z} = 0.012(1+z_s)$.
 The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. 
-Thus, we will exclude all galaxies that have F814W magnitude greater than 23.5. However, we will use $m_\text{F814W}\le 25.2$ sample in volume-limiting process (cf.~\S\ref{sub:volumelimiting}) to calculate completeness.  We take the $z<1.2$ flux-limited sample to fit redshift distribution models (cf.~\S\ref{sub:overdensities}) and then restrict ourselves to $z\le1$ sample for all further analysis.
+Thus, we will exclude all galaxies that have F814W magnitude greater than 23.5. However, we will use $m_\text{F814W}\le 25.2$ sample in volume-limiting process (cf.~\S\ref{sub:volumelimiting}) to calculate completeness.  We take the $z<1.0$ flux-limited sample to fit redshift distribution models (cf.~\S\ref{sub:overdensities}) and then restrict ourselves to $z\le1$ sample for all further analysis.
 % ($S/N \sim 50$ {\bf ?} )
 % \rachel{Our catalog has the more up-to-date Ilbert et al. photo-$z$,
 %   not the older Mobasher ones.  Need to fix citations. Also, we care
@@ -280,10 +280,10 @@ we split our sample in a similar way to assign overdensities.
 
 %\rachel{I thought we were only going up to $z=0.85$ but here you say $1$?}
 %For our sample of galaxies, volume-limited upto $z=1$ by imposing an $M_I$ cut, we fit parametric models to the histogram of photometric redshifts in order to assign values of overdensity. The figures show chi-squared and gamma functions fitted to the histogram~\citep{Redshift_modelling}.
-For our (flux-limited) sample of galaxies, up to $z=1.2$, we fit parametric models to the histogram of photometric redshift in order to assign values of overdensity. Figures show Chi-squared distribution given by
-\begin{align}
- &p_1(z) \sim z^{a-1}\exp({-bz}) \\
-\end{align}
+For our (flux-limited) sample of galaxies, up to $z=1.0$, we fit parametric models to the histogram of photometric redshift in order to assign values of overdensity. Figures show Chi-squared distribution given by
+\begin{equation}
+ p_1(z) \sim z^{a-1}\exp({-bz})
+\end{equation}
 and the function given by
 \begin{equation}
  p_2(z) \sim z^2\exp{\left(-\left(\frac{z}{z_0}\right)^{1.5}\right)}
@@ -294,7 +294,7 @@ redshift histograms. The normalization constants depend not only on the paramete
   the $b$'s into $b_1$ and $b_2$.  Also, the normalization factors out
   front do not matter - they are not something that you fit for.  I
   would say $p(z)\propto$\dots to avoid 
-  the need for a normalization for which you are not actually fitting.)} Here $a,b$ and $c$ are free parameters that are to be determined.
+  the need for a normalization for which you are not actually fitting.)} Here $a,b$ and $z_0$ are free parameters that are to be determined.
 %\rachel{You cannot expect people to look these up.  Give them equations in which you define $p(z)$ for each case, with labels like $p_1(z)$ and $p_2(z)$.}
 For low $z$, the volume is too small to rely the overdensity values from our model fits and hence the fit is made for $z \ge 0.3$. Our binning width, $\Delta z$ must be small enough so as to be able to identify localized overdensities/underdensities but large enough to not let our conclusions be affected by the errors in photometric redshift. 
 We choose our bins to be $0.05$ wide starting from $z=0.3$. 

@@ -14,9 +14,10 @@
 % For correct printing on US Letter, while still working on A4
 \topmargin-1cm
 
-\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
-\newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
-
+%\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
+\newcommand{\rachel}[1]{}
+%\newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\arun}[1]{}
 \def\a{\alpha}
 \def\reff@jnl#1{{\rm#1\/}}
 
@@ -142,22 +143,10 @@ According to our current understanding, galaxy shapes and morphologies should de
  Gravitational lensing: weak --- Cosmology: Large-scale structure of Universe --- Galaxies: evolution.
 \end{keywords}
 
-\rachel{Overall comment: the figures need a {\em lot} of work.  First,
-  they should be in the same order as they are referenced in the
-  text.  Second, they need to be sensibly referenced in the text; you
-  can't say ``as we see\dots'' without having a clear statement that
-  we should be looking at Fig.~4 (or whatever).  In all
-  cases, the font size is way too small, so you should enlarge it.
-  The rule of thumb for MNRAS and other journals is that the font size
-  in the figures should appear the same size as the font in the text
-  of the paper.  (This is true for axis labels, tick labels, and text
-  in the legend.)  You also need to write good captions, because some
-  people will not really read the paper, just the captions.  MNRAS
-  does not use the subfigure environment, so you should remove it.
-  Just have the figures on top of or next to each other, and then in
-  the caption refer to ``Top panel'' and ``Bottom panel'' or whatever.}
-\arun{Results have too many figures and they overlap with the bibliography. I think we should put some of the figures explicitly after the references?}
-\rachel{No, just move the figures a bit earlier in the text.  It's okay for them to show up slightly before you actually discuss them.  The references really should be last.}
+% \rachel{Overall comment: the figures need a {\em lot} of work.  First,  they should be in the same order as they are referenced in the  text.  Second, they need to be sensibly referenced in the text; you  can't say ``as we see\dots'' without having a clear statement that  we should be looking at Fig.~4 (or whatever).  In all  cases, the font size is way too small, so you should enlarge it.  The rule of thumb for MNRAS and other journals is that the font size  in the figures should appear the same size as the font in the text  of the paper.  (This is true for axis labels, tick labels, and text  in the legend.)  You also need to write good captions, because some  people will not really read the paper, just the captions.  MNRAS
+%         does not use the subfigure environment, so you should remove it.  Just have the figures on top of or next to each other, and then in  the caption refer to ``Top panel'' and ``Bottom panel'' or whatever.} 
+%         \arun{Results have too many figures and they overlap with the bibliography. I think we should put some of the figures explicitly after the references?}
+% \rachel{No, just move the figures a bit earlier in the text.  It's okay for them to show up slightly before you actually discuss them.  The references really should be last.}
 \section{Introduction}
 \label{S:intro}
 
@@ -254,6 +243,14 @@ In order to study the variation in the intrinsic ellipticity distribution and ot
 
 \subsection{Finding overdensities}
 \label{sub:overdensities}
+\begin{figure}
+ \centering
+  \includegraphics[width=\columnwidth]{redshift_fluxlimited}
+  %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
+  \caption{Upper panel: Redshift distribution of flux-limited ($m_\text{F814W}\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
+  \label{fig:redshift_fluxlimited}
+\end{figure}
 
 %\rachel{I am a bit confused here.  Our initial strategy was as follows: use all galaxies with $F814W<23.5$ or 25.2 to define a redshift distribution that we fit with one of our functional forms, use that to define overdensities, and then later when we're checking
 %  the variation of properties with redshift, we restrict to
@@ -289,27 +286,16 @@ and the function given by
  p_2(z) \sim z^2\exp{\left(-\left(\frac{z}{z_0}\right)^{1.5}\right)}
 \end{equation}
 that was first presented by~\cite{Redshift_modelling} as fits to the
-redshift histograms. The normalization constants depend not only on the parameters but also on the lower and the upper limit of the redshifts considered. \rachel{(To avoid ambiguity, you should use avoid
-  using the same symbol in both equations.  For example you could turn
-  the $b$'s into $b_1$ and $b_2$.  Also, the normalization factors out
-  front do not matter - they are not something that you fit for.  I
-  would say $p(z)\propto$\dots to avoid 
-  the need for a normalization for which you are not actually fitting.)} Here $a,b$ and $z_0$ are free parameters that are to be determined.
+redshift histograms. The normalization constants depend not only on the parameters but also on the lower and the upper limit of the redshifts considered. 
+\rachel{(To avoid ambiguity, you should use avoid   using the same symbol in both equations.  For example you could turn   the $b$'s into $b_1$ and $b_2$.  Also, the normalization factors out  front do not matter - they are not something that you fit for.  I would say $p(z)\propto$\dots to avoid   the need for a normalization for which you are not actually fitting.)} 
+\arun{Done.}
+Here $a,b$ and $z_0$ are free parameters that are to be determined.
 %\rachel{You cannot expect people to look these up.  Give them equations in which you define $p(z)$ for each case, with labels like $p_1(z)$ and $p_2(z)$.}
 For low $z$, the volume is too small to rely the overdensity values from our model fits and hence the fit is made for $z \ge 0.3$. Our binning width, $\Delta z$ must be small enough so as to be able to identify localized overdensities/underdensities but large enough to not let our conclusions be affected by the errors in photometric redshift. 
 We choose our bins to be $0.05$ wide starting from $z=0.3$. 
 %\rachel{Were you going to use other fitting functions as a test of the method?  If so, you should introduce them here.}
 
 %The curves are normalized such that the area under the curves is equal to the number of galaxies considered. - no longer true if not using fithist.c
-
-\begin{figure}
- \centering
-  \includegraphics[width=\columnwidth]{redshift_fluxlimited}
-  %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
-  \caption{Upper panel: Redshift distribution of flux-limited ($m_\text{F814W}\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
-           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
-  \label{fig:redshift_fluxlimited}
-\end{figure}
 
 Overdensity in a redshift bin is defined as the ratio of the
 difference between the value given by the histogram and the value
@@ -358,6 +344,20 @@ evolution).
 
 \subsection{Volume limiting}
 \label{sub:volumelimiting}
+\begin{figure}
+  \centering
+   \includegraphics[width=\columnwidth]{hist2d_mag_mi}
+   \caption{2-D histogram of galaxies in apparent magnitude ($m_\text{F814W}$) and absolute magnitude ($M_\text{F814W}$) space.}
+   \label{fig:2Dhist}
+\end{figure}
+
+\begin{figure}
+  \centering
+   \includegraphics[width=\columnwidth]{MAG_histograms}
+   \caption{Distribution of $M_\text{F814W}$ for various flux-limited samples are plotted together. The vertical line corresponds to the luminosity cut of $-20.8$, below which the $m_\text{F814W}<23.5$ sample has 95.3\% of the galaxies in the $m_\text{F814W}<25.2$ sample.}
+   \label{fig:2Dhist}
+ \end{figure}
+ 
 COSMOS is a flux-limited survey and is therefore affected by Malmquist bias, i.e. at higher redshifts, the brighter galaxies are preferentially observed.
 Our analysis involves comparing galaxies in different redshift slices to find significant differences in morphology, if any, so with a flux-limited sample, we would be comparing only the bright galaxies at high redshifts with
 bright and faint galaxies at low redshifts. For a fair comparison, we must restrict ourselves to bright galaxies at all redshifts and this is acheived by volume-limiting the sample.
@@ -389,13 +389,6 @@ We relax our luminosity cut %to $-20.8$
 so that the sample is volume-limited \emph{not} until $z=1$ but until $z=0.85$. 
 We choose to impose the cut at $M_\text{F814W}=-20.8$, with 95.3\% completeness in the $0.8 < z \le 0.85$ bin. This increases the sample size significantly, from 7,418 galaxies to 11,169. We call this sample \s$1$.
 
-\begin{figure}
-  \centering
-   \includegraphics[width=\columnwidth]{hist2d_mag_mi}
-   \caption{2-D histogram of galaxies in apparent magnitude ($m$) and absolute magnitude ($M_\text{F814W}$) space.}
-   \label{fig:2Dhist}
- \end{figure}
- 
 However, previous studies {\bf cite} have shown that absolute luminosities evolve with redshift. Thus, we must also let the luminosity cut evolve with the redshift. 
 There has been no published literature on the LF for the $I$-band, particularly for the COSMOS survey.
 We used the published result~\citep{Faber2007} for the `rate' of evolution of B-band magnitudes for DEEP2 and COMBO-17 surveys, which is $ \Delta M_B^* \sim -1.23$ mag per unit redshift, for both blue and red galaxies combined together.
@@ -444,7 +437,7 @@ are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a vo
 
 \begin{figure*}
  \centering
- \includegraphics[width=2.4\columnwidth]{figure_generated}
+ \includegraphics[width=2.4\columnwidth]{SMF}
  \caption{Stellar-mass distribution for various flux-limited samples in three redshift ranges are plotted. Bins have been chosen so as to make the comparison easier with 
           a study of SMF in the same FOV \citep{Tomczak_SMF}. At high mass, the distributions are the same for various flux limits indicating that the samples are complete in that mass range. The curves begin to separate at low masses on account of incompleteness, which determines where the mass cutoff should be to volume-limit the sample.}
  \label{fig:smf}
@@ -593,28 +586,17 @@ and we will present our results in each of the 3 cases.
   the way the volume limiting was carried out), the second can be
   about morphology from Sersic index and bulge-to-total ratios.}
 
-We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 
-%The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
-We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
-
-We first compare the distribution of the axis ratio in \emph{all}
-overdense bins and \emph{all} underdense bins in
-Fig.~\ref{fig:axisratio_all}. \rachel{How was the volume-limiting
-  carried out for this?  You should say the answer to this question
-  for all figures.} Unless otherwise mentioned, the axis ratios refer to the values obtained using the method of~\cite{Claire_Fits}.
-The cumulative distinction functions are also plotted alongside in order to be able to visualize the `distance' between the distributions.
-The p-value from both the KS and AD tests are well below 0.05
-(\rachel{give the actual numbers!} \arun{It's in the table.}
-\rachel{The text does not seem to mention the table at all.  If the
-  readers are to get the numbers from it, then you need to refer to it
-here and any other place where it is relevant.}), 
-so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level.
-
-One might imagine that the disagreement between the distributions is, at least partly, due to the fact that the overdense and underdense sample have different redshift distributions.
-To show that that is not the case, we will compare distributions between two overdense / underdense redshift bins, where we expect to find similarity, and between an overdense and underdense regions,
-where we expect the distributions to differ.
-Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} are examples showing that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
-Similar conclusion can be arrived at by comparing other redshift bins.
+\subsection{Axis-ratios} 
+\begin{figure*}
+ \centering
+ \includegraphics[width=2.3\columnwidth]{axis_ratio_all}
+ %\includegraphics[width=0.66\columnwidth]{axis_ratio_all.eps}
+ %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
+ %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
+ \caption{The distributions of axis ratios of galaxies in \emph{all} overdense (OD) and \emph{all} underdense (UD) regions in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
+ and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table. \ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant.}
+ \label{fig:axisratio_all}
+\end{figure*}
 
 \begin{table}
  \centering
@@ -633,18 +615,6 @@ Similar conclusion can be arrived at by comparing other redshift bins.
  \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.}
  \label{table:pvalues_all}
 \end{table}
-
-\begin{figure*}
- \centering
- \includegraphics[width=2.3\columnwidth]{axis_ratio_all_all}
- %\includegraphics[width=0.66\columnwidth]{axis_ratio_all.eps}
- %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
- %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
- \caption{The distributions of axis ratios of galaxies in \emph{all} overdense (OD) and \emph{all} underdense (UD) regions in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
- and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table. \ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant.}
- \label{fig:axisratio_all}
-\end{figure*}
-
 
 \begin{figure*}
  \centering
@@ -668,27 +638,50 @@ Similar conclusion can be arrived at by comparing other redshift bins.
  \label{fig:axisratio_contrasting}
 \end{figure*}
 
+We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 
+%The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
+We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
 
-\begin{figure*}
- \centering
- a) \includegraphics[width=0.9\columnwidth]{rms_ellip1.eps} \
- b) \includegraphics[width=0.9\columnwidth]{rms_ellip2_noevolution.eps} \\
+We first compare the distribution of the axis ratio in \emph{all}
+overdense bins and \emph{all} underdense bins in Fig.~\ref{fig:axisratio_all}.
+\rachel{How was the volume-limiting carried out for this?  You should say the answer to this question  for all figures.} 
+\arun{The caption mentions it.}
+Unless otherwise mentioned, the axis ratios refer to the values obtained using the method of~\cite{Claire_Fits}.
+The cumulative distinction functions are also plotted alongside in order to be able to visualize the `distance' between the distributions.
+Referring to the first two rows in Table~\ref{table:pvalues_all}, we see that the p-values from both the KS and AD tests are well below 0.05
+(\rachel{give the actual numbers!} 
+\arun{It's in the table.} 
+\rachel{The text does not seem to mention the table at all.  If thereaders are to get the numbers from it, then you need to refer to it here and any other place where it is relevant.}), 
+\arun{Done.}
+so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level.
+
+One might imagine that the disagreement between the distributions is, at least partly, due to the fact that the overdense and underdense sample have different redshift distributions.
+To show that that is not the case, we will compare distributions between two overdense / underdense redshift bins, where we expect to find similarity, and between an overdense and underdense regions,
+where we expect the distributions to differ.
+Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} are examples showing that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
+Similar conclusion can be arrived at by comparing other redshift bins.
+
+
+\begin{figure}
+ %\centering
+ a) \includegraphics[width=1.1\columnwidth]{rms_ellip1.eps} \
+ b) \includegraphics[width=1.1\columnwidth]{rms_ellip2_noevolution.eps} \\
  \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
           Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
           are $1\sigma$ errorbars obtained by bootstrapping.}
  \label{fig:rms_ellip}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}
- \centering
- a) \includegraphics[width=0.9\columnwidth]{rms_ellip1_Bbandevolution_masscut.eps} \
- b) \includegraphics[width=0.9\columnwidth]{rms_ellip2_Bbandevolution_masscut.eps} \\
+\begin{figure}
+ %\centering
+ a) \includegraphics[width=1.1\columnwidth]{rms_ellip1_Bbandevolution_masscut.eps} \
+ b) \includegraphics[width=1.1\columnwidth]{rms_ellip2_Bbandevolution_masscut.eps} \\
  \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
           Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
           are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the sample where the luminosity cut evolves by -1.23 per unit redshift (\s$2$) and the unfilled
           points correspond to the sample obtained from stellar mass cuts (\s$3$).}
  \label{fig:rms_ellip_Bband_mass}
-\end{figure*}
+\end{figure}
 
 %The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
 %or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
@@ -713,25 +706,25 @@ We observe that the overdense regions tend to have higher \sersic index than the
 Figure(s) \ref{fig:median_dvcbtt} show the variation of median \btt ratio with redshift. We see that the bulge component is more in overdense regions than in the underdense regions.
 These two observations are consistent with each other since higher \sersic index implies higher bulge component which are typical in young galaxies found in overdense regions.
 %We chose median over mean since \sersic n greater than 6 are truncated to 6. This affects the mean statistic more than the median.
-\begin{figure*}
- \centering
- \includegraphics[width=\columnwidth]{median_sersicn}
- \includegraphics[width=\columnwidth]{median_sersicn(2)}
+\begin{figure}
+ %\centering
+ \includegraphics[width=1.1\columnwidth]{median_sersicn}
+ \includegraphics[width=1.1\columnwidth]{median_sersicn(2)}
  \caption{Median values of the \sersic indices for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
           Median values for the \s$2$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
           The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}
  \label{fig:median_sersicn}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}
- \centering
- \includegraphics[width=\columnwidth]{median_dvcbtt}
- \includegraphics[width=\columnwidth]{median_dvcbtt(2)}
+\begin{figure}
+ %\centering
+ \includegraphics[width=1.1\columnwidth]{median_dvcbtt}
+ \includegraphics[width=1.1\columnwidth]{median_dvcbtt(2)}
   \caption{Median values of the \btt ratios for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
           Median values for the \s$2$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
           The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}
  \label{fig:median_dvcbtt}
-\end{figure*}
+\end{figure}
 
 \section{Conclusion}
 \label{S:conclusion}

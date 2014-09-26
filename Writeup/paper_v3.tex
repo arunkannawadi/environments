@@ -14,10 +14,10 @@
 % For correct printing on US Letter, while still working on A4
 \topmargin-1cm
 
-%\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
-\newcommand{\rachel}[1]{}
-%\newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
-\newcommand{\arun}[1]{}
+\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
+%\newcommand{\rachel}[1]{}
+\newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
+%\newcommand{\arun}[1]{}
 \def\a{\alpha}
 \def\reff@jnl#1{{\rm#1\/}}
 
@@ -143,10 +143,10 @@ According to our current understanding, galaxy shapes and morphologies should de
  Gravitational lensing: weak --- Cosmology: Large-scale structure of Universe --- Galaxies: evolution.
 \end{keywords}
 
-% \rachel{Overall comment: the figures need a {\em lot} of work.  First,  they should be in the same order as they are referenced in the  text.  Second, they need to be sensibly referenced in the text; you  can't say ``as we see\dots'' without having a clear statement that  we should be looking at Fig.~4 (or whatever).  In all  cases, the font size is way too small, so you should enlarge it.  The rule of thumb for MNRAS and other journals is that the font size  in the figures should appear the same size as the font in the text  of the paper.  (This is true for axis labels, tick labels, and text  in the legend.)  You also need to write good captions, because some  people will not really read the paper, just the captions.  MNRAS
-%         does not use the subfigure environment, so you should remove it.  Just have the figures on top of or next to each other, and then in  the caption refer to ``Top panel'' and ``Bottom panel'' or whatever.} 
-%         \arun{Results have too many figures and they overlap with the bibliography. I think we should put some of the figures explicitly after the references?}
-% \rachel{No, just move the figures a bit earlier in the text.  It's okay for them to show up slightly before you actually discuss them.  The references really should be last.}
+\rachel{Overall comment: the figures need a {\em lot} of work.  First,  they should be in the same order as they are referenced in the  text.  Second, they need to be sensibly referenced in the text; you  can't say ``as we see\dots'' without having a clear statement that  we should be looking at Fig.~4 (or whatever).  In all  cases, the font size is way too small, so you should enlarge it.  The rule of thumb for MNRAS and other journals is that the font size  in the figures should appear the same size as the font in the text  of the paper.  (This is true for axis labels, tick labels, and text  in the legend.)  You also need to write good captions, because some  people will not really read the paper, just the captions.  MNRAS
+         does not use the subfigure environment, so you should remove it.  Just have the figures on top of or next to each other, and then in  the caption refer to ``Top panel'' and ``Bottom panel'' or whatever.} 
+         \arun{Results have too many figures and they overlap with the bibliography. I think we should put some of the figures explicitly after the references?}
+ \rachel{No, just move the figures a bit earlier in the text.  It's okay for them to show up slightly before you actually discuss them.  The references really should be last.}
 \section{Introduction}
 \label{S:intro}
 
@@ -497,8 +497,8 @@ The other redshift slices seem to exhibit a consistent behavior.
 
 In the following section, we will compare and analyze the distribution of properties of the galaxies residing in the overdense regions.
 
-\arun{Talk more about environments - Nature and nurture?}
-\rachel{What do you have in mind here?}
+%\arun{Talk more about environments - Nature and nurture?}
+%\rachel{What do you have in mind here?}
 
 %\section{Implications/Comparisons}
 %\section{Results}
@@ -520,6 +520,7 @@ In the following section, we will compare and analyze the distribution of proper
 
 If galaxies have elliptical isophotes, its shape and size could be defined by the axis ratio and the area enclosed by a boundary isophote. However, in real galaxy images,
 the boundary may not be well defined and the shape may not be well approximated by an ellipse. More importantly, the effect of smearing due to the point-spread function (PSF) is larger. 
+Thus, we are in need of more sophisticated methods to measure the ellipticities.
 % Given the surface brightness (intensity) $I(\vec{\theta})$ of a galaxy image at every angular position $\vec{\theta}$,
 % we can define the tensor of second brightness moments as
 % \begin{equation}
@@ -541,14 +542,7 @@ the boundary may not be well defined and the shape may not be well approximated 
 %   use a PSF correction scheme.  Recommend removing much of the above discussion.}
 % \arun{Should I remove these even if we plan to use the ellipticities from the second moments?} 
 
-The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of~\cite{HS03} (hereafter HS03).
-This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
-intrinsic image of $f$, is $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
-estimate of $I'$ even if we use an approximate form for $f$. The form assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I - M_g$, where $M_I$ and $M_g$ are the adaptive
-covariances of the measured object and PSF respectively, described in \S 2.1 of HS03, which is in turn based on~\cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
-of the galaxies, which we will refer to as `ellipticities based on moments'.
-
-Another method of estimate the ellipticities is to fit parametric models to each image. Two examples of the models are
+One method to estimate the ellipticities is to estimate the axis-ratios by fitting parametric models to each image. The models that we fit to the images are
 \begin{enumerate}
  \item a \sersic profile given by the expression 
        \begin{equation} 
@@ -561,12 +555,20 @@ $R_{\text{eff}}$ is the half-light radius of the profile, $\Sigma_{1/2}$ is the 
 $\Phi$ is the profile rotation angle, $n$ is the \sersic index, $k$ is a $n$-dependent normalization factor and $q$ is the axis ratio of the elliptical isophotes.
 Thus, the \sersic profile has 7 free parameters. The bulge+disk model has 10 free parameters since the \sersic indices are fixed as 1 and 4
 and both the profiles are required to have the same centroid $(x_0,y_0)$. Best-fit parameters were found, by minimizing the weighted
-sum of the difference between the image and the PSF-convolved mode
+sum of the difference between the image and the PSF-convolved model
 using Levenberg-Marquardt minimization, \texttt{mpfit2fun} in IDL~\citep{mpfit2fun}. More details about the fit can be found
 in~\cite{Claire_Fits}.
 
 The quantities that we would use from the single \sersic profile fits are the \sersic index and axis ratio
 and from the bulge+disk fits will be the \btt ratio given by ${\Sigma_{1/2}(n=4)}/{\left(\Sigma_{1/2}(n=4)+\Sigma_{1/2}(n=1)\right)}$.
+
+An alternative method involves correcting the observed image for the PSF and computing the covariances from which the ellipticity of the galaxy can be obtained.
+The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of~\cite{HS03} (hereafter HS03).
+This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
+intrinsic image of $f$, is $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
+estimate of $I'$ even if we use an approximate form for $f$. The form assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I - M_g$, where $M_I$ and $M_g$ are the adaptive
+covariances of the measured object and PSF respectively, described in \S 2.1 of HS03, which is in turn based on~\cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
+of the galaxies, which we will refer to as `ellipticities based on moments'.
 
 \section{Results}
 \label{S:results}
@@ -587,6 +589,9 @@ and we will present our results in each of the 3 cases.
   about morphology from Sersic index and bulge-to-total ratios.}
 
 \subsection{Axis-ratios} 
+We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 
+Then, we proceed to consider the root mean square ellipticity, a statistic that can characterize the shape of the population/sample of galaxies. 
+\subsubsection{Comparing distributions}
 \begin{figure*}
  \centering
  \includegraphics[width=2.3\columnwidth]{axis_ratio_all}
@@ -638,7 +643,6 @@ and we will present our results in each of the 3 cases.
  \label{fig:axisratio_contrasting}
 \end{figure*}
 
-We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 
 %The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
 We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
 
@@ -661,7 +665,7 @@ where we expect the distributions to differ.
 Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} are examples showing that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
 Similar conclusion can be arrived at by comparing other redshift bins.
 
-
+\subsubsection{RMS ellipticites}
 \begin{figure}
  %\centering
  a) \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \
@@ -685,7 +689,6 @@ Similar conclusion can be arrived at by comparing other redshift bins.
 
 %The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
 %or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
-It is useful to consider the root mean square ellipticity, a statistic that can characterize the shape of the population/sample of galaxies.
 For the luminosity-selected sample without any evolution, RMS ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}. As one can see, the underdense regions
 have significantly higher values for RMS ellipticities when compared to the overdense regions. Note in particular that we've been able to capture the narrow overdense bin $0.75\le z < 0.80$.  
 There is (almost) no redshift dependence in the figure.
@@ -698,7 +701,9 @@ the region $0.4\le z < 0.55$ show signs of being marginally underdense but have 
 
 When the B-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the ellipticity at lower redshifts can be observed. We plot these alongside with stellar-mass selected samples, where a similar trend is found, in Fig.~\ref{fig:rms_ellip_Bband_mass}. 
 Such a trend is not observed in axis ratios based on second moments. 
-For other morphological parameters, we do not the distributions themselves directly. For \sersic profile fits, it gets tricky since we truncate the \sersic index at 6. 
+
+\subsection{\sersicn}
+For other morphological parameters, we do not compare the distributions themselves directly. For \sersic profile fits, it gets tricky since we truncate the \sersic index at 6. 
 For \btt ratios, we force the value to be greater than 0.05 \arun{What exactly do we do here?}. We will understand the dependence of these quantities on environment by computing the median values in different redshift bins.
 We choose median over mean since it is more robust to the truncation effects.
 Figure(s) \ref{fig:median_sersicn} show the median of the \sersic index with and without taking into account of the luminosity evolution. Median values obtained using stellar mass selected samples are plotted alongside for reference.
@@ -708,8 +713,8 @@ These two observations are consistent with each other since higher \sersic index
 %We chose median over mean since \sersic n greater than 6 are truncated to 6. This affects the mean statistic more than the median.
 \begin{figure}
  %\centering
- \includegraphics[width=1.1\columnwidth]{median_sersicn}
- \includegraphics[width=1.1\columnwidth]{median_sersicn2}
+ \includegraphics[width=1.0\columnwidth]{median_sersicn}
+ \includegraphics[width=1.0\columnwidth]{median_sersicn2}
  \caption{Median values of the \sersic indices for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
           Median values for the \s$2$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
           The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}
@@ -718,8 +723,8 @@ These two observations are consistent with each other since higher \sersic index
 
 \begin{figure}
  %\centering
- \includegraphics[width=1.1\columnwidth]{median_dvcbtt1}
- \includegraphics[width=1.1\columnwidth]{median_dvcbtt2}
+ \includegraphics[width=1.0\columnwidth]{median_dvcbtt1}
+ \includegraphics[width=1.0\columnwidth]{median_dvcbtt2}
   \caption{Median values of the \btt ratios for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
           Median values for the \s$2$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
           The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}

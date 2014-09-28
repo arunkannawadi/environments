@@ -248,7 +248,7 @@ In order to study the variation in the intrinsic ellipticity distribution and ot
   \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
   \caption{Upper panel: Redshift distribution of flux-limited ($m_\text{F814W}\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
-           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
+           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin. \arun{Give parameter values. Set minor ticks.}}
   \label{fig:redshift_fluxlimited}
 \end{figure}
 
@@ -297,7 +297,7 @@ We choose our bins to be $0.05$ wide starting from $z=0.3$.
 
 %The curves are normalized such that the area under the curves is equal to the number of galaxies considered. - no longer true if not using fithist.c
 
-Overdensity in a redshift bin is defined as the ratio of the
+Overdensity (as predicted by a given model) in a redshift bin is defined as the ratio of the
 difference between the value given by the histogram and the value
 predicted by the model to the latter:
 \begin{equation}
@@ -308,9 +308,12 @@ predicted by the model to the latter:
   overdensity.  Better yet would be $\delta_{g,1D}$, to clearly
   indicate this is based on a 1-dimensional slice through redshift
   space rather than isolating 3D overdensities.})
-We leave a 10\% margin of safety i.e. iff $\delta_{g,\text{1D}}$ from both the fits is greater than $0.1$, then we call that redshift bin as an
-overdense region whereas if $\delta_{g,\text{1D}}$ from both the fits is less than $-0.1$, then we call that as an underdense region. Redshift bins with $-0.1 < \delta_{g,\text{1D}} < 0.1$ are neither too overdense
-nor too underdense and we call them as `neutral regions'.
+Note that $\delta_{g,\text{1D}}$ is model dependent. If a model and the distribution agree, then $\delta_{g,\text{1D}}=0$ for that model at all the redshifts. 
+
+Our decision criterion is as follows. We leave a 10\% margin of safety i.e., if $\left| \delta_{g,\text{1D}} \right| < 0.1$, we say that the model and the actual distribution agree.
+We label a redshift bin overdense if at least one of the models predicts the value of $\delta_{g,\text{1D}} > 0.1$ while the other predicts $\delta_{g,\text{1D}} > -0.1$, i.e.,
+neutral or overdense and vice versa for the underdense regions. We label a redshift bin `neutral' if both the models predicted the value of $\delta_{g,\text{1D}}$ within the margin of safety 
+\emph{or} if one of them predicts the bin to be overdense while the other predicts it to be underdense.
 
 % \begin{figure}
 %  \centering
@@ -320,8 +323,8 @@ nor too underdense and we call them as `neutral regions'.
 %           The green lines correspond to the 0.9 and 1.1 times the overall average.}
 % \end{figure}
 
-We thus identify the regions $z=0.30-0.40, 0.65-0.75, 0.80-0.85$ as overdense, $z=0.55-0.65, 0.75-0.80$ as underdense and $z=0.40-0.55$ as unclassified. Although, the $z=0.40-0.55$ bin
-appears to be underdense, for reasons mentioned in \S\ref{sub:volumelimiting}, we will not call them underdense.
+We thus identify the regions $z=0.30-0.40, 0.65-0.75, 0.80-0.85$ as overdense, $z=0.55-0.65, 0.75-0.80$ as underdense and $z=0.40-0.55$ as unclassified. 
+%Although, the $z=0.40-0.55$ bin appears to be underdense, for reasons mentioned in \S\ref{sub:volumelimiting}, we will not call them underdense.
 
 Our classification is not very rigorous since it considers only the counts in redshift slices and compares with models that only approximately describe the redshift distribution of galaxies.
 Moreover, the photometric redshifts become less accurate as we go to higher redshifts (cf.~\S\ref{S:data}) and no information about structure in transverse direction has been taken into account.
@@ -603,24 +606,6 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
  \label{fig:axisratio_all}
 \end{figure*}
 
-\begin{table}
- \centering
- \begin{tabular}[\columnwidth]{ | r | c | c | c | c | }
-  \hline
-  %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
-  Redshift bins & Tests & \s$1$ & \s$2$ & \s$3$ \\
-  \hline
-  All overdense vs. & K-S & 1.1e-4 & 3e-5 & 0.0 \\
-  All underdense    & A-D & 1e-5 & 0.0 & 0.0 \\ \hline 
-  $z:[0.65,0.75]$ (OD) vs. & K-S & 0.613 & 0.431 & 0.231 \\
-  $z:[0.80,0.85]$ (OD) & A-D & 0.494 & 0.237 & 0.130 \\ \hline
-  $z:[0.65,0.75]$ (OD) vs & K-S & 5.8e-4 & 2e-5 & 0.0 \\
-  $z:[0.55,0.65]$ (UD) & A-D & 9.8e-4 & 0.0 & 0.0 \\ \hline
- \end{tabular}
- \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.}
- \label{table:pvalues_all}
-\end{table}
-
 \begin{figure*}
  \centering
  \includegraphics[width=2.3\columnwidth]{axis_ratio_odod}
@@ -642,6 +627,26 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
  \caption{Comparison in contrasting environments: Axis ratios of galaxies in an underdense redshift bin, $z=0.55-0.65$ are compared with those in an overdense bin, $z=0.65-0.75$. $p$-values from the KS and AD test are given in Table.~\ref{table:pvalues_all}}
  \label{fig:axisratio_contrasting}
 \end{figure*}
+
+\begin{table}
+ \centering
+ \begin{tabular}[\columnwidth]{ | r | c | c | c | c | }
+  \hline
+  %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
+  Redshift bins & Tests & \s$1$ & \s$2$ & \s$3$ \\
+  \hline
+  All overdense vs. & K-S & 1.1e-4 & 3e-5 & 0.0 \\
+  All underdense    & A-D & 1e-5 & 0.0 & 0.0 \\ \hline 
+  $z:[0.65,0.75]$ (OD) vs. & K-S & 0.613 & 0.431 & 0.231 \\
+  $z:[0.80,0.85]$ (OD) & A-D & 0.494 & 0.237 & 0.130 \\ \hline
+  $z:[0.65,0.75]$ (OD) vs & K-S & 5.8e-4 & 2e-5 & 0.0 \\
+  $z:[0.55,0.65]$ (UD) & A-D & 9.8e-4 & 0.0 & 0.0 \\ \hline
+ \end{tabular}
+ \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.}
+ \label{table:pvalues_all}
+\end{table}
+
+
 
 %The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
 We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
@@ -687,6 +692,16 @@ Similar conclusion can be arrived at by comparing other redshift bins.
  \label{fig:rms_ellip_Bband_mass}
 \end{figure}
 
+\begin{figure}
+ a) \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution.eps} \
+ b) \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_masscut.eps} \\
+ \caption{RMS ellipticies with ellipticity defined as $\sqrt{e_1^2+e_2^2}$ \arun{Explain notation} \\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
+          are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the luminosity selected sample (\s$1$ sample on the left and \s$2$ sample on the right) and the unfilled
+          points correspond to the sample obtained from stellar mass cuts (\s$3$). }
+ \label{fig:rms_ellip_momentbased}         
+\end{figure}
+
+
 %The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
 %or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
 For the luminosity-selected sample without any evolution, RMS ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}. As one can see, the underdense regions
@@ -700,7 +715,10 @@ From Figs.~\ref{fig:redshift_fluxlimited} and~\ref{fig:redshift_vollimited},
 the region $0.4\le z < 0.55$ show signs of being marginally underdense but have low RMS ellipticities too that agree with the rest of the overdense regions.
 
 When the B-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the ellipticity at lower redshifts can be observed. We plot these alongside with stellar-mass selected samples, where a similar trend is found, in Fig.~\ref{fig:rms_ellip_Bband_mass}. 
-Such a trend is not observed in axis ratios based on second moments. 
+
+Such a trend is also observed in axis ratios based on second moments.\arun{Comment on the agreement/disagreement of the distributions themselves.} After neglecting a small number galaxies (36 galaxies between $0.3\le z<0.85$ with $\log(M/M_sun) > 10.15$)for which the moments do not converge, 
+we plot the RMS ellipticites within each redshift bin in Fig.~\ref{fig:rms_ellip_momentbased}
+
 
 \subsection{\sersicn}
 For other morphological parameters, we do not compare the distributions themselves directly. For \sersic profile fits, it gets tricky since we truncate the \sersic index at 6. 

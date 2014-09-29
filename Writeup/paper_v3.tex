@@ -14,10 +14,11 @@
 % For correct printing on US Letter, while still working on A4
 \topmargin-1cm
 
-\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
-%\newcommand{\rachel}[1]{}
-\newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
-%\newcommand{\arun}[1]{}
+%\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
+\newcommand{\rachel}[1]{}
+%\newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
+\newcommand{\arun}[1]{}
+\newcommand{\claire}[1]{{\textcolor{green}{#1}}}
 \def\a{\alpha}
 \def\reff@jnl#1{{\rm#1\/}}
 
@@ -179,7 +180,7 @@ observed in the COSMOS' field of view (FOV) may cause the properties of the gala
 %The structure of the paper is as follows. In \S\ref{S:data}, we briefly describe the COSMOS catalog that we use for our analysis.
 In this paper, we show that these large scale structure effects mentioned are indeed present in the data. The rest of the paper is structured as follows.
 In \S\ref{sub:overdensities}, we explain how we identify overdensities and underdensities, volume-limit our data in \S\ref{sub:volumelimiting} and in \S\ref{sub:axisratio},
- we explain how we obtain axis-ratios from the images of the galaxies. Finally, we present our results in \S\ref{S:results} and end with conclusions in \S\ref{S:conclusion}.
+ we explain how we obtain axis-ratios from the images of the galaxies. Finally, we present our results in \S\ref{S:results} and end with conclusions in \S\ref{S:summary}.
 \section{Data}
 \label{S:data}
 %In this analysis, we consider the COSMOS sample of galaxies. 
@@ -749,10 +750,29 @@ These two observations are consistent with each other since higher \sersic index
  \label{fig:median_dvcbtt}
 \end{figure}
 
-\section{Conclusion}
-\label{S:conclusion}
+\section{Summary}
+\label{S:summary}
 
-We have shown that 
+In this study, we have shown that morphological parameters of galaxies depend on the local environments along the line of sight in a manner than affect Weak Lensing simulations.
+In studies of Weak Lensing, one simulates galaxy images in a redshift slice by learning from the images in the same redshift bin of a training sample like COSMOS, which we have used for our analysis here.
+The survey volume is broken up into multiple redshift slices and are classified as `overdense', `underdense' or `neutral' according to their local environment.
+This is done by comparing the 1-D redshift distribution to some of the parametric models available in the literature. 
+The incompleteness in the sample is minimized by constructing a volume limited sample either by imposing stellar mass cuts (\s$3$) or by imposing a luminosity cut. 
+Further, depending on whether we have the cut fixed or evolve with redshift, we get two more volume limited samples \s$1$ and \s$2$ respectively. 
+Morphological parameters are obtained by fitting a single \sersic profile to the images or by a two component (bulge+disk) fit. 
+The morphological quantities of interest include axis ratios or equivalently the ellipticities, \sersic index and \btt ratios.
+
+For all the three volume-limited samples, we compare the distributions of the axis-ratios of the galaxies in overdense and underdense regions and conclude that the distributions are different after performing statistical tests on them.
+From the axis ratios, we compute ellipticities and find that the root mean squared value of the ellipticities of galaxies in a redshift bin vary significantly between the overdense and underdense regions.
+Such a behavior is also observed when ellipticies are computed using second moments instead of parametric model fitting. \sersic index and \btt ratios also exhibit similar trends
+with redshift based on the local environment. 
+
+Our result has serious implications for realistic image simulations for Weak Lensing. 
+It suggests that the training sample is affected by cosmic variance so as to possibly bias the conclusions from the simulations. 
+This is particularly a problem with narrow surveys where a single galaxy cluster or a void could affect the environment significantly. 
+Thus, we are forced to use wider redshift bins, much larger than the uncertainties in the redshifts, so as to be able to wash out the environmental dependence.
+However, future surveys such as the Large Synoptic Survey Telescope\citep[LSST;][]{LSST} will image larger areas of sky mitigating the dependence of local environment in image simulations.
+
 \section*{Acknowledgments}
 
 AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and

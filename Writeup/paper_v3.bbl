@@ -1,4 +1,4 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{25}
 \providecommand{\natexlab}[1]{#1}
 \providecommand{\url}[1]{\texttt{#1}}
 \expandafter\ifx\csname urlstyle\endcsname\relax
@@ -207,14 +207,23 @@ A.~{Leauthaud}, A.~{Finoguenov}, J.-P. {Kneib}, J.~E. {Taylor}, R.~{Massey},
 \newblock \emph{\apj}, 709:\penalty0 97--114, January 2010.
 \newblock \doi{10.1088/0004-637X/709/1/97}.
 
-\bibitem[{LSST Science Collaboration} et~al.(2009){LSST Science Collaboration},
-  {Abell}, {Allison}, {Anderson}, {Andrew}, {Angel}, {Armus}, {Arnett},
-  {Asztalos}, {Axelrod}, and et~al.]{LSST_Book}
+\bibitem[{LSST Science Collaboration} et~al.(2009{\natexlab{a}}){LSST Science
+  Collaboration}, {Abell}, {Allison}, {Anderson}, {Andrew}, {Angel}, {Armus},
+  {Arnett}, {Asztalos}, {Axelrod}, and et~al.]{LSST}
 {LSST Science Collaboration}, P.~A. {Abell}, J.~{Allison}, S.~F. {Anderson},
   J.~R. {Andrew}, J.~R.~P. {Angel}, L.~{Armus}, D.~{Arnett}, S.~J. {Asztalos},
   T.~S. {Axelrod}, and et~al.
 \newblock {LSST Science Book, Version 2.0}.
-\newblock \emph{ArXiv e-prints}, December 2009.
+\newblock \emph{ArXiv e-prints}, December 2009{\natexlab{a}}.
+
+\bibitem[{LSST Science Collaboration} et~al.(2009{\natexlab{b}}){LSST Science
+  Collaboration}, {Abell}, {Allison}, {Anderson}, {Andrew}, {Angel}, {Armus},
+  {Arnett}, {Asztalos}, {Axelrod}, and et~al.]{LSST_Book}
+{LSST Science Collaboration}, P.~A. {Abell}, J.~{Allison}, S.~F. {Anderson},
+  J.~R. {Andrew}, J.~R.~P. {Angel}, L.~{Armus}, D.~{Arnett}, S.~J. {Asztalos},
+  T.~S. {Axelrod}, and et~al.
+\newblock {LSST Science Book, Version 2.0}.
+\newblock \emph{ArXiv e-prints}, December 2009{\natexlab{b}}.
 
 \bibitem[{Mandelbaum} et~al.(2011){Mandelbaum}, {Hirata}, {Leauthaud},
   {Massey}, and {Rhodes}]{SHERA}

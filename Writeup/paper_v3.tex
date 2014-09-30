@@ -647,7 +647,23 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
  \label{table:pvalues_all}
 \end{table}
 
-
+\begin{table}
+ \centering
+ \begin{tabular}[\columnwidth]{ | r | c | c | c | c | }
+  \hline
+  %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
+  Redshift bins & Tests & \s$1$ & \s$2$ & \s$3$ \\
+  \hline
+  All overdense vs. & K-S & 0.00056 & 0.0001 & 0.0 \\
+  All underdense    & A-D & 3e-5 & 1e-5 & 0.0 \\ \hline 
+  $z:[0.65,0.75]$ (OD) vs. & K-S & 0.9563 & 0.7476 & 0.5359 \\
+  $z:[0.80,0.85]$ (OD) & A-D & 0.5162 & 0.3352 & 0.2290 \\ \hline
+  $z:[0.65,0.75]$ (OD) vs & K-S & 0.00605 & 0.00025 & 0.00024 \\
+  $z:[0.55,0.65]$ (UD) & A-D & 0.01201 & 0.00025 & 5e-5 \\ \hline
+ \end{tabular}
+ \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the ellipticities computed using second moments are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.}
+ \label{table:pvalues_momentbased_all}
+\end{table}
 
 %The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
 We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
@@ -670,6 +686,19 @@ To show that that is not the case, we will compare distributions between two ove
 where we expect the distributions to differ.
 Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} are examples showing that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
 Similar conclusion can be arrived at by comparing other redshift bins.
+
+Such a trend is also observed in axis ratios based on second moments.\arun{I've commented on the agreement/disagreement of the distributions themselves in Table~\ref{table:pvalues_momentbased_all}. No plots included.} 
+If $Q_{ij}$ represents the generic matrix element of the matrix of second moments, then define a complex number, sometimes known as the \emph{distortion}, as
+\begin{equation}
+ e = e_1 + ie_2 = \frac{Q_{11}-Q_{22}+2iQ_{12}}{Q_{11}+Q_{22}}.
+ \label{eq:distortion}
+\end{equation}
+\arun{Is this the correct denominator?}
+Then, one definition of ellipticity is the magnitude of this complex number which is $\sqrt{e_1^2+e_2^2}$.
+
+After neglecting a small fraction $(\sim 0.0065\%)$ of galaxies (36 out of 55991 galaxies between $0.3\le z<0.85$ with $\log(M/\Msun) > 10.15$) for which the moments do not converge, 
+we make comparisons to the above between the distribution of ellipticities computed from the second moments and the results are tabulated in Table~\ref{table:pvalues_momentbased_all}.
+Once again, we see that the distributions are consistent with each other when the environment is similar and are inconsistent when the environments are constrasting.
 
 \subsubsection{RMS ellipticites}
 \begin{figure}
@@ -696,7 +725,8 @@ Similar conclusion can be arrived at by comparing other redshift bins.
 \begin{figure}
  a) \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution.eps} \
  b) \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_masscut.eps} \\
- \caption{RMS ellipticies with ellipticity defined as $\sqrt{e_1^2+e_2^2}$ \arun{Explain notation} \\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
+ \caption{RMS ellipticies with ellipticity defined as $\sqrt{e_1^2+e_2^2}$, where $e_1$ and $e_2$ are the real and imaginary components of the distortion defined in Eq.~\ref{eq:distortion}.
+          The horizontal errorbars simply correspond to the binwidth while the vertical ones
           are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the luminosity selected sample (\s$1$ sample on the left and \s$2$ sample on the right) and the unfilled
           points correspond to the sample obtained from stellar mass cuts (\s$3$). }
  \label{fig:rms_ellip_momentbased}         
@@ -716,10 +746,7 @@ From Figs.~\ref{fig:redshift_fluxlimited} and~\ref{fig:redshift_vollimited},
 the region $0.4\le z < 0.55$ show signs of being marginally underdense but have low RMS ellipticities too that agree with the rest of the overdense regions.
 
 When the B-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the ellipticity at lower redshifts can be observed. We plot these alongside with stellar-mass selected samples, where a similar trend is found, in Fig.~\ref{fig:rms_ellip_Bband_mass}. 
-
-Such a trend is also observed in axis ratios based on second moments.\arun{Comment on the agreement/disagreement of the distributions themselves.} After neglecting a small number galaxies (36 galaxies between $0.3\le z<0.85$ with $\log(M/M_sun) > 10.15$)for which the moments do not converge, 
-we plot the RMS ellipticites within each redshift bin in Fig.~\ref{fig:rms_ellip_momentbased}
-
+Also, the RMS values of the ellipticites calculated from the second moments within each redshift bin are given in Fig.~\ref{fig:rms_ellip_momentbased}.
 
 \subsection{Other morphological parameters}
 For other morphological parameters such as the \sersic index and \btt ratio, we do not compare the distributions themselves directly. 
@@ -729,7 +756,7 @@ We will understand the dependence of these quantities on environment by computin
 We choose median over mean since it is more robust to the truncation effects.
 Fig.~\ref{fig:median_sersicn} show the median of the \sersic index with and without taking into account of the luminosity evolution. Median values obtained using stellar mass selected samples are plotted alongside for reference.
 We observe that the overdense regions tend to have higher \sersic index than the adjacent underdense ones.
-Figure(s) \ref{fig:median_dvcbtt} show the variation of median \btt ratio with redshift. We see that the bulge component is more in overdense regions than in the underdense regions.
+Fig. \ref{fig:median_dvcbtt} show the variation of median \btt ratio with redshift. We see that the bulge component is more in overdense regions than in the underdense regions.
 These two observations are consistent with each other since higher \sersic index implies higher bulge component which are typical in young galaxies found in overdense regions.
 
 In Fig.~\ref{fig:median_sersicn}, we see that the \sersic indices of mass selected sample (\s$3$) are systematically greater than those of the luminosity selected samples (\s$1$,\s$2$).
@@ -756,7 +783,7 @@ that the mass selected sample doesn't include as many disk-like galaxies as in l
  \label{fig:median_dvcbtt}
 \end{figure}
 
-\section{Summary}
+\section{Conclusions}
 \label{S:summary}
 
 In this study, we have shown that morphological parameters of galaxies depend on the local environments along the line of sight in a manner than affect Weak Lensing simulations.

@@ -144,10 +144,7 @@ According to our current understanding, galaxy shapes and morphologies should de
  Gravitational lensing: weak --- Cosmology: Large-scale structure of Universe --- Galaxies: evolution.
 \end{keywords}
 
-\rachel{Overall comment: the figures need a {\em lot} of work.  First,  they should be in the same order as they are referenced in the  text.  Second, they need to be sensibly referenced in the text; you  can't say ``as we see\dots'' without having a clear statement that  we should be looking at Fig.~4 (or whatever).  In all  cases, the font size is way too small, so you should enlarge it.  The rule of thumb for MNRAS and other journals is that the font size  in the figures should appear the same size as the font in the text  of the paper.  (This is true for axis labels, tick labels, and text  in the legend.)  You also need to write good captions, because some  people will not really read the paper, just the captions.  MNRAS
-         does not use the subfigure environment, so you should remove it.  Just have the figures on top of or next to each other, and then in  the caption refer to ``Top panel'' and ``Bottom panel'' or whatever.} 
-         \arun{Results have too many figures and they overlap with the bibliography. I think we should put some of the figures explicitly after the references?}
- \rachel{No, just move the figures a bit earlier in the text.  It's okay for them to show up slightly before you actually discuss them.  The references really should be last.}
+
 \section{Introduction}
 \label{S:intro}
 
@@ -171,7 +168,7 @@ shear systematics as a function of redshift.
 Previous studies have shown that any shape measurement method that uses second moments cannot be independent of the morphology and substructure of the galaxies involved. ({\bf rephrased from GREAT3}).
 Hence, it is important to check any method that is proposed to measure the shape of the galaxies to check against a simulation that generates images as realistic as possible.  
 With this in mind, the GREAT3 challenge~\citep{great3} was held with the aim to test and faciliate methods for measuring weak gravitational lensing by analyzing astronomical images.
-Software packages like GalSim\footnote{https://github.com/GalSim-developers/GalSim} can generate galaxy images fairly accurately, given realistic input parametes.
+Software packages like GalSim\footnote{\url{https://github.com/GalSim-developers/GalSim}} can generate galaxy images fairly accurately, given realistic input parametes.
 The training dataset used in the challenge comes from the COSMOS survey, which we describe in sufficient detail in \S\ref{S:data}.
 While providing a good quality (high $S/N$) images to be trained over, there could be some bias introduced due to the survey being a narrow one.
 It is known \arun{cite refs.} that the shape and morphology of galaxies depend very much on their local environment. Hence, local overdensities or underdensities
@@ -199,13 +196,11 @@ We apply the following set of initial cuts to the data, all of which is defined 
 %                                       \arun{copied from Mandelbaum
 %                                         2011.}
  \item \texttt{GOOD\_ZPHOT\_SOURCE =1}: This cut requires that the photometric redshifts be reliable and good enough to draw conclusions about the population. More details on what `good' refers to can be found in \cite{SHERA}
-\rachel{Need to rephrase, at least a little.  I recommend being
-  briefer and saying to see that paper for more details.} \arun{Done.}
 \end{enumerate}
 %\rachel{The cuts you just gave are really basic or fundamental ones.  Those should go before any discussion of more complicated derived quantities like redshifts, stellar mass, Sersic fits, etc.}
 
 Precise shape measurements, when compared to ground-based surveys, can be made since the full width half-maximum (FWHM) of the point-spread function (PSF)
-is $0.12''$. High resolution images taken through the wide F814W filter (broad \emph{I}), after correcting for the PSF, have led to collection of postage stamp images\footnote{http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-postage-stamps/} for the GREAT3 challenge~\citep{great3}, using the procedure described in \cite{SHERA}.
+is $0.12''$. High resolution images taken through the wide F814W filter (broad \emph{I}), after correcting for the PSF, have led to collection of postage stamp images\footnote{\url{http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-postage-stamps/}} for the GREAT3 challenge~\citep{great3}, using the procedure described in \cite{SHERA}.
 Parametric models to most of these galaxies including \sersicn profile fits, 
 2 component bulge+disk fits, axis ratios etc were done for GREAT3 challenge~\citep{great3} using the method described in \cite{Claire_Fits}. This is described briefly in Sec.~\ref{sub:axisratio}.In addition to the ACS/WFC (F814W) imaging, the COSMOS field has also been imaged by Subaru Suprime-Cam ($B_j, V_j, g^+,r^+,i^+,z^+,$ NB816), the
 Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
@@ -288,8 +283,6 @@ and the function given by
 \end{equation}
 that was first presented by~\cite{Redshift_modelling} as fits to the
 redshift histograms. The normalization constants depend not only on the parameters but also on the lower and the upper limit of the redshifts considered. 
-\rachel{(To avoid ambiguity, you should use avoid   using the same symbol in both equations.  For example you could turn   the $b$'s into $b_1$ and $b_2$.  Also, the normalization factors out  front do not matter - they are not something that you fit for.  I would say $p(z)\propto$\dots to avoid   the need for a normalization for which you are not actually fitting.)} 
-\arun{Done.}
 Here $a,b$ and $z_0$ are free parameters that are to be determined.
 %\rachel{You cannot expect people to look these up.  Give them equations in which you define $p(z)$ for each case, with labels like $p_1(z)$ and $p_2(z)$.}
 For low $z$, the volume is too small to rely the overdensity values from our model fits and hence the fit is made for $z \ge 0.3$. Our binning width, $\Delta z$ must be small enough so as to be able to identify localized overdensities/underdensities but large enough to not let our conclusions be affected by the errors in photometric redshift. 
@@ -305,10 +298,6 @@ predicted by the model to the latter:
 \delta_{g,\text{1D}}=\frac{(N-N_{\text{mod}})}{N_{\text{mod}}}.  
 \end{equation}
 %(\rachel{This $\delta$ definition is important, so it should be in an equation environment.})
-(\rachel{Call it $\delta_{g,\text{1D}}$, not $\delta$, which implies matter
-  overdensity.  Better yet would be $\delta_{g,1D}$, to clearly
-  indicate this is based on a 1-dimensional slice through redshift
-  space rather than isolating 3D overdensities.})
 Note that $\delta_{g,\text{1D}}$ is model dependent. If a model and the distribution agree, then $\delta_{g,\text{1D}}=0$ for that model at all the redshifts. 
 
 Our decision criterion is as follows. We leave a 10\% margin of safety i.e., if $\left| \delta_{g,\text{1D}} \right| < 0.1$, we say that the model and the actual distribution agree.
@@ -374,6 +363,7 @@ We generate, using the method below, a volume-limited sample that is complete up
   $I_{814}$, so $I$.}
 \rachel{But you are still being ambiguous in sometimes calling it $I$
   and other times F814W.  Pick one.}
+\rachel{Actually, is this the catalog entry called ``MI''?  If so, it really is a different band - it's the k-corrected $I$-band data from Suburu or CFHT, so it's appropriate to call it $M_I$ and explain briefly that it's from the Subaru data (but $m_{F814W}$, since MAG\_AUTO is from F814W).}
 Since the parent sample contains fainter galaxies, upto $m_\text{F814W}=25.2$, we compare the distribution of the $m_\text{F814W}=23.5$ sample with the samples containing fainter galaxies for high redshift bins, to see where the sample is no longer complete.
 % \begin{figure}
 %  \centering
@@ -515,13 +505,6 @@ In the following section, we will compare and analyze the distribution of proper
 % 
 % {\bf Should explain in brief Claire's work.} \\
 
-\rachel{In my opinion, given that the main results are from Claire's
-  fits, you should describe those {\em first} and then put the
-  re-Gaussianization description second.  Also, state this plan up
-  front, i.e., something like ``To describe galaxy morphology and
-  shape, we will use fits to Sersic profiles. (\dots description here
-  \dots)  However, as a secondary check on the results, we will use \dots''}
-
 If galaxies have elliptical isophotes, its shape and size could be defined by the axis ratio and the area enclosed by a boundary isophote. However, in real galaxy images,
 the boundary may not be well defined and the shape may not be well approximated by an ellipse. More importantly, the effect of smearing due to the point-spread function (PSF) is larger. 
 Thus, we are in need of more sophisticated methods to measure the ellipticities.
@@ -584,13 +567,6 @@ parameters of the galaxies, listed in \S\ref{sub:axisratio}, have any dependence
  \item impose stellar mass cuts instead of luminosity $(\s3)$
 \end{enumerate}
 and we will present our results in each of the 3 cases. 
-\rachel{Say how this connects to the 3 samples S1, S2, and S3 that you defined earlier.} \arun{Done.}
-
-\rachel{I also recommend splitting this section up into subsections so
-  it's not just one big block.  For example, the first can be about
-  axis ratios (with a subsubsection about how the results depend on
-  the way the volume limiting was carried out), the second can be
-  about morphology from Sersic index and bulge-to-total ratios.}
 
 \subsection{Axis-ratios} 
 We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 
@@ -672,13 +648,10 @@ We first compare the distribution of the axis ratio in \emph{all}
 overdense bins and \emph{all} underdense bins in Fig.~\ref{fig:axisratio_all}.
 \rachel{How was the volume-limiting carried out for this?  You should say the answer to this question  for all figures.} 
 \arun{The caption mentions it.}
+\rachel{I'm afraid that's not enough.  Some people are going to read linearly and you want the info in the main text, too.}
 Unless otherwise mentioned, the axis ratios refer to the values obtained using the method of~\cite{Claire_Fits}.
 The cumulative distinction functions are also plotted alongside in order to be able to visualize the `distance' between the distributions.
-Referring to the first two rows in Table~\ref{table:pvalues_all}, we see that the p-values from both the KS and AD tests are well below 0.05
-(\rachel{give the actual numbers!} 
-\arun{It's in the table.} 
-\rachel{The text does not seem to mention the table at all.  If thereaders are to get the numbers from it, then you need to refer to it here and any other place where it is relevant.}), 
-\arun{Done.}
+Referring to the first two rows in Table~\ref{table:pvalues_all}, we see that the p-values from both the KS and AD tests are well below 0.05, 
 so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level.
 
 One might imagine that the disagreement between the distributions is, at least partly, due to the fact that the overdense and underdense sample have different redshift distributions.
@@ -687,13 +660,13 @@ where we expect the distributions to differ.
 Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} are examples showing that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
 Similar conclusion can be arrived at by comparing other redshift bins.
 
-Such a trend is also observed in axis ratios based on second moments.\arun{I've commented on the agreement/disagreement of the distributions themselves in Table~\ref{table:pvalues_momentbased_all}. No plots included.} 
+Such a trend is also observed in axis ratios based on second moments. 
 If $Q_{ij}$ represents the generic matrix element of the matrix of second moments, then define a complex number, sometimes known as the \emph{distortion}, as
 \begin{equation}
  e = e_1 + ie_2 = \frac{Q_{11}-Q_{22}+2iQ_{12}}{Q_{11}+Q_{22}}.
  \label{eq:distortion}
 \end{equation}
-\arun{Is this the correct denominator?}
+\arun{Is this the correct denominator?} \rachel{Yes.  There's another ellipticity definition with a different denominator, but we use distortion which is defined as in this equation.  (Once you read this response feel free to delete this conversation.)}
 Then, one definition of ellipticity is the magnitude of this complex number which is $\sqrt{e_1^2+e_2^2}$.
 
 After neglecting a small fraction $(\sim 0.0065\%)$ of galaxies (36 out of 55991 galaxies between $0.3\le z<0.85$ with $\log(M/\Msun) > 10.15$) for which the moments do not converge, 

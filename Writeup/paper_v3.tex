@@ -548,6 +548,7 @@ in~\cite{Claire_Fits}.
 
 The quantities that we would use from the single \sersic profile fits are the \sersic index and axis ratio
 and from the bulge+disk fits will be the \btt ratio given by ${\Sigma_{1/2}(n=4)}/{\left(\Sigma_{1/2}(n=4)+\Sigma_{1/2}(n=1)\right)}$.
+\rachel{I think it would be useful to take the entire sample that we use for science, and show the overall distributions of axis ratio, distortion (one curve for Claire's and one curve for re-Gaussianization), \sersic index, and \btt.  This would be a nearly full-page four panel figure, but I think it's worthwhile to illustrate the nature of the sample.  For example, it will clearly show why we cannot use the distributions of \sersic index and \btt, because of the hard cutoffs.}
 
 An alternative method involves correcting the observed image for the PSF and computing the covariances from which the ellipticity of the galaxy can be obtained.
 The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of~\cite{HS03} (hereafter HS03).
@@ -579,7 +580,7 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
  \caption{The distributions of axis ratios of galaxies in \emph{all} overdense (OD) and \emph{all} underdense (UD) regions in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
- and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table. \ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant.}
+ and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table. \ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant. \rachel{This figure and the ones below appear to be right-justified (pushed up against the right margin) instead of centered.  Can you look into fixing that?  Also, the $:=$ is not very standard notation, I recommend just $=$.  Finally, the spacing in the legends is funny; I would prefer to see things like ``8213 (OD)'' rather than the current ``8213( OD )''.  The former is also consistent with the next figure.}}
  \label{fig:axisratio_all}
 \end{figure*}
 
@@ -619,7 +620,7 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
   $z:[0.65,0.75]$ (OD) vs & K-S & 5.8e-4 & 2e-5 & 0.0 \\
   $z:[0.55,0.65]$ (UD) & A-D & 9.8e-4 & 0.0 & 0.0 \\ \hline
  \end{tabular}
- \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.}
+ \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways. \rachel{What are the 0 entries in this and other tables?  Just how close to zero are they?  Since 0 is not really achieve, I recommend defining a value (such as $10^{-10}$ below which you will just say $<10^{-10}$ and give the value if it's above that, even if it seems really small to you, like $10^{-8}$.  Also, say $1.1\times 10^{-4}$ rather than $1.1e-4$.}}
  \label{table:pvalues_all}
 \end{table}
 
@@ -637,7 +638,7 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
   $z:[0.65,0.75]$ (OD) vs & K-S & 0.00605 & 0.00025 & 0.00024 \\
   $z:[0.55,0.65]$ (UD) & A-D & 0.01201 & 0.00025 & 5e-5 \\ \hline
  \end{tabular}
- \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the ellipticities computed using second moments are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.}
+ \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the ellipticities computed using second moments are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.  \rachel{Change numbers that are below 0.01 to scientific notation.}}
  \label{table:pvalues_momentbased_all}
 \end{table}
 
@@ -676,18 +677,18 @@ Once again, we see that the distributions are consistent with each other when th
 \subsubsection{RMS ellipticites}
 \begin{figure}
  %\centering
- a) \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \
- b) \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
+ \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \
+ \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
  \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
           Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
-          are $1\sigma$ errorbars obtained by bootstrapping.}
+          are $1\sigma$ errorbars obtained by bootstrapping. \rachel{I'm thinking these are so similar we just need to show one figure, and can say the results for the other in words.  The same goes for the next figure.}}
  \label{fig:rms_ellip}
 \end{figure}
 
 \begin{figure}
  %\centering
- a) \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution.eps} \
- b) \includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution.eps} \\
+  \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution.eps} \
+\includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution.eps} \\
  \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
           Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
           are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the sample where the luminosity cut evolves by -1.23 per unit redshift (\s$2$) and the unfilled
@@ -696,8 +697,8 @@ Once again, we see that the distributions are consistent with each other when th
 \end{figure}
 
 \begin{figure}
- a) \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution.eps} \
- b) \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_masscut.eps} \\
+ \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution.eps} \
+ \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_masscut.eps} \\
  \caption{RMS ellipticies with ellipticity defined as $\sqrt{e_1^2+e_2^2}$, where $e_1$ and $e_2$ are the real and imaginary components of the distortion defined in Eq.~\ref{eq:distortion}.
           The horizontal errorbars simply correspond to the binwidth while the vertical ones
           are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the luminosity selected sample (\s$1$ sample on the left and \s$2$ sample on the right) and the unfilled
@@ -742,7 +743,7 @@ that the mass selected sample doesn't include as many disk-like galaxies as in l
  \includegraphics[width=1.0\columnwidth]{median_sersicn2}
  \caption{Median values of the \sersic indices for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
           Median values for the \s$2$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
-          The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}
+          The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping. \rachel{Only need to have a legend on one panel, since the legends on both panels are the same.  Same comment applies to next figure.}}
  \label{fig:median_sersicn}
 \end{figure}
 
@@ -752,7 +753,7 @@ that the mass selected sample doesn't include as many disk-like galaxies as in l
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt2}
   \caption{Median values of the \btt ratios for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
           Median values for the \s$2$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
-          The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}
+          The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.  \rachel{These look so similar that I am questioning the need to have both.  Perhaps remove one and mention that they are nearly identical in the text.}}
  \label{fig:median_dvcbtt}
 \end{figure}
 

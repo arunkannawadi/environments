@@ -117,6 +117,7 @@
 \newcommand{\sersic}{S\'{e}rsic }
 \newcommand{\btt}{Bulge-to-Total }
 \newcommand{\s}{\ensuremath{\mathcal{S}}}
+\newcommand{\scinot}[2]{\ensuremath{#1 \times 10^{#2}}} 
 
 \title[WL simulation]{The impact of cosmic variance on simulating weak lensing surveys}
 
@@ -151,7 +152,7 @@ According to our current understanding, galaxy shapes and morphologies should de
 Major surveys such as the Hyper Suprime-Cam \citep[HSC;][]{HSC_Overview}, Dark Energy Survey~\citep[DES;][]{DESC}, the KIlo-Degree Survey~\citep[KIDS;][]{KIDS}, the Panoramic Survey Telescope and Rapid Response System~\citep[PanSTARRS;][]{PanSTARRS_2010},
 the Large Synoptic Survey Telescope~\citep[LSST;][]{LSST_Book}, Euclid\footnote{\url{http://sci.esa.int/euclid/}, \url{http://www.euclid-ec.org}} \citep{EuclidReport},
 %(\rachel{cite http://adsabs.harvard.edu/abs/2011arXiv1110.3193L}),
-Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_Final}
+Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_AFTA_FINAL}
 %(\rachel{for WFIRST, you should actually cite the Spergel et al report that was on the arxiv in the past year, not Green et al})
 are planned to be carried out over the next decade or two that will gather huge amounts of weak lensing data that can be used to constrain cosmological parameters more precisely than ever.
 Weak gravitational lensing probes the nature of dark energy through both the growth of structure in the universe with redshift and the dependence of distances on the expansion rate or the Hubble parameter.
@@ -340,14 +341,14 @@ evolution).
 \begin{figure}
   \centering
    \includegraphics[width=\columnwidth]{hist2d_mag_mi}
-   \caption{2-D histogram of galaxies in apparent magnitude ($m_\text{F814W}$) and absolute magnitude ($M_\text{F814W}$) space.}
+   \caption{2-D histogram of galaxies in apparent magnitude ($m_\text{F814W}$) and absolute magnitude ($M_I$) space.}
    \label{fig:2Dhist}
 \end{figure}
 
 \begin{figure}
   \centering
    \includegraphics[width=\columnwidth]{MAG_histograms}
-   \caption{Distribution of $M_\text{F814W}$ for various flux-limited samples are plotted together. The vertical line corresponds to the luminosity cut of $-20.8$, below which the $m_\text{F814W}<23.5$ sample has 95.3\% of the galaxies in the $m_\text{F814W}<25.2$ sample.}
+   \caption{Distribution of $M_I$ for various flux-limited samples are plotted together. The vertical line corresponds to the luminosity cut of $-20.8$, below which the $m_\text{F814W}<23.5$ sample has 95.3\% of the galaxies in the $m_\text{F814W}<25.2$ sample.}
    \label{fig:MIhist}
  \end{figure}
  
@@ -357,7 +358,7 @@ bright and faint galaxies at low redshifts. For a fair comparison, we must restr
 %\rachel{Explain why you are doing this.  Before saying {\em how} you
 %  generate a volume-limited sample, explain {\em why} you are
 %  generating one.}
-We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on $K$-corrected $F814W$-band magnitudes, denoted as $M_\text{F814W}$.
+We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on $K$-corrected $F814W$-band magnitudes, denoted as $M_I$.
 \rachel{Is it $i$ band, or $I$ band?  Check which one and then be
   self-consistent throughout the text.}\arun{I think they call it
   $I_{814}$, so $I$.}
@@ -373,15 +374,15 @@ Since the parent sample contains fainter galaxies, upto $m_\text{F814W}=25.2$, w
 %  \caption{ ... }
 % \end{figure}
 
-At $M_\text{F814W}\sim-22.0$, we see the sample is beginning to be biased in the $0.9<z<1.0$ bin due to the flux limit. We obtain 97.84\% completeness in this bin for $M_\text{F814W}$, where completeness is defined as the ratio between the number of galaxies in $m_\text{F814W}\le 23.5$ and in $m_\text{F814W}\le25.2$ samples.
-Thus the sample $z\le1$ and $M_\text{F814W}<-22$ is at least 97.84\% complete. Figs.~\ref{fig:2Dhist} \&~\ref{fig:MIhist} show that at $M_\text{F814W}<-22$, we are not affected by flux limit yet. 
+At $M_I\sim-22.0$, we see the sample is beginning to be biased in the $0.9<z<1.0$ bin due to the flux limit. We obtain 97.84\% completeness in this bin for $M_I$, where completeness is defined as the ratio between the number of galaxies in $m_\text{F814W}\le 23.5$ and in $m_\text{F814W}\le25.2$ samples.
+Thus the sample $z\le1$ and $M_I<-22$ is at least 97.84\% complete. Figs.~\ref{fig:2Dhist} \&~\ref{fig:MIhist} show that at $M_I<-22$, we are not affected by flux limit yet. 
 
 %We see that the region between $0.85<z<1.0$ is neither overdense nor underdense according to our model and hence is not going to be considered for further analysis.
 The region between $0.85<z<1.0$ is only moderately overdense and we do not seem to have as many underdense regions to compare with. It would rather be advantageous to disregard this region
 and redo the volume limiting procedure.
 We relax our luminosity cut %to $-20.8$
 so that the sample is volume-limited \emph{not} until $z=1$ but until $z=0.85$. 
-We choose to impose the cut at $M_\text{F814W}=-20.8$, with 95.3\% completeness in the $0.8 < z \le 0.85$ bin. This increases the sample size significantly, from 7,418 galaxies to 11,169. We call this sample \s$1$.
+We choose to impose the cut at $M_I=-20.8$, with 95.3\% completeness in the $0.8 < z \le 0.85$ bin. This increases the sample size significantly, from 7,418 galaxies to 11,169. We call this sample \s$1$.
 
 However, previous studies {\bf cite} have shown that absolute luminosities evolve with redshift. Thus, we must also let the luminosity cut evolve with the redshift. 
 There has been no published literature on the LF for the $I$-band, particularly for the COSMOS survey.
@@ -390,7 +391,7 @@ Typically, estimates of evolution in K-band are lesser than the estimates of evo
 Assuming that the evolution is a smooth function of the wavelength, the evolution in I-band is expected to be lesser than that of the B-band. 
 Therefore, by considering no evolution and an upper bound on the evolution, we can interpolate what the results would be like for the true $I$-band evolution.
 
-Thus, we construct a second volume-limited sample \s$2$, this time by letting the luminosity cut evolve. Starting from $M_\text{F814W} = -20.8$ for the $0.8<z\le0.85$ bin, we add to it $1.23$ times the difference between the
+Thus, we construct a second volume-limited sample \s$2$, this time by letting the luminosity cut evolve. Starting from $M_I = -20.8$ for the $0.8<z\le0.85$ bin, we add to it $1.23$ times the difference between the
 bincenters to obtain the luminosity cut for the other (lower) redshift bins. At lower redshifts, we allow for fainter galaxies that wouldn't have passed the cut in \s$1$ and hence has more galaxies.
 
 %In our analysis, we imposed the cut on luminosity for all redshift bins while many studies have shown that the characteristic luminosity of galaxies evolve with redshift. 
@@ -406,7 +407,7 @@ Alternatively, one could get around the problem of considering redshift evolutio
 We plot their SMF for \emph{all} in Fig.~\ref{fig:smf} for
 reference. Their SMF is higher than ours since they reach $K_s$-band
 $5\sigma$ depth of 24.9. 
-As in the case of $M_\text{F814W}$ s, we compare the stellar mass in the $m_\text{F814W}\le23.5$ sample with that of the $m_\text{F814W}\le25.2$ sample. 
+As in the case of $M_I$ s, we compare the stellar mass in the $m_\text{F814W}\le23.5$ sample with that of the $m_\text{F814W}\le25.2$ sample. 
 The sample $\log(M/M_\odot) > 10.15$ is about 95\% complete in the redshift bin $\left[ 0.75 - 0.85\right]$ and has 10,341 galaxies in total.
 Thus, we construct a third volume-limited sample \s$3$ by imposing the stellar mass cut mentioned above. The number of galaxies in redshift slices
 are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a volume-limited sample. Stellar-mass limited sample happens to be the smallest one.
@@ -424,6 +425,7 @@ are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a vo
  0.65-0.75 & Overdense & 4059 & 4476 & 2593 \\
  0.75-0.8 & Underdense & 1159 & 1196 & 675 \\
  0.8-0.85 & Overdense & 2428 & 2428 & 1630 \\
+ \hline
 \end{tabular}
 \caption{List of different redshift bins, their environmental classification and the number of galaxies binwise for volume-limited samples constructed in three different ways: using hard luminosity cut (\s$1$), letting the luminosity cut evolve with redshift (\s$2$) and imposing stellar-mass cuts (\s$3$).}
 \label{table:GalaxyCounts}
@@ -459,7 +461,7 @@ The other redshift slices seem to exhibit a consistent behavior.
 \begin{figure}
  \centering
   \includegraphics[width=\columnwidth]{redshift_vollimited}
-  \caption{Upper panel: Redshift distribution of volume-limited ($M_\text{F814W} <  -20.8$) \s$1$ sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+  \caption{Upper panel: Redshift distribution of volume-limited ($M_I <  -20.8$) \s$1$ sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
            Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
   \label{fig:redshift_vollimited}
 \end{figure}
@@ -608,42 +610,47 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
 
 \begin{table}
  \centering
- \begin{tabular}[\columnwidth]{ | r | c | c | c | c | }
+ \begin{tabular}[\columnwidth]{ | l | l | l | l | }
   \hline
   %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
-  Redshift bins & Tests & \s$1$ & \s$2$ & \s$3$ \\
+  Redshift bins & \s$1$ & \s$2$ & \s$3$ \\
   \hline
-  All overdense vs. & K-S & 1.1e-4 & 3e-5 & 0.0 \\
-  All underdense    & A-D & 1e-5 & 0.0 & 0.0 \\ \hline 
-  $z:[0.65,0.75]$ (OD) vs. & K-S & 0.613 & 0.431 & 0.231 \\
-  $z:[0.80,0.85]$ (OD) & A-D & 0.494 & 0.237 & 0.130 \\ \hline
-  $z:[0.65,0.75]$ (OD) vs & K-S & 5.8e-4 & 2e-5 & 0.0 \\
-  $z:[0.55,0.65]$ (UD) & A-D & 9.8e-4 & 0.0 & 0.0 \\ \hline
+  All overdense vs.  & \scinot{1.1}{-4} & \scinot{2.6}{-5} & \scinot{1.9}{-6} \\
+  All underdense     & \scinot{1}{-5} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline 
+  $z:[0.65,0.75]$ (OD) vs. & 0.613 & 0.431 & 0.231 \\
+  $z:[0.80,0.85]$ (OD) & 0.494 & 0.237 & 0.130 \\ \hline
+  $z:[0.65,0.75]$ (OD) vs. & \scinot{5.8}{-4} & \scinot{1.5}{-5} & \scinot{3.5}{-6} \\
+  $z:[0.55,0.65]$ (UD) & \scinot{9.8}{-4} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline
  \end{tabular}
- \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways. \rachel{What are the 0 entries in this and other tables?  Just how close to zero are they?  Since 0 is not really achieve, I recommend defining a value (such as $10^{-10}$ below which you will just say $<10^{-10}$ and give the value if it's above that, even if it seems really small to you, like $10^{-8}$.  Also, say $1.1\times 10^{-4}$ rather than $1.1e-4$.}}
+ \caption{$p$-values from the Kolmogorov-Smirnov (top) and Anderson-Darling (bottom) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.
+          The Anderson-Darling $p$-values are correct only upto 5 decimal places. 
+% \rachel{What are the 0 entries in this and other tables?  Just how close to zero are they?  Since 0 is not really achieve, I recommend defining a value (such as $10^{-10}$ below which you will just say $<10^{-10}$ and give the value if it's above that, even if it seems really small to you, like $10^{-8}$.  Also, say $1.1\times 10^{-4}$ rather than $1.1e-4$.}
+          }
  \label{table:pvalues_all}
 \end{table}
 
 \begin{table}
  \centering
- \begin{tabular}[\columnwidth]{ | r | c | c | c | c | }
+ \begin{tabular}[\columnwidth]{ | l | l | l | l | }
   \hline
   %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
-  Redshift bins & Tests & \s$1$ & \s$2$ & \s$3$ \\
+  Redshift bins & \s$1$ & \s$2$ & \s$3$ \\
   \hline
-  All overdense vs. & K-S & 0.00056 & 0.0001 & 0.0 \\
-  All underdense    & A-D & 3e-5 & 1e-5 & 0.0 \\ \hline 
-  $z:[0.65,0.75]$ (OD) vs. & K-S & 0.9563 & 0.7476 & 0.5359 \\
-  $z:[0.80,0.85]$ (OD) & A-D & 0.5162 & 0.3352 & 0.2290 \\ \hline
-  $z:[0.65,0.75]$ (OD) vs & K-S & 0.00605 & 0.00025 & 0.00024 \\
-  $z:[0.55,0.65]$ (UD) & A-D & 0.01201 & 0.00025 & 5e-5 \\ \hline
+  All overdense vs. & \scinot{5.6}{-4} & \scinot{1.0}{-4} & \scinot{3.3}{-6} \\
+  All underdense    & \scinot{3}{-5} & \scinot{1}{-5} & $<\scinot{1}{-5}$ \\ \hline 
+  $z:[0.65,0.75]$ (OD) vs. & 0.9563 & 0.7476 & 0.5359 \\
+  $z:[0.80,0.85]$ (OD) & 0.5162 & 0.3352 & 0.2290 \\ \hline
+  $z:[0.65,0.75]$ (OD) vs & \scinot{6.0}{-3} & \scinot{2.5}{-4} & \scinot{2.4}{4} \\
+  $z:[0.55,0.65]$ (UD) & \scinot{1.2}{-2} & \scinot{2.5}{-4} & \scinot{5}{-5} \\ \hline
  \end{tabular}
- \caption{$p$-values from the Kolmogorov-Smirnov (K-S) and Anderson-Darling (A-D) obtained by comparing the ellipticities computed using second moments are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.  \rachel{Change numbers that are below 0.01 to scientific notation.}}
+ \caption{$p$-values from the Kolmogorov-Smirnov (top) and Anderson-Darling (bottom) obtained by comparing the ellipticities computed using second moments are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.  \arun{Should I write only two significant digits for higher $p$-values?}
+           The Anderson-Darling $p$-values are correct only upto 5 decimal places. }
  \label{table:pvalues_momentbased_all}
 \end{table}
 
 %The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
 We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
+The Anderson-Darling test is carried out using the \texttt{adk} package\footnote{\url{http://www.inside-r.org/packages/cran/adk/docs/adk.test}} in \texttt{R}.
 
 We first compare the distribution of the axis ratio in \emph{all}
 overdense bins and \emph{all} underdense bins in Fig.~\ref{fig:axisratio_all}.
@@ -667,7 +674,7 @@ If $Q_{ij}$ represents the generic matrix element of the matrix of second moment
  e = e_1 + ie_2 = \frac{Q_{11}-Q_{22}+2iQ_{12}}{Q_{11}+Q_{22}}.
  \label{eq:distortion}
 \end{equation}
-\arun{Is this the correct denominator?} \rachel{Yes.  There's another ellipticity definition with a different denominator, but we use distortion which is defined as in this equation.  (Once you read this response feel free to delete this conversation.)}
+%\arun{Is this the correct denominator?} \rachel{Yes.  There's another ellipticity definition with a different denominator, but we use distortion which is defined as in this equation.  (Once you read this response feel free to delete this conversation.)}
 Then, one definition of ellipticity is the magnitude of this complex number which is $\sqrt{e_1^2+e_2^2}$.
 
 After neglecting a small fraction $(\sim 0.0065\%)$ of galaxies (36 out of 55991 galaxies between $0.3\le z<0.85$ with $\log(M/\Msun) > 10.15$) for which the moments do not converge, 

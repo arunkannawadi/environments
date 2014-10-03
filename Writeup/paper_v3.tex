@@ -149,36 +149,93 @@ According to our current understanding, galaxy shapes and morphologies should de
 \section{Introduction}
 \label{S:intro}
 
-Major surveys such as the Hyper Suprime-Cam \citep[HSC;][]{HSC_Overview}, Dark Energy Survey~\citep[DES;][]{DESC}, the KIlo-Degree Survey~\citep[KIDS;][]{KIDS}, the Panoramic Survey Telescope and Rapid Response System~\citep[PanSTARRS;][]{PanSTARRS_2010},
+Weak gravitational lensing, the deflection of light by mass, is one of the cleanest ways to study the nature of dark energy by tracking the growth of structure in the Universe as a function of time \citep[e.g.,][]{2001PhR...340..291B,2006astro.ph..9591A,2013PhR...530...87W}.
+As light from background sources passes by matter (including dark matter) on its way to us, the apparent shapes of the background galaxies get distorted, and the galaxies get slightly magnified as well.
+Because of its sensitivity to dark matter and dark energy, major surveys such as the Hyper Suprime-Cam \citep[HSC;][]{HSC_Overview}, Dark Energy Survey~\citep[DES;][]{DESC}, the KIlo-Degree Survey~\citep[KIDS;][]{KIDS}, the Panoramic Survey Telescope and Rapid Response System~\citep[PanSTARRS;][]{PanSTARRS_2010},
 the Large Synoptic Survey Telescope~\citep[LSST;][]{LSST_Book}, Euclid\footnote{\url{http://sci.esa.int/euclid/}, \url{http://www.euclid-ec.org}} \citep{EuclidReport},
 %(\rachel{cite http://adsabs.harvard.edu/abs/2011arXiv1110.3193L}),
-Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_AFTA_FINAL}
+and Wide-Field Infrared Survey Telescope~\citep[WFIRST;][]{WFIRST_Final}
 %(\rachel{for WFIRST, you should actually cite the Spergel et al report that was on the arxiv in the past year, not Green et al})
-are planned to be carried out over the next decade or two that will gather huge amounts of weak lensing data that can be used to constrain cosmological parameters more precisely than ever.
-Weak gravitational lensing probes the nature of dark energy through both the growth of structure in the universe with redshift and the dependence of distances on the expansion rate or the Hubble parameter.
-However, most of the matter in the universe is made up of dark matter which cannot be detected by most of the standard astronomical/cosmological probes. Weak lensing happens to be the cleanest probe for this purpose.
-As light from the background sources passes through the foreground cluster of galaxies and dark matter profiles, the shapes get distorted. Weak lensing also causes magnification in addition to introducing a shear.
+are planned for the next two decades to gather enormous quantities of weak lensing data that will lead to precise constraints on the growth of structure with time, and therefore cosmological parameters.
 %Weak lensing effects need to be removed from the Cosmic Microwave Background (CMB) analysis to understand the initial conditions of the universe.
 
-For the upcoming surveys to acheive their promise, the systematic error budget must be below the statistical error budget. This would mean that the systematic errors need to be reduced from their current typical level.
-One method that is commonly used to test for the presence of systematics is image simulation. Realistic simulations use samples based on images taken from the Hubble Space Telescope (HST) such as COSMOS or UDF(Ultra Deep Field), which are deep (high redshift) surveys taken over small areas of the sky.
-The goal of this work is to understand the systematic uncertainties that might arise due to finite size of these areas when dividing the sample into redshift slices to test for 
-shear systematics as a function of redshift.
+For the upcoming surveys to achieve their promise, their systematic error budgets must be below their statistical error budgets.
+Systematic error budgets for weak lensing surveys typically include
+astrophysical effects, such as intrinsic alignments of galaxy shapes
+with large scale density fields \citep[e.g.,][]{2014arXiv1407.6990T} and the effect of baryons on the
+matter power spectrum \citep[e.g.,][]{2011MNRAS.415.3649V}, as well as observational uncertainties such as
+the ability to robustly infer shears from galaxy observed shapes or
+photometric redshifts from their observed colors. 
+Given the expected sub-per cent errors on upcoming surveys, systematic errors must be reduced from
+ their typical level in the current state-of-the-art
+ measurements that typically achieve $\sim 5$ per cent statistical
+ errors at best
+ \citep[e.g.,][]{2010A&A...516A..63S,2013MNRAS.432.2433H,2013ApJ...765...74J,2013MNRAS.432.1544M}.
+
+One method that is commonly used to test for the presence of
+systematic errors in the shear estimation process is image simulation,
+where we can cleanly test whether our methods of shear estimation
+recover the ground truth. This is a valuable test, considering the
+numerous sources of additive and multiplicative bias such as a
+mismatch between galaxy model assumptions and actual galaxy light
+profiles \citep[e.g.,][]{2010MNRAS.404..458V, 2010A&A...510A..75M}, biases due to the effects of pixel noise on the
+shear estimates
+\citep{2012MNRAS.427.2711K,2012MNRAS.424.2757M,2012MNRAS.425.1951R},
+and ellipticity gradients \citep{2010MNRAS.406.2793B}.  These biases
+often differ for galaxies with different morphologies (e.g., disks
+vs. ellipticals), sizes, $S/N$, and shape.  
+ Realistic simulations use samples based on images from the Hubble
+ Space Telescope ({\em HST}) such as COSMOS \citep[used by the GREAT3 challenge,][]{great3} or the
+ Ultra Deep Field \citep[UDF, used by][]{2013ApJ...765...74J}.  These
+ two examples serve as the extremes in the {\em HST} samples used as
+ the basis for image simulation, with the former being shallower but
+ the current widest contiguous area surveyed by the {\em HST}, and the
+ latter being extremely deep but narrow.
+The goal of this work is to understand the systematic uncertainties
+that might arise due to the finite size of these areas, resulting in
+cosmic variance that could result in selection of atypical galaxy
+samples, particularly when dividing the sample as a function of
+redshift. Upcoming surveys will study lensing as a function of
+redshift and therefore need to simulate galaxy samples at different
+redshifts in order to assess the shear calibration at each redshift.
+
 %In almost all branches of observational cosmology, weak lensing introduces systematic error, in addition to itself being a probe of the dark matter and eventually the large scale structure of the universe.
 
-Previous studies have shown that any shape measurement method that uses second moments cannot be independent of the morphology and substructure of the galaxies involved. ({\bf rephrased from GREAT3}).
-Hence, it is important to check any method that is proposed to measure the shape of the galaxies to check against a simulation that generates images as realistic as possible.  
-With this in mind, the GREAT3 challenge~\citep{great3} was held with the aim to test and faciliate methods for measuring weak gravitational lensing by analyzing astronomical images.
-Software packages like GalSim\footnote{\url{https://github.com/GalSim-developers/GalSim}} can generate galaxy images fairly accurately, given realistic input parametes.
-The training dataset used in the challenge comes from the COSMOS survey, which we describe in sufficient detail in \S\ref{S:data}.
-While providing a good quality (high $S/N$) images to be trained over, there could be some bias introduced due to the survey being a narrow one.
-It is known \arun{cite refs.} that the shape and morphology of galaxies depend very much on their local environment. Hence, local overdensities or underdensities
-observed in the COSMOS' field of view (FOV) may cause the properties of the galaxies to be associated with the redshift, thus unable to distinguish between redshift evolution and large scale structure.
+A general requirement for simulations used to test shear recovery is
+that they should be as realistic as possible.  
+With this in mind, the GREAT3 challenge~\citep{great3} was held with the aim to test methods for measuring weak gravitational lensing by analyzing astronomical images.
+Software packages like
+GalSim\footnote{\url{https://github.com/GalSim-developers/GalSim}}
+\citep{2014arXiv1407.7676R} can generate images of galaxies from the
+{\em HST} as they would appear with an additional lensing shear and
+viewed by some lower resolution telescope.
+The training dataset used in the challenge comes from the COSMOS
+survey, which we will describe in \S\ref{S:data}.
+%While providing a good quality (high $S/N$) images to be trained over, there could be some bias introduced due to the survey being a narrow one.
+For a variety of physical reasons, some of which are still not fully
+understood, the shape and morphology of
+galaxies depends on their local environment
+\citep[e.g.,][]{2014arXiv1402.1172C,2014MNRAS.444.2200D}. 
+Hence, local overdensities or underdensities
+observed in the COSMOS field may (given the small size of the field)
+cause the properties of the galaxy population in redshift slices to be
+atypical depending on the environment in that slice.  This would have
+the undesired consequence of including variation in galaxy properties
+due to the COSMOS galaxy sample in the simulated galaxies, rather than
+only including ensemble effects such as true redshift evolution of
+galaxy properties.  Our goal is to quantify the degree to which the
+morphology-density correlations in COSMOS cause noticeable changes in
+the galaxy populations in narrow redshift slices at a level that could
+result in difficulty using the sample to derive redshift-dependent
+shear calibrations.
 
 %The structure of the paper is as follows. In \S\ref{S:data}, we briefly describe the COSMOS catalog that we use for our analysis.
-In this paper, we show that these large scale structure effects mentioned are indeed present in the data. The rest of the paper is structured as follows.
-In \S\ref{sub:overdensities}, we explain how we identify overdensities and underdensities, volume-limit our data in \S\ref{sub:volumelimiting} and in \S\ref{sub:axisratio},
- we explain how we obtain axis-ratios from the images of the galaxies. Finally, we present our results in \S\ref{S:results} and end with conclusions in \S\ref{S:summary}.
+The paper is structured as follows: in Sec.~\ref{S:data}, we describe
+the data that we use for this study.  In Sec.~\ref{S:methods}, we
+describe our methods for deriving the relevant galaxy properties
+like environment, morphology, and shape.  
+Using these ingredients, we present our results in Sec.~\ref{S:results}
+and discuss their implications in Sec.~\ref{S:summary}.
 \section{Data}
 \label{S:data}
 %In this analysis, we consider the COSMOS sample of galaxies. 
@@ -435,7 +492,7 @@ are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a vo
  \centering
  \includegraphics[width=2.4\columnwidth]{SMF}
  \caption{Stellar-mass distribution for various flux-limited samples in three redshift ranges are plotted. Bins have been chosen so as to make the comparison easier with 
-          a study of SMF in the same FOV \citep{Tomczak_SMF}. At high mass, the distributions are the same for various flux limits indicating that the samples are complete in that mass range. The curves begin to separate at low masses on account of incompleteness, which determines where the mass cutoff should be to volume-limit the sample.}
+          a study of SMF in the same survey \citep{Tomczak_SMF}. At high mass, the distributions are the same for various flux limits indicating that the samples are complete in that mass range. The curves begin to separate at low masses on account of incompleteness, which determines where the mass cutoff should be to volume-limit the sample.}
  \label{fig:smf}
 \end{figure*}
 

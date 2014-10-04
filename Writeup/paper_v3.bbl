@@ -1,8 +1,19 @@
-\begin{thebibliography}{24}
+\begin{thebibliography}{42}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
+
+\bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
+  {Freedman}, {Hewitt}, {Hu}, {Huth}, {Kamionkowski}, {Kolb}, {Knox}, {Mather},
+  {Staggs}, \& {Suntzeff}}]{2006astro.ph..9591A}
+{Albrecht} A. {et~al.}, 2006, ArXiv Astrophysics e-prints
+
+\bibitem[{{Bartelmann} \& {Schneider}(2001)}]{2001PhR...340..291B}
+{Bartelmann} M., {Schneider} P., 2001, \physrep, 340, 291
 
 \bibitem[{{Baugh} \& {Efstathiou}(1993)}]{Redshift_modelling}
 {Baugh} C.~M., {Efstathiou} G., 1993, \mnras, 265, 145
+
+\bibitem[{{Bernstein}(2010)}]{2010MNRAS.406.2793B}
+{Bernstein} G.~M., 2010, \mnras, 406, 2793
 
 \bibitem[{{Bernstein} \& {Jarvis}(2002)}]{BJ02}
 {Bernstein} G.~M., {Jarvis} M., 2002, \aj, 123, 583
@@ -11,6 +22,11 @@
   {Cooper}, {Willmer}, {Weiner}, {Coil}, {Noeske}, \&
   {Eisenhardt}}]{KEVIN_MSTAR}
 {Bundy} K. {et~al.}, 2006, \apj, 651, 120
+
+\bibitem[{{Carollo} {et~al}\mbox{.}(2014){Carollo}, {Cibinel}, {Lilly},
+  {Pipino}, {Bonoli}, {Finoguenov}, {Miniati}, {Norberg}, \&
+  {Silverman}}]{2014arXiv1402.1172C}
+{Carollo} C.~M. {et~al.}, 2014, ArXiv e-prints
 
 \bibitem[{{Chabrier}(2003)}]{ChabrierIMF}
 {Chabrier} G., 2003, \pasp, 115, 763
@@ -28,6 +44,11 @@
   {Vriend}}]{KIDS}
 {de Jong} J.~T.~A. {et~al.}, 2013, The Messenger, 154, 44
 
+\bibitem[{{De Propris} {et~al}\mbox{.}(2014){De Propris}, {Baldry},
+  {Bland-Hawthorn}, {Brough}, {Driver}, {Hopkins}, {Kelvin}, {Loveday},
+  {Phillipps}, \& {Robotham}}]{2014MNRAS.444.2200D}
+{De Propris} R. {et~al.}, 2014, \mnras, 444, 2200
+
 \bibitem[{{Faber} {et~al}\mbox{.}(2007){Faber}, {Willmer}, {Wolf}, {Koo},
   {Weiner}, {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis}, {Finkbeiner},
   {Gerke}, {Gebhardt}, {Groth}, {Guhathakurta}, {Harker}, {Kaiser}, {Kassin},
@@ -35,6 +56,24 @@
   {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon}, {Simard},
   {Szalay}, {Vogt}, \& {Yan}}]{Faber2007}
 {Faber} S.~M. {et~al.}, 2007, \apj, 665, 265
+
+\bibitem[{{Green} {et~al}\mbox{.}(2012){Green}, {Schechter}, {Baltay}, {Bean},
+  {Bennett}, {Brown}, {Conselice}, {Donahue}, {Fan}, {Gaudi}, {Hirata},
+  {Kalirai}, {Lauer}, {Nichol}, {Padmanabhan}, {Perlmutter}, {Rauscher},
+  {Rhodes}, {Roellig}, {Stern}, {Sumi}, {Tanner}, {Wang}, {Weinberg}, {Wright},
+  {Gehrels}, {Sambruna}, {Traub}, {Anderson}, {Cook}, {Garnavich},
+  {Hillenbrand}, {Ivezic}, {Kerins}, {Lunine}, {McDonald}, {Penny}, {Phillips},
+  {Rieke}, {Riess}, {van der Marel}, {Barry}, {Cheng}, {Content}, {Cutri},
+  {Goullioud}, {Grady}, {Helou}, {Jackson}, {Kruk}, {Melton}, {Peddie},
+  {Rioux}, \& {Seiffert}}]{WFIRST_Final}
+{Green} J. {et~al.}, 2012, ArXiv e-prints
+
+\bibitem[{{Heymans} {et~al}\mbox{.}(2013){Heymans}, {Grocutt}, {Heavens},
+  {Kilbinger}, {Kitching}, {Simpson}, {Benjamin}, {Erben}, {Hildebrandt},
+  {Hoekstra}, {Mellier}, {Miller}, {Van Waerbeke}, {Brown}, {Coupon}, {Fu},
+  {Harnois-D{\'e}raps}, {Hudson}, {Kuijken}, {Rowe}, {Schrabback}, {Semboloni},
+  {Vafaei}, \& {Velander}}]{2013MNRAS.432.2433H}
+{Heymans} C. {et~al.}, 2013, \mnras, 432, 2433
 
 \bibitem[{{Hirata} \& {Seljak}(2003)}]{HS03}
 {Hirata} C., {Seljak} U., 2003, \mnras, 343, 459
@@ -51,6 +90,16 @@
   {Scodeggio}, {Shioya}, {Silverman}, {Surace}, {Tanaka}, {Tasca}, {Tresse},
   {Vergani}, \& {Zucca}}]{COSMOS_Photoz_30band}
 {Ilbert} O. {et~al.}, 2009, \apj, 690, 1236
+
+\bibitem[{{Jee} {et~al}\mbox{.}(2013){Jee}, {Tyson}, {Schneider}, {Wittman},
+  {Schmidt}, \& {Hilbert}}]{2013ApJ...765...74J}
+{Jee} M.~J., {Tyson} J.~A., {Schneider} M.~D., {Wittman} D., {Schmidt} S.,
+  {Hilbert} S., 2013, \apj, 765, 74
+
+\bibitem[{{Kacprzak} {et~al}\mbox{.}(2012){Kacprzak}, {Zuntz}, {Rowe},
+  {Bridle}, {Refregier}, {Amara}, {Voigt}, \& {Hirsch}}]{2012MNRAS.427.2711K}
+{Kacprzak} T., {Zuntz} J., {Rowe} B., {Bridle} S., {Refregier} A., {Amara} A.,
+  {Voigt} L., {Hirsch} M., 2012, \mnras, 427, 2711
 
 \bibitem[{{Kaiser} {et~al}\mbox{.}(2010){Kaiser}, {Burgett}, {Chambers},
   {Denneau}, {Heasley}, {Jedicke}, {Magnier}, {Morgan}, {Onaka}, \&
@@ -116,10 +165,23 @@
   {Schrabback}}]{great3}
 {Mandelbaum} R. {et~al.}, 2014, \apjs, 212, 5
 
+\bibitem[{{Mandelbaum} {et~al}\mbox{.}(2013){Mandelbaum}, {Slosar}, {Baldauf},
+  {Seljak}, {Hirata}, {Nakajima}, {Reyes}, \& {Smith}}]{2013MNRAS.432.1544M}
+{Mandelbaum} R., {Slosar} A., {Baldauf} T., {Seljak} U., {Hirata} C.~M.,
+  {Nakajima} R., {Reyes} R., {Smith} R.~E., 2013, \mnras, 432, 1544
+
 \bibitem[{{Markwardt}(2009)}]{mpfit2fun}
 {Markwardt} C.~B., 2009, in Astronomical Society of the Pacific Conference
   Series, Vol. 411, Astronomical Data Analysis Software and Systems XVIII,
   {Bohlender} D.~A., {Durand} D., {Dowler} P., eds., p. 251
+
+\bibitem[{{Melchior} {et~al}\mbox{.}(2010){Melchior}, {B{\"o}hnert},
+  {Lombardi}, \& {Bartelmann}}]{2010A&A...510A..75M}
+{Melchior} P., {B{\"o}hnert} A., {Lombardi} M., {Bartelmann} M., 2010, \aap,
+  510, A75
+
+\bibitem[{{Melchior} \& {Viola}(2012)}]{2012MNRAS.424.2757M}
+{Melchior} P., {Viola} M., 2012, \mnras, 424, 2757
 
 \bibitem[{{Miyazaki} {et~al}\mbox{.}(2006){Miyazaki}, {Komiyama}, {Nakaya},
   {Doi}, {Furusawa}, {Gillingham}, {Kamata}, {Takeshi}, \&
@@ -128,22 +190,30 @@
   Engineers (SPIE) Conference Series, Vol. 6269, Society of Photo-Optical
   Instrumentation Engineers (SPIE) Conference Series
 
+\bibitem[{{Refregier} {et~al}\mbox{.}(2012){Refregier}, {Kacprzak}, {Amara},
+  {Bridle}, \& {Rowe}}]{2012MNRAS.425.1951R}
+{Refregier} A., {Kacprzak} T., {Amara} A., {Bridle} S., {Rowe} B., 2012,
+  \mnras, 425, 1951
+
+\bibitem[{{Rowe} {et~al}\mbox{.}(2014){Rowe}, {Jarvis}, {Mandelbaum},
+  {Bernstein}, {Bosch}, {Simet}, {Meyers}, {Kacprzak}, {Nakajima}, {Zuntz},
+  {Miyatake}, {Dietrich}, {Armstrong}, {Melchior}, \&
+  {Gill}}]{2014arXiv1407.7676R}
+{Rowe} B. {et~al.}, 2014, ArXiv e-prints
+
+\bibitem[{{Schrabback} {et~al}\mbox{.}(2010){Schrabback}, {Hartlap},
+  {Joachimi}, {Kilbinger}, {Simon}, {Benabed}, {Brada{\v c}}, {Eifler},
+  {Erben}, {Fassnacht}, {High}, {Hilbert}, {Hildebrandt}, {Hoekstra},
+  {Kuijken}, {Marshall}, {Mellier}, {Morganson}, {Schneider}, {Semboloni}, {van
+  Waerbeke}, \& {Velander}}]{2010A&A...516A..63S}
+{Schrabback} T. {et~al.}, 2010, \aap, 516, A63
+
 \bibitem[{{Scoville} {et~al}\mbox{.}(2007){Scoville}, {Aussel}, {Brusa},
   {Capak}, {Carollo}, {Elvis}, {Giavalisco}, {Guzzo}, {Hasinger}, {Impey},
   {Kneib}, {LeFevre}, {Lilly}, {Mobasher}, {Renzini}, {Rich}, {Sanders},
   {Schinnerer}, {Schminovich}, {Shopbell}, {Taniguchi}, \&
   {Tyson}}]{COSMOS_overview}
 {Scoville} N. {et~al.}, 2007, \apjs, 172, 1
-
-\bibitem[{{Spergel} {et~al}\mbox{.}(2013){Spergel}, {Gehrels}, {Breckinridge},
-  {Donahue}, {Dressler}, {Gaudi}, {Greene}, {Guyon}, {Hirata}, {Kalirai},
-  {Kasdin}, {Moos}, {Perlmutter}, {Postman}, {Rauscher}, {Rhodes}, {Wang},
-  {Weinberg}, {Centrella}, {Traub}, {Baltay}, {Colbert}, {Bennett},
-  {Kiessling}, {Macintosh}, {Merten}, {Mortonson}, {Penny}, {Rozo},
-  {Savransky}, {Stapelfeldt}, {Zu}, {Baker}, {Cheng}, {Content}, {Dooley},
-  {Foote}, {Goullioud}, {Grady}, {Jackson}, {Kruk}, {Levine}, {Melton},
-  {Peddie}, {Ruffa}, \& {Shaklan}}]{WFIRST_AFTA_FINAL}
-{Spergel} D. {et~al.}, 2013, ArXiv e-prints
 
 \bibitem[{{The Dark Energy Survey Collaboration}(2005)}]{DESC}
 {The Dark Energy Survey Collaboration}, 2005, ArXiv Astrophysics e-prints
@@ -153,5 +223,21 @@
   {Kacprzak}, {Kawinwanichakij}, {Kelson}, {McCarthy}, {Mehrtens}, {Monson},
   {Persson}, {Spitler}, {Tilvi}, \& {van Dokkum}}]{Tomczak_SMF}
 {Tomczak} A.~R. {et~al.}, 2014, \apj, 783, 85
+
+\bibitem[{{Troxel} \& {Ishak}(2014)}]{2014arXiv1407.6990T}
+{Troxel} M.~A., {Ishak} M., 2014, ArXiv e-prints
+
+\bibitem[{{van Daalen} {et~al}\mbox{.}(2011){van Daalen}, {Schaye}, {Booth}, \&
+  {Dalla Vecchia}}]{2011MNRAS.415.3649V}
+{van Daalen} M.~P., {Schaye} J., {Booth} C.~M., {Dalla Vecchia} C., 2011,
+  \mnras, 415, 3649
+
+\bibitem[{{Voigt} \& {Bridle}(2010)}]{2010MNRAS.404..458V}
+{Voigt} L.~M., {Bridle} S.~L., 2010, \mnras, 404, 458
+
+\bibitem[{{Weinberg} {et~al}\mbox{.}(2013){Weinberg}, {Mortonson},
+  {Eisenstein}, {Hirata}, {Riess}, \& {Rozo}}]{2013PhR...530...87W}
+{Weinberg} D.~H., {Mortonson} M.~J., {Eisenstein} D.~J., {Hirata} C., {Riess}
+  A.~G., {Rozo} E., 2013, \physrep, 530, 87
 
 \end{thebibliography}

@@ -756,9 +756,12 @@ analytical functions with best fit parameters are plotted over it.
 % 
 % {\bf Should explain in brief Claire's work.} \\
 
-If galaxies have elliptical isophotes, its shape and size could be defined by the axis ratio and the area enclosed by a boundary isophote. However, in real galaxy images,
-the boundary may not be well defined and the shape may not be well approximated by an ellipse. More importantly, the effect of smearing due to the point-spread function (PSF) is larger. 
-Thus, we are in need of more sophisticated methods to measure the ellipticities.
+We choose simple and well-motivated ways to parametrize galaxy shapes
+and morphology based on existing methods in the literature.  These
+methods have the advantage of being stable and well-defined in nearly
+all cases.  However, for highly irregular galaxies the meaning of the
+structural parameters that we derive is not entirely clear.  In all
+cases, our methods account for the effect of the {\em HST} PSF.
 % Given the surface brightness (intensity) $I(\vec{\theta})$ of a galaxy image at every angular position $\vec{\theta}$,
 % we can define the tensor of second brightness moments as
 % \begin{equation}
@@ -780,34 +783,89 @@ Thus, we are in need of more sophisticated methods to measure the ellipticities.
 %   use a PSF correction scheme.  Recommend removing much of the above discussion.}
 % \arun{Should I remove these even if we plan to use the ellipticities from the second moments?} 
 
-One method to estimate the ellipticities is to estimate the axis-ratios by fitting parametric models to each image. The models that we fit to the images are
+One method to estimate the galaxy ellipticities and other
+morphological parameters is to fit parametric models convolved with
+the PSF to the observed galaxy light profile.  We use the fits from
+\cite{great3}, which used the methods and
+software from \cite{Claire_Fits} to fit the images to the following profiles:
 \begin{enumerate}
- \item a \sersic profile given by the expression 
+ \item A \sersic profile given by the expression 
        \begin{equation} 
-    S = \Sigma_{1/2}\exp{\left( -k(R/R_{\text{eff}})^{1/n} -1 \right)},
+    I_S(x,y) = I_{1/2}\exp{\left[ -k(R(x,y)/R_{\text{eff}})^{1/n} -1 \right]},
        \end{equation}
-       \item two \sersic component fits: de Vaucoulers bulge $(n=4)$ + exponential disc profile $(n=1)$,
+where \begin{align*} R^2(x,y) = & ((x-x_0)\cos\Phi+(y-y_0)\sin\Phi)^2
+  \\ & + ((y-y_0)\cos\Phi-(x-x_0)\sin\Phi)^2/q^2, \end{align*}
+$R_{\text{eff}}$ is the half-light radius of the profile defined along
+hte major axis, $I_0$ is the surface brightness at $R=R_{\text{eff}}$, $(x_0,y_0)$ is the centroid of the image,
+$\Phi$ is the position angle, $n$ is the \sersic index, $k$ is a
+$n$-dependent normalization factor required to ensure that half the
+light is enclosed within the half-light radius, and $q$ is the axis
+ratio of the elliptical isophotes.
+Thus, the \sersic profile has 7 free parameters.
+       \item A sum of two \sersic{} component fits: a de Vaucouleurs
+         bulge $(n=4)$ plus an exponential disc profile $(n=1)$.  In this
+         case, there are 10 free parameters, because the \sersic\
+         indices are fixed, and the two components are constrained to
+         have the same centroid.
 \end{enumerate}
-where \begin{align*} R^2 = & ((x-x_0)\cos\Phi+(y-y_0)\sin\Phi)^2  \\ & + ((y-y_0)\cos\Phi-(x-x_0)\sin\Phi)^2/q^2, \end{align*}
-$R_{\text{eff}}$ is the half-light radius of the profile, $\Sigma_{1/2}$ is the surface brightness at $R=R_{\text{eff}}$, $(x_0,y_0)$ is the centroid of the image,
-$\Phi$ is the profile rotation angle, $n$ is the \sersic index, $k$ is a $n$-dependent normalization factor and $q$ is the axis ratio of the elliptical isophotes.
-Thus, the \sersic profile has 7 free parameters. The bulge+disk model has 10 free parameters since the \sersic indices are fixed as 1 and 4
-and both the profiles are required to have the same centroid $(x_0,y_0)$. Best-fit parameters were found, by minimizing the weighted
-sum of the difference between the image and the PSF-convolved model
-using Levenberg-Marquardt minimization, \texttt{mpfit2fun} in IDL \citep{mpfit2fun}. More details about the fit can be found
+More details about the fitting algorithm can be found
 in \cite{Claire_Fits}.
 
-The quantities that we would use from the single \sersic profile fits are the \sersic index and axis ratio
-and from the bulge+disk fits will be the \btt ratio given by ${\Sigma_{1/2}(n=4)}/{\left(\Sigma_{1/2}(n=4)+\Sigma_{1/2}(n=1)\right)}$.
-\rachel{I think it would be useful to take the entire sample that we use for science, and show the overall distributions of axis ratio, distortion (one curve for Claire's and one curve for re-Gaussianization), \sersic index, and \btt.  This would be a nearly full-page four panel figure, but I think it's worthwhile to illustrate the nature of the sample.  For example, it will clearly show why we cannot use the distributions of \sersic index and \btt, because of the hard cutoffs.}
+To quantify galaxy morphology and shape, we will use several
+quantities from the above fits.  First, from the single \sersic
+profile fits, we use the \sersic index and the axis ratio.  The axis
+ratio can also be used to derive a distortion,
+\begin{equation}
+e = \frac{1-q^2}{1+q^2}
+\end{equation}
+or an ellipticity,
+\begin{equation}
+\varepsilon = \frac{1-q}{1+q}.
+\end{equation}
 
-An alternative method involves correcting the observed image for the PSF and computing the covariances from which the ellipticity of the galaxy can be obtained.
-The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in Sec.~2.4 of \cite{HS03} (hereafter HS03).
+As an alternative morphological indicator (instead of \sersic{} index)
+we use a bulge-to-total ratio derived from the double \sersic{}
+profile fits.  This ratio is defined in terms of bulge and disk fluxes as
+\begin{equation}
+\frac{B}{T} = \frac{f_\text{bulge}}{f_\text{bulge}+f_\text{disk}}.
+\end{equation}
+(\rachel{Note, the equation that was previously in here was wrong.
+  It's not defined in terms of surface brightnesses, but rather in
+  terms of flux.  Were you using numbers from my files for $B/T$?  If
+  so, then it was calculated properly.  But if your analysis uses the
+  equation that was in here before, then you will have to redo it.
+  Sorry for not noticing this earlier.})
+
+\rachel{I think it would be useful to take the entire sample that we
+  use for science, and show the overall distributions of axis ratio,
+  distortion (one curve for Claire's and one curve for
+  re-Gaussianization), \sersic index, and \btt.  This would be a
+  nearly full-page four panel figure, but I think it's worthwhile to
+  illustrate the nature of the sample.  For example, it will clearly
+  show why we cannot use the distributions of \sersic index and \btt,
+  because of the hard cutoffs.}
+
+We also consider an alternative method for estimating the galaxy
+ellipticity.  This method is based on using the observed weighted
+moments of the galaxy and PSF, and correcting those of the galaxy for
+those of the PSF.  This PSF correction scheme is the
+re-Gaussianization method described in section~2.4 of \cite{HS03}
+(hereafter HS03) as implemented in the {\sc GalSim} software package
+(with implementation details described in \citealt{2014arXiv1407.7676R}).
 This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
-intrinsic image of $f$, is $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
-estimate of $I'$ even if we use an approximate form for $f$. The form assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I - M_g$, where $M_I$ and $M_g$ are the adaptive
-covariances of the measured object and PSF respectively, described in Sec.~2.1 of HS03, which is in turn based on \cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
-of the galaxies, which we will refer to as `ellipticities based on moments'.
+intrinsic image, $f$, can be modeled as $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
+estimate of $I'$ even if we use an approximate form for $f$. The form
+assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I
+- M_g$, where $M_I$ and $M_g$ are the elliptical Gaussian-weighted adaptive
+covariances of the measured object and PSF respectively, described in
+section~2.1 of HS03 and \cite{BJ02}. We refer to the
+re-Gaussianization estimates of the PSF-corrected distortion as
+``moments-based shape estimates''.  The value in including them in
+this analysis is that they have quite different radial weighting from
+the \sersic{} profile fits, with the outer regions being quite
+downweighted when calculating adaptive moments.  Thus, if ellipticity
+gradients are important, we could get different results using these
+two shape estimators.
 
 \section{Results}
 \label{S:results}

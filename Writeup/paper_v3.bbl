@@ -1,4 +1,4 @@
-\begin{thebibliography}{42}
+\begin{thebibliography}{44}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -17,6 +17,15 @@
 
 \bibitem[{{Bernstein} \& {Jarvis}(2002)}]{BJ02}
 {Bernstein} G.~M., {Jarvis} M., 2002, \aj, 123, 583
+
+\bibitem[{{Bridle} {et~al}\mbox{.}(2010){Bridle}, {Balan}, {Bethge}, {Gentile},
+  {Harmeling}, {Heymans}, {Hirsch}, {Hosseini}, {Jarvis}, {Kirk}, {Kitching},
+  {Kuijken}, {Lewis}, {Paulin-Henriksson}, {Sch{\"o}lkopf}, {Velander},
+  {Voigt}, {Witherick}, {Amara}, {Bernstein}, {Courbin}, {Gill}, {Heavens},
+  {Mandelbaum}, {Massey}, {Moghaddam}, {Rassat}, {R{\'e}fr{\'e}gier}, {Rhodes},
+  {Schrabback}, {Shawe-Taylor}, {Shmakova}, {van Waerbeke}, \&
+  {Wittman}}]{2010MNRAS.405.2044B}
+{Bridle} S. {et~al.}, 2010, \mnras, 405, 2044
 
 \bibitem[{{Bundy} {et~al}\mbox{.}(2006){Bundy}, {Ellis}, {Conselice}, {Taylor},
   {Cooper}, {Willmer}, {Weiner}, {Coil}, {Noeske}, \&
@@ -107,6 +116,13 @@
 {Kaiser} N. {et~al.}, 2010, in Society of Photo-Optical Instrumentation
   Engineers (SPIE) Conference Series, Vol. 7733, Society of Photo-Optical
   Instrumentation Engineers (SPIE) Conference Series
+
+\bibitem[{{Kitching} {et~al}\mbox{.}(2012){Kitching}, {Balan}, {Bridle},
+  {Cantale}, {Courbin}, {Eifler}, {Gentile}, {Gill}, {Harmeling}, {Heymans},
+  {Hirsch}, {Honscheid}, {Kacprzak}, {Kirkby}, {Margala}, {Massey}, {Melchior},
+  {Nurbaeva}, {Patton}, {Rhodes}, {Rowe}, {Taylor}, {Tewes}, {Viola},
+  {Witherick}, {Voigt}, {Young}, \& {Zuntz}}]{2012MNRAS.423.3163K}
+{Kitching} T.~D. {et~al.}, 2012, \mnras, 423, 3163
 
 \bibitem[{{Koekemoer} {et~al}\mbox{.}(2007){Koekemoer}, {Aussel}, {Calzetti},
   {Capak}, {Giavalisco}, {Kneib}, {Leauthaud}, {Le F{\`e}vre}, {McCracken},

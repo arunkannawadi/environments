@@ -183,51 +183,42 @@ shear estimates
 \citep{2012MNRAS.427.2711K,2012MNRAS.424.2757M,2012MNRAS.425.1951R},
 and ellipticity gradients \citep{2010MNRAS.406.2793B}.  These biases
 often differ for galaxies with different morphologies (e.g., disks
-vs. ellipticals), sizes, $S/N$, and shape.  
- Realistic simulations use samples based on images from the Hubble
- Space Telescope ({\em HST}) such as COSMOS \citep[used by the GREAT3 challenge,][]{great3} or the
- Ultra Deep Field \citep[UDF, used by][]{2013ApJ...765...74J}.  These
- two examples serve as the extremes in the {\em HST} samples used as
- the basis for image simulation, with the former being shallower but
- the current widest contiguous area surveyed by the {\em HST}, and the
- latter being extremely deep but narrow.
-The goal of this work is to understand the systematic uncertainties
-that might arise due to the finite size of these areas, resulting in
-cosmic variance that could result in selection of atypical galaxy
-samples, particularly when dividing the sample as a function of
-redshift. Upcoming surveys will study lensing as a function of
-redshift and therefore need to simulate galaxy samples at different
-redshifts in order to assess the shear calibration at each redshift.
-
-%In almost all branches of observational cosmology, weak lensing introduces systematic error, in addition to itself being a probe of the dark matter and eventually the large scale structure of the universe.
-
+vs. ellipticals), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.423.3163K}. 
 A general requirement for simulations used to test shear recovery is
-that they should be as realistic as possible.  
-With this in mind, the GREAT3 challenge~\citep{great3} was held with the aim to test methods for measuring weak gravitational lensing by analyzing astronomical images.
+that they should be as realistic as possible.
+ 
+ Realistic simulations may use samples based on images from the Hubble
+ Space Telescope ({\em HST}).
 Software packages like
 GalSim\footnote{\url{https://github.com/GalSim-developers/GalSim}}
 \citep{2014arXiv1407.7676R} can generate images of galaxies from the
 {\em HST} as they would appear with an additional lensing shear and
-viewed by some lower resolution telescope.
-The training dataset used in the challenge comes from the COSMOS
-survey, which we will describe in \S\ref{S:data}.
-%While providing a good quality (high $S/N$) images to be trained over, there could be some bias introduced due to the survey being a narrow one.
+viewed by some lower resolution telescope.  Examples of training samples from the {\em HST} include 
+the COSMOS survey \citep[used by the GREAT3 challenge,][]{great3} or the
+ Ultra Deep Field \citep[UDF, used by][]{2013ApJ...765...74J}.  These
+ two examples serve as the extremes in the {\em HST} samples used as
+ the basis for image simulation, with COSMOS being shallower but
+representing the current widest contiguous area surveyed by the {\em HST}, and the
+ latter being extremely deep but narrow.
+
 For a variety of physical reasons, some of which are still not fully
 understood, the shape and morphology of
 galaxies depends on their local environment
 \citep[e.g.,][]{2014arXiv1402.1172C,2014MNRAS.444.2200D}. 
 Hence, local overdensities or underdensities
-observed in the COSMOS field may (given the small size of the field)
+observed in these {\em HST} fields may (given the small size of the field)
 cause the properties of the galaxy population in redshift slices to be
 atypical depending on the environment in that slice.  This would have
 the undesired consequence of including variation in galaxy properties
-due to the COSMOS galaxy sample in the simulated galaxies, rather than
-only including ensemble effects such as true redshift evolution of
+due to the COSMOS (or other) survey cosmic variance in the simulated galaxy sample in that redshift slice, rather than
+only including ensemble effects that would appear in a large cosmological volume, such as true redshift evolution of
 galaxy properties.  Our goal is to quantify the degree to which the
 morphology-density correlations in COSMOS cause noticeable changes in
 the galaxy populations in narrow redshift slices at a level that could
 result in difficulty using the sample to derive redshift-dependent
-shear calibrations.
+shear calibrations.   Upcoming surveys will study lensing as a function of
+redshift and therefore need to simulate galaxy samples at different
+redshifts in order to assess the shear calibration at each redshift.
 
 %The structure of the paper is as follows. In \S\ref{S:data}, we briefly describe the COSMOS catalog that we use for our analysis.
 The paper is structured as follows: in Sec.~\ref{S:data}, we describe

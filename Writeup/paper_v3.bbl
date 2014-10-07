@@ -1,4 +1,4 @@
-\begin{thebibliography}{45}
+\begin{thebibliography}{48}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -58,13 +58,27 @@
   {Phillipps}, \& {Robotham}}]{2014MNRAS.444.2200D}
 {De Propris} R. {et~al.}, 2014, \mnras, 444, 2200
 
-\bibitem[{{Faber} {et~al}\mbox{.}(2007){Faber}, {Willmer}, {Wolf}, {Koo},
-  {Weiner}, {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis}, {Finkbeiner},
-  {Gerke}, {Gebhardt}, {Groth}, {Guhathakurta}, {Harker}, {Kaiser}, {Kassin},
-  {Kleinheinrich}, {Konidaris}, {Kron}, {Lin}, {Luppino}, {Madgwick},
-  {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon}, {Simard},
-  {Szalay}, {Vogt}, \& {Yan}}]{Faber2007}
-{Faber} S.~M. {et~al.}, 2007, \apj, 665, 265
+\bibitem[{{Faber} {et~al}\mbox{.}(2007{\natexlab{a}}){Faber}, {Willmer},
+  {Wolf}, {Koo}, {Weiner}, {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis},
+  {Finkbeiner}, {Gerke}, {Gebhardt}, {Groth}, {Guhathakurta}, {Harker},
+  {Kaiser}, {Kassin}, {Kleinheinrich}, {Konidaris}, {Kron}, {Lin}, {Luppino},
+  {Madgwick}, {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon},
+  {Simard}, {Szalay}, {Vogt}, \& {Yan}}]{2007ApJ...665..265F}
+{Faber} S.~M. {et~al.}, 2007{\natexlab{a}}, \apj, 665, 265
+
+\bibitem[{{Faber} {et~al}\mbox{.}(2007{\natexlab{b}}){Faber}, {Willmer},
+  {Wolf}, {Koo}, {Weiner}, {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis},
+  {Finkbeiner}, {Gerke}, {Gebhardt}, {Groth}, {Guhathakurta}, {Harker},
+  {Kaiser}, {Kassin}, {Kleinheinrich}, {Konidaris}, {Kron}, {Lin}, {Luppino},
+  {Madgwick}, {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon},
+  {Simard}, {Szalay}, {Vogt}, \& {Yan}}]{Faber2007}
+{Faber} S.~M. {et~al.}, 2007{\natexlab{b}}, \apj, 665, 265
+
+\bibitem[{{Giallongo} {et~al}\mbox{.}(2005){Giallongo}, {Salimbeni}, {Menci},
+  {Zamorani}, {Fontana}, {Dickinson}, {Cristiani}, \&
+  {Pozzetti}}]{2005ApJ...622..116G}
+{Giallongo} E., {Salimbeni} S., {Menci} N., {Zamorani} G., {Fontana} A.,
+  {Dickinson} M., {Cristiani} S., {Pozzetti} L., 2005, \apj, 622, 116
 
 \bibitem[{{Green} {et~al}\mbox{.}(2012){Green}, {Schechter}, {Baltay}, {Bean},
   {Bennett}, {Brown}, {Conselice}, {Donahue}, {Fan}, {Gaudi}, {Hirata},
@@ -168,11 +182,6 @@
   {Arnett}, {Asztalos}, {Axelrod}, \& et~al.}]{LSST_Book}
 {LSST Science Collaboration} {et~al.}, 2009, ArXiv e-prints
 
-\bibitem[{{Mandelbaum} {et~al}\mbox{.}(2011){Mandelbaum}, {Hirata},
-  {Leauthaud}, {Massey}, \& {Rhodes}}]{SHERA}
-{Mandelbaum} R., {Hirata} C.~M., {Leauthaud} A., {Massey} R.~J., {Rhodes} J.,
-  2011, {SHERA: SHEar Reconvolution Analysis}. Astrophysics Source Code Library
-
 \bibitem[{{Mandelbaum} {et~al}\mbox{.}(2012){Mandelbaum}, {Hirata},
   {Leauthaud}, {Massey}, \& {Rhodes}}]{2012MNRAS.420.1518M}
 {Mandelbaum} R., {Hirata} C.~M., {Leauthaud} A., {Massey} R.~J., {Rhodes} J.,
@@ -260,5 +269,16 @@
   {Eisenstein}, {Hirata}, {Riess}, \& {Rozo}}]{2013PhR...530...87W}
 {Weinberg} D.~H., {Mortonson} M.~J., {Eisenstein} D.~J., {Hirata} C., {Riess}
   A.~G., {Rozo} E., 2013, \physrep, 530, 87
+
+\bibitem[{{Willmer} {et~al}\mbox{.}(2006){Willmer}, {Faber}, {Koo}, {Weiner},
+  {Newman}, {Coil}, {Connolly}, {Conroy}, {Cooper}, {Davis}, {Finkbeiner},
+  {Gerke}, {Guhathakurta}, {Harker}, {Kaiser}, {Kassin}, {Konidaris}, {Lin},
+  {Luppino}, {Madgwick}, {Noeske}, {Phillips}, \& {Yan}}]{2006ApJ...647..853W}
+{Willmer} C.~N.~A. {et~al.}, 2006, \apj, 647, 853
+
+\bibitem[{{Wolf} {et~al}\mbox{.}(2003){Wolf}, {Meisenheimer}, {Rix}, {Borch},
+  {Dye}, \& {Kleinheinrich}}]{2003A&A...401...73W}
+{Wolf} C., {Meisenheimer} K., {Rix} H.-W., {Borch} A., {Dye} S.,
+  {Kleinheinrich} M., 2003, \aap, 401, 73
 
 \end{thebibliography}

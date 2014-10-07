@@ -338,7 +338,9 @@ In this section we will describe how these steps were carried out.
   \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
   \caption{Upper panel: Redshift distribution of flux-limited
-    ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+    ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins
+    that are 0.05 wide. Two analytical functions with best fit
+    parameters are plotted over it. 
            Lower panel: Plot of $(1+\delta_{g,\text{1D}}) =
            N/N_{\text{mod}}$ with each functional form as the model
            for each redshift bin. \arun{Give parameter values. Set
@@ -473,37 +475,65 @@ photometric redshifts, with the overdensity reported by
 \cite{Kovac_Density10k} in the $z=0.875-1$ range 
 leaking into our $z=0.80-0.85$ slice.
 
-
-\subsection{Volume limiting}
-\label{sub:volumelimiting}
 \begin{figure}
   \centering
    \includegraphics[width=\columnwidth]{hist2d_mag_mi}
-   \caption{2-D histogram of galaxies in apparent magnitude ($m_\text{F814W}$) and absolute magnitude ($M_I$) space.}
+   \caption{2D histogram of galaxies in apparent magnitude
+     ($m_\text{F814W}$) and absolute magnitude ($M_I$). \rachel{What
+       redshift range?}}
    \label{fig:2Dhist}
 \end{figure}
 
 \begin{figure}
   \centering
    \includegraphics[width=\columnwidth]{MAG_histograms}
-   \caption{Distribution of $M_I$ for various flux-limited samples are plotted together. The vertical line corresponds to the luminosity cut of $-20.8$, below which the $m_\text{F814W}<23.5$ sample has 95.3\% of the galaxies in the $m_\text{F814W}<25.2$ sample.}
+   \caption{Distribution of absolute magnitude $M_I$ for various
+     flux-limited samples are plotted together. The vertical line
+     corresponds to our luminosity cut of $-20.8$, brighter than which
+     the $m_\text{F814W}<23.5$ sample includes $>95.3$ per cent of the
+     galaxies in the $m_\text{F814W}<25.2$ sample.
+   \rachel{Is this plot and the numbers in the caption for
+     $0.8<z<0.85$ only?  This is currently implied by the text.  If
+     that is true, then please fix the figure and caption to say
+     this.  If that is wrong, then please fix the text.}}
    \label{fig:MIhist}
  \end{figure}
+
+
+\subsection{Volume limiting}
+\label{sub:volumelimiting}
  
-COSMOS is a flux-limited survey and is therefore affected by Malmquist bias, i.e. at higher redshifts, the brighter galaxies are preferentially observed.
-Our analysis involves comparing galaxies in different redshift slices to find significant differences in morphology, if any, so with a flux-limited sample, we would be comparing only the bright galaxies at high redshifts with
-bright and faint galaxies at low redshifts. For a fair comparison, we must restrict ourselves to bright galaxies at all redshifts and this is acheived by volume-limiting the sample.
+COSMOS is a flux-limited survey and is therefore affected by Malmquist
+bias, with the galaxy samples at higher redshift being intrinsically
+brighter on average.  
+Our analysis involves comparing galaxies in different redshift slices
+to identity significant differences in morphology that arise due to
+morphology-density correlations.  Such an analysis would be very
+difficult with a flux-limited sample because there would be some
+variation in morphology with redshift just due to the intrinsic change
+in the sample properties.  For a fair comparison, we must restrict
+ourselves to galaxies that are bright enough that they would be
+observed at all redshifts that we consider, which is achieved by
+volume-limiting the sample.  We consider three different ways of
+carrying out this process, which results in three different galaxy
+sample selections, all of which we will use in the remainder of the
+analysis.
 %\rachel{Explain why you are doing this.  Before saying {\em how} you
 %  generate a volume-limited sample, explain {\em why} you are
 %  generating one.}
-We generate, using the method below, a volume-limited sample that is complete upto $z=1$ by applying a cut on luminosity such that only galaxies instrinsically brighter than a certain threshold is considered. This threshold is set on  $M_I$, which are $K$-corrected $i^+$-band magnitudes from Subaru or from the PSF-matched CHFT $i^*$-band images.
-\rachel{Is it $i$ band, or $I$ band?  Check which one and then be
-  self-consistent throughout the text.}\arun{I think they call it
-  $I_{814}$, so $I$.}
-\rachel{But you are still being ambiguous in sometimes calling it $I$
-  and other times F814W.  Pick one.}
-\rachel{Actually, is this the catalog entry called ``MI''?  If so, it really is a different band - it's the k-corrected $I$-band data from Suburu or CFHT, so it's appropriate to call it $M_I$ and explain briefly that it's from the Subaru data (but $m_{F814W}$, since MAG\_AUTO is from F814W).}
-Since the parent sample contains fainter galaxies, upto $m_\text{F814W}=25.2$, we compare the distribution of the $m_\text{F814W}=23.5$ sample with the samples containing fainter galaxies for high redshift bins, to see where the sample is no longer complete.
+
+Our first approach is to generate a volume-limited sample that is
+complete up to $z=1$, by applying a cut on luminosity such that only
+galaxies instrinsically brighter than a certain threshold (determined
+in detail below) is considered. This threshold is set on the
+$k$-corrected $I$-band absolute magnitudes ($M_I$) from the COSMOS PSF-matched
+photometry catalog.   The joint distribution of $m_\text{F814W}$ and
+$M_I$ is shown in Fig.~\ref{fig:2Dhist}. 
+Since the parent sample contains fainter galaxies and is quite
+complete to $m_\text{F814W}=25.2$, we compare the $M_I$ distribution
+of the $m_\text{F814W}=23.5$ sample with flux-limited samples that
+have fainter flux limits, to see where the $m_\text{F814W}<23.5$
+sample that we want to use for our tests is no longer complete.
 % \begin{figure}
 %  \centering
 %  a) \includegraphics[width=\columnwidth]{volume_limiting_pdf}
@@ -511,26 +541,49 @@ Since the parent sample contains fainter galaxies, upto $m_\text{F814W}=25.2$, w
 %  \label{fig:volume_limiting_dist}
 %  \caption{ ... }
 % \end{figure}
-
-At $M_I\sim-22.0$, we see the sample is beginning to be biased in the $0.9<z<1.0$ bin due to the flux limit. We obtain 97.84\% completeness in this bin for $M_I$, where completeness is defined as the ratio between the number of galaxies in $m_\text{F814W}\le 23.5$ and in $m_\text{F814W}\le25.2$ samples.
-Thus the sample $z\le1$ and $M_I<-22$ is at least 97.84\% complete. Figs.~\ref{fig:2Dhist} \&~\ref{fig:MIhist} show that at $M_I<-22$, we are not affected by flux limit yet. 
-
-%We see that the region between $0.85<z<1.0$ is neither overdense nor underdense according to our model and hence is not going to be considered for further analysis.
-The region between $0.85<z<1.0$ is only moderately overdense and we do not seem to have as many underdense regions to compare with. It would rather be advantageous to disregard this region
-and redo the volume limiting procedure.
-We relax our luminosity cut %to $-20.8$
+At $M_I\sim-22.0$, the
+$m_\text{F814W}<23.5$ sample is beginning to lose galaxies in the
+$0.9<z<1.0$ redshift bin due to the flux limit. However, the $0.85<z<1$
+redshift bin was found to be only moderately overdense, so we choose
+to disregard this region for the rest of the analysis, and instead
+restrict to $z<0.85$, which is advantageous because it allows us to
+choose a somewhat fainter intrinsic luminosity limit for the
+analysis.  We relax our luminosity cut %to $-20.8$
 so that the sample is volume-limited \emph{not} until $z=1$ but until $z=0.85$. 
-We choose to impose the cut at $M_I=-20.8$, with 95.3\% completeness in the $0.8 < z \le 0.85$ bin. This increases the sample size significantly, from 7,418 galaxies to 11,169. We call this sample \s$1$.
+We impose the cut at $M_I=-20.8$, which gives 95.3 per cent completeness in
+the $0.8 < z \le 0.85$ bin (see Fig.~\ref{fig:MIhist}). The resulting
+sample, which has 11~169 galaxies, will be called sample \s$1$ in the remainder
+of this work.
 
-However, previous studies {\bf cite} have shown that absolute luminosities evolve with redshift. Thus, we must also let the luminosity cut evolve with the redshift. 
-There has been no published literature on the LF for the $I$-band, particularly for the COSMOS survey.
-We used the published result \citep{Faber2007} for the `rate' of evolution of B-band magnitudes for DEEP2 and COMBO-17 surveys, which is $ \Delta M_B^* \sim -1.23$ mag per unit redshift, for both blue and red galaxies combined together.
-Typically, estimates of evolution in K-band are lesser than the estimates of evolution in B and V bands.
-Assuming that the evolution is a smooth function of the wavelength, the evolution in I-band is expected to be lesser than that of the B-band. 
-Therefore, by considering no evolution and an upper bound on the evolution, we can interpolate what the results would be like for the true $I$-band evolution.
+However, previous studies
+\citep[e.g.,][]{2003A&A...401...73W,2005ApJ...622..116G,2006ApJ...647..853W,Faber2007}
+have shown that galaxy intrinsic luminosities evolve with
+redshift. Thus, we should also let the luminosity cut that we apply to
+volume-limit the sample evolve with redshift. 
+Unfortunately, the majority of the published work on evolution of the
+luminosity function uses $B$ and $V$ band data, and it is not apparent
+that the results should be the same in a redder passband like $I$.  
+We use the results from \cite{Faber2007} for the evolution of
+$B$-band magnitudes from the DEEP2 and COMBO-17 surveys, which is $
+\Delta M_B^* \sim -1.23$ mag per unit redshift (with the sign
+indicating that galaxies were intrinsically brighter in the past), for a combined sample
+of blue and red galaxies. 
+Typically, estimates of evolution in the much redder $K$ band are less
+than the estimates of evolution in $B$ and $V$ bands. (\rachel{Please
+  include a citation for this statement.}) 
+Assuming that the evolution is a smooth function of the wavelength,
+the evolution in $I$-band should be in between $B$ and $K$ band. 
+Therefore, by considering no evolution (a lower limit) as in our \s$1$, and a second
+sample \s$2$ constructed using the $B$-band evolution (as an upper
+bound on the $I$-band evolution), we can assume that these two samples
+bracket reality, which should be somewhere in between.
 
-Thus, we construct a second volume-limited sample \s$2$, this time by letting the luminosity cut evolve. Starting from $M_I = -20.8$ for the $0.8<z\le0.85$ bin, we add to it $1.23$ times the difference between the
-bincenters to obtain the luminosity cut for the other (lower) redshift bins. At lower redshifts, we allow for fainter galaxies that wouldn't have passed the cut in \s$1$ and hence has more galaxies.
+Thus, \s$2$ is constructed by letting the luminosity cut evolve,
+starting from $M_I = -20.8$ (same as in \s$1$) for the $0.8<z\le0.85$
+bin.  The cut values for the other bins are defined by allowing $1.23$
+magnitudes of evolution to fainter magnitudes as a function of
+redshift (evaluated using the bin centers).  Because of the sign of
+redshift evolution, \s$2$ includes  more galaxies.
 
 %In our analysis, we imposed the cut on luminosity for all redshift bins while many studies have shown that the characteristic luminosity of galaxies evolve with redshift. 
 % The work that is at least close to what we expect is that of
@@ -540,15 +593,27 @@ bincenters to obtain the luminosity cut for the other (lower) redshift bins. At 
 
 %Alternatively, we can impose cuts on stellar mass of the galaxies instead of imposing on the luminosity. 
 %If we restrict to galaxies with masses $M$ such that $\log(M/M_\odot) \ge 10.15$, then we have at least {\bf 95.0\% } completeness.
-Alternatively, one could get around the problem of considering redshift evolution by imposing cuts on stellar mass instead of absolute luminosity in a particular band. In Fig.~\ref{fig:smf}, we show the stellar mass function (SMF) of our sample for various F814W flux limit.
-\cite{Tomczak_SMF} report the SMFs for the ZFOURGE survey, which includes COSMOS. They considered for this work, a single stellar population following a Chabrier IMF \citep{ChabrierIMF}. 
+Finally, we can circumvent the problem of redshift evolution of the
+luminosity by imposing cuts on stellar mass instead. In Fig.~\ref{fig:smf}, we show the stellar mass function (SMF) of our sample for various F814W flux limits.
+\cite{Tomczak_SMF} report the SMFs for the ZFOURGE survey, which
+includes COSMOS. They considered for this work a single stellar
+population (\rachel{What do you mean by a single stellar population?})
+following a Chabrier IMF \citep{ChabrierIMF}. 
 We plot their SMF for \emph{all} galaxies in Fig.~\ref{fig:smf} for
-reference. Their SMF is higher than ours since they reach $K_s$-band
+reference. Their SMF is higher than ours since they reach a $K_s$-band
 $5\sigma$ depth of 24.9. 
-As in the case of $M_I$ s, we compare the stellar mass in the $m_\text{F814W}\le23.5$ sample with that of the $m_\text{F814W}\le25.2$ sample. 
-The sample $\log(M/M_\odot) > 10.15$ is about 95\% complete in the redshift bin $\left[ 0.75 - 0.85\right]$ and has 10,341 galaxies in total.
+As for $M_I$, we compare the stellar mass function in the $m_\text{F814W}\le23.5$ sample with that in the $m_\text{F814W}\le25.2$ sample. 
+The sample with $\log(M/M_\odot) > 10.15$ is $\sim 95$ per cent
+complete in the redshift bin $0.75 \le z< 0.85$ and has 10~341
+galaxies in total across all redshifts.
 Thus, we construct a third volume-limited sample \s$3$ by imposing the stellar mass cut mentioned above. The number of galaxies in redshift slices
-are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a volume-limited sample. Stellar-mass limited sample happens to be the smallest one.
+are tabulated in Table~\ref{table:GalaxyCounts} for all three ways
+discussed in this section for obtaining a volume-limited sample. The
+stellar-mass limited sample is the smallest, most likely because when
+converting from flux to stellar mass, the stellar mass-to-light ratios
+vary strongly with galaxy type, so red galaxies with high $M_*/L$
+simply have too low a flux compared to the blue galaxies at the same
+$M_*$, and are not observed.
 
 \begin{table} 
 \centering
@@ -565,42 +630,81 @@ are tabulated in Table \ref{table:GalaxyCounts} for all 3 ways of obtaining a vo
  0.8-0.85 & Overdense & 2428 & 2428 & 1630 \\
  \hline
 \end{tabular}
-\caption{List of different redshift bins, their environmental classification and the number of galaxies binwise for volume-limited samples constructed in three different ways: using hard luminosity cut (\s$1$), letting the luminosity cut evolve with redshift (\s$2$) and imposing stellar-mass cuts (\s$3$).}
+\caption{List of different redshift bins, their environmental
+  classification and the number of galaxies per redshift bin for
+  volume-limited samples constructed in three different ways: using a
+  hard luminosity cut (\s$1$), using a redshift-dependent luminosity cut (\s$2$) and using stellar-mass cuts (\s$3$).}
 \label{table:GalaxyCounts}
 \end{table}
 
 \begin{figure*}
  \centering
  \includegraphics[width=2.4\columnwidth]{SMF}
- \caption{Stellar-mass distribution for various flux-limited samples in three redshift ranges are plotted. Bins have been chosen so as to make the comparison easier with 
-          a study of SMF in the same survey \citep{Tomczak_SMF}. At high mass, the distributions are the same for various flux limits indicating that the samples are complete in that mass range. The curves begin to separate at low masses on account of incompleteness, which determines where the mass cutoff should be to volume-limit the sample.}
+ \caption{Stellar mass distribution for various flux-limited samples
+   are shown in three redshift ranges as separate panels. The redshift
+   bins have been chosen to facilitate the comparison with  
+          a study of the SMF in \protect\cite{Tomczak_SMF}. At high mass, the
+          distributions are the same for various flux limits,
+          indicating that the samples are complete in that mass
+          range. The curves begin to deviate at low masses due to
+          incompleteness coming from the flux limit.  The point at
+          which the deviation exceeds our threshold determines where the mass cutoff should be to volume-limit the sample.}
  \label{fig:smf}
 \end{figure*}
 
-There is a minor pitfall with this method. We analyse only those galaxies for which postage stamp images exist.
-12\% of galaxies that pass our cuts do not have an associated postage stamp image.
-Yet, we use the full $m_\text{F814W}\le23.5$ sample, irrespective of the existence of postage stamps, for identifying overdensities and in the completeness calculation for volume-limiting.
-%\rachel{What do you mean we use the full sample  $<23.5$?  For what purpose?  We obviously don't use it for the fits  or shape estimates, so be specific.}
-%\arun{Added saying we use the full sample for overdensity calculation and for volume-limiting.}
-Postage stamps may not exist because, given the size of the galaxy, the size of the postage stamp we want to draw around it (including enough blank space) intersects with the edge of the CCD.
+There is one subtlety in our method used for estimating
+completeness. We have used the full $m_\text{F814W}\le23.5$ sample
+for identifying
+overdensities and for the completeness calculations that motivated our
+definitions of volume-limited samples. (\rachel{Do the numbers in the
+  table include the full sample or just the subsample with postage stamps?}) However, in the rest of this
+paper, we analyse only those galaxies for which there are postage stamp
+images used to create weak lensing simulations, in part because this is the
+sample for which fits to \sersic\ profiles were carried out, which is a
+requirement for our morphology analysis.  
+12 per cent of the galaxies that pass our cuts do not have an
+associated postage stamp image.
+Postage stamps may not exist because, given the size of the galaxy,
+the size of the postage stamp we want to draw around it (including
+some blank space) intersects the edge of the CCD.
 If all galaxies were the same size, this would be a purely random effect, but in fact bigger galaxies are more likely to get excluded by this cut. 
-Typically galaxies that are nearby and intrinsically very bright do not have postage stamps associated with them and this is an effect that is dominant at lower redshifts. 
-Our completeness calculation is done at high redshifts and thus we believe that our conclusions are not affected by this bias. 
+It is commonly the case that  galaxies that are nearby and
+intrinsically very bright do not have postage stamps associated with
+them, an effect that is dominant at lower redshifts (and is part of
+our reason for excluding $z<0.3$). 
+Our completeness calculation is done at high redshifts, and thus we
+believe that our conclusions are not affected by this bias.  
 
 %Not surprisingly, we see the overdense and underdense regions obtained by the above method have local average number density higher than the global average number density after volume limiting. %Refer to Figure~\ref{fig:comoving_densities}.
 %And the environmentally neutral regions fall below or at least lie close to the 10\% margin.
 %Refitting the model to our new sample is consistent with the previous assignment of overdensities.
 
-The functional forms for the (flux-limited) redshift distribution that we used in \S\ref{sub:overdensities} are not physically motivated. We fit them again to the  
-redshift distribution of a volume-limited sample (\s$1$). Referring to Fig.~\ref{fig:redshift_vollimited}, the values of $\delta_{g,\text{1D}}$ for the $z=0.40-0.55$ bin have increased and are within $\pm 10\%$ of 0. This is the reason why in \S\ref{sub:overdensities} we classified them as neutral as opposed to underdense.
-We will see in \S\ref{S:results} that they are more similar to overdense regions as opposed to underdense regions.
-The other redshift slices seem to exhibit a consistent behavior. 
+The functional forms for the (flux-limited) redshift distribution that we used in Sec.~\ref{sub:overdensities} are not physically motivated. We fit them again to the  
+redshift distribution of a volume-limited sample
+(\s$1$). Fig.~\ref{fig:redshift_vollimited} shows that when we do
+this, the values of $\delta_{g,\text{1D}}$ for the $z=0.40-0.55$ bin
+increase and are within the $[-0.1, 0.1]$ range that we have defined
+as neutral. This is the reason that in Sec.~\ref{sub:overdensities} we classified them as neutral as opposed to underdense.
+We will see in Sec.~\ref{S:results} that they are more similar to overdense regions as opposed to underdense regions.
+The other redshift slices seem to exhibit a consistent behavior in
+Fig.~\ref{fig:redshift_vollimited} as in Fig.~\ref{fig:redshift_fluxlimited}. 
 
 \begin{figure}
  \centering
   \includegraphics[width=\columnwidth]{redshift_vollimited}
-  \caption{Upper panel: Redshift distribution of volume-limited ($M_I <  -20.8$) \s$1$ sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
-           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin.}
+  \caption{
+Upper panel: Redshift distribution of volume-limited ($M_I <  -20.8$)
+\s$1$ sample with photometric redshift bins that are 0.05 wide. Two
+analytical functions with best fit parameters are plotted over it. 
+           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) =
+           N/N_{\text{mod}}$ with each functional form as the model
+           for each redshift bin. \rachel{I am quite concerned that
+             something has gone wrong with this fit (in the sense that
+           there may be a bug).  Why is the redshift distribution
+           shown in blue forced to zero at $z=0.3$?  It should go to
+           zero at $z=0$, not $0.3$.  In terms of formatting, please
+           implement the same changes that I suggested for the
+           flux-limited sample redshift distribution plot.}}
   \label{fig:redshift_vollimited}
 \end{figure}
 
@@ -629,7 +733,7 @@ The other redshift slices seem to exhibit a consistent behavior.
 %  \hline
 % \end{tabular}
 
-In the following section, we will compare and analyze the distribution of properties of the galaxies residing in the overdense regions.
+%In the following section, we will compare and analyze the distribution of properties of the galaxies residing in the overdense regions.
 
 %\arun{Talk more about environments - Nature and nurture?}
 %\rachel{What do you have in mind here?}
@@ -691,17 +795,17 @@ and from the bulge+disk fits will be the \btt ratio given by ${\Sigma_{1/2}(n=4)
 \rachel{I think it would be useful to take the entire sample that we use for science, and show the overall distributions of axis ratio, distortion (one curve for Claire's and one curve for re-Gaussianization), \sersic index, and \btt.  This would be a nearly full-page four panel figure, but I think it's worthwhile to illustrate the nature of the sample.  For example, it will clearly show why we cannot use the distributions of \sersic index and \btt, because of the hard cutoffs.}
 
 An alternative method involves correcting the observed image for the PSF and computing the covariances from which the ellipticity of the galaxy can be obtained.
-The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of \cite{HS03} (hereafter HS03).
+The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in Sec.~2.4 of \cite{HS03} (hereafter HS03).
 This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
 intrinsic image of $f$, is $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
 estimate of $I'$ even if we use an approximate form for $f$. The form assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I - M_g$, where $M_I$ and $M_g$ are the adaptive
-covariances of the measured object and PSF respectively, described in \S 2.1 of HS03, which is in turn based on \cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
+covariances of the measured object and PSF respectively, described in Sec.~2.1 of HS03, which is in turn based on \cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
 of the galaxies, which we will refer to as `ellipticities based on moments'.
 
 \section{Results}
 \label{S:results}
-Having identified the overdense and underdense regions in a volume-limited sample (\S\ref{sub:overdensities}, \S\ref{sub:volumelimiting}), we will now see in this section if the morphological
-parameters of the galaxies, listed in \S\ref{sub:axisratio}, have any dependence on the environment that they reside in. We have 3 different ways of volume-limiting our sample
+Having identified the overdense and underdense regions in a volume-limited sample (Sec.~\ref{sub:overdensities}, Sec.~\ref{sub:volumelimiting}), we will now see in this section if the morphological
+parameters of the galaxies, listed in Sec.~\ref{sub:axisratio}, have any dependence on the environment that they reside in. We have 3 different ways of volume-limiting our sample
 \begin{enumerate}
  \item no redshift evolution of luminosity cut $(\s1)$,
  \item use $B$-band evolution rate for $I$-band luminosities $(\s2)$,

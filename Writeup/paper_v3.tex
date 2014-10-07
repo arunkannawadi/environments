@@ -190,7 +190,7 @@ that they should be as realistic as possible.
  Realistic simulations may use samples based on images from the Hubble
  Space Telescope ({\em HST}).
 Software packages like
-GalSim\footnote{\url{https://github.com/GalSim-developers/GalSim}}
+{\sc GalSim}\footnote{\url{https://github.com/GalSim-developers/GalSim}}
 \citep{2014arXiv1407.7676R} can generate images of galaxies from the
 {\em HST} as they would appear with an additional lensing shear and
 viewed by some lower resolution telescope.  Examples of training samples from the {\em HST} include 
@@ -230,33 +230,68 @@ and discuss their implications in Sec.~\ref{S:summary}.
 \section{Data}
 \label{S:data}
 %In this analysis, we consider the COSMOS sample of galaxies. 
-COSMOS~\citep{COSMOS_overview, COSMOS_generic, COSMOS_Alexie} is a flux-limited, narrow deep field survey covering a contiguous area of $1.64 \text{ deg}^2$ of sky, with images taken using the Advanced Camera for Surveys (ACS) Wide Field Channel (WFC)
-in the Hubble Space Telescope (HST). 
+The COSMOS survey \citep{COSMOS_overview, COSMOS_generic, COSMOS_Alexie} is a flux-limited, narrow deep field survey covering a contiguous area of $1.64 \text{ deg}^2$ of sky, with images taken using the Advanced Camera for Surveys (ACS) Wide Field Channel (WFC)
+in the Hubble Space Telescope (HST).  We use the COSMOS survey to
+define a parent sample of galaxy images to be used for making image
+simulations, following the approach taken to this problem in
+\cite{2012MNRAS.420.1518M,great3}.
 
-We apply the following set of initial cuts to the data, all of which is defined in~\cite{COSMOS_Alexie}:
+We apply the following set of initial cuts to the COSMOS data, the
+first two of which
+are motivated and explained in more detail by \cite{COSMOS_Alexie}:
 \begin{enumerate}
- \item \texttt{MU\_CLASS=1}: Unlike SExtractor's stellar index \texttt{CLASS\_STAR} which is continuous, the \texttt{MU\_MAX} method that compares the peak surface brightness to the background level,
- provides a clear differentiation of galaxies (\texttt{MU\_CLASS=1}) from stars (\texttt{MU\_CLASS=2}) and other spurious objects like cosmic rays (\texttt{MU\_CLASS=3})
- 
- \item \texttt{CLEAN=1}: Objects near bright stars or those containing saturated pixels were removed and the rest classify as \emph{clean}.
- 
+ \item \texttt{MU\_CLASS=1}: This criterion uses a comparison between
+   the peak surface brightness and the background level to achieve a
+   robust star/galaxy separation, with galaxies having \texttt{MU\_CLASS=1}. 
+ \item \texttt{CLEAN=1}: Objects near bright stars or those containing
+   saturated pixels were removed; the rest pass this cut on \texttt{CLEAN}. 
 % \item \texttt{GOOD\_ZPHOT\_SOURCE=1}: This cut requires that there be a good photometric redshift, which typically is equivalent to requiring that the galaxy not be located within
 %                                       the masked regions of the Subaru $BVIz$ imaging used for photometric redshifts, and that it have a successful match against an object in the Subaru imaging
 %                                       \arun{copied from Mandelbaum
 %                                         2011.}
- \item \texttt{GOOD\_ZPHOT\_SOURCE =1}: This cut requires that the photometric redshifts be reliable and good enough to draw conclusions about the population. More details on what `good' refers to can be found in \cite{SHERA}
+ \item \texttt{GOOD\_ZPHOT\_SOURCE =1}: This cut requires that
+   photometric redshifts be reliable and good enough to draw
+   conclusions about the population (see \citealt{2012MNRAS.420.1518M}
+   for details).
 \end{enumerate}
 %\rachel{The cuts you just gave are really basic or fundamental ones.  Those should go before any discussion of more complicated derived quantities like redshifts, stellar mass, Sersic fits, etc.}
 
-Precise shape measurements, when compared to ground-based surveys, can be made since the full width half-maximum (FWHM) of the point-spread function (PSF)
-is $0.12''$. High resolution images taken through the wide F814W filter (broad \emph{I}), after correcting for the PSF, have led to collection of postage stamp images\footnote{\url{http://irsa.ipac.caltech.edu/data/COSMOS/images/galaxy-postage-stamps/}} for the GREAT3 challenge~\citep{great3}, using the procedure described in \cite{SHERA}.
-Parametric models to most of these galaxies including \sersicn profile fits, 
-2 component bulge+disk fits, axis ratios etc were done for GREAT3 challenge~\citep{great3} using the method described in \cite{Claire_Fits}. This is described briefly in Sec.~\ref{sub:axisratio}.In addition to the ACS/WFC (F814W) imaging, the COSMOS field has also been imaged by Subaru Suprime-Cam ($B_j, V_j, g^+,r^+,i^+,z^+,$ NB816), the
-Canada-French Hawaii Telescope (CFHT;$u^*,i^*$) and the KPNO/CTIO ($K_s$) .
-	      
-Photometric redshifts were determined by~\cite{COSMOS_Photoz_30band}.The accuracy of photometric redshifts for $m_\text{F814W}\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z_s)$ and at fainter magnitudes, i.e. $m_\text{F814W}\le$ 24, $\sigma_{\Delta z} = 0.012(1+z_s)$.
-The photometric redshift values become noisy beyond $z$ of $1$ for our purposes and the various fits to the galaxies are also not very reliable beyond the apparent magnitude $(m)$ value of 23.5. 
-Thus, we will exclude all galaxies that have F814W magnitude greater than 23.5. However, we will use $m_\text{F814W}\le 25.2$ sample in volume-limiting process (cf.~\S\ref{sub:volumelimiting}) to calculate completeness.  We take the $z<1.0$ flux-limited sample to fit redshift distribution models (cf.~\S\ref{sub:overdensities}) and then restrict ourselves to $z\le1$ sample for all further analysis.
+%Precise shape measurements, when compared to ground-based surveys, can be made since the full width half-maximum (FWHM) of the point-spread function (PSF)
+%is $0.12''$. 
+High resolution images taken through the wide F814W filter (broad
+\emph{I}) for all galaxies passing the above cuts were used to create
+a collection of postage stamp images for the GREAT3 challenge
+\citep{great3}, using the procedure described in
+\cite{2012MNRAS.420.1518M}.  Each galaxy postage stamp image has a
+corresponding PSF image that can be used by {\sc GalSim} or other
+software to remove the effects of the {\em HST} PSF before simulating
+the galaxy image as it would appear at lower resolution.
+
+To better characterize the galaxy population, parametric models were
+fit to the light profiles of these galaxies.  These were carried out
+using the method described in \cite{Claire_Fits}, and include
+\sersic{} profile fits and 
+2 component bulge $+$ disk fits described in detail in \cite{great3}
+and briefly in Sec.~\ref{sub:axisratio} of this work.  
+
+In addition to the ACS/WFC (F814W) imaging, the COSMOS field has also been imaged by Subaru Suprime-Cam, the
+Canada-French Hawaii Telescope (CFHT) and KPNO/CTIO, yielding many bands
+of imaging data from which to determine high-fidelity photometric
+redshifts. 
+Photometric redshifts were determined by
+\cite{COSMOS_Photoz_30band}. The accuracy of photometric redshifts for
+$m_\text{F814W}\le$ 22.5 is $\sigma_{\Delta z} = 0.007(1+z)$; for $m_\text{F814W}\le$ 24, $\sigma_{\Delta z} = 0.012(1+z)$.
+The photometric redshift values become noisier beyond $z\sim 1.2$, and
+the  fits to the galaxy light profiles are also somewhat noisy once we
+go beyond $m_\text{F814W}\sim 23.5$.   
+For this reason, we will exclude all galaxies that have F814W
+magnitude fainter than 23.5. However, we will use the
+$m_\text{F814W}\le 25.2$ sample that was generated for the GREAT3
+challenge to estimate the completeness, which is useful when
+generating a volume-limited sample (Sec.~\ref{sub:volumelimiting}).
+We first use the $z<1$ flux-limited sample to fit parametric redshift
+distribution models (Sec.~\ref{sub:overdensities}), and then
+restrict ourselves to $z\le1$ sample for all further analysis. 
 % ($S/N \sim 50$ {\bf ?} )
 % \rachel{Our catalog has the more up-to-date Ilbert et al. photo-$z$,
 %   not the older Mobasher ones.  Need to fix citations. Also, we care
@@ -266,13 +301,17 @@ Thus, we will exclude all galaxies that have F814W magnitude greater than 23.5. 
 %   complicated by the correlated noise, so most people use use
 %   magnitude instead of $S/N$.}
 
-Stellar mass estimates were obtained~\citep{COSMOS_XRAY} using the Bayesian code described in~\cite{KEVIN_MSTAR}. Basically, a grid of models that vary in age, star formation history, dust content and metallicity
-are constructed to which the observed galaxy's spectral energy distribution (SED) and the photometric redshift are referenced to. At each grid point, the probability that the 
-SED fits the model are calculated and by marginalizing over all the parameters in the grid, the stellar mass probability distribution is obtained. The median of this distribution
-is taken as the stellar mass estimate. A Chabrier IMF~\citep{ChabrierIMF} is assumed.
+Stellar mass estimates were obtained~\citep{COSMOS_XRAY} using the
+Bayesian code described in~\cite{KEVIN_MSTAR}.  This process involves
+constructing a grid of models that vary in age, star formation
+history, dust content and metallicity (always assuming a Chabrier IMF;
+\citealt{ChabrierIMF}), 
+ to which the observed galaxy spectral energy distributions (SEDs) and photometric redshift are compared. At each grid point, the probability that the 
+SED fits the model is calculated, and by marginalizing over the nuisance parameters in the grid, the stellar mass probability distribution is obtained. The median of this distribution
+is taken as the stellar mass estimate. 
   
-We will analyze how the galaxy morphology and intrinsic shape depends on
-the environment in which they reside.
+%We will analyze how the galaxy morphology and intrinsic shape depends on
+%the environment in which they reside.
 
 \section{Methods}
 \label{S:methods}

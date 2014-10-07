@@ -1,4 +1,4 @@
-\begin{thebibliography}{44}
+\begin{thebibliography}{45}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -172,6 +172,11 @@
   {Leauthaud}, {Massey}, \& {Rhodes}}]{SHERA}
 {Mandelbaum} R., {Hirata} C.~M., {Leauthaud} A., {Massey} R.~J., {Rhodes} J.,
   2011, {SHERA: SHEar Reconvolution Analysis}. Astrophysics Source Code Library
+
+\bibitem[{{Mandelbaum} {et~al}\mbox{.}(2012){Mandelbaum}, {Hirata},
+  {Leauthaud}, {Massey}, \& {Rhodes}}]{2012MNRAS.420.1518M}
+{Mandelbaum} R., {Hirata} C.~M., {Leauthaud} A., {Massey} R.~J., {Rhodes} J.,
+  2012, \mnras, 420, 1518
 
 \bibitem[{{Mandelbaum} {et~al}\mbox{.}(2014){Mandelbaum}, {Rowe}, {Bosch},
   {Chang}, {Courbin}, {Gill}, {Jarvis}, {Kannawadi}, {Kacprzak}, {Lackner},

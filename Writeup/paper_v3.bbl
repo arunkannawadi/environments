@@ -40,6 +40,11 @@
 \bibitem[{{Chabrier}(2003)}]{ChabrierIMF}
 {Chabrier} G., 2003, \pasp, 115, 763
 
+\bibitem[{{Coil} {et~al}\mbox{.}(2004){Coil}, {Newman}, {Kaiser}, {Davis},
+  {Ma}, {Kocevski}, \& {Koo}}]{2004ApJ...617..765C}
+{Coil} A.~L., {Newman} J.~A., {Kaiser} N., {Davis} M., {Ma} C.-P., {Kocevski}
+  D.~D., {Koo} D.~C., 2004, \apj, 617, 765
+
 \bibitem[{{de Jong} {et~al}\mbox{.}(2013){de Jong}, {Kuijken}, {Applegate},
   {Begeman}, {Belikov}, {Blake}, {Bout}, {Boxhoorn}, {Buddelmeijer},
   {Buddendiek}, {Cacciato}, {Capaccioli}, {Choi}, {Cordes}, {Covone},
@@ -58,21 +63,13 @@
   {Phillipps}, \& {Robotham}}]{2014MNRAS.444.2200D}
 {De Propris} R. {et~al.}, 2014, \mnras, 444, 2200
 
-\bibitem[{{Faber} {et~al}\mbox{.}(2007{\natexlab{a}}){Faber}, {Willmer},
-  {Wolf}, {Koo}, {Weiner}, {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis},
-  {Finkbeiner}, {Gerke}, {Gebhardt}, {Groth}, {Guhathakurta}, {Harker},
-  {Kaiser}, {Kassin}, {Kleinheinrich}, {Konidaris}, {Kron}, {Lin}, {Luppino},
-  {Madgwick}, {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon},
-  {Simard}, {Szalay}, {Vogt}, \& {Yan}}]{2007ApJ...665..265F}
-{Faber} S.~M. {et~al.}, 2007{\natexlab{a}}, \apj, 665, 265
-
-\bibitem[{{Faber} {et~al}\mbox{.}(2007{\natexlab{b}}){Faber}, {Willmer},
-  {Wolf}, {Koo}, {Weiner}, {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis},
-  {Finkbeiner}, {Gerke}, {Gebhardt}, {Groth}, {Guhathakurta}, {Harker},
-  {Kaiser}, {Kassin}, {Kleinheinrich}, {Konidaris}, {Kron}, {Lin}, {Luppino},
-  {Madgwick}, {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon},
-  {Simard}, {Szalay}, {Vogt}, \& {Yan}}]{Faber2007}
-{Faber} S.~M. {et~al.}, 2007{\natexlab{b}}, \apj, 665, 265
+\bibitem[{{Faber} {et~al}\mbox{.}(2007){Faber}, {Willmer}, {Wolf}, {Koo},
+  {Weiner}, {Newman}, {Im}, {Coil}, {Conroy}, {Cooper}, {Davis}, {Finkbeiner},
+  {Gerke}, {Gebhardt}, {Groth}, {Guhathakurta}, {Harker}, {Kaiser}, {Kassin},
+  {Kleinheinrich}, {Konidaris}, {Kron}, {Lin}, {Luppino}, {Madgwick},
+  {Meisenheimer}, {Noeske}, {Phillips}, {Sarajedini}, {Schiavon}, {Simard},
+  {Szalay}, {Vogt}, \& {Yan}}]{Faber2007}
+{Faber} S.~M. {et~al.}, 2007, \apj, 665, 265
 
 \bibitem[{{Giallongo} {et~al}\mbox{.}(2005){Giallongo}, {Salimbeni}, {Menci},
   {Zamorani}, {Fontana}, {Dickinson}, {Cristiani}, \&

@@ -412,12 +412,25 @@ fix the normalization to ensure that the predicted number of galaxies
 in the range used ($0.3<z<1$) is equal to the actual number. 
 Fig.~\ref{fig:redshift_fluxlimited} shows the photometric redshift
 histogram together with the best-fitting parametric distributions.
-\rachel{The results for the 2nd redshift distribution do not look that
-  great.  Does it help if we go to $z<1.25$?  I thought the photo-$z$
-  were okay in that regime, and it's only beyond $1.25$ that they get
-  really scary.  We could use up to $1.25$ for determining the
-  redshift distribution, even if we're only trying to find
-  overdensities for $z<1$.}
+\rachel{New suggestion re: 2nd redshift distribution: it just looks so
+  bad, I worry that this functional form is simply wrong 
+  and we should use something newer that has been shown to work with
+  modern redshift surveys.  Let me suggest something you can
+  do as an immediate sanity check.   Look at
+  \cite{2004ApJ...617..765C} table 4, which gives parametrized fits to
+  the redshift distribution from DEEP2 for samples binned by
+  $R_\text{AB}$ and $I_\text{AB}$.  Use the results for the
+  $18<I_\text{AB}<23$ bin and the $18<I_\text{AB}<24$ bin,
+  interpolating linearly between them since your sample is limited at
+  $23.5$.  Their results suggest that either $z^2 \exp{[-z/0.262]}$ or
+  $z^2 \exp{[-(z/0.361)^{1.2}]}$ should be decent descriptions of your sample.  Just as a quick
+  sanity check can you please plot those  distributions (appropriately
+  normalized) on top of what you have in the top panel of figure 1,
+  and see how they look?  If they look OK, then I would be inclined to
+  completely eliminate the 2nd distribution, and just use the 1st one
+  that you're fitting and one of the ones from Coil as your way of
+  checking overdensities and underdensities.
+}
 
 The estimated overdensity in a redshift bin is defined by comparing
 the observed galaxy counts in the bin with the counts that are
@@ -473,8 +486,8 @@ leaking into our $z=0.80-0.85$ slice.
   \centering
    \includegraphics[width=\columnwidth]{hist2d_mag_mi}
    \caption{2D histogram of galaxies in apparent magnitude
-     ($m_\text{F814W}$) and absolute magnitude ($M_I$) in the redshift range $[0.3 - 1.0]$. The blue dotted line with a unit slope is a boundary at $z=1$, fitted by eye.
-     The green vertical dotted line represents our luminosity cut. \rachel{What redshift range?}\arun{addressed.}} 
+     ($m_\text{F814W}$) and absolute magnitude ($M_I$) in the redshift range $[0.3, 1.0]$. The blue dotted line with a unit slope is a boundary at $z=1$, fitted by eye.
+     The green vertical dotted line represents our luminosity cut. } 
    \label{fig:2Dhist}
 \end{figure}
 
@@ -482,14 +495,11 @@ leaking into our $z=0.80-0.85$ slice.
   \centering
    \includegraphics[width=\columnwidth]{MAG_histograms}
    \caption{Distribution of absolute magnitude $M_I$ for various
-     flux-limited samples in the redshift range $[0.80 - 0.85]$ are plotted together. The vertical line
+     flux-limited samples in the redshift range $[0.80, 0.85]$ are plotted together. The vertical line
      corresponds to our luminosity cut of $-20.8$, brighter than which
      the $m_\text{F814W}<23.5$ sample includes $>95.3$ per cent of the
      galaxies in the $m_\text{F814W}<25.2$ sample.
-   \rachel{Is this plot and the numbers in the caption for
-     $0.8<z<0.85$ only?  This is currently implied by the text.  If
-     that is true, then please fix the figure and caption to say
-     this.  If that is wrong, then please fix the text.} \arun{Text is correct. Caption fixed.}}
+   }
    \label{fig:MIhist}
  \end{figure}
 

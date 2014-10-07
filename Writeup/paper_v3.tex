@@ -343,8 +343,7 @@ In this section we will describe how these steps were carried out.
     parameters are plotted over it. 
            Lower panel: Plot of $\delta_{g,\text{1D}} =
            N/N_{\text{mod}}-1$ with each functional form as the model
-           for each redshift bin. \arun{Give parameter values. Set
-             minor ticks.}
+           for each redshift bin. \arun{Note to self: Give parameter values.}
 \rachel{Change $x$ axis label to ``Photometric redshift ($z$)''.  Use  thicker line width for the actual histogram.  Change legend to say  ``$p_1(z)$ (Eq. 1)'' and ``$p_2(z)$ (Eq. 2)'' rather than giving the actual equation.  Also, why are two of the horizontal lines in the bottom panel solid and one dashed?  What decides the style for eachline?  Finally, I think it makes sense to plot $\delta$ rather than $1+\delta$.}}
 \arun{Done. But I refer to the equations in the caption instead of the legend.}
   \label{fig:redshift_fluxlimited}
@@ -385,7 +384,7 @@ simulations based on the COSMOS survey.
 
 %\rachel{I thought we were only going up to $z=0.85$ but here you say $1$?}
 %For our sample of galaxies, volume-limited upto $z=1$ by imposing an $M_I$ cut, we fit parametric models to the histogram of photometric redshifts in order to assign values of overdensity. The figures show chi-squared and gamma functions fitted to the histogram \citep{Redshift_modelling}.
-For our (flux-limited) sample of galaxies, up to $z=1.0$, we fit
+For our (flux-limited) sample of galaxies, up to $z=1.0(1.25)$, we fit
 parametric models to the histograms of photometric redshifts in order
 to assign values of overdensity.  We choose our bins to be $0.05$ wide
 starting from $z=0.3$, where the bin width is selected to be somewhat
@@ -475,8 +474,8 @@ leaking into our $z=0.80-0.85$ slice.
   \centering
    \includegraphics[width=\columnwidth]{hist2d_mag_mi}
    \caption{2D histogram of galaxies in apparent magnitude
-     ($m_\text{F814W}$) and absolute magnitude ($M_I$). \rachel{What
-       redshift range?}}
+     ($m_\text{F814W}$) and absolute magnitude ($M_I$) in the redshift range $[0.3 - 1.0]$. The blue dotted line with a unit slope is a boundary at $z=1$, fitted by eye.
+     The green vertical dotted line represents our luminosity cut. \rachel{What redshift range?}\arun{addressed.}} 
    \label{fig:2Dhist}
 \end{figure}
 
@@ -484,14 +483,14 @@ leaking into our $z=0.80-0.85$ slice.
   \centering
    \includegraphics[width=\columnwidth]{MAG_histograms}
    \caption{Distribution of absolute magnitude $M_I$ for various
-     flux-limited samples are plotted together. The vertical line
+     flux-limited samples in the redshift range $[0.80 - 0.85]$ are plotted together. The vertical line
      corresponds to our luminosity cut of $-20.8$, brighter than which
      the $m_\text{F814W}<23.5$ sample includes $>95.3$ per cent of the
      galaxies in the $m_\text{F814W}<25.2$ sample.
    \rachel{Is this plot and the numbers in the caption for
      $0.8<z<0.85$ only?  This is currently implied by the text.  If
      that is true, then please fix the figure and caption to say
-     this.  If that is wrong, then please fix the text.}}
+     this.  If that is wrong, then please fix the text.} \arun{Text is correct. Caption fixed.}}
    \label{fig:MIhist}
  \end{figure}
 
@@ -653,8 +652,7 @@ completeness. We have used the full $m_\text{F814W}\le23.5$ sample
 for identifying
 overdensities and for the completeness calculations that motivated our
 definitions of volume-limited samples. (\rachel{Do the numbers in the
-  table include the full sample or just the subsample with postage stamps?}) However, in the rest of this
-paper, we analyse only those galaxies for which there are postage stamp
+  table include the full sample or just the subsample with postage stamps?} \arun{The subsample alone. The only place where the full sample is used is Fig. 3. The following sentence is corrected to say that.}) However, everywhere else in the paper, we consider only those galaxies for which there are postage stamp
 images used to create weak lensing simulations, in part because this is the
 sample for which fits to \sersic\ profiles were carried out, which is a
 requirement for our morphology analysis.  

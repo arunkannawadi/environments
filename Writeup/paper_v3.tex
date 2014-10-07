@@ -316,12 +316,18 @@ is taken as the stellar mass estimate.
 \section{Methods}
 \label{S:methods}
 
-In order to study the variation in the intrinsic ellipticity distribution and other morphological indicators with environment, there are three main steps to be carried out.
+In order to study the variation in the intrinsic ellipticity
+distribution and various morphological indicators with the galaxy environment, there are three main steps to be carried out:
 \begin{enumerate}
- \item To identify overdense and underdense environments in our survey from the redshift distribution of galaxies (\S\ref{sub:overdensities}),
- \item To limit the sample such that Malmquist bias is minimized before comparing galaxies in different redshift slices (\S\ref{sub:volumelimiting}),
- \item To estimate the galaxy axis ratios and other morphological indicators such as  \sersic index and Bulge-to-Total ratios (\S\ref{sub:axisratio}).
+ \item Identify overdense and underdense environments in our survey
+   from the redshift distribution of galaxies (Sec.~\ref{sub:overdensities});
+ \item volume-limit the sample such that Malmquist bias is minimized
+   before comparing galaxies in different redshift slices
+   (Sec.~\ref{sub:volumelimiting}); and 
+ \item estimate the galaxy axis ratios and other morphological indicators such as  \sersic{} index and bulge-to-total ratios (Sec.~\ref{sub:axisratio}).
 \end{enumerate}
+
+In this section we will describe how these steps were carried out.
 
 %\rachel{Here you should put a few introductory sentences about the purpose of this section. Could be something like ``To study the  variation in the intrinsic ellipticity distribution with environment, there are two main steps.  The first is to identify redshift ranges with overdense and underdense environments.  The second is to estimate galaxy axis ratios.  In this section we describe how these two steps were done.''}
 
@@ -331,8 +337,18 @@ In order to study the variation in the intrinsic ellipticity distribution and ot
  \centering
   \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
-  \caption{Upper panel: Redshift distribution of flux-limited ($m_\text{F814W}\le 23.5$) sample with bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
-           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) = N/N_{\text{mod}}$ with each functional form as the model for each redshift bin. \arun{Give parameter values. Set minor ticks.}}
+  \caption{Upper panel: Redshift distribution of flux-limited
+    ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins that are 0.05 wide. Two analytical functions with best fit parameters are plotted over it.\
+           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) =
+           N/N_{\text{mod}}$ with each functional form as the model
+           for each redshift bin. \arun{Give parameter values. Set
+             minor ticks.}
+\rachel{Change $x$ axis label to ``Photometric redshift ($z$)''.  Use
+  thicker line width for the actual histogram.  Change legend to say
+  ``$p_1(z)$ (Eq. 1)'' and ``$p_2(z)$ (Eq. 2)'' rather than giving the
+actual equation.  Also, why are two of the horizontal lines in the
+bottom panel solid and one dashed?  What decides the style for each
+line?  Finally, I think it makes sense to plot $\delta$ rather than $1+\delta$.}}
   \label{fig:redshift_fluxlimited}
 \end{figure}
 
@@ -348,8 +364,18 @@ In order to study the variation in the intrinsic ellipticity distribution and ot
 %  where we need to explain the two choices (using $B$-band evolution
 %  and using no evolution).}
 
-Weak lensing simulations will use galaxies selected in 2D redshift slices and
-we split our sample in a similar way to assign overdensities.
+It is important to keep in mind when considering the environment
+estimation that our goal is not to create a full 3D mapping of the
+density field within the COSMOS region (a task that was already
+addressed by \citealt{Kovac_Density10k} using the zCOSMOS
+spectroscopic sample).  Instead, we make a coarse, 1D division of the
+COSMOS survey into redshift slices, just as would be done when making
+galaxy redshift slices as input to a weak lensing survey simulation.
+For each redshift slice, we can then check whether the environment is
+overdense or underdense on average.  Our approach will tend to wash
+out some real trends from a 3D study, but is appropriate given our
+scientific goal of testing effects of the environment on weak lensing
+simulations based on the COSMOS survey.
 
 %In a wide-field survey, regions of overdensities are selected  identified by computing 3-dimensional comoving densities. But in narrow field surveys like COSMOS, previous work {\bf cite } have shown
 %that regions of overdensities can be identified from a 1-dimensional histogram of redshifts, at least for low redshifts. 
@@ -361,67 +387,92 @@ we split our sample in a similar way to assign overdensities.
 
 %\rachel{I thought we were only going up to $z=0.85$ but here you say $1$?}
 %For our sample of galaxies, volume-limited upto $z=1$ by imposing an $M_I$ cut, we fit parametric models to the histogram of photometric redshifts in order to assign values of overdensity. The figures show chi-squared and gamma functions fitted to the histogram \citep{Redshift_modelling}.
-For our (flux-limited) sample of galaxies, up to $z=1.0$, we fit parametric models to the histogram of photometric redshift in order to assign values of overdensity. Figures show Chi-squared distribution given by
-\begin{equation}
- p_1(z) \sim z^{a-1}\exp({-bz})
-\end{equation}
-and the function given by
-\begin{equation}
- p_2(z) \sim z^2\exp{\left(-\left(\frac{z}{z_0}\right)^{1.5}\right)}
-\end{equation}
-that was first presented by~\cite{Redshift_modelling} as fits to the
-redshift histograms. The normalization constants depend not only on the parameters but also on the lower and the upper limit of the redshifts considered. 
-Here $a,b$ and $z_0$ are free parameters that are to be determined.
-%\rachel{You cannot expect people to look these up.  Give them equations in which you define $p(z)$ for each case, with labels like $p_1(z)$ and $p_2(z)$.}
-For low $z$, the volume is too small to rely the overdensity values from our model fits and hence the fit is made for $z \ge 0.3$. Our binning width, $\Delta z$ must be small enough so as to be able to identify localized overdensities/underdensities but large enough to not let our conclusions be affected by the errors in photometric redshift. 
-We choose our bins to be $0.05$ wide starting from $z=0.3$. 
-%\rachel{Were you going to use other fitting functions as a test of the method?  If so, you should introduce them here.}
+For our (flux-limited) sample of galaxies, up to $z=1.0$, we fit
+parametric models to the histograms of photometric redshifts in order
+to assign values of overdensity.  We choose our bins to be $0.05$ wide
+starting from $z=0.3$, where the bin width is selected to be somewhat
+larger than the photometric redshift error but narrow enough that we
+can still identify rather than averaging over real cosmological
+structures.  We neglect the lowest
+redshifts which have negligible cosmological volume and where the
+galaxy population tends to be intrinsically bright and large enough
+that a non-negligible fraction is lost due to the cuts we impose
+(Sec.~\ref{S:data}).
 
-%The curves are normalized such that the area under the curves is equal to the number of galaxies considered. - no longer true if not using fithist.c
-
-Overdensity (as predicted by a given model) in a redshift bin is defined as the ratio of the
-difference between the value given by the histogram and the value
-predicted by the model to the latter:
-\begin{equation}
-\delta_{g,\text{1D}}=\frac{(N-N_{\text{mod}})}{N_{\text{mod}}}.  
+The parametric redshift distributions that we use are
+\begin{equation}\label{E:pz1}
+ p_1(z) \propto z^{a-1}\exp({-bz})
 \end{equation}
+and 
+\begin{equation}\label{E:pz2}
+ p_2(z) \propto z^2\exp{\left(-\left(\frac{z}{z_0}\right)^{1.5}\right)},
+\end{equation}
+the latter of which was first presented by
+\cite{Redshift_modelling}. Here $a$, $b$, and
+$z_0$ are free parameters that are to be determined.  The
+normalization constants depend not only on the parameters but also on
+the lower and the upper limit of the redshifts considered, where we
+fix the normalization to ensure that the predicted number of galaxies
+in the range used ($0.3<z<1$) is equal to the actual number. 
+Fig.~\ref{fig:redshift_fluxlimited} shows the photometric redshift
+histogram together with the best-fitting parametric distributions.
+\rachel{The results for the 2nd redshift distribution do not look that
+  great.  Does it help if we go to $z<1.25$?  I thought the photo-$z$
+  were okay in that regime, and it's only beyond $1.25$ that they get
+  really scary.  We could use up to $1.25$ for determining the
+  redshift distribution, even if we're only trying to find
+  overdensities for $z<1$.}
+
+The estimated overdensity in a redshift bin is defined by comparing
+the observed galaxy counts in the bin with the counts that are
+predicted in that bin by one of the models in Eqs.~\eqref{E:pz1}
+and~\eqref{E:pz2}:
+\begin{equation}
+\delta_{g,\text{1D}}=\frac{(N-N_{\text{mod}})}{N_{\text{mod}}},
+\end{equation}
+where
+\begin{equation}
+N_\text{mod} = \int_{z_\text{min}}^{z_\text{max}} p(z) \,\mathrm{d}z
+\end{equation}
+is determined by integrating the redshift distribution within the
+limits of that redshift slice. 
 %(\rachel{This $\delta$ definition is important, so it should be in an equation environment.})
-Note that $\delta_{g,\text{1D}}$ is model dependent. If a model and the distribution agree, then $\delta_{g,\text{1D}}=0$ for that model at all the redshifts. 
+Note that $\delta_{g,\text{1D}}$ is dependent on our choice of model
+redshift distribution, and should have a mean value of $0$ over the
+entire redshift range. % If a model and the distribution agree, then $\delta_{g,\text{1D}}=0$ for that model at all the redshifts. 
 
-Our decision criterion is as follows. We leave a 10\% margin of safety i.e., if $\left| \delta_{g,\text{1D}} \right| < 0.1$, we say that the model and the actual distribution agree.
-We label a redshift bin overdense if at least one of the models predicts the value of $\delta_{g,\text{1D}} > 0.1$ while the other predicts $\delta_{g,\text{1D}} > -0.1$, i.e.,
-neutral or overdense and vice versa for the underdense regions. We label a redshift bin `neutral' if both the models predicted the value of $\delta_{g,\text{1D}}$ within the margin of safety 
-\emph{or} if one of them predicts the bin to be overdense while the other predicts it to be underdense.
-
-% \begin{figure}
-%  \centering
-%  \includegraphics[width=\columnwidth]{fig4}
-%  \label{fig:comoving_densities}
-%  \caption{Differential comoving densities, integrated within a bin, are plotted. Red line refers to the average comoving density over the entire volume under consideration. 
-%           The green lines correspond to the 0.9 and 1.1 times the overall average.}
-% \end{figure}
-
-We thus identify the regions $z=0.30-0.40, 0.65-0.75, 0.80-0.85$ as overdense, $z=0.55-0.65, 0.75-0.80$ as underdense and $z=0.40-0.55$ as unclassified. 
+Our decision criterion for identifying overdense and underdense
+redshift slices involves leaving a 10 per cent margin around an
+overdensity of zero; i.e., if $\left| \delta_{g,\text{1D}} \right| <
+0.1$, that is considered ``neutral'' (neither overdense nor
+underdense on average).  We can then label each redshift slice as
+either overdense, underdense, or neutral as follows: 
+We label a redshift bin as overdense if at least one model gives a
+value of $\delta_{g,\text{1D}} > 0.1$ while the other gives
+$\delta_{g,\text{1D}} > -0.1$ 
+(neutral or overdense), and vice versa for the underdense regions. We
+label a redshift bin as neutral if both models give
+$\delta_{g,\text{1D}}$ within the neutral region,  
+\emph{or} if use of one model redshift distribution results in the
+conclusion that the bin is overdense while the over leads to the
+conclusion that it is underdense.
+We thus identify the regions $z=0.30-0.40$, $0.65-0.75$, and
+$0.80-0.85$ as overdense; $z=0.55-0.65$ and $0.75-0.80$ as underdense; and $z=0.40-0.55$ as unclassified. 
 %Although, the $z=0.40-0.55$ bin appears to be underdense, for reasons mentioned in \S\ref{sub:volumelimiting}, we will not call them underdense.
 
-Our classification is not very rigorous since it considers only the counts in redshift slices and compares with models that only approximately describe the redshift distribution of galaxies.
-Moreover, the photometric redshifts become less accurate as we go to higher redshifts (cf.~\S\ref{S:data}) and no information about structure in transverse direction has been taken into account.
-Thus, it is important to cross-check with a more careful study of the density fields in the same field of view.
-~\cite{Kovac_Density10k}, using a sample of $\sim 10,000$ zCOSMOS spectra sources with $I_{AB}<22.5$, have reconstructed the three dimensional overdensity field up to $z\sim 1$.
-In spite of the above mentioned shortcomings, our classification of overdensities and underdensities agrees with this work done, except for the last two high redshift bins.
-We believe that this disagreement is due to the errors in our photometric redshifts and the overdensity reported in $z=0.875-1$ slice
-is observed by us in $z=0.80-0.85$ slice.
+We have adopted this purely 1D environment classification for reasons
+explained at the beginning of this section. However, as a sanity check
+we can compare it with a more rigorous study that includes information
+about structure in the plane of the sky.  
+ \cite{Kovac_Density10k} used a sample of $\sim$10~000 zCOSMOS
+ spectroscopic galaxies with $I_{AB}<22.5$ to reconstruct the three dimensional overdensity field up to $z\sim 1$.
+We find that our classification of overdensities and underdensities
+agrees with this work, except for our two highest redshift bins.
+We believe that this disagreement is due to the errors in our
+photometric redshifts, with the overdensity reported by
+\cite{Kovac_Density10k} in the $z=0.875-1$ range 
+leaking into our $z=0.80-0.85$ slice.
 
-However, the other point to keep in mind here is that what we are
-doing most closely follows the way the COSMOS galaxies would be used
-when constructing a simulation to test weak lensing measurement
-methods: the sample would be divided into redshift slices using the
-photometric redshifts, and the shear calibration would be estimated
-for all galaxies in that slice.  Thus, it is the apparent over- and
-under-densities in such a procedure that we care about here (where our
-main concern is testing systematics in weak lensing survey
-simulations, rather than learning about galaxy formation and
-evolution).
 
 \subsection{Volume limiting}
 \label{sub:volumelimiting}
@@ -483,7 +534,7 @@ bincenters to obtain the luminosity cut for the other (lower) redshift bins. At 
 
 %In our analysis, we imposed the cut on luminosity for all redshift bins while many studies have shown that the characteristic luminosity of galaxies evolve with redshift. 
 % The work that is at least close to what we expect is that of
-%~\cite{Faber2007}, who have studied the evolution of Schechter parameters in the B-band of DEEP2 and COMBO-17 surveys. We consider their reported value of $ \Delta M_B^* \sim -1.23$ per unit redshift, for both blue and red galaxies combined together.
+% \cite{Faber2007}, who have studied the evolution of Schechter parameters in the B-band of DEEP2 and COMBO-17 surveys. We consider their reported value of $ \Delta M_B^* \sim -1.23$ per unit redshift, for both blue and red galaxies combined together.
 %Although it is the $I$-band that is of relevance to us, we expect the evolution in B-band to be an upper bound on the evolution in I-band. 
 
 
@@ -633,18 +684,18 @@ Thus, the \sersic profile has 7 free parameters. The bulge+disk model has 10 fre
 and both the profiles are required to have the same centroid $(x_0,y_0)$. Best-fit parameters were found, by minimizing the weighted
 sum of the difference between the image and the PSF-convolved model
 using Levenberg-Marquardt minimization, \texttt{mpfit2fun} in IDL \citep{mpfit2fun}. More details about the fit can be found
-in~\cite{Claire_Fits}.
+in \cite{Claire_Fits}.
 
 The quantities that we would use from the single \sersic profile fits are the \sersic index and axis ratio
 and from the bulge+disk fits will be the \btt ratio given by ${\Sigma_{1/2}(n=4)}/{\left(\Sigma_{1/2}(n=4)+\Sigma_{1/2}(n=1)\right)}$.
 \rachel{I think it would be useful to take the entire sample that we use for science, and show the overall distributions of axis ratio, distortion (one curve for Claire's and one curve for re-Gaussianization), \sersic index, and \btt.  This would be a nearly full-page four panel figure, but I think it's worthwhile to illustrate the nature of the sample.  For example, it will clearly show why we cannot use the distributions of \sersic index and \btt, because of the hard cutoffs.}
 
 An alternative method involves correcting the observed image for the PSF and computing the covariances from which the ellipticity of the galaxy can be obtained.
-The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of~\cite{HS03} (hereafter HS03).
+The PSF correction scheme used on the observed images is that of `re-Gaussianization' method described in \S 2.4 of \cite{HS03} (hereafter HS03).
 This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
 intrinsic image of $f$, is $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
 estimate of $I'$ even if we use an approximate form for $f$. The form assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I - M_g$, where $M_I$ and $M_g$ are the adaptive
-covariances of the measured object and PSF respectively, described in \S 2.1 of HS03, which is in turn based on~\cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
+covariances of the measured object and PSF respectively, described in \S 2.1 of HS03, which is in turn based on \cite{BJ02}. Once we obtain the covariance matrices of the instrinsic image $f$, one can compute the ellipticities 
 of the galaxies, which we will refer to as `ellipticities based on moments'.
 
 \section{Results}
@@ -744,7 +795,7 @@ overdense bins and \emph{all} underdense bins in Fig.~\ref{fig:axisratio_all}.
 \rachel{How was the volume-limiting carried out for this?  You should say the answer to this question  for all figures.} 
 \arun{The caption mentions it.}
 \rachel{I'm afraid that's not enough.  Some people are going to read linearly and you want the info in the main text, too.}
-Unless otherwise mentioned, the axis ratios refer to the values obtained using the method of~\cite{Claire_Fits}.
+Unless otherwise mentioned, the axis ratios refer to the values obtained using the method of \cite{Claire_Fits}.
 The cumulative distinction functions are also plotted alongside in order to be able to visualize the `distance' between the distributions.
 Referring to the first two rows in Table~\ref{table:pvalues_all}, we see that the p-values from both the KS and AD tests are well below 0.05, 
 so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level.

@@ -339,18 +339,14 @@ In this section we will describe how these steps were carried out.
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
   \caption{Upper panel: Redshift distribution of flux-limited
     ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins
-    that are 0.05 wide. Two analytical functions with best fit
+    that are 0.05 wide. Two analytical functions, $p_1(z)$ and $p_2(z)$, defined in Eqns.~\ref{E:pz1} \&~\ref{E:pz2} with best fit
     parameters are plotted over it. 
-           Lower panel: Plot of $(1+\delta_{g,\text{1D}}) =
-           N/N_{\text{mod}}$ with each functional form as the model
+           Lower panel: Plot of $\delta_{g,\text{1D}} =
+           N/N_{\text{mod}}-1$ with each functional form as the model
            for each redshift bin. \arun{Give parameter values. Set
              minor ticks.}
-\rachel{Change $x$ axis label to ``Photometric redshift ($z$)''.  Use
-  thicker line width for the actual histogram.  Change legend to say
-  ``$p_1(z)$ (Eq. 1)'' and ``$p_2(z)$ (Eq. 2)'' rather than giving the
-actual equation.  Also, why are two of the horizontal lines in the
-bottom panel solid and one dashed?  What decides the style for each
-line?  Finally, I think it makes sense to plot $\delta$ rather than $1+\delta$.}}
+\rachel{Change $x$ axis label to ``Photometric redshift ($z$)''.  Use  thicker line width for the actual histogram.  Change legend to say  ``$p_1(z)$ (Eq. 1)'' and ``$p_2(z)$ (Eq. 2)'' rather than giving the actual equation.  Also, why are two of the horizontal lines in the bottom panel solid and one dashed?  What decides the style for eachline?  Finally, I think it makes sense to plot $\delta$ rather than $1+\delta$.}}
+\arun{Done. But I refer to the equations in the caption instead of the legend.}
   \label{fig:redshift_fluxlimited}
 \end{figure}
 
@@ -819,7 +815,7 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
 \subsubsection{Comparing distributions}
 \begin{figure*}
  \centering
- \includegraphics[width=2.3\columnwidth]{axis_ratio_all}
+ \includegraphics[width=2.2\columnwidth]{axis_ratio_all}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}

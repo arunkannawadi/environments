@@ -270,7 +270,7 @@ the galaxy image as it would appear at lower resolution.
 To better characterize the galaxy population, parametric models were
 fit to the light profiles of these galaxies.  These were carried out
 using the method described in \cite{Claire_Fits}, and include
-\sersic{} profile fits and 
+\sersic profile fits and 
 2 component bulge $+$ disk fits described in detail in \cite{great3}
 and briefly in Sec.~\ref{sub:axisratio} of this work.  
 
@@ -324,7 +324,7 @@ distribution and various morphological indicators with the galaxy environment, t
  \item volume-limit the sample such that Malmquist bias is minimized
    before comparing galaxies in different redshift slices
    (Sec.~\ref{sub:volumelimiting}); and 
- \item estimate the galaxy axis ratios and other morphological indicators such as  \sersic{} index and bulge-to-total ratios (Sec.~\ref{sub:axisratio}).
+ \item estimate the galaxy axis ratios and other morphological indicators such as  \sersic index and bulge-to-total ratios (Sec.~\ref{sub:axisratio}).
 \end{enumerate}
 
 In this section we will describe how these steps were carried out.
@@ -816,7 +816,7 @@ $n$-dependent normalization factor required to ensure that half the
 light is enclosed within the half-light radius, and $q$ is the axis
 ratio of the elliptical isophotes.
 Thus, the \sersic profile has 7 free parameters.
-       \item A sum of two \sersic{} component fits: a de Vaucouleurs
+       \item A sum of two \sersic component fits: a de Vaucouleurs
          bulge $(n=4)$ plus an exponential disc profile $(n=1)$.  In this
          case, there are 10 free parameters, because the \sersic\
          indices are fixed, and the two components are constrained to
@@ -829,7 +829,7 @@ To quantify galaxy morphology and shape, we will use several
 quantities from the above fits.  First, from the single \sersic
 profile fits, we use the \sersic index and the axis ratio.  The axis
 ratio can also be used to derive a distortion,
-\begin{equation}
+\begin{equation}\label{eq:distortion}
 e = \frac{1-q^2}{1+q^2}
 \end{equation}
 or an ellipticity,
@@ -837,8 +837,8 @@ or an ellipticity,
 \varepsilon = \frac{1-q}{1+q}.
 \end{equation}
 
-As an alternative morphological indicator (instead of \sersic{} index)
-we use a bulge-to-total ratio derived from the double \sersic{}
+As an alternative morphological indicator (instead of \sersic index)
+we use a bulge-to-total ratio derived from the double \sersic
 profile fits.  This ratio is defined in terms of bulge and disk fluxes as
 \begin{equation}
 \frac{B}{T} = \frac{f_\text{bulge}}{f_\text{bulge}+f_\text{disk}}.
@@ -876,7 +876,7 @@ section~2.1 of HS03 and \cite{BJ02}. We refer to the
 re-Gaussianization estimates of the PSF-corrected distortion as
 ``moments-based shape estimates''.  The value in including them in
 this analysis is that they have quite different radial weighting from
-the \sersic{} profile fits, with the outer regions being quite
+the \sersic profile fits, with the outer regions being quite
 downweighted when calculating adaptive moments.  Thus, if ellipticity
 gradients are important, we could get different results using these
 two shape estimators.
@@ -909,9 +909,18 @@ As described in Sec.~\ref{sub:volumelimiting}, we have three different ways of v
 We will present our results in all three cases to check for their
 robustness to how the sample is selected. 
 
-\subsection{Axis-ratios} 
-We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 
-Then, we proceed to consider the root mean square ellipticity, a statistic that can characterize the shape of the population/sample of galaxies. 
+\subsection{Axis ratios} 
+
+We can test the influence of environment on the galaxy shapes by
+comparing the distributions of the axis ratios for the overdense and
+underdense redshift slices, or by encapsulating that distribution as a
+single number, the RMS ellipticity. By volume-limiting the sample, we can avoid issues
+wherein the flux limit leads to artificial changes in the sample as a
+function of redshift.  We will also carry out tests to differentiate
+between environmental effects versus evolution of the population with
+redshift (at fixed mass).
+
+%Then, we proceed to consider the root mean square ellipticity, a statistic that can characterize the shape of the population/sample of galaxies. 
 \subsubsection{Comparing distributions}
 \begin{figure*}
  \centering
@@ -919,8 +928,14 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
- \caption{The distributions of axis ratios of galaxies in \emph{all} overdense (OD) and \emph{all} underdense (UD) regions in the case of luminosity-selected sample (left), luminosity-selected with B-band evolution taken into account (center) and stellar-mass-selected sample (right). The upper panels show the histogram
- and the botom panels show the empirical cumulative distribution function (ECDF). $p$-values are computed using these CDFs using the Kolmogorov-Smirnov and Anderson-Darling tests and are given in Table. \ref{table:pvalues_all}. The difference between the CDFs turn out to be statistically significant. \rachel{This figure and the ones below appear to be right-justified (pushed up against the right margin) instead of centered.  Can you look into fixing that?  Also, the $:=$ is not very standard notation, I recommend just $=$.  Finally, the spacing in the legends is funny; I would prefer to see things like ``8213 (OD)'' rather than the current ``8213( OD )''.  The former is also consistent with the next figure.}}
+ \caption{The distributions of axis ratios of galaxies in \emph{all}
+   overdense (OD) and \emph{all} underdense (UD) regions in the case
+   of the luminosity-selected sample \s1 (left), luminosity-selected
+   sample with $B$-band evolution taken into account \s2 (center), and
+   thestellar-mass-selected sample \s3 (right). The upper panels show
+   the histograms, 
+ and the bottom panels show the cumulative distribution functions
+ (CDF). The $p$-values computed using these CDFs are shown in Table. \ref{table:pvalues_all}.}
  \label{fig:axisratio_all}
 \end{figure*}
 
@@ -931,7 +946,13 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
  %b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot80-0dot85.eps} \\
  %c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot80-0dot85.eps} \
  %d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot55-0dot65_0dot75-0dot8.eps} \
- \caption{Comparison in similar environments: Axis ratios of galaxies in two overdense redshift bins, $z=0.65-0.75$ and $z=0.80-0.85$ are compared. $p$-values from the KS and AD test are given in Table.~\ref{table:pvalues_all}}
+ \caption{Galaxy axis ratio
+   distributions in two overdense redshift bins, $z=0.65-0.75$ and
+   $z=0.80-0.85$, to check for consistency in the case that the
+   environment is the same even if the redshift differs. The
+   $p$-values from the KS and AD tests are given in
+   Table.~\ref{table:pvalues_all}. \rachel{Figure does not appear to
+     be centered.}}
  \label{fig:axisratio_similar}
 \end{figure*}
 
@@ -942,26 +963,39 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
  %#b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot55-0dot65.eps} \\
  %c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot75-0dot8.eps} \
  %d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot75-0dot80.eps} \
- \caption{Comparison in contrasting environments: Axis ratios of galaxies in an underdense redshift bin, $z=0.55-0.65$ are compared with those in an overdense bin, $z=0.65-0.75$. $p$-values from the KS and AD test are given in Table.~\ref{table:pvalues_all}}
+ \caption{Galaxy axis ratio distributions in a single underdense redshift
+   slice, $z=0.55-0.65$, and a single overdense redshift slice,
+   $z=0.65-0.75$. The $p$-values from the
+   KS and AD tests are given in Table.~\ref{table:pvalues_all}.   \rachel{Figure does not appear to
+     be centered.}}
  \label{fig:axisratio_contrasting}
 \end{figure*}
 
 \begin{table}
  \centering
- \begin{tabular}[\columnwidth]{ | l | l | l | l | }
+ \begin{tabular}[\columnwidth]{ | l | c | c | c | }
   \hline
   %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
   Redshift bins & \s$1$ & \s$2$ & \s$3$ \\
   \hline
   All overdense vs.  & \scinot{1.1}{-4} & \scinot{2.6}{-5} & \scinot{1.9}{-6} \\
   All underdense     & \scinot{1}{-5} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline 
-  $z:[0.65,0.75]$ (OD) vs. & 0.613 & 0.431 & 0.231 \\
-  $z:[0.80,0.85]$ (OD) & 0.494 & 0.237 & 0.130 \\ \hline
-  $z:[0.65,0.75]$ (OD) vs. & \scinot{5.8}{-4} & \scinot{1.5}{-5} & \scinot{3.5}{-6} \\
-  $z:[0.55,0.65]$ (UD) & \scinot{9.8}{-4} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline
+  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.613 & 0.431 & 0.231 \\
+  $[0.80,0.85]$ (OD) & 0.494 & 0.237 & 0.130 \\ \hline
+  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & \scinot{5.8}{-4} & \scinot{1.5}{-5} & \scinot{3.5}{-6} \\
+  $[0.55,0.65]$ (UD) & \scinot{9.8}{-4} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline
  \end{tabular}
- \caption{$p$-values from the Kolmogorov-Smirnov (top) and Anderson-Darling (bottom) obtained by comparing the distributions of axis ratios are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.
-          The Anderson-Darling $p$-values are correct only upto 5 decimal places. 
+ \caption{$p$-values from the Kolmogorov-Smirnov (top) and
+   Anderson-Darling (bottom) tests obtained by comparing the
+   distributions of axis ratios for three cases: \emph{all} overdense
+   (OD) vs. \emph{all} underdense (UD), two overdense bins that are
+   not very separated in redshift, and a pair of adjacent overdense
+   and underdense bins. \s$1$, \s$2$, \s$3$ refer to the three
+   different types of volume-limited samples.
+          The Anderson-Darling $p$-values are correct only up to 5
+          decimal places. 
+\rachel{What does this last sentence mean?  Why?  I think you need
+  clarification of this point in this table and the next one.}
 % \rachel{What are the 0 entries in this and other tables?  Just how close to zero are they?  Since 0 is not really achieve, I recommend defining a value (such as $10^{-10}$ below which you will just say $<10^{-10}$ and give the value if it's above that, even if it seems really small to you, like $10^{-8}$.  Also, say $1.1\times 10^{-4}$ rather than $1.1e-4$.}
           }
  \label{table:pvalues_all}
@@ -976,48 +1010,88 @@ Then, we proceed to consider the root mean square ellipticity, a statistic that 
   \hline
   All overdense vs. & \scinot{5.6}{-4} & \scinot{1.0}{-4} & \scinot{3.3}{-6} \\
   All underdense    & \scinot{3}{-5} & \scinot{1}{-5} & $<\scinot{1}{-5}$ \\ \hline 
-  $z:[0.65,0.75]$ (OD) vs. & 0.9563 & 0.7476 & 0.5359 \\
-  $z:[0.80,0.85]$ (OD) & 0.5162 & 0.3352 & 0.2290 \\ \hline
-  $z:[0.65,0.75]$ (OD) vs & \scinot{6.0}{-3} & \scinot{2.5}{-4} & \scinot{2.4}{4} \\
-  $z:[0.55,0.65]$ (UD) & \scinot{1.2}{-2} & \scinot{2.5}{-4} & \scinot{5}{-5} \\ \hline
+  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.9563 & 0.7476 & 0.5359 \\
+  $[0.80,0.85]$ (OD) & 0.5162 & 0.3352 & 0.2290 \\ \hline
+  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & \scinot{6.0}{-3} & \scinot{2.5}{-4} & \scinot{2.4}{4} \\
+  $[0.55,0.65]$ (UD) & \scinot{1.2}{-2} & \scinot{2.5}{-4} & \scinot{5}{-5} \\ \hline
  \end{tabular}
- \caption{$p$-values from the Kolmogorov-Smirnov (top) and Anderson-Darling (bottom) obtained by comparing the ellipticities computed using second moments are given for three cases: \emph{all} overdense (OD) vs. \emph{all} underdense (UD), two overdense bins, not very separated in redshift and a pair of adjacent overdense and underdense bins. \s$1$, \s$2$, \s$3$ refer to the volume-limited sample in three different ways.  \arun{Should I write only two significant digits for higher $p$-values?}
-           The Anderson-Darling $p$-values are correct only upto 5 decimal places. }
+ \caption{$p$-values from the Kolmogorov-Smirnov (top) and
+   Anderson-Darling (bottom) obtained by comparing the second
+   moments-based ellipticities for three the same three cases as in
+   Table~\ref{table:pvalues_all}.  \arun{Should I write only two
+     significant digits for higher $p$-values?} \rachel{Yes.  The same
+     comment applies to the previous table, too.}
+           The Anderson-Darling $p$-values are correct only up to 5 decimal places. }
  \label{table:pvalues_momentbased_all}
 \end{table}
 
 %The distribution of the axis ratios that are obtained by the above manner are compared between redshift bins. 
-We use two statistical tests namely the Kolmogorov-Smirnov test and Anderson-Darling test to compare distributions.
-The Anderson-Darling test is carried out using the \texttt{adk} package\footnote{\url{http://www.inside-r.org/packages/cran/adk/docs/adk.test}} in \texttt{R}.
+We begin by comparing the entire axis ratio distributions $p(q)$
+between pairs of redshift slices.  Unless otherwise mentioned, the
+axis ratios refer to the values obtained using the method of
+\cite{Claire_Fits} to fit single \sersic profiles to each galaxy image.
+To compare the distributions and
+make statistical statements about their consistency, we
+use two statistical tests, the Kolmogorov-Smirnov (KS) test and
+Anderson-Darling (AD) test, the latter of which is carried out using
+the \texttt{adk} package in \texttt{R}.
 
-We first compare the distribution of the axis ratio in \emph{all}
-overdense bins and \emph{all} underdense bins in Fig.~\ref{fig:axisratio_all}.
-\rachel{How was the volume-limiting carried out for this?  You should say the answer to this question  for all figures.} 
-\arun{The caption mentions it.}
-\rachel{I'm afraid that's not enough.  Some people are going to read linearly and you want the info in the main text, too.}
-Unless otherwise mentioned, the axis ratios refer to the values obtained using the method of \cite{Claire_Fits}.
-The cumulative distinction functions are also plotted alongside in order to be able to visualize the `distance' between the distributions.
-Referring to the first two rows in Table~\ref{table:pvalues_all}, we see that the p-values from both the KS and AD tests are well below 0.05, 
-so we reject the `null hypothesis' that the overdense and underdense regions have same axis ratio distributions at 95\% significance level.
+We first compare the distribution of galaxy axis ratios in \emph{all}
+overdense bins against that for \emph{all} underdense bins in
+Fig.~\ref{fig:axisratio_all}, with different panels showing the
+comparison for \s1, \s2, and \s3. 
+The cumulative distinction functions are also shown, since they form
+the basis for our statistical statements about consistency using the
+KS and AD tests.  The results of these tests are shown in the first
+two rows in Table~\ref{table:pvalues_all}.  For all three ways of
+volume-limiting the sample, the $p$-values from both the KS and AD
+tests are well below 0.05 (a maximum of $1.1\times 10^{-4}$, but often
+smaller than that).  We can therefore reject the null hypothesis that
+the overdense and underdense regions have the same underlying axis
+ratio distributions at high significance.
 
-One might imagine that the disagreement between the distributions is, at least partly, due to the fact that the overdense and underdense sample have different redshift distributions.
-To show that that is not the case, we will compare distributions between two overdense / underdense redshift bins, where we expect to find similarity, and between an overdense and underdense regions,
-where we expect the distributions to differ.
-Figures~\ref{fig:axisratio_similar} and~\ref{fig:axisratio_contrasting} are examples showing that the distributions are indeed similar when the environments are similar and different when the environments are different, confirming our expectation.
-Similar conclusion can be arrived at by comparing other redshift bins.
+One might imagine that the disagreement between the distributions is
+at least partly due to the fact that the overdense and underdense
+sample have different redshift distributions and there could be some
+evolution of ellipticity distributions with redshift. 
+To show that this redshift evolution effect is subdominant to
+environmental effects, we will compare distributions between pairs of
+two overdense (or pairs of underdense) redshift slices, where we
+expect to find similarity even if the redshifts are different if the
+environmental effects dominate.  We will also compare between
+overdense and underdense regions that are selected to be nearby in
+redshift, so that any redshift evolution effects should be minimal. 
+Figures~\ref{fig:axisratio_similar}
+shows that the axis ratio
+distributions are indeed consistent when the environments are similar
+but the redshifts are different.  Likewise
+Fig.~\ref{fig:axisratio_contrasting} shows that for adjacent redshift
+slices with different environments, the axis ratio distributions are
+inconsistent.  The results of statistical tests for the distributions
+in these figures are given in Table~\ref{table:pvalues_all}, and
+support our statement that the morphology-density
+correlation is the dominant effect when comparing overdense and
+underdense redshift slices, with redshift evolution of the
+population being negligible. 
+Comparing other pairs of redshift
+bins leads to similar conclusions. (\rachel{This argument would be even stronger if
+  Fig.~\ref{fig:axisratio_similar} showed two redshift slices that were
+  further separated in redshift, for example $0.3-0.4$ against
+  $0.75-0.8$.  However the former might not have enough galaxies?})
 
-Such a trend is also observed in axis ratios based on second moments. 
-If $Q_{ij}$ represents the generic matrix element of the matrix of second moments, then define a complex number, sometimes known as the \emph{distortion}, as
-\begin{equation}
- e = e_1 + ie_2 = \frac{Q_{11}-Q_{22}+2iQ_{12}}{Q_{11}+Q_{22}}.
- \label{eq:distortion}
-\end{equation}
-%\arun{Is this the correct denominator?} \rachel{Yes.  There's another ellipticity definition with a different denominator, but we use distortion which is defined as in this equation.  (Once you read this response feel free to delete this conversation.)}
-Then, one definition of ellipticity is the magnitude of this complex number which is $\sqrt{e_1^2+e_2^2}$.
-
-After neglecting a small fraction $(\sim 0.0065\%)$ of galaxies (36 out of 55991 galaxies between $0.3\le z<0.85$ with $\log(M/\Msun) > 10.15$) for which the moments do not converge, 
-we make comparisons to the above between the distribution of ellipticities computed from the second moments and the results are tabulated in Table~\ref{table:pvalues_momentbased_all}.
-Once again, we see that the distributions are consistent with each other when the environment is similar and are inconsistent when the environments are constrasting.
+Finally, we can check whether these findings are particular to the
+axis ratios from the \sersic fits, or whether we reproduce this
+finding when we use the shapes from the centrally-weighted
+moments-based re-Gaussianization method, which estimates a distortion
+(Eq.~\ref{eq:distortion}) for each galaxy. 
+After neglecting a small fraction ($<0.01$ per cent) of galaxies for
+which the method does not converge, 
+we carry out the same statistical tests from
+Table~\ref{table:pvalues_all}, but using the moments-based shape
+estimates.  The results of the KS and AD tests are tabulated in Table~\ref{table:pvalues_momentbased_all}.
+We see that all of our findings with the \sersic fit-based shapes
+carry over to shapes from a centrally-weighted moments-based shape
+estimate.
 
 \subsubsection{RMS ellipticites}
 \begin{figure}

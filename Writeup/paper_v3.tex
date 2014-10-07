@@ -833,7 +833,7 @@ ratio can also be used to derive a distortion,
 e = \frac{1-q^2}{1+q^2}
 \end{equation}
 or an ellipticity,
-\begin{equation}
+\begin{equation}\label{eq:ellipticity}
 \varepsilon = \frac{1-q}{1+q}.
 \end{equation}
 
@@ -914,14 +914,15 @@ robustness to how the sample is selected.
 We can test the influence of environment on the galaxy shapes by
 comparing the distributions of the axis ratios for the overdense and
 underdense redshift slices, or by encapsulating that distribution as a
-single number, the RMS ellipticity. By volume-limiting the sample, we can avoid issues
+single number, the RMS (root mean squared) ellipticity. By
+volume-limiting the sample, we have avoided issues
 wherein the flux limit leads to artificial changes in the sample as a
 function of redshift.  We will also carry out tests to differentiate
 between environmental effects versus evolution of the population with
 redshift (at fixed mass).
 
 %Then, we proceed to consider the root mean square ellipticity, a statistic that can characterize the shape of the population/sample of galaxies. 
-\subsubsection{Comparing distributions}
+\subsubsection{Comparing distributions}\label{subsubsec:compdist}
 \begin{figure*}
  \centering
  \includegraphics[width=2.2\columnwidth]{axis_ratio_all}
@@ -1097,49 +1098,116 @@ estimate.
 \begin{figure}
  %\centering
  \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \
- \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
- \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
-          Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
-          are $1\sigma$ errorbars obtained by bootstrapping. \rachel{I'm thinking these are so similar we just need to show one figure, and can say the results for the other in words.  The same goes for the next figure.}}
+% \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
+ \caption{RMS distortions as a function of redshift. The horizontal errorbars indicate
+          the width of the redshift bin, while the vertical ones
+          are $1\sigma$ errorbars obtained by
+          bootstrapping. The colors and shapes of the points indicate their
+          environmental classification, as shown in the legend.  \rachel{The title and figure clearly show two
+          samples.  The caption needs to explain which are solid
+          points and which are open. Also, the horizontal axis label should
+          be either $z$ or ``Photometric redshift ($z$)'', not ``Photo
+          $z$'' (which is not a phrase we have used throughout the
+          paper).  The change in horizontal axis label is needed for
+          the other RMS ellipticity plots and anywhere else that it
+          shows up in the paper.}}
  \label{fig:rms_ellip}
 \end{figure}
 
 \begin{figure}
  %\centering
   \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution.eps} \
-\includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution.eps} \\
- \caption{Left: RMS ellipticities with ellipticity defined as $\frac{1-q}{1+q}$. \; 
-          Right: RMS ellipticities with ellipticity defined as $\frac{1-q^2}{1+q^2}$.\\ The horizontal errorbars simply correspond to the binwidth while the vertical ones
-          are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the sample where the luminosity cut evolves by -1.23 per unit redshift (\s$2$) and the unfilled
-          points correspond to the sample obtained from stellar mass cuts (\s$3$).}
+%\includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution.eps} \\
+ \caption{RMS distortions as a function of redshift. The solid
+   points correspond to the sample where the luminosity cut evolves by
+   $-1.23$ magnitudes per unit redshift (\s$2$) and the open
+          points correspond to the sample obtained from stellar mass
+          cuts (\s$3$). \rachel{If I compare this with
+            Fig.~\ref{fig:rms_ellip} I would have concluded that the
+            samples were the opposite of what is stated here.  The solid points appear the
+            same in both plots, so I thought that was the stellar
+            mass-selected sample.  Please check and confirm which way
+            is correct, and include the information in both captions.}}
  \label{fig:rms_ellip_Bband_mass}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution.eps} \
  \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_masscut.eps} \\
- \caption{RMS ellipticies with ellipticity defined as $\sqrt{e_1^2+e_2^2}$, where $e_1$ and $e_2$ are the real and imaginary components of the distortion defined in Eq.~\ref{eq:distortion}.
-          The horizontal errorbars simply correspond to the binwidth while the vertical ones
-          are $1\sigma$ errorbars obtained by bootstrapping. The solid points correspond to the luminosity selected sample (\s$1$ sample on the left and \s$2$ sample on the right) and the unfilled
-          points correspond to the sample obtained from stellar mass cuts (\s$3$). }
+ \caption{RMS distortions as a function of redshift, with points
+   defined in a similar way as in Fig.~\ref{fig:rms_ellip}.  In this
+   case, the distortions are the moments-based shape estimates, rather
+   than from fits to \sersic profiles. }
  \label{fig:rms_ellip_momentbased}         
 \end{figure}
 
+\rachel{Overall, I find it quite confusing that the underdense regions
+  are red and the overdense regions are blue on all of these plots.
+  The underdense regions are dominated by blue galaxies and the
+  overdense are dominated by red galaxies, so having the plot colors
+  reversed creates some cognitive dissonance.  Can you reverse them to
+  more naturally match up point color with galaxy type?}
 
 %The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
 %or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
-For the luminosity-selected sample without any evolution, RMS ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}. As one can see, the underdense regions
-have significantly higher values for RMS ellipticities when compared to the overdense regions. Note in particular that we've been able to capture the narrow overdense bin $0.75\le z < 0.80$.  
-There is (almost) no redshift dependence in the figure.
+We can also carry out tests on a single statistic of the galaxy shape
+distribution in each redshift slice, like the RMS ellipticity.  While
+tests of a single quantity may seem less powerful than tests that use
+the entire shape distributions, the advantage is that instead of
+picking out pairs of redshift slices for our tests, we can easily compute our
+statistic of interest for every single redshift slice, and look for
+trends with both redshift and environment.
 
-The dependence on the local environment seems to make sense. Overdense regions typically have young, spiral galaxies which have high $q$ and hence low RMS ellipticity. 
-On the contrary, the underdense regions typically have old, elliptical galaxies and thus low $q$ and high RMS ellipticity.
+For the luminosity-selected sample without any evolution (\s1), the
+RMS distortions (Eq.~\ref{eq:distortion}) of galaxies in each redshift bin are shown
+in Fig.~\ref{fig:rms_ellip}.  (\rachel{The figure seems to show two
+  samples, not just \s1.  Update the text to reflect this?}) For this and all similar figures, the
+colors of the points were selected to easily differentiate between
+galaxies in overdense, neutral, and underdense redshift slices.
+As shown, the underdense regions
+have  higher values for RMS ellipticities when compared to the
+overdense regions. The difference between the underdense and overdense
+regions for $z>0.5$ is significantly larger than any redshift
+evolution across the $z>0.5$ range.  Our conclusions are very similar
+if we use the RMS ellipticity from Eq.~\eqref{eq:ellipticity} instead
+of the distortion. (\rachel{Our statements at the low redshift end
+  regarding the amount of redshift evolution will depend on whether
+  we're using the solid or open points, and the text and caption do
+  not say which samples they correspond to, so I was not able to
+  address this in the text.  Please do that once it is your turn to edit.})
+
+The sign of the dependence on the local environment is reasonable when
+compared with previous work on the morphology-density
+relation. Overdense regions typically contain many old, elliptical
+galaxies which are close to round (large axis ratio and low RMS ellipticity). 
+In contrast, the underdense regions typically contain a larger
+population of younger, disk galaxies, which have lower axis ratios and
+higher RMS ellipticity. \rachel{Important note: this argument was
+  given completely backwards.  I fixed it, but please watch out for
+  this in future since it's a key point behind this work.}
 
 From Figs.~\ref{fig:redshift_fluxlimited} and~\ref{fig:redshift_vollimited},
-the region $0.4\le z < 0.55$ show signs of being marginally underdense but have low RMS ellipticities too that agree with the rest of the overdense regions.
+the $0.4\le z < 0.55$ redshift range shows signs of being marginally
+underdense, but has somewhat low RMS ellipticities that agree with the rest of the overdense regions.
 
-When the B-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the ellipticity at lower redshifts can be observed. We plot these alongside with stellar-mass selected samples, where a similar trend is found, in Fig.~\ref{fig:rms_ellip_Bband_mass}. 
-Also, the RMS values of the ellipticites calculated from the second moments within each redshift bin are given in Fig.~\ref{fig:rms_ellip_momentbased}.
+When the $B$-band luminosity evolution is taken into account in
+selecting the sample, a systematic increase in the ellipticity at
+lower redshifts can be observed. We plot these along with stellar-mass
+selected samples, where a similar trend is found, in
+Fig.~\ref{fig:rms_ellip_Bband_mass}.
+
+Finally, we show an analogous plot of RMS ellipticities for all three
+volume-limited sample using the moments-based shape estimates in
+Fig.~\ref{fig:rms_ellip_momentbased}. The conclusions are quite
+similar to those using the shapes from the \sersic profile fits, with
+the underdense regions standing out in having larger RMS distortions 
+than the other redshift slices, an effect that is substantially larger
+than any average redshift evolution of the RMS distortions.
+
+However, it is generally the case that the statistical significance of
+trends in this section using a single statistic of the shape
+distribution (the RMS) is less than the significance of the trends
+seen using the entire axis ratio distributions in Sec.~\ref{subsubsec:compdist}.
 
 \subsection{Other morphological parameters}
 For other morphological parameters such as the \sersic index and \btt ratio, we do not compare the distributions themselves directly. 

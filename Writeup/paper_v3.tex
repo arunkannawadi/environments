@@ -594,6 +594,20 @@ magnitudes of evolution to fainter magnitudes as a function of
 redshift (evaluated using the bin centers).  Because of the sign of
 redshift evolution, \s$2$ includes  more galaxies.
 
+One might wonder why we cannot use the luminosity function in F814W
+based on the COSMOS observations to directly determine the luminosity
+function for our sample, thus simplifying this exercise.  However,
+this turns out to be highly non-trivial for two reasons.  First, the
+F814W observations are relatively shallow compared to the deep
+ground-based observations used in many other works for determination
+of luminosity evolution.  As a result, it is difficult to get a handle
+on the faint end of the luminosity function, and the unknown faint-end
+slope turns out to be degenerate with the evolution of the typical
+luminosity.  Second, the photometric redshift error is a complicating
+factor that requires sophisticated techniques to remove.  A derivation
+of the $I$-band luminosity evolution is therefore beyond the scope of
+this work.
+
 %In our analysis, we imposed the cut on luminosity for all redshift bins while many studies have shown that the characteristic luminosity of galaxies evolve with redshift. 
 % The work that is at least close to what we expect is that of
 % \cite{Faber2007}, who have studied the evolution of Schechter parameters in the B-band of DEEP2 and COMBO-17 surveys. We consider their reported value of $ \Delta M_B^* \sim -1.23$ per unit redshift, for both blue and red galaxies combined together.
@@ -869,14 +883,31 @@ two shape estimators.
 
 \section{Results}
 \label{S:results}
-Having identified the overdense and underdense regions in a volume-limited sample (Sec.~\ref{sub:overdensities}, Sec.~\ref{sub:volumelimiting}), we will now see in this section if the morphological
-parameters of the galaxies, listed in Sec.~\ref{sub:axisratio}, have any dependence on the environment that they reside in. We have 3 different ways of volume-limiting our sample
+
+Having identified the overdense and underdense regions in a
+volume-limited sample (Secs.~\ref{sub:overdensities}
+and~\ref{sub:volumelimiting}), we will now see whether the morphological
+parameters of the galaxies described in Sec.~\ref{sub:axisratio}
+depend noticably on the environment of the redshift slice in which
+they reside. Note that for true 3D overdensities there is already
+substantial evidence in the literature that we should see variation of
+properties with the environment.  Our test is necessary to see
+whether such morphology-density correlations are evident in the kind
+of 1D redshift slices that would be used for constructing weak lensing
+simulations, or whether our use of an area the size of COSMOS will
+wash out these trends (which would be good news for weak lensing
+simulations based on that dataset).
+
+As described in Sec.~\ref{sub:volumelimiting}, we have three different ways of volume-limiting our sample:
 \begin{enumerate}
  \item no redshift evolution of luminosity cut $(\s1)$,
- \item use $B$-band evolution rate for $I$-band luminosities $(\s2)$,
- \item impose stellar mass cuts instead of luminosity $(\s3)$
+ \item using $B$-band luminosity evolution applied to the $I$-band
+   luminosities $(\s2)$, and
+ \item impose stellar mass cuts instead of luminosity $(\s3)$.
 \end{enumerate}
-and we will present our results in each of the 3 cases. 
+
+We will present our results in all three cases to check for their
+robustness to how the sample is selected. 
 
 \subsection{Axis-ratios} 
 We can understand the influence of environment on the ellipticities of the galaxies simply by comparing the distribution of the axis ratios for the overdense and underdense samples. 

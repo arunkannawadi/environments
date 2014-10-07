@@ -344,8 +344,7 @@ In this section we will describe how these steps were carried out.
            Lower panel: Plot of $\delta_{g,\text{1D}} =
            N/N_{\text{mod}}-1$ with each functional form as the model
            for each redshift bin. \arun{Note to self: Give parameter values.}
-\rachel{Change $x$ axis label to ``Photometric redshift ($z$)''.  Use  thicker line width for the actual histogram.  Change legend to say  ``$p_1(z)$ (Eq. 1)'' and ``$p_2(z)$ (Eq. 2)'' rather than giving the actual equation.  Also, why are two of the horizontal lines in the bottom panel solid and one dashed?  What decides the style for eachline?  Finally, I think it makes sense to plot $\delta$ rather than $1+\delta$.}}
-\arun{Done. But I refer to the equations in the caption instead of the legend.}
+}
   \label{fig:redshift_fluxlimited}
 \end{figure}
 
@@ -398,11 +397,11 @@ that a non-negligible fraction is lost due to the cuts we impose
 
 The parametric redshift distributions that we use are
 \begin{equation}\label{E:pz1}
- p_1(z) \propto z^{a-1}\exp({-bz})
+ p_1(z) \propto z^{a-1}\exp\left[{-bz}\right]
 \end{equation}
 and 
 \begin{equation}\label{E:pz2}
- p_2(z) \propto z^2\exp{\left(-\left(\frac{z}{z_0}\right)^{1.5}\right)},
+ p_2(z) \propto z^2\exp{\left[-\left(\frac{z}{z_0}\right)^{1.5}\right]},
 \end{equation}
 the latter of which was first presented by
 \cite{Redshift_modelling}. Here $a$, $b$, and

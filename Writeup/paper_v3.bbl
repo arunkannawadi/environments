@@ -1,4 +1,4 @@
-\begin{thebibliography}{48}
+\begin{thebibliography}{51}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -14,6 +14,9 @@
 
 \bibitem[{{Bernstein}(2010)}]{2010MNRAS.406.2793B}
 {Bernstein} G.~M., 2010, \mnras, 406, 2793
+
+\bibitem[{{Bernstein} \& {Armstrong}(2014)}]{2014MNRAS.438.1880B}
+{Bernstein} G.~M., {Armstrong} R., 2014, \mnras, 438, 1880
 
 \bibitem[{{Bernstein} \& {Jarvis}(2002)}]{BJ02}
 {Bernstein} G.~M., {Jarvis} M., 2002, \aj, 123, 583
@@ -135,6 +138,11 @@
   {Witherick}, {Voigt}, {Young}, \& {Zuntz}}]{2012MNRAS.423.3163K}
 {Kitching} T.~D. {et~al.}, 2012, \mnras, 423, 3163
 
+\bibitem[{{Kitching} {et~al}\mbox{.}(2008){Kitching}, {Miller}, {Heymans}, {van
+  Waerbeke}, \& {Heavens}}]{2008MNRAS.390..149K}
+{Kitching} T.~D., {Miller} L., {Heymans} C.~E., {van Waerbeke} L., {Heavens}
+  A.~F., 2008, \mnras, 390, 149
+
 \bibitem[{{Koekemoer} {et~al}\mbox{.}(2007){Koekemoer}, {Aussel}, {Calzetti},
   {Capak}, {Giavalisco}, {Kneib}, {Leauthaud}, {Le F{\`e}vre}, {McCracken},
   {Massey}, {Mobasher}, {Rhodes}, {Scoville}, \& {Shopbell}}]{COSMOS_generic}
@@ -197,11 +205,6 @@
 {Mandelbaum} R., {Slosar} A., {Baldauf} T., {Seljak} U., {Hirata} C.~M.,
   {Nakajima} R., {Reyes} R., {Smith} R.~E., 2013, \mnras, 432, 1544
 
-\bibitem[{{Markwardt}(2009)}]{mpfit2fun}
-{Markwardt} C.~B., 2009, in Astronomical Society of the Pacific Conference
-  Series, Vol. 411, Astronomical Data Analysis Software and Systems XVIII,
-  {Bohlender} D.~A., {Durand} D., {Dowler} P., eds., p. 251
-
 \bibitem[{{Melchior} {et~al}\mbox{.}(2010){Melchior}, {B{\"o}hnert},
   {Lombardi}, \& {Bartelmann}}]{2010A&A...510A..75M}
 {Melchior} P., {B{\"o}hnert} A., {Lombardi} M., {Bartelmann} M., 2010, \aap,
@@ -209,6 +212,17 @@
 
 \bibitem[{{Melchior} \& {Viola}(2012)}]{2012MNRAS.424.2757M}
 {Melchior} P., {Viola} M., 2012, \mnras, 424, 2757
+
+\bibitem[{{Miller} {et~al}\mbox{.}(2013){Miller}, {Heymans}, {Kitching}, {van
+  Waerbeke}, {Erben}, {Hildebrandt}, {Hoekstra}, {Mellier}, {Rowe}, {Coupon},
+  {Dietrich}, {Fu}, {Harnois-D{\'e}raps}, {Hudson}, {Kilbinger}, {Kuijken},
+  {Schrabback}, {Semboloni}, {Vafaei}, \& {Velander}}]{2013MNRAS.429.2858M}
+{Miller} L. {et~al.}, 2013, \mnras, 429, 2858
+
+\bibitem[{{Miller} {et~al}\mbox{.}(2007){Miller}, {Kitching}, {Heymans},
+  {Heavens}, \& {van Waerbeke}}]{2007MNRAS.382..315M}
+{Miller} L., {Kitching} T.~D., {Heymans} C., {Heavens} A.~F., {van Waerbeke}
+  L., 2007, \mnras, 382, 315
 
 \bibitem[{{Miyazaki} {et~al}\mbox{.}(2006){Miyazaki}, {Komiyama}, {Nakaya},
   {Doi}, {Furusawa}, {Gillingham}, {Kamata}, {Takeshi}, \&

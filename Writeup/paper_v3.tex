@@ -1227,10 +1227,11 @@ are more robust to what happens at the edges of the distributions.
 
 Fig.~\ref{fig:median_sersicn} shows the median value of the \sersic
 index in each redshift slice, with and without taking into account of
-luminosity evolution when volume-limited the samples (\s1 and
+luminosity evolution when volume-limiting the samples (\s1 and
 \s2). Both panels also show the results with stellar mass-selected
 samples (\s3) for reference.  
-When using the stellar mass-selected sample, we observe that the overdense regions tend to have higher \sersic
+When using the stellar mass-selected sample, we observe that the
+overdense regions tend to have higher \sersic 
 index than the underdense ones, with the redshift evolution being mild
 and the results for the underdense regions particularly standing
 out. This trend is consistent with our previous explanation for trends
@@ -1245,7 +1246,12 @@ indices of the stellar mass-selected samples (\s$3$) are
 systematically greater than those of the luminosity selected samples
 (\s$1$, \s$2$).  We saw that \s3 is the smallest sample, and thus is
 likely limited to higher mass galaxies overall.  It is therefore not
-surprising that it has a higher median \sersic $n$.
+surprising that it has a higher median \sersic $n$.  Finally, even for
+the stellar mass-selected sample there is some sign of redshift
+evolution.  The sign of this evolution is as expected, with lower
+\sersic $n$ and $B/T$ for higher redshift samples, which should have a
+higher fraction of disk and irregular galaxies and fewer galaxies with
+bulge-like morphology.
  
 Finally, Fig.~\ref{fig:median_dvcbtt} shows the variation of the median
 bulge-to-total ratio with redshift. The results are quite consistent
@@ -1291,41 +1297,166 @@ galaxies.
  \label{fig:median_dvcbtt}
 \end{figure}
 
-\section{Conclusions}
+\section{Conclusions and implications}
 \label{S:summary}
 
 \rachel{Here is one thing that is still missing from the results
   section.  We had discussed a number of times lumping the galaxies
   together into slices with larger $\Delta z$ and showing that the
-  trends in the shape distributions disappear.  You had shown me plots
-  and numbers for these, but they don't seem to have gone into the
-  paper.  Please include them, because it would be useful to be able
-  to give some guidance on how wide the redshift slices should be to
-  avoid this issue.}
+  trends in the shape distributions disappear or are reduced.  You had
+  shown me plots for this at some point, but they don't seem to have
+  gone into the paper.  Please include them, because it would be
+  useful to be able to give some guidance on how wide the redshift
+  slices should be to avoid this issue.}
 
-In this study, we have shown that morphological parameters of galaxies depend on the local environments along the line of sight in a manner than affect weak lensing simulations.
-In studies of weak lensing, one simulates galaxy images in a redshift slice by learning from the images in the same redshift bin of a training sample like COSMOS, which we have used for our analysis here.
-The survey volume is broken up into multiple redshift slices and are classified as `overdense', `underdense' or `neutral' according to their local environment.
-This is done by comparing the 1-D redshift distribution to some of the parametric models available in the literature. 
-The incompleteness in the sample is minimized by constructing a volume limited sample either by imposing stellar mass cuts (\s$3$) or by imposing a luminosity cut. 
-Further, depending on whether we have the cut fixed or evolve with redshift, we get two more volume limited samples \s$1$ and \s$2$ respectively. 
-Morphological parameters are obtained by fitting a single \sersic profile to the images or by a two component (bulge+disk) fit. 
-The morphological quantities of interest include axis ratios or equivalently the ellipticities, \sersic indices and \btt ratios.
+In this study, we have shown that the shape distributions of galaxies
+(to a statistically significant degree) and morphological parameters
+like \sersic $n$ and bulge-to-total ratios (more marginally) depend on
+the local environments when dividing up the COSMOS sample into
+redshift slices along the line of sight.  The redshift slices used had
+a width of $\Delta z=0.05$.  Our findings are robust to the choice of
+shape estimator from \sersic profile fits vs. using centrally weighted
+moments-based shear estimates.
 
-For all the three volume-limited samples, we compare the distributions of the axis-ratios of the galaxies in overdense and underdense regions and conclude that the distributions are different after performing statistical tests on them.
-From the axis ratios, we compute ellipticities and find that the root mean squared value of the ellipticities of galaxies in a redshift bin vary significantly between the overdense and underdense regions.
-Such a behavior is also observed when ellipticies are computed using second moments instead of a parametric model fitting. \sersic index and \btt ratios also exhibit similar trends
-with redshift based on the local environment. 
+These findings are relevant to attempts to use {\em HST}-based galaxy
+samples to calibrate shear estimates in weak lensing surveys.  In
+general, the approach would be to define galaxy samples using all
+galaxies in redshift slices, and determine a redshift-dependent shear
+calibration.  Our findings highlight the danger in such an approach:
+while we would like our simulations to include true evolution in
+galaxy properties with redshift, this approach also includes spurious
+variations in galaxy properties due to the large-scale structure
+within the COSMOS field.  Since the fidelity of weak lensing shear
+estimates depends sensitively on the intrinsic shape distribution and
+galaxy morphological parameters, the conclusions for the
+redshift-dependent shear calibration would be incorrect.  These errors
+would be reduced as the redshift slices that are used become wider, so
+that the impact of local overdensities becomes washed out.
 
-Our result has serious implications for realistic image simulations for weak lensing. 
-It suggests that the training sample is affected by cosmic variance so as to possibly bias the conclusions from the simulations. 
-This is particularly a problem with narrow surveys where a single galaxy cluster or a void could affect the environment significantly. 
-Thus, we are forced to use wider redshift bins, much larger than the uncertainties in the redshifts, so as to be able to wash out the environmental dependence.
-However, future surveys such as the Large Synoptic Survey Telescope\citep[LSST;][]{LSST_Book} will image larger areas of sky mitigating the dependence of local environment in image simulations.
+It is important to keep in mind the nature of COSMOS with respect to
+other possible {\em HST} training samples.  COSMOS represents the
+largest contiguous field surveyed by the {\em HST}, with the sizes of
+other {\em HST} fields such as GOODS and AEGIS lagging by at least an
+order of magnitude.  Hence, if cosmic variance due to structures along
+the line-of-sight in COSMOS are problematic for its use as a training
+sample for weak lensing simulations, studies that use even smaller
+area training samples are even more prone to errors, with the UDF
+serving as an extreme case.  If the size of the {\em HST} survey is
+small enough, there is no reason {\em a priori} to suppose that the
+galaxy population is typical even when using all galaxies along the
+line of sight, without any division into redshift bins.  Of course,
+future surveys are unlikely to pick just a single survey to serve as
+the basis for their image simulation training sample, but rather
+to combine as many as possible.  Combining multiple surveys will
+reduce the cosmic variance and therefore the significance of the
+effects discussed in this work.  However, with COSMOS being so
+dominant in its size, the combination with other much smaller fields
+is unlikely to fully ameliorate this effect.  Thus, it will be
+important to carefully choose the size of redshift slices used to
+derive properties of the galaxy population so as to be minimally
+affected by this issue.
 
-\rachel{Note to self: mention UDF, and tie back to bias in shear
-  estimates?  Also, tie back to flux-limited samples, and why we
-  should care about these results for them.}
+It is natural to ask the question of how relevant are variations in
+the galaxy population of the size found here for shear calibration
+bias estimates.  It is likely that the answer to this question varies
+quite significantly with the type of shear estimation method used.
+Some will be sensitive to the variations in morphology, others to the
+variation in the intrinsic ellipticity distribution, and many will be
+sensitive to both at some level.  We consider each in turn.
+
+The intrinsic ellipticity distribution plays a role in nearly all
+shear estimators.  In some, the role is explicit: for example, LensFit
+\citep{2007MNRAS.382..315M,2008MNRAS.390..149K,2013MNRAS.429.2858M}
+and the methods presented by \cite{2014MNRAS.438.1880B} require
+accurate intrinsic ellipticity distributions as inputs, and
+uncertainty in the distribution was one of the important sources of
+systematic uncertainty in the CFHTLenS weak lensing results
+\citep{2013MNRAS.432.2433H,2013MNRAS.429.2858M}.  In others, the role
+is implicit.  For example, the re-Gaussianization method and several
+other moment-based methods require calculation of a shear responsivity
+\citep{BJ02,HS03} that describes how the galaxy population overall
+responds to a shear, based on its intrinsic ellipticity distribution.
+The responsivity can be calculated based on the observed shape
+distribution, assuming that the uncertainties in the shears are known
+enough that their contribution to that distribution can be removed.
+If a simulated sample in some redshift slice has a different intrinsic
+ellipticity distribution and therefore responsivity, it could lead to
+incorrect conclusions about shear calibration.  The responsivity
+scales roughly like $1-e_\text{RMS}^2$, which means that deviations in
+RMS ellipticity at the level of 0.01 would become fractional shear
+errors of
+\begin{equation}
+\frac{\Delta\gamma}{\gamma} \approx \frac{2 e_\text{RMS} \Delta
+  e_\text{RMS} }{1-e_\text{RMS}^2} \approx 0.01.
+\end{equation}
+In the context of upcoming lensing surveys that seek to constrain
+shears to the per cent level or better, a systematic error of this
+magnitude in shear calibration is quite serious.
+
+Regarding possible biases in the morphological mixtures of galaxies
+due to overdensities or underdensities in the training sample, there
+are results in the literature for several methods that show how shear
+biases vary with morphology.  For example, for the maximum likelihood
+fitting code {\sc im3shape}, figure 2 in \cite{2012MNRAS.427.2711K}
+shows multiplicative biases for two-component \sersic profile galaxies
+as a function of their bulge-to-total ratios (denoted there as
+$F_b/(F_b+F_d)$, which we will equate with our $B/T$).  The shear
+calibration bias scales roughly like $0.04 - 0.05(B/T)$ as $B/T$ goes
+from $0$ to $1$.  Our results suggest that typical (median) $B/T$
+values may be influenced by cosmic variance in the COSMOS field
+leading to fluctuations of order $0.05$.  The resulting variation in
+the calibration bias would therefore be $\sim 2.5\times 10^{-3}$, or
+$0.25$ per cent shear calibration uncertainty.  For existing datasets
+this is not very problematic, but for surveys like LSST, Euclid, and
+WFIRST-AFTA, this would be a dominant part of the systematic error
+budget.  To give another example, for re-Gaussianization, figure 9 of
+\cite{2012MNRAS.420.1518M} shows that as \sersic $n$ goes from $1$ to
+$6$, the shear calibration bias varies by $2$ per cent.  In this case,
+since we have shown that the median value of \sersic $n$ can vary by
+$\sim 0.4$ due to morphology-density correlations, this suggests that
+the shear calibration for re-Gaussianization could be misestimated by
+$\sim 2\times 10^{-3}$, or 0.2 per cent.  This too is acceptable in
+existing datasets, but not those that will be used for shear
+estimation in the next decade.
+
+A final consideration is the question of how applicable these results
+using volume-limited samples are to simulations of upcoming weak
+lensing surveys, which will exclusively use flux-limited samples.  For
+our analysis, the volume-limiting sample was necessary to avoid
+complications due to varying galaxy populations in each redshift
+slice, allowing us to isolate purely environmental effects.  In
+principle, if the morphology-density correlations that we have
+identified turn out to not exist for intrinsically fainter galaxy
+populations, then at low redshift (where a flux limited sample will
+include galaxies that are intrinsically much fainter than at high
+redshift), the effects will be less serious for upcoming lensing
+surveys.  However, we do not have any particular reason to believe
+that these effects will vanish for fainter galaxies.  Moreover, at
+higher redshift where only intrinsically bright galaxies can be seen,
+the effect should be present at a level similar to what we have found
+here.  Since higher redshift galaxies tend to dominate cosmological
+shear estimates (due to their higher shears), our findings will be
+important to take into account.
+
+In conclusion, our results have serious implications for the plans to
+create realistic image simulations that will be used to derive
+redshift-dependent shear calibrations for upcoming weak lensing
+surveys.  If care is not taken to mitigate this effect, then the
+cosmic variance in the training sample may bias the conclusions
+regarding shear calibration for redshift slices that represent
+significant overdensities or underdensities compared to the typical
+galaxy population.  This is particularly a problem when using the
+smaller {\em HST} surveys, where a single galaxy cluster or a void
+could completely dominate the galaxy population in a given redshift
+slice.  To mitigate this problem, it will be imperative to (a) collect
+training data from widely separated patches on the sky, and (b) take
+care to use redshift slices that are brought enough that these effects
+are reduced, so as to wash out the effect of any signal overdensity or
+underdensity on the simulated galaxy population.  By employing these
+mitigation schemes, there is every reason to believe that the effect
+we have identified can be reduced to a small component of the
+systematic error budget of major upcoming lensing surveys.
+
 
 \section*{Acknowledgments}
 
@@ -1336,6 +1467,8 @@ Association of Universities for Research in Astronomy, Incorporated,
 under NASA contract NAS5-26555. RM acknowledges the support of an Alfred P. Sloan Research Fellowship.  We thank Alexie Leauthaud for 
 many useful discussions.
 
+\rachel{Need to fix arXiv references so that they show up properly
+  with e-print number.}
 
 %\begin{thebibliography}
 \bibliography{ref}

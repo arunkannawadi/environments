@@ -119,12 +119,12 @@
 \newcommand{\s}{\ensuremath{\mathcal{S}}}
 \newcommand{\scinot}[2]{\ensuremath{#1 \times 10^{#2}}} 
 
-\title[WL simulation]{The impact of cosmic variance on simulating weak lensing surveys}
+\title[Cosmic variance in simulations]{The impact of cosmic variance on simulating weak lensing surveys}
 
 \author[Kannawadi et al.]
 {Arun Kannawadi$^1$\thanks{\tt akannawa@andrew.cmu.edu}, 
 Rachel Mandelbaum$^1$,
-Claire Lackner$^2$, 
+Claire Lackner$^2$
 \\$^1$McWilliams Center for Cosmology, Carnegie Mellon University, Pittsburgh, PA 15217, USA
 \\$^2$Kavli Institute for the Physics and Mathematics of the Universe (WPI), Todai Institutes for Advanced Study,\\ the University of Tokyo, Kashiwa, Japan.
 }
@@ -136,9 +136,34 @@ Claire Lackner$^2$,
 \maketitle
 
 \begin{abstract}
-According to our current understanding, galaxy shapes and morphologies should depend on various factors such as the local environment. Realistic image simulations for calibration of weak lensing analysis methods that use training samples from the Hubble Space Telescope can therefore be affected by these trends, due to the limited volume of the universe that has been surveyed by Hubble. We will show how redshift slices in a volume-limited subsample of COSMOS can be classified as overdense or underdense (or neither), and how the statistical properties of various morphological parameters such as ellipticity, \sersicn, \btt ratio and color differ in these bins. This study requires a careful distinction between environment effects from large-scale structure, which we do not wish to include in simulations, and general trends in the galaxy population with redshift. We conclude with some guidance for how upcoming surveys can use COSMOS data as the basis for weak lensing simulations without having their conclusions overly affected by cosmic variance.  
-\rachel{I have some comments on this abtract, but prefer to do all
-  revision of the abstract at the end once the paper is finalized.}
+Upcoming weak lensing surveys will survey large cosmological volumes
+in order to measure the growth of cosmological structure with time and
+thereby constrain dark energy.  One major systematic uncertainty in
+this process is the calibration of the weak lensing shape distortions,
+or shears.  Nearly all upcoming surveys plan to test their shear
+estimation algorithms using sophisticated image simulations that
+attempt to mimick real data as closely as possible, including
+realistic galaxy populations based on high-resolution data from the
+Hubble Space Telescope ({\em HST}).  However, the existing datasets
+from the {\em HST} cover very small cosmological volumes, such that
+cosmic variance could cause the galaxy population represented in them
+to be atypical.  This is particularly the case when selecting galaxy
+populations in limited redshift slices, which could be dominated by a
+single large overdensity or underdensity.  In that case, the
+morphology-density relation could cause changes in the local galaxy
+populations that would result in incorrect conclusions to be drawn
+about the calibration of shear estimates as a function of redshift.
+We directly test this scenario using the COSMOS survey, which is the
+largest-area {\em HST} survey to date, and show how the
+statistical properties of shape (axis ratio or ellipticity) and
+morphological parameters such as \sersicn or the bulge-to-total ratio
+are influenced by redshift-dependent cosmic variance in this survey. This
+study requires a careful distinction between environment effects from
+large-scale structure, which we do not wish to include in simulations,
+and general trends in the galaxy population with redshift. We conclude
+that this effect is large enough to exceed the systematic error budget
+in future surveys, but can be mitigated with careful choice of
+training dataset and sufficiently large redshift binning. 
 \end{abstract}
 
 \begin{keywords}

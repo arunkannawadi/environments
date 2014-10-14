@@ -873,7 +873,8 @@ profile fits.  This ratio is defined in terms of bulge and disk fluxes as
   terms of flux.  Were you using numbers from my files for $B/T$?  If
   so, then it was calculated properly.  But if your analysis uses the
   equation that was in here before, then you will have to redo it.
-  Sorry for not noticing this earlier.})
+  Sorry for not noticing this earlier.}
+ \arun{I didn't have to compute the ratios. Claire had it computed already. So nothing but the equation had to be changed.})
 
 \rachel{I think it would be useful to take the entire sample that we
   use for science, and show the overall distributions of axis ratio,
@@ -947,10 +948,11 @@ between environmental effects versus evolution of the population with
 redshift (at fixed mass).
 
 %Then, we proceed to consider the root mean square ellipticity, a statistic that can characterize the shape of the population/sample of galaxies. 
-\subsubsection{Comparing distributions}\label{subsubsec:compdist}
+\subsubsection{Comparing distributions}
+\label{subsubsec:compdist}
 \begin{figure*}
  \centering
- \includegraphics[width=2.2\columnwidth]{axis_ratio_all}
+ \includegraphics[width=2.2\columnwidth]{axis_ratio_all.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_Bbandevolution.eps}
  %\includegraphics[width=0.66\columnwidth]{axis_ratio_all_masscut.eps}
@@ -967,33 +969,33 @@ redshift (at fixed mass).
 
 \begin{figure*}
  \centering
- \includegraphics[width=2.3\columnwidth]{axis_ratio_odod}
+ \includegraphics[width=2.2\columnwidth]{axis_ratio_odod}
  %a) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot65-0dot75.eps} \
  %b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot80-0dot85.eps} \\
  %c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot80-0dot85.eps} \
  %d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot55-0dot65_0dot75-0dot8.eps} \
  \caption{Galaxy axis ratio
-   distributions in two overdense redshift bins, $z=0.65-0.75$ and
-   $z=0.80-0.85$, to check for consistency in the case that the
+   distributions in two overdense redshift bins, $z=0.65-0.75$ (blue) and
+   $z=0.80-0.85$ (red), to check for consistency in the case that the
    environment is the same even if the redshift differs. The
    $p$-values from the KS and AD tests are given in
    Table.~\ref{table:pvalues_all}. \rachel{Figure does not appear to
-     be centered.}}
+     be centered.}\arun{Fixed.}}
  \label{fig:axisratio_similar}
 \end{figure*}
 
 \begin{figure*}
  \centering
- \includegraphics[width=2.3\columnwidth]{axis_ratio_odud}
+ \includegraphics[width=2.2\columnwidth]{axis_ratio_odud}
  %a) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot55-0dot65_0dot65-0dot75.eps} \
  %#b) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot55-0dot65.eps} \\
  %c) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot3-0dot4_0dot75-0dot8.eps} \
  %d) \includegraphics[width=0.9\columnwidth]{axisratio(0)_0dot65-0dot75_0dot75-0dot80.eps} \
  \caption{Galaxy axis ratio distributions in a single underdense redshift
-   slice, $z=0.55-0.65$, and a single overdense redshift slice,
-   $z=0.65-0.75$. The $p$-values from the
+   slice, $z=0.55-0.65$ (blue), and a single overdense redshift slice,
+   $z=0.65-0.75$ (red). The $p$-values from the
    KS and AD tests are given in Table.~\ref{table:pvalues_all}.   \rachel{Figure does not appear to
-     be centered.}}
+     be centered.}\arun{Fixed.}}
  \label{fig:axisratio_contrasting}
 \end{figure*}
 
@@ -1006,8 +1008,8 @@ redshift (at fixed mass).
   \hline
   All overdense vs.  & \scinot{1.1}{-4} & \scinot{2.6}{-5} & \scinot{1.9}{-6} \\
   All underdense     & \scinot{1}{-5} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline 
-  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.613 & 0.431 & 0.231 \\
-  $[0.80,0.85]$ (OD) & 0.494 & 0.237 & 0.130 \\ \hline
+  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.61 & 0.43 & 0.23 \\
+  $[0.80,0.85]$ (OD) & 0.49 & 0.24 & 0.13 \\ \hline
   $[0.65,0.75]$ (OD) vs.$\!\!\!$ & \scinot{5.8}{-4} & \scinot{1.5}{-5} & \scinot{3.5}{-6} \\
   $[0.55,0.65]$ (UD) & \scinot{9.8}{-4} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline
  \end{tabular}
@@ -1021,7 +1023,8 @@ redshift (at fixed mass).
           The Anderson-Darling $p$-values are correct only up to 5
           decimal places. 
 \rachel{What does this last sentence mean?  Why?  I think you need
-  clarification of this point in this table and the next one.}
+  clarification of this point in this table and the next one.
+\arun{I meant, R computes the p-values only upto 5 decimal places. This is why it is written as \scinot{1}{-5} and not as \scinot{1.0}{-5} }}
 % \rachel{What are the 0 entries in this and other tables?  Just how close to zero are they?  Since 0 is not really achieve, I recommend defining a value (such as $10^{-10}$ below which you will just say $<10^{-10}$ and give the value if it's above that, even if it seems really small to you, like $10^{-8}$.  Also, say $1.1\times 10^{-4}$ rather than $1.1e-4$.}
           }
  \label{table:pvalues_all}
@@ -1029,15 +1032,15 @@ redshift (at fixed mass).
 
 \begin{table}
  \centering
- \begin{tabular}[\columnwidth]{ | l | l | l | l | }
+ \begin{tabular}[\columnwidth]{ | l | c | c | c | }
   \hline
   %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
   Redshift bins & \s$1$ & \s$2$ & \s$3$ \\
   \hline
   All overdense vs. & \scinot{5.6}{-4} & \scinot{1.0}{-4} & \scinot{3.3}{-6} \\
   All underdense    & \scinot{3}{-5} & \scinot{1}{-5} & $<\scinot{1}{-5}$ \\ \hline 
-  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.9563 & 0.7476 & 0.5359 \\
-  $[0.80,0.85]$ (OD) & 0.5162 & 0.3352 & 0.2290 \\ \hline
+  $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.96 & 0.75 & 0.54 \\
+  $[0.80,0.85]$ (OD) & 0.52 & 0.34 & 0.23 \\ \hline
   $[0.65,0.75]$ (OD) vs.$\!\!\!$ & \scinot{6.0}{-3} & \scinot{2.5}{-4} & \scinot{2.4}{4} \\
   $[0.55,0.65]$ (UD) & \scinot{1.2}{-2} & \scinot{2.5}{-4} & \scinot{5}{-5} \\ \hline
  \end{tabular}
@@ -1103,7 +1106,9 @@ Comparing other pairs of redshift
 bins leads to similar conclusions. (\rachel{This argument would be even stronger if
   Fig.~\ref{fig:axisratio_similar} showed two redshift slices that were
   further separated in redshift, for example $0.3-0.4$ against
-  $0.75-0.8$.  However the former might not have enough galaxies?})
+  $0.75-0.8$.  However the former might not have enough galaxies?}
+  \arun{For the bins 0.3-0.4 and say 0.8-0.85 (the combination you mentioned is OD vs UD), the distributions agree only when no luminosity evolution is taken into account.
+        \s2 and \s3 samples don't agree. You can see in Fig.~\ref{fig:rms_ellip} that the thick points don't agree with each other.})
 
 Finally, we can check whether these findings are particular to the
 axis ratios from the \sersic fits, or whether we reproduce this
@@ -1121,44 +1126,46 @@ estimate.
 
 \subsubsection{RMS ellipticites}
 \begin{figure}
- %\centering
- \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \
+ \centering
+ \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \\
+ \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution.eps} \\
 % \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
  \caption{RMS distortions as a function of redshift. The horizontal errorbars indicate
           the width of the redshift bin, while the vertical ones
           are $1\sigma$ errorbars obtained by
           bootstrapping. The colors and shapes of the points indicate their
-          environmental classification, as shown in the legend.  \rachel{The title and figure clearly show two
-          samples.  The caption needs to explain which are solid
-          points and which are open. Also, the horizontal axis label should
-          be either $z$ or ``Photometric redshift ($z$)'', not ``Photo
-          $z$'' (which is not a phrase we have used throughout the
-          paper).  The change in horizontal axis label is needed for
-          the other RMS ellipticity plots and anywhere else that it
-          shows up in the paper.}}
+          environmental classification, as shown in the legend. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+          and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.          
+          \rachel{The title and figure clearly show two samples.  The caption needs to explain which are solid points and which are open. Also, the horizontal axis label should
+           be either $z$ or ``Photometric redshift ($z$)'', not ``Photo $z$'' (which is not a phrase we have used throughout the paper).  
+           The change in horizontal axis label is needed for the other RMS ellipticity plots and anywhere else that it shows up in the paper.} 
+           \arun{Done}        
+          }
  \label{fig:rms_ellip}
-\end{figure}
 
-\begin{figure}
- %\centering
-  \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution.eps} \
-%\includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution.eps} \\
- \caption{RMS distortions as a function of redshift. The solid
-   points correspond to the sample where the luminosity cut evolves by
-   $-1.23$ magnitudes per unit redshift (\s$2$) and the open
-          points correspond to the sample obtained from stellar mass
-          cuts (\s$3$). \rachel{If I compare this with
-            Fig.~\ref{fig:rms_ellip} I would have concluded that the
-            samples were the opposite of what is stated here.  The solid points appear the
-            same in both plots, so I thought that was the stellar
-            mass-selected sample.  Please check and confirm which way
-            is correct, and include the information in both captions.}}
- \label{fig:rms_ellip_Bband_mass}
+  
+% %\includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution.eps} \\
+%  \caption{RMS distortions as a function of redshift. The solid
+%    points correspond to the sample where the luminosity cut evolves by
+%    $-1.23$ magnitudes per unit redshift (\s$2$) and the open
+%           points correspond to the sample obtained from stellar mass
+%           cuts (\s$3$). 
+           
+%           
+%           \rachel{If I compare this with
+%             Fig.~\ref{fig:rms_ellip} I would have concluded that the
+%             samples were the opposite of what is stated here.  The solid points appear the
+%             same in both plots, so I thought that was the stellar
+%             mass-selected sample.  Please check and confirm which way
+%             is correct, and include the information in both captions.}
+%             \arun{I was referring to the marker, not the errorbar. The filled ones correspond to luminosity-selected \s1, \s2 samples and unfilled markers correspond to stellar-mass-selected sample, \s3.}
+%            }
+% \label{fig:rms_ellip_Bband_mass}
 \end{figure}
 
 \begin{figure}
  \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution.eps} \
- \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_masscut.eps} \\
+ \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution.eps} \\
  \caption{RMS distortions as a function of redshift, with points
    defined in a similar way as in Fig.~\ref{fig:rms_ellip}.  In this
    case, the distortions are the moments-based shape estimates, rather
@@ -1172,7 +1179,7 @@ estimate.
   The underdense regions are dominated by blue galaxies and the
   overdense are dominated by red galaxies, so having the plot colors
   reversed creates some cognitive dissonance.  Can you reverse them to
-  more naturally match up point color with galaxy type?}
+  more naturally match up point color with galaxy type?} \arun{On it.}
 
 %The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
 %or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
@@ -1244,6 +1251,7 @@ tricky because both distributions have hard cutoffs that are enforced
 in the fitting process (\sersic $n$ in the range $[0.25, 6]$ and
 $0.05<B/T<0.95$).  The KS and AD statistical tests are both sensitive
 to exactly what happens at these hard boundaries in the distributions.
+\arun{AD test is actually not so sensitive to the boundaries.}
 So, instead of using the full distributions, we will study the
 dependence of these quantities on environment by computing the median
 values in different redshift slices.  Median values are preferred
@@ -1313,7 +1321,7 @@ galaxies.
 
 \begin{figure}
  %\centering
- \includegraphics[width=1.0\columnwidth]{median_dvcbtt1}
+ \includegraphics[width=1.0\columnwidth]{median_dvcbtt} \
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt2}
   \caption{\rachel{Same confusion here as in previous figure caption;
       please clarify!} Median values of the bulge-to-total ratios for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.

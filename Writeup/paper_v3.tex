@@ -360,7 +360,7 @@ In this section we will describe how these steps were carried out.
 \label{sub:overdensities}
 \begin{figure}
  \centering
-  \includegraphics[width=\columnwidth]{redshift_fluxlimited}
+  \includegraphics[width=\columnwidth]{redshift_fluxlimited_withcoil}
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
   \caption{Upper panel: Redshift distribution of flux-limited
     ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins
@@ -514,7 +514,7 @@ leaking into our $z=0.80-0.85$ slice.
 
 \begin{figure}
   \centering
-   \includegraphics[width=\columnwidth]{hist2d_mag_mi}
+   \includegraphics[width=1.0\columnwidth]{hist2d_mag_mi}
    \caption{2D histogram of galaxies in apparent magnitude
      ($m_\text{F814W}$) and absolute magnitude ($M_I$) in the redshift range $[0.3, 1.0]$. The blue dotted line with a unit slope is a boundary at $z=1$, fitted by eye.
      The green vertical dotted line represents our luminosity cut. } 
@@ -556,7 +556,7 @@ analysis.
 %  generate a volume-limited sample, explain {\em why} you are
 %  generating one.}
 
-Our first approach is to generate a volume-limited sample that is
+Call the flux-limited ($m_\text{F814W} \le 23.5$) sample \s$0$. Our first approach is to generate a volume-limited sample that is
 complete up to $z=1$, by applying a cut on luminosity such that only
 galaxies instrinsically brighter than a certain threshold (determined
 in detail below) is considered. This threshold is set on the
@@ -687,7 +687,7 @@ $M_*$, and are not observed.
 
 \begin{figure*}
  \centering
- \includegraphics[width=2.4\columnwidth]{SMF}
+ \includegraphics[width=2.2\columnwidth]{SMF}
  \caption{Stellar mass distribution for various flux-limited samples
    are shown in three redshift ranges as separate panels. The redshift
    bins have been chosen to facilitate the comparison with  
@@ -737,7 +737,7 @@ Fig.~\ref{fig:redshift_vollimited} as in Fig.~\ref{fig:redshift_fluxlimited}.
 
 \begin{figure}
  \centering
-  \includegraphics[width=\columnwidth]{redshift_vollimited}
+  \includegraphics[width=\columnwidth]{redshift_vollimited_withcoil}
   \caption{
 Upper panel: Redshift distribution of volume-limited ($M_I <  -20.8$)
 \s$1$ sample with photometric redshift bins that are 0.05 wide. Two
@@ -794,6 +794,15 @@ analytical functions with best fit parameters are plotted over it.
 %   what shape estimates we use from GalSim (re-Gaussianization).}
 % 
 % {\bf Should explain in brief Claire's work.} \\
+\begin{figure*}
+ \centering
+ \includegraphics[width=2.2\columnwidth]{sample_histograms}
+ \caption{The distributions of the morphological parameters of interest, namely the distortion, \sersic index and \btt are presented. 
+          The shape of the distribution depends on the way the volume-limiting process is carried out. \s$0$ refers to the flux-limited ($m_\text{F814}\le23.5$) sample
+          and \s$1$, \s$2$ and \s$3$ refer to the volume-limited samples, as discussed in Sec.~\ref{sub:volumelimiting}}
+  \label{fig:sample_histograms}
+\end{figure*}
+
 
 We choose simple and well-motivated ways to parametrize galaxy shapes
 and morphology based on existing methods in the literature.  These
@@ -876,6 +885,7 @@ profile fits.  This ratio is defined in terms of bulge and disk fluxes as
   Sorry for not noticing this earlier.}
  \arun{I didn't have to compute the ratios. Claire had it computed already. So nothing but the equation had to be changed.})
 
+ 
 \rachel{I think it would be useful to take the entire sample that we
   use for science, and show the overall distributions of axis ratio,
   distortion (one curve for Claire's and one curve for
@@ -906,6 +916,11 @@ the \sersic profile fits, with the outer regions being quite
 downweighted when calculating adaptive moments.  Thus, if ellipticity
 gradients are important, we could get different results using these
 two shape estimators.
+
+\arun{New paragraph:} Fig.~\ref{fig:sample_histograms} show the distribution of these morphological and shape parameters for the flux-limited sample \s$0$ and the various
+volume-limited samples - \s$1$, \s$2$ and \s$3$. It is important to understand the biases in selecting the galaxies in each of the volume-limiting process to be able to interpret the results.
+For instance, galaxies with lower \sersic indices are preferentially selected in \s$2$ when compared to \s$1$ and \s$3$. And similarly, galaxies with low ellipticity/distortion values
+are rejected in generating \s$2$ and \s$3$ while they are retained in \s$1$.																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
 
 \section{Results}
 \label{S:results}
@@ -1130,7 +1145,7 @@ estimate.
  \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \\
  \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution.eps} \\
 % \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
- \caption{RMS distortions as a function of redshift. The horizontal errorbars indicate
+ \caption{RMS ellipticities as a function of redshift. The horizontal errorbars indicate
           the width of the redshift bin, while the vertical ones
           are $1\sigma$ errorbars obtained by
           bootstrapping. The colors and shapes of the points indicate their
@@ -1191,19 +1206,22 @@ picking out pairs of redshift slices for our tests, we can easily compute our
 statistic of interest for every single redshift slice, and look for
 trends with both redshift and environment.
 
-For the luminosity-selected sample without any evolution (\s1), the
-RMS distortions (Eq.~\ref{eq:distortion}) of galaxies in each redshift bin are shown
-in Fig.~\ref{fig:rms_ellip}.  (\rachel{The figure seems to show two
-  samples, not just \s1.  Update the text to reflect this?}) For this and all similar figures, the
-colors of the points were selected to easily differentiate between
-galaxies in overdense, neutral, and underdense redshift slices.
-As shown, the underdense regions
-have  higher values for RMS ellipticities when compared to the
+For the luminosity-selected samples (\s$1$,\s$2$), the
+RMS ellipticities (Eq.~\eqref{eq:ellipticity}) of galaxies in each redshift bin are shown
+in Fig.~\ref{fig:rms_ellip}. In each case, the RMS ellipticities from the mass-selected sample (\s$3$) are also plotted.
+When the $B$-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the ellipticity at
+lower redshifts can be observed (bottom panel).The stellar-mass selected sample exhibits a similar trend.
+
+(\rachel{The figure seems to show two  samples, not just \s1.  Update the text to reflect this?} \arun{Fixed.}) 
+For figures upto Fig.~\ref{fig:median_dvcbtt}, the colors of the points were selected to easily differentiate between galaxies in overdense, neutral, and underdense redshift slices.
+Points with unfilled centers and thicker errorbars correspond to the \s$3$ sample and points with filled centers and thinner errorbars correspond to the luminosity-selected samples (\s$1$ or \s$2$).
+
+As shown in Fig.~\ref{fig:rms_ellip}, the underdense regions have  higher values for RMS ellipticities when compared to the
 overdense regions. The difference between the underdense and overdense
 regions for $z>0.5$ is significantly larger than any redshift
-evolution across the $z>0.5$ range.  Our conclusions are very similar
-if we use the RMS ellipticity from Eq.~\eqref{eq:ellipticity} instead
-of the distortion. (\rachel{Our statements at the low redshift end
+evolution across the $z>0.5$ \arun{$z<0.5$, you mean?} range.  
+Our conclusions are very similar if we use the RMS distortion from Eq.~\eqref{eq:distortion} instead
+of the ellipticities. (\rachel{Our statements at the low redshift end
   regarding the amount of redshift evolution will depend on whether
   we're using the solid or open points, and the text and caption do
   not say which samples they correspond to, so I was not able to
@@ -1223,13 +1241,7 @@ From Figs.~\ref{fig:redshift_fluxlimited} and~\ref{fig:redshift_vollimited},
 the $0.4\le z < 0.55$ redshift range shows signs of being marginally
 underdense, but has somewhat low RMS ellipticities that agree with the rest of the overdense regions.
 
-When the $B$-band luminosity evolution is taken into account in
-selecting the sample, a systematic increase in the ellipticity at
-lower redshifts can be observed. We plot these along with stellar-mass
-selected samples, where a similar trend is found, in
-Fig.~\ref{fig:rms_ellip_Bband_mass}.
-
-Finally, we show an analogous plot of RMS ellipticities for all three
+Next, we show an analogous plot of RMS ellipticities \arun{Is this ellipticity or distortion?} for all three
 volume-limited sample using the moments-based shape estimates in
 Fig.~\ref{fig:rms_ellip_momentbased}. The conclusions are quite
 similar to those using the shapes from the \sersic profile fits, with
@@ -1242,15 +1254,15 @@ trends in this section using a single statistic of the shape
 distribution (the RMS) is less than the significance of the trends
 seen using the entire axis ratio distributions in Sec.~\ref{subsubsec:compdist}.
 
-\subsection{Other morphological parameters}
+\subsection{Morphological parameters}
 
-For the other morphological parameters that we described in
+For the morphological parameters that we described in
 Sec.~\ref{sub:axisratio}, the \sersic index and bulge-to-total ratio,
 we do not compare the distributions directly.  Doing so is relatively
 tricky because both distributions have hard cutoffs that are enforced
 in the fitting process (\sersic $n$ in the range $[0.25, 6]$ and
-$0.05<B/T<0.95$).  The KS and AD statistical tests are both sensitive
-to exactly what happens at these hard boundaries in the distributions.
+$0.05<B/T<0.95$). See Fig.~\ref{fig:sample_histograms}.
+The KS and AD statistical tests are both sensitive to exactly what happens at these hard boundaries in the distributions.
 \arun{AD test is actually not so sensitive to the boundaries.}
 So, instead of using the full distributions, we will study the
 dependence of these quantities on environment by computing the median
@@ -1302,10 +1314,10 @@ galaxies.
  \includegraphics[width=1.0\columnwidth]{median_sersicn}
  \includegraphics[width=1.0\columnwidth]{median_sersicn2}
  \caption{Median values of the \sersic indices for volume-limited
-   samples \s$1$ and \s$3$ are plotted (filled centers and thin
+   samples \s$1$ and \s$2$ are plotted (filled centers and thin
    errorbars) in top and bottom panels, respectively, for each
    redshift bin. 
-          Median values for the \s$2$ sample are plotted in both the
+          Median values for the \s$3$ sample are plotted in both the
           panels (open centers and thick errorbars) in both the
           panels.
 \rachel{Now I'm really confused.  The text implies
@@ -1315,7 +1327,9 @@ galaxies.
      vs. closed.  Please clarify and make everything consistent!
      Also, you only need to have a legend on one panel, since the
      legends on both panels are the same.  Same comment applies to
-     next figure.}}
+     next figure.} 
+\arun{Sorry, my bad. I have made the convention about the point markers and errorbar thickness in the text and in Fig.~\ref{fig:rms_ellip}}     
+     }
  \label{fig:median_sersicn}
 \end{figure}
 
@@ -1324,11 +1338,68 @@ galaxies.
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt} \
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt2}
   \caption{\rachel{Same confusion here as in previous figure caption;
-      please clarify!} Median values of the bulge-to-total ratios for volume-limited samples \s$1$ and \s$3$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
-          Median values for the \s$2$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
+      please clarify!} Median values of the bulge-to-total ratios for volume-limited samples \s$1$ and \s$2$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
+          Median values for the \s$3$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
           The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.  \rachel{These look so similar that I am questioning the need to have both.  Perhaps remove one and mention that they are nearly identical in the text.}}
  \label{fig:median_dvcbtt}
 \end{figure}
+
+\subsection{Wider bins}
+
+We now repeat the analysis with wider redshift bins. Pretending to be ignorant of any overdensities and underdensities along the line of sight, we choose the slices in redshift to be $\left[ 0.3 - 0.5 \right]$,
+$\left[ 0.5 - 0.7\right]$ and $\left[ 0.7 - 0.85\right]$.
+\begin{figure}
+ \centering
+ \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution_wide} \
+ \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution_wide}
+ \caption{ RMS ellipticities as a function of redshift. The horizontal errorbars indicate
+           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
+           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
+         }
+ \label{fig:rms_ellip_wide}
+\end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution_wide} \
+ \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_wide}
+ \caption{ RMS distortions as a function of redshift. The horizontal errorbars indicate
+           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
+           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
+         }
+ \label{fig:rms_ellip_momentbased_wide}         
+\end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=1.0\columnwidth]{median_dvcbtt_wide} \
+ \includegraphics[width=1.0\columnwidth]{median_dvcbtt2_wide} 
+ \caption{ Plot of median values of \btt, as a function of redshift. The horizontal errorbars indicate
+           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
+           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
+         }
+  \label{fig:median_dvcbtt_wide}
+\end{figure}
+
+\begin{figure}
+ \centering
+ \includegraphics[width=1.0\columnwidth]{median_sersicn_wide} \
+ \includegraphics[width=1.0\columnwidth]{median_sersicn2_wide} 
+ \caption{ Plot of median values of \sersic index, as a function of redshift. The horizontal errorbars indicate
+           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
+           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
+         }
+ \label{fig:median_sersicn_wide}
+\end{figure}
+
+Comparing Figs.~\ref{fig:rms_ellip_wide}, ~\ref{fig:rms_ellip_momentbased_wide}, ~\ref{fig:median_dvcbtt_wide} and ~\ref{fig:median_sersicn_wide} to the corresponding figures from earlier, we observe that the 
+range of values they assume have become smaller and so have the vertical errorbars, due to the increase in the number of galaxies in each redshift bin. The results do not suggest that statistic values
+are all consistent across all redshift bins. However, it seems to suggest that when we choose wider bins, which include overdense and underdense structures in them and thus average out,
+the shape and the morphological parameters are affected lesser by the cosmic variance.
 
 \section{Conclusions and implications}
 \label{S:summary}
@@ -1341,6 +1412,7 @@ galaxies.
   gone into the paper.  Please include them, because it would be
   useful to be able to give some guidance on how wide the redshift
   slices should be to avoid this issue.}
+\arun{Included now as the last part in the section on results. Do you want me to move it down to this section?}  
 
 In this study, we have shown that the shape distributions of galaxies
 (to a statistically significant degree) and morphological parameters

@@ -1,4 +1,4 @@
-\begin{thebibliography}{51}
+\begin{thebibliography}{50}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -8,9 +8,6 @@
 
 \bibitem[{{Bartelmann} \& {Schneider}(2001)}]{2001PhR...340..291B}
 {Bartelmann} M., {Schneider} P., 2001, \physrep, 340, 291
-
-\bibitem[{{Baugh} \& {Efstathiou}(1993)}]{Redshift_modelling}
-{Baugh} C.~M., {Efstathiou} G., 1993, \mnras, 265, 145
 
 \bibitem[{{Bernstein}(2010)}]{2010MNRAS.406.2793B}
 {Bernstein} G.~M., 2010, \mnras, 406, 2793

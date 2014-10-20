@@ -360,7 +360,7 @@ In this section we will describe how these steps were carried out.
 \label{sub:overdensities}
 \begin{figure}
  \centering
-  \includegraphics[width=\columnwidth]{redshift_fluxlimited_withcoil}
+  \includegraphics[width=\columnwidth]{redshift_fluxlimited}
   %\caption{\rachel{You show this figure twice.  Why?  The legend needs to say the name of the distribution, not show the functional form.}}
   \caption{Upper panel: Redshift distribution of flux-limited
     ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins
@@ -372,7 +372,7 @@ In this section we will describe how these steps were carried out.
 \rachel{How does this figure look if you show the plot range with the
   histogram going to $z=0$ (still only fitting to $0.3<z<1.25$)?  It
   might be nicer to do that and put a vertical line at $z=0.3$ to
-  remind the reader that you only fit above that redshift.}
+  remind the reader that you only fit above that redshift.} \arun{Done.}
 }
   \label{fig:redshift_fluxlimited}
 \end{figure}
@@ -412,8 +412,7 @@ simulations based on the COSMOS survey.
 
 %\rachel{I thought we were only going up to $z=0.85$ but here you say $1$?}
 %For our sample of galaxies, volume-limited upto $z=1$ by imposing an $M_I$ cut, we fit parametric models to the histogram of photometric redshifts in order to assign values of overdensity. The figures show chi-squared and gamma functions fitted to the histogram \citep{Redshift_modelling}.
-For our (flux-limited) sample of galaxies, up to $z=1.0~(1.25)$
-(\rachel{fix this to the correct one once we make final decisions}), we fit
+For our (flux-limited) sample of galaxies, up to $z=1.25$, we fit
 parametric models to the histograms of photometric redshifts in order
 to assign values of overdensity.  We choose our bins to be $0.05$ wide
 starting from $z=0.3$, where the bin width is selected to be somewhat
@@ -427,21 +426,41 @@ that a non-negligible fraction is lost due to the cuts we impose
 
 The parametric redshift distributions that we use are
 \begin{equation}\label{E:pz1}
- p_1(z) \propto z^{a-1}\exp\left[{-bz}\right]
+ p_1(z) \propto z^{a-1}\exp\left[{-z/z_1}\right]
 \end{equation}
 and 
 \begin{equation}\label{E:pz2}
- p_2(z) \propto z^2\exp{\left[-\left(\frac{z}{z_0}\right)^{1.5}\right]},
+ %p_2(z) \propto z^2\exp{\left[-\left(\frac{z}{z_0}\right)^{1.5}\right]},
+ p_2(z) \propto z^{b-1}\exp\left( -\frac{1}{2}\left( \frac{z}{z_2} \right)^2\right)
 \end{equation}
-the latter of which was first presented by
-\cite{Redshift_modelling}. Here $a$, $b$, and
-$z_0$ are free parameters that are to be determined.  The
+%the latter of which was first presented by \cite{Redshift_modelling}.
+Here $a$, $b$, $z_1$ and
+$z_2$ are free parameters that are to be determined.  The
 normalization constants depend not only on the parameters but also on
 the lower and the upper limit of the redshifts considered, where we
 fix the normalization to ensure that the predicted number of galaxies
-in the range used ($0.3<z<1$) is equal to the actual number. 
+in the range used ($0.3<z<1.25$) is equal to the actual number. 
 Fig.~\ref{fig:redshift_fluxlimited} shows the photometric redshift
 histogram together with the best-fitting parametric distributions.
+
+We compare our fits to the fits made by \cite{2004ApJ...617..765C} for 
+the DEEP2 survey. Interpolating their results for the $18<I_\text{AB}<23$
+and $18<I_\text{AB}<24$ samples, we obtain that the redshift distributions 
+as
+
+\begin{equation}
+ \label{E;pz3}
+ p_3(z) \propto z^2 \exp{[-z/0.262]}
+\end{equation}
+and 
+\begin{equation}
+ \label{E;pz4}
+ p_4(z) \propto z^2 \exp{[-(z/0.361)^{1.2}]}
+\end{equation}
+
+which are also plotted in Fig.~\ref{fig:redshift_fluxlimited}.
+
+
 \rachel{New suggestion re: 2nd redshift distribution: it just looks so
   bad, I worry that this functional form is simply wrong 
   and we should use something newer that has been shown to work with
@@ -460,7 +479,7 @@ histogram together with the best-fitting parametric distributions.
   completely eliminate the 2nd distribution, and just use the 1st one
   that you're fitting and one of the ones from Coil as your way of
   checking overdensities and underdensities.
-}
+} \arun{The functional forms with the parameters in  \cite{2004ApJ...617..765C} agree well with the histogram and our models.}
 
 The estimated overdensity in a redshift bin is defined by comparing
 the observed galaxy counts in the bin with the counts that are
@@ -478,7 +497,7 @@ limits of that redshift slice.
 %(\rachel{This $\delta$ definition is important, so it should be in an equation environment.})
 Note that $\delta_{g,\text{1D}}$ is dependent on our choice of model
 redshift distribution, and should have a mean value of $0$ over the
-entire redshift range. % If a model and the distribution agree, then $\delta_{g,\text{1D}}=0$ for that model at all the redshifts. 
+entire redshift range. \arun{weighted by the number fraction in each bin.} % If a model and the distribution agree, then $\delta_{g,\text{1D}}=0$ for that model at all the redshifts. 
 
 Our decision criterion for identifying overdense and underdense
 redshift slices involves leaving a 10 per cent margin around an
@@ -645,7 +664,8 @@ Finally, we can circumvent the problem of redshift evolution of the
 luminosity by imposing cuts on stellar mass instead. In Fig.~\ref{fig:smf}, we show the stellar mass function (SMF) of our sample for various F814W flux limits.
 \cite{Tomczak_SMF} report the SMFs for the ZFOURGE survey, which
 includes COSMOS. They considered for this work a single stellar
-population (\rachel{What do you mean by a single stellar population?})
+population (\rachel{What do you mean by a single stellar population?} \arun{I had lifted that term from the paper since I thought it was important to highlight that. 
+They consider those stars that have metallicity of that of the sun formed at redshift $z=5$.})
 following a Chabrier IMF \citep{ChabrierIMF}. 
 We plot their SMF for \emph{all} galaxies in Fig.~\ref{fig:smf} for
 reference. Their SMF is higher than ours since they reach a $K_s$-band
@@ -750,7 +770,7 @@ analytical functions with best fit parameters are plotted over it.
            shown in blue forced to zero at $z=0.3$?  It should go to
            zero at $z=0$, not $0.3$.  It is clearly not normalized to the same total number as the redshift histogram, either.  In terms of formatting, please
            implement the same changes that I suggested for the
-           flux-limited sample redshift distribution plot.}}
+           flux-limited sample redshift distribution plot.}\arun{This will change once I discuss with you.}} 
   \label{fig:redshift_vollimited}
 \end{figure}
 
@@ -893,7 +913,7 @@ profile fits.  This ratio is defined in terms of bulge and disk fluxes as
   nearly full-page four panel figure, but I think it's worthwhile to
   illustrate the nature of the sample.  For example, it will clearly
   show why we cannot use the distributions of \sersic index and \btt,
-  because of the hard cutoffs.}
+  because of the hard cutoffs.} \arun{Done.}
 
 We also consider an alternative method for estimating the galaxy
 ellipticity.  This method is based on using the observed weighted
@@ -1035,7 +1055,7 @@ redshift (at fixed mass).
    not very separated in redshift, and a pair of adjacent overdense
    and underdense bins. \s$1$, \s$2$, \s$3$ refer to the three
    different types of volume-limited samples.
-          The Anderson-Darling $p$-values are correct only up to 5
+          The Anderson-Darling $p$-values are computed only up to 5
           decimal places. 
 \rachel{What does this last sentence mean?  Why?  I think you need
   clarification of this point in this table and the next one.
@@ -1065,7 +1085,7 @@ redshift (at fixed mass).
    Table~\ref{table:pvalues_all}.  \arun{Should I write only two
      significant digits for higher $p$-values?} \rachel{Yes.  The same
      comment applies to the previous table, too.}
-           The Anderson-Darling $p$-values are correct only up to 5 decimal places. }
+           The Anderson-Darling $p$-values are computed only up to 5 decimal places. }
  \label{table:pvalues_momentbased_all}
 \end{table}
 
@@ -1194,7 +1214,7 @@ estimate.
   The underdense regions are dominated by blue galaxies and the
   overdense are dominated by red galaxies, so having the plot colors
   reversed creates some cognitive dissonance.  Can you reverse them to
-  more naturally match up point color with galaxy type?} \arun{On it.}
+  more naturally match up point color with galaxy type?} \arun{Fixed.}
 
 %The shape of a population of galaxies can be characterized by a single number called `RMS ellipticity'. If $q=b/a$ is the axis-ratio, then the ellipticity maybe defined as $\frac{1-q}{1+q}$
 %or as $\frac{1-q^2}{1+q^2}$. The root mean squared (RMS) of ellipticities of galaxies in each redshift bin are shown in Figure~\ref{fig:rms_ellip}.
@@ -1219,13 +1239,14 @@ Points with unfilled centers and thicker errorbars correspond to the \s$3$ sampl
 As shown in Fig.~\ref{fig:rms_ellip}, the underdense regions have  higher values for RMS ellipticities when compared to the
 overdense regions. The difference between the underdense and overdense
 regions for $z>0.5$ is significantly larger than any redshift
-evolution across the $z>0.5$ \arun{$z<0.5$, you mean?} range.  
+evolution across the $z>0.5$ range.  
 Our conclusions are very similar if we use the RMS distortion from Eq.~\eqref{eq:distortion} instead
 of the ellipticities. (\rachel{Our statements at the low redshift end
   regarding the amount of redshift evolution will depend on whether
   we're using the solid or open points, and the text and caption do
   not say which samples they correspond to, so I was not able to
-  address this in the text.  Please do that once it is your turn to edit.})
+  address this in the text.  Please do that once it is your turn to edit.} 
+  \arun{Convention: Open centers and thick errorbars for \s$3$ and filled centers and thin errorbars for \s$1$ and \s$2$})
 
 The sign of the dependence on the local environment is reasonable when
 compared with previous work on the morphology-density
@@ -1235,13 +1256,14 @@ In contrast, the underdense regions typically contain a larger
 population of younger, disk galaxies, which have lower axis ratios and
 higher RMS ellipticity. \rachel{Important note: this argument was
   given completely backwards.  I fixed it, but please watch out for
-  this in future since it's a key point behind this work.}
+  this in future since it's a key point behind this work.} \arun{Oops, sorry. Thanks!}
 
 From Figs.~\ref{fig:redshift_fluxlimited} and~\ref{fig:redshift_vollimited},
 the $0.4\le z < 0.55$ redshift range shows signs of being marginally
 underdense, but has somewhat low RMS ellipticities that agree with the rest of the overdense regions.
 
-Next, we show an analogous plot of RMS ellipticities \arun{Is this ellipticity or distortion?} for all three
+Next, we show an analogous plot of RMS ellipticities %\arun{Is this ellipticity or distortion?} 
+for all three
 volume-limited sample using the moments-based shape estimates in
 Fig.~\ref{fig:rms_ellip_momentbased}. The conclusions are quite
 similar to those using the shapes from the \sersic profile fits, with
@@ -1262,8 +1284,8 @@ we do not compare the distributions directly.  Doing so is relatively
 tricky because both distributions have hard cutoffs that are enforced
 in the fitting process (\sersic $n$ in the range $[0.25, 6]$ and
 $0.05<B/T<0.95$). See Fig.~\ref{fig:sample_histograms}.
-The KS and AD statistical tests are both sensitive to exactly what happens at these hard boundaries in the distributions.
-\arun{AD test is actually not so sensitive to the boundaries.}
+The KS statistical test is sensitive to exactly what happens at these hard boundaries in the distributions.
+%\arun{AD test is actually not so sensitive to the boundaries.}
 So, instead of using the full distributions, we will study the
 dependence of these quantities on environment by computing the median
 values in different redshift slices.  Median values are preferred
@@ -1350,8 +1372,8 @@ We now repeat the analysis with wider redshift bins. Pretending to be ignorant o
 $\left[ 0.5 - 0.7\right]$ and $\left[ 0.7 - 0.85\right]$.
 \begin{figure}
  \centering
- \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution_wide} \
- \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution_wide}
+ \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution_wide} \
+ \includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution_wide}
  \caption{ RMS ellipticities as a function of redshift. The horizontal errorbars indicate
            the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
            bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$

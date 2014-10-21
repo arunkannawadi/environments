@@ -501,7 +501,7 @@ entire redshift range when weighted by the number fraction in each bin.
 %\arun{weighted by the number fraction in each bin.} 
 % If a model and the distribution agree, then $\delta_{g,\text{1D}}=0$ for that model at all the redshifts. 
 
-Our decision criterion for identifying overdense and underdense
+Our preliminary decision criterion for identifying overdense and underdense
 redshift slices involves leaving a 10 per cent margin around an
 overdensity of zero; i.e., if $\left| \delta_{g,\text{1D}} \right| <
 0.1$, that is considered ``neutral'' (neither overdense nor
@@ -514,10 +514,17 @@ $\delta_{g,\text{1D}} > -0.1$
 label a redshift bin as neutral if both models give
 $\delta_{g,\text{1D}}$ within the neutral region,  
 \emph{or} if use of one model redshift distribution results in the
-conclusion that the bin is overdense while the over leads to the
-conclusion that it is underdense. \arun{New:}The naive Poisson uncertainty of the counts
+conclusion that the bin is overdense while the other leads to the
+conclusion that it is underdense. 
+
+Once we volume-limit our sample (explained in Sec.~\ref{sub:volumelimiting}), we again compare the histogram to the models.
+If there is no qualitative change in the overdensities, we stick with the preliminary decision. If the overdensity values
+flip in sign or become too small, then we classify the redshift bin as `neutral'.
+
+\arun{New:}The naive Poisson uncertainty of the counts
 in each bin is much lesser compared the difference between the actual number of galaxies present
 and the number predicted by the models. For this reason, errorbars have been completely ignored.
+
 We thus identify the regions $z=0.30-0.40$, $0.65-0.75$, and
 $0.80-0.85$ as overdense; $z=0.55-0.65$ and $0.75-0.80$ as underdense; and $z=0.40-0.55$ as unclassified. 
 %Although, the $z=0.40-0.55$ bin appears to be underdense, for reasons mentioned in \S\ref{sub:volumelimiting}, we will not call them underdense.
@@ -557,7 +564,7 @@ leaking into our $z=0.80-0.85$ slice.
  \end{figure}
 
 
-\subsection{Volume limiting}
+\subsection{Volume-limiting}
 \label{sub:volumelimiting}
  
 COSMOS is a flux-limited survey and is therefore affected by Malmquist
@@ -1437,12 +1444,12 @@ galaxies.
 \end{figure}
 
 We now repeat the analysis with wider redshift bins. Pretending to be ignorant of any overdensities and underdensities along the line of sight, we choose the slices in redshift to be $\left[ 0.3 - 0.5 \right]$,
-$\left[ 0.5 - 0.7\right]$ and $\left[ 0.7 - 0.85\right]$.
+$\left[ 0.5 - 0.7\right]$ and $\left[ 0.7 - 0.85\right]$ and then see what the \emph{average} environment is for the galaxies in these bins.
 
 Using the fits done earlier (cf. Figs.~\ref{fig:redshift_fluxlimited} and ~\ref{fig:redshift_vollimited}), we obtain the overdensities for the wider bins.
 %that are shown in Figs.~\ref{fig:redshift_fluxlimited_wide} and ~\ref{fig:redshift_vollimited_wide}. 
 Although the $\left[ 0.7 - 0.85\right]$ bin seems to be overdense in Fig.~\ref{fig:redshift_fluxlimited_wide}, it appears to closely follow our models when we volume-limit the sample.
-See Fig.~\ref{fig:redshift_vollimited_wide}. Thus, as before, we classify $\left[ 0.7 - 0.85\right]$ bin as `neutral'.
+See Fig.~\ref{fig:redshift_vollimited_wide} . Thus, as following our earlier convention, we classify $\left[ 0.7 - 0.85\right]$ bin as `neutral'.
 
 Comparing Figs.~\ref{fig:rms_ellip_wide}, ~\ref{fig:rms_ellip_momentbased_wide}, ~\ref{fig:median_dvcbtt_wide} and ~\ref{fig:median_sersicn_wide} to the corresponding figures from earlier, we observe that the 
 range of values they assume have become smaller and so have the vertical errorbars, partly due to the increase in the number of galaxies in each redshift bin. The results do not suggest that statistic values

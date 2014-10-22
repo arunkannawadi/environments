@@ -744,11 +744,20 @@ believe that our conclusions are not affected by this bias.
 %And the environmentally neutral regions fall below or at least lie close to the 10\% margin.
 %Refitting the model to our new sample is consistent with the previous assignment of overdensities.
 
-The functional forms for the (flux-limited) redshift distribution that we used in Sec.~\ref{sub:overdensities} are not physically motivated. We try to fit them again to the  
-redshift distribution of a volume-limited sample ($M_I < -22$). 
-Due to the absence of an exponential tail in the histogram, the parameters that set the scale for the redshift, $z_1$ and $z_2$ run to 
-incredible large values during the fit, making $p_1(z)$ and $p_2(z)$ defined in Eq.~\eqref{E:pz1} and Eq.~\eqref{E:pz2} essentially the same power law.
-The best fit exponent is remarkably close to $2$ suggesting that the number of galaxies within a given comoving volume grows proportional to the volume itself. 
+The functional forms for the (flux-limited) redshift distribution that
+we used in Sec.~\ref{sub:overdensities} are not well-motivated for a
+volume-limited sample. If we fit them to the 
+redshift distribution of the volume-limited sample ($M_I < -22$
+\rachel{without or with evolution correction?}), then 
+due to the absence of an exponential tail in the histogram, the
+parameters that set the scale for the redshift ($z_1$ and $z_2$)
+become very large.  As a result, both  $p_1(z)$ and $p_2(z)$ defined
+in Eqs.~\eqref{E:pz1} and~\eqref{E:pz2} essentially become the same power law.
+The best-fitting exponent is remarkably close to $2$ ($a=2.78\pm
+0.28$, giving an exponent $1.78\pm 0.28$), suggesting that the
+comoving number density of galaxies is constant with redshift as we
+would expect for a volume-limited sample in a redshift range for which
+evolution is negligible. 
 Fig.~\ref{fig:redshift_vollimited} shows that when we do
 this, the values of $\delta_{g,\text{1D}}$ for the $z=0.40-0.55$ bin
 increase and are within the $[-0.1, 0.1]$ range that we have defined
@@ -763,17 +772,11 @@ Fig.~\ref{fig:redshift_vollimited} as in Fig.~\ref{fig:redshift_fluxlimited}.
   \caption{
 Upper panel: Redshift distribution of volume-limited ($M_I <  -22$)
 sample with photometric redshift bins that are 0.05 wide. Two
-analytical functions with best fit parameters are plotted over it. 
-The best fit parameters for $p_1(z)$ are $a=2.78\pm0.28$.
+analytical functions with best fit parameters are plotted over it, as
+discussed in the text. 
            Lower panel: Plot of $(1+\delta_{g,\text{1D}}) =
            N/N_{\text{mod}}$ with each functional form as the model
-           for each redshift bin. \rachel{I am quite concerned that
-             something has gone wrong with this fit (in the sense that
-           there may be a bug).  Why is the redshift distribution
-           shown in blue forced to zero at $z=0.3$?  It should go to
-           zero at $z=0$, not $0.3$.  It is clearly not normalized to the same total number as the redshift histogram, either.  In terms of formatting, please
-           implement the same changes that I suggested for the
-           flux-limited sample redshift distribution plot.}\arun{This will change once I discuss with you.}} 
+           for each redshift bin. } 
   \label{fig:redshift_vollimited}
 \end{figure}
 

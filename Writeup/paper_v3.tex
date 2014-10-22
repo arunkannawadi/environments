@@ -426,7 +426,7 @@ The parametric redshift distributions that we use are
 and 
 \begin{equation}\label{E:pz2}
  %p_2(z) \propto z^2\exp{\left[-\left(\frac{z}{z_0}\right)^{1.5}\right]},
- p_2(z) \propto z^{b-1}\exp\left( -\frac{1}{2}\left( \frac{z}{z_2} \right)^2\right)
+ p_2(z) \propto z^{b-1}\exp\left[ -\frac{1}{2}\left( \frac{z}{z_2} \right)^2\right]
 \end{equation}
 %the latter of which was first presented by \cite{Redshift_modelling}.
 Here $a$, $b$, $z_1$ and
@@ -438,11 +438,9 @@ in the range used ($0.3<z<1.25$) is equal to the actual number.
 Fig.~\ref{fig:redshift_fluxlimited} shows the photometric redshift
 histogram together with the best-fitting parametric distributions.
 
-We compare our fits to the fits made by \cite{2004ApJ...617..765C} for 
-the DEEP2 survey. Interpolating their results for the $18<I_\text{AB}<23$
-and $18<I_\text{AB}<24$ samples, we obtain that the redshift distributions 
-as
-
+We compare our fits to the fits made by \cite{2004ApJ...617..765C} using 
+the DEEP2 galaxy redshift survey. Interpolating between their results for the $18<I_\text{AB}<23$
+and $18<I_\text{AB}<24$ samples to our own limiting magnitude (and assuming equivalence of our $I$ bands), we obtain the following redshift distributions:
 \begin{equation}
  \label{E;pz3}
  p_3(z) \propto z^2 \exp{[-z/0.262]}
@@ -452,29 +450,13 @@ and
  \label{E;pz4}
  p_4(z) \propto z^2 \exp{[-(z/0.361)^{1.2}]}
 \end{equation}
+which are also plotted in Fig.~\ref{fig:redshift_fluxlimited}.  
+Note that $p_3(z)$ is a special case of $p_1(z)$ with $a=3$ and
+$z_1=0.262$; these parameter values are within the $1\sigma$ allowed
+regions for our fits to Eq.~\ref{E:pz1}.  Visually, these
+distributions appear quite similar to our own fits carried out here, which is
+reassuring given the use of different survey data and functional forms.
 
-which are also plotted in Fig.~\ref{fig:redshift_fluxlimited}.
-
-
-\rachel{New suggestion re: 2nd redshift distribution: it just looks so
-  bad, I worry that this functional form is simply wrong 
-  and we should use something newer that has been shown to work with
-  modern redshift surveys.  Let me suggest something you can
-  do as an immediate sanity check.   Look at
-  \cite{2004ApJ...617..765C} table 4, which gives parametrized fits to
-  the redshift distribution from DEEP2 for samples binned by
-  $R_\text{AB}$ and $I_\text{AB}$.  Use the results for the
-  $18<I_\text{AB}<23$ bin and the $18<I_\text{AB}<24$ bin,
-  interpolating linearly between them since your sample is limited at
-  $23.5$.  Their results suggest that either $z^2 \exp{[-z/0.262]}$ or
-  $z^2 \exp{[-(z/0.361)^{1.2}]}$ should be decent descriptions of your sample.  Just as a quick
-  sanity check can you please plot those  distributions (appropriately
-  normalized) on top of what you have in the top panel of figure 1,
-  and see how they look?  If they look OK, then I would be inclined to
-  completely eliminate the 2nd distribution, and just use the 1st one
-  that you're fitting and one of the ones from Coil as your way of
-  checking overdensities and underdensities.
-} \arun{The functional forms with the parameters in  \cite{2004ApJ...617..765C} agree well with the histogram and our models.}
 
 The estimated overdensity in a redshift bin is defined by comparing
 the observed galaxy counts in the bin with the counts that are

@@ -651,10 +651,18 @@ this work.
 Finally, we can circumvent the problem of redshift evolution of the
 luminosity by imposing cuts on stellar mass instead. In Fig.~\ref{fig:smf}, we show the stellar mass function (SMF) of our sample for various F814W flux limits.
 \cite{Tomczak_SMF} report the SMFs for the ZFOURGE survey, which
-includes COSMOS. They considered for this work a single stellar
-population (\rachel{What do you mean by a single stellar population?} \arun{I had lifted that term from the paper since I thought it was important to highlight that. 
-They consider those stars that have metallicity of that of the sun formed at redshift $z=5$.})
-following a Chabrier IMF \citep{ChabrierIMF}. 
+includes COSMOS. They calculated stellar masses using the procedure
+and software described by \cite{2009ApJ...700..221K}, using a set of models
+with exponentially declining star formation history \citep{2003MNRAS.344.1000B} assuming a
+Chabrier IMF \citep{ChabrierIMF}.  (\rachel{What do you mean by a single stellar population?} \arun{I had lifted that term from the paper since I thought it was important to highlight that. 
+They consider those stars that have metallicity of that of the sun
+formed at redshift $z=5$.} \rachel{No, look more carefully: they used
+that only to estimate completeness.  Their description of the stellar
+mss estimation process says they used a set of BC03
+models.  This would never work for a single population!  I left this
+conversation here to correct this misimpression, but since I
+fixed the text already, please remove this conversation once you've
+read it - there are no further action items.}) 
 We plot their SMF for \emph{all} galaxies in Fig.~\ref{fig:smf} for
 reference. Their SMF is higher than ours since they reach a $K_s$-band
 $5\sigma$ depth of 24.9. 
@@ -662,7 +670,10 @@ As for $M_I$, we compare the stellar mass function in the $m_\text{F814W}\le23.5
 The sample with $\log(M/M_\odot) > 10.15$ is $\sim 95$ per cent
 complete in the redshift bin $0.75 \le z< 0.85$ and has 10~341
 galaxies in total across all redshifts.
-Thus, we construct a third volume-limited sample \s$3$ by imposing the stellar mass cut mentioned above. The number of galaxies in redshift slices
+Thus, we construct a third volume-limited sample \s$3$ by imposing the
+stellar mass cut mentioned above. 
+
+The number of galaxies in redshift slices
 are tabulated in Table~\ref{table:GalaxyCounts} for all three ways
 discussed in this section for obtaining a volume-limited sample. The
 stellar-mass limited sample is the smallest, most likely because when

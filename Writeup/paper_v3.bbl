@@ -1,4 +1,4 @@
-\begin{thebibliography}{50}
+\begin{thebibliography}{52}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -26,6 +26,9 @@
   {Schrabback}, {Shawe-Taylor}, {Shmakova}, {van Waerbeke}, \&
   {Wittman}}]{2010MNRAS.405.2044B}
 {Bridle} S. {et~al.}, 2010, \mnras, 405, 2044
+
+\bibitem[{{Bruzual} \& {Charlot}(2003)}]{2003MNRAS.344.1000B}
+{Bruzual} G., {Charlot} S., 2003, \mnras, 344, 1000
 
 \bibitem[{{Bundy} {et~al}\mbox{.}(2006){Bundy}, {Ellis}, {Conselice}, {Taylor},
   {Cooper}, {Willmer}, {Weiner}, {Coil}, {Noeske}, \&
@@ -156,6 +159,11 @@
   {Cappi}, {Cassata}, {Cimatti}, {Fumana}, {Koekemoer}, {Maccagni}, {Marinoni},
   {McCracken}, {Memeo}, {Meneux}, \& {Scaramella}}]{Kovac_Density10k}
 {Kova{\v c}} K. {et~al.}, 2010, \apj, 708, 505
+
+\bibitem[{{Kriek} {et~al}\mbox{.}(2009){Kriek}, {van Dokkum}, {Labb{\'e}},
+  {Franx}, {Illingworth}, {Marchesini}, \& {Quadri}}]{2009ApJ...700..221K}
+{Kriek} M., {van Dokkum} P.~G., {Labb{\'e}} I., {Franx} M., {Illingworth}
+  G.~D., {Marchesini} D., {Quadri} R.~F., 2009, \apj, 700, 221
 
 \bibitem[{{Lackner} \& {Gunn}(2012)}]{Claire_Fits}
 {Lackner} C.~N., {Gunn} J.~E., 2012, \mnras, 421, 2277

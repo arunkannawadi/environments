@@ -825,7 +825,22 @@ discussed in the text.
  \includegraphics[width=2.2\columnwidth]{sample_histograms}
  \caption{The distributions of the morphological parameters of interest, namely the distortion, \sersic index and \btt are presented. 
           The shape of the distribution depends on the way the volume-limiting process is carried out. \s$0$ refers to the flux-limited ($m_\text{F814}\le23.5$) sample
-          and \s$1$, \s$2$ and \s$3$ refer to the volume-limited samples, as discussed in Sec.~\ref{sub:volumelimiting}}
+          and \s$1$, \s$2$ and \s$3$ refer to the volume-limited
+          samples, as discussed in
+          Sec.~\ref{sub:volumelimiting}. \rachel{I am confused by the
+            top line: first, distortion is $(1-q^2)/(1+q^2)$, not
+            $(1-q)/(1+q)$.  Second, I am not sure which shapes you are
+          plotting - from Claire or from re-Gaussianization.  It seems
+        redundant to have two plots of the same thing, so I hope that
+        one is from Claire and one from re-Gaussianization, but these
+        needs to be indicated clearly.  Finally, we have the option of
+      deliberately plotting different things (like $q$ from Claire
+      vs. distortion from re-Gaussianization) or explicitly choosing
+      to plot the same thing (like total distortion from Claire
+      vs. total distortion from re-Gaussianization).  I'm not sure
+      which is best; the latter would allow a comparison between the
+      two types of shape estimates, which could be interesting, so I'm
+      inclined to say you should do that.}}
   \label{fig:sample_histograms}
 \end{figure*}
 
@@ -926,10 +941,22 @@ downweighted when calculating adaptive moments.  Thus, if ellipticity
 gradients are important, we could get different results using these
 two shape estimators.
 
-\arun{New paragraph:} Fig.~\ref{fig:sample_histograms} show the distribution of these morphological and shape parameters for the flux-limited sample \s$0$ and the various
-volume-limited samples - \s$1$, \s$2$ and \s$3$. It is important to understand the biases in selecting the galaxies in each of the volume-limiting process to be able to interpret the results.
-For instance, galaxies with lower \sersic indices are preferentially selected in \s$2$ when compared to \s$1$ and \s$3$. And similarly, galaxies with low ellipticity/distortion values
-are rejected in generating \s$2$ and \s$3$ while they are retained in \s$1$.																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+Fig.~\ref{fig:sample_histograms} shows the distribution of these morphological and shape parameters for the flux-limited sample \s$0$ and the three
+volume-limited samples - \s$1$, \s$2$ and \s$3$. In addition to the
+basic value in characterizing these distributions for our sample
+overall, it is also useful to understand how the samples change when
+we vary our method of volume-limiting the sample.
+For instance, galaxies with lower \sersic indices are preferentially
+selected in \s$2$ compared to \s$1$ and \s$3$. Similarly, galaxies
+with low ellipticity/distortion values 
+are rejected in generating \s$2$ (despite the lack of any explicit
+cut on shapes) while they are retained in
+\s$1$ and \s$3$.  A simple explanation is that the cuts in \s$2$ are
+preferentially removing early-type populations, which have higher
+\sersic indices and lower ellipticities.  For example, if the
+luminosity evolution that was adopted is too strong particularly for
+early type populations, that could give rise to the effect shown in
+Fig.~\ref{fig:sample_histograms}.
 
 \section{Results}
 \label{S:results}

@@ -1328,15 +1328,6 @@ galaxies.
           Median values for the \s$3$ sample are plotted in both the
           panels (open centers and thick errorbars) in both the
           panels.
-\rachel{Now I'm really confused.  The text implies
-     that the top and bottom are \s1 and \s2 as open points, with \s3 in both
-     panels as solid points.  The caption says something different
-     regarding which sample is in both panels and which is open
-     vs. closed.  Please clarify and make everything consistent!
-     Also, you only need to have a legend on one panel, since the
-     legends on both panels are the same.  Same comment applies to
-     next figure.} 
-\arun{Sorry, my bad. I have made the convention about the point markers and errorbar thickness in the text and in Fig.~\ref{fig:rms_ellip}}     
      }
  \label{fig:median_sersicn}
 \end{figure}
@@ -1345,72 +1336,69 @@ galaxies.
  %\centering
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt} \
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt2}
-  \caption{\rachel{Same confusion here as in previous figure caption;
-      please clarify!} Median values of the bulge-to-total ratios for volume-limited samples \s$1$ and \s$2$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
-          Median values for the \s$3$ sample are plotted in both the panels (open centers and thick errorbars) in both the panels.
-          The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.  \rachel{These look so similar that I am questioning the need to have both.  Perhaps remove one and mention that they are nearly identical in the text.}}
+  \caption{ Median values of the bulge-to-total ratios for volume-limited samples \s$1$ and \s$2$ are plotted (filled centers and thin errorbars) in left and right panels respectively for each redshift bin.
+          Median values for the \s$3$ sample are plotted in both the panels (open centers and thick errorbars).
+          The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}
  \label{fig:median_dvcbtt}
 \end{figure}
 
-\subsection{Rectifying line of sight fluctuations}
+\subsection{Mitigating the effects of line of sight fluctuations}\label{sec:mitigation}
 
 \begin{figure}
  \centering
  \includegraphics[width=1.0\columnwidth]{redshift_fluxlimited_wide}
- \caption{Plot of $\delta_{g,\text{1D}} =  N/N_{\text{mod}}-1$ with each functional form as the model
-           for each redshift bin. }
- \label{fig:redshift_fluxlimited_wide}          
-\end{figure}
-\begin{figure}
- \centering
  \includegraphics[width=1.0\columnwidth]{redshift_vollimited_wide}
  \caption{Plot of $\delta_{g,\text{1D}} =  N/N_{\text{mod}}-1$ with each functional form as the model
-           for each redshift bin. }
- \label{fig:redshift_vollimited_wide}          
+           for each of our new wide redshift bins discussed in Sec.~\ref{sec:mitigation}, for flux-limited (top) and
+           volume-limited (bottom) samples. \rachel{Remove $p_2(z)$
+             in bottom panel since it's hidden anyway so seeing it in the legend is
+             just confusing.}}
+ \label{fig:redshift_wide}          
 \end{figure}
 
 
-\begin{figure}
- \centering
- \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution_wide} \
- \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution_wide}
- \caption{ RMS ellipticities as a function of redshift. The horizontal errorbars indicate
-           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
-           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
-           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
-         }
- \label{fig:rms_ellip_wide}
-\end{figure}
+%\begin{figure}
+% \centering
+% \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution_wide} \
+% \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution_wide}
+% \caption{ RMS ellipticities as a function of redshift. The horizontal errorbars indicate
+%           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
+%           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+%           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
+%         }
+% \label{fig:rms_ellip_wide}
+%\end{figure}
 
-\begin{figure}
- \centering
- \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution_wide} \
- \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_wide}
- \caption{ RMS distortions as a function of redshift. The horizontal errorbars indicate
-           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
-           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
-           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
-         }
- \label{fig:rms_ellip_momentbased_wide}         
-\end{figure}
-
-\begin{figure}
- \centering
- \includegraphics[width=1.0\columnwidth]{median_dvcbtt_wide} \
- \includegraphics[width=1.0\columnwidth]{median_dvcbtt2_wide} 
- \caption{ Plot of median values of \btt, as a function of redshift. The horizontal errorbars indicate
-           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
-           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
-           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
-         }
-  \label{fig:median_dvcbtt_wide}
-\end{figure}
+%\begin{figure}
+% \centering
+% \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_noevolution_wide} \
+% \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_Bbandevolution_wide}
+% \caption{ RMS distortions as a function of redshift. The horizontal errorbars indicate
+%           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
+%           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+%           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
+%         }
+% \label{fig:rms_ellip_momentbased_wide}         
+%\end{figure}
+%
+%\begin{figure}
+% \centering
+% \includegraphics[width=1.0\columnwidth]{median_dvcbtt_wide} \
+% \includegraphics[width=1.0\columnwidth]{median_dvcbtt2_wide} 
+% \caption{ Plot of median values of \btt, as a function of redshift. The horizontal errorbars indicate
+%           the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
+%           bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
+%           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
+%         }
+%  \label{fig:median_dvcbtt_wide}
+%\end{figure}
 
 \begin{figure}
  \centering
  \includegraphics[width=1.0\columnwidth]{median_sersicn_wide} \
  \includegraphics[width=1.0\columnwidth]{median_sersicn2_wide} 
- \caption{ Plot of median values of \sersic index, as a function of redshift. The horizontal errorbars indicate
+ \caption{ Median values of \sersic index, as a function of redshift
+   for our wider redshift ranges used in Sec.~\ref{sec:mitigation}. The horizontal errorbars indicate
            the width of the redshift bin, while the vertical ones are $1\sigma$ errorbars obtained by
            bootstrapping. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
            and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.    
@@ -1418,18 +1406,48 @@ galaxies.
  \label{fig:median_sersicn_wide}
 \end{figure}
 
-We now repeat the analysis with wider redshift bins. Pretending to be ignorant of any overdensities and underdensities along the line of sight, we choose the slices in redshift to be $\left[ 0.3 - 0.5 \right]$,
-$\left[ 0.5 - 0.7\right]$ and $\left[ 0.7 - 0.85\right]$ and then see what the \emph{average} environment is for the galaxies in these bins.
+Since we have argued that cosmic variance is giving rise to
+environmentally-based variations between galaxy populations in our
+redshift slices that are $0.05$ wide, the natural question is how to
+mitigate this effect so that it will not affect attempts to simulate a
+realistic galaxy sample as a function of redshift.  The most obvious
+approach is to repeat the analysis with wider redshift bins. Feigning ignorance of overdensities and underdensities along the line of sight, we choose the slices in redshift to be $\left[ 0.3 - 0.5 \right]$,
+$\left[ 0.5 - 0.7\right]$ and $\left[ 0.7 - 0.85\right]$ (a nearly
+even division of our entire redshift range) and redo the analysis,
+beginning by checking the environmental classification for these wide bins.
 
-Using the fits done earlier (cf. Figs.~\ref{fig:redshift_fluxlimited} and ~\ref{fig:redshift_vollimited}), we obtain the overdensities for the wider bins.
+Using the redshift distributions estimated earlier in this work (cf. Figs.~\ref{fig:redshift_fluxlimited}
+and~\ref{fig:redshift_vollimited}), we obtain the overdensity estimates for
+the wider bins, $\delta_{g,\text{1D}}$.
 %that are shown in Figs.~\ref{fig:redshift_fluxlimited_wide} and ~\ref{fig:redshift_vollimited_wide}. 
-Although the $\left[ 0.7 - 0.85\right]$ bin seems to be overdense in Fig.~\ref{fig:redshift_fluxlimited_wide}, it appears to closely follow our models when we volume-limit the sample.
-See Fig.~\ref{fig:redshift_vollimited_wide} . Thus, as following our earlier convention, we classify $\left[ 0.7 - 0.85\right]$ bin as `neutral'.
+Although the $\left[ 0.7 - 0.85\right]$ bin seems to be overdense in
+the top panel of Fig.~\ref{fig:redshift_wide}, it appears to be
+environmentally neutral when we volume-limit the sample (\rachel{how?
+  Should say here and in caption whether this is \s1, \s2, or \s3}).
+Since the latter is what we use to study the galaxy morphology, we
+classify $\left[ 0.7 - 0.85\right]$ bin as `neutral'.
+What is surprising is the fact that the lowest and middle redshift
+slices still qualify as substantial overdensities and underdensities
+despite our use of $\Delta z=0.2$.
 
-Comparing Figs.~\ref{fig:rms_ellip_wide}, ~\ref{fig:rms_ellip_momentbased_wide}, ~\ref{fig:median_dvcbtt_wide} and ~\ref{fig:median_sersicn_wide} to the corresponding figures from earlier, we observe that the 
-range of values they assume have become smaller and so have the vertical errorbars, partly due to the increase in the number of galaxies in each redshift bin. The results do not suggest that statistic values
-are all consistent across all redshift bins. However, it seems to suggest that when we choose wider bins, which include overdense and underdense structures in them and thus average out,
-the shape and the morphological parameters are affected lesser by the cosmic variance.
+As an example of what happens to morphological parameters, we show the
+median \sersic index for there bins in
+Fig.~\ref{fig:median_sersicn_wide}.  Comparing this with
+Fig.~\ref{fig:median_sersicn}, we observe that the 
+range of \sersic $n$ values has become smaller, as have the vertical errorbars, mainly due to the increase in the number of galaxies in each redshift bin. The results do not suggest that the values
+are consistent across all redshift bins, and in particular, the
+disparity between overdense and underdense regions is still quite
+evident (with the same sign as before). However, in
+Fig.~\ref{fig:median_sersicn}, the magnitude of that disparity between
+overdensities and underdensities was around 20 per cent, whereas here
+it is reduced to 7 per cent.  This seems to suggest that when we
+choose wider redshift bins, some of the large-scale structure gets washed out, 
+so the galaxy morphological parameters are less affected by cosmic
+variance.  This is a promising result, which could be further improved
+by either (a) non-blind selection of the wide redshift bins with respect to
+known structure in the calibration fields, or (b) attempting some kind of
+reweighting of the galaxy populations in redshift slices affected by
+known structure.
 
 \section{Conclusions and implications}
 \label{S:summary}

@@ -1070,10 +1070,8 @@ redshift (at fixed mass).
    and underdense bins. \s$1$, \s$2$, \s$3$ refer to the three
    different types of volume-limited samples.
           The Anderson-Darling $p$-values are computed only up to 5
-          decimal places. 
-\rachel{What does this last sentence mean?  Why?  I think you need
-  clarification of this point in this table and the next one.
-\arun{I meant, R computes the p-values only upto 5 decimal places. This is why it is written as \scinot{1}{-5} and not as \scinot{1.0}{-5} }}
+          decimal places, so values that were given as zero are
+          denoted $<\scinot{1}{-5}$.
 % \rachel{What are the 0 entries in this and other tables?  Just how close to zero are they?  Since 0 is not really achieve, I recommend defining a value (such as $10^{-10}$ below which you will just say $<10^{-10}$ and give the value if it's above that, even if it seems really small to you, like $10^{-8}$.  Also, say $1.1\times 10^{-4}$ rather than $1.1e-4$.}
           }
  \label{table:pvalues_all}
@@ -1095,10 +1093,8 @@ redshift (at fixed mass).
  \end{tabular}
  \caption{$p$-values from the Kolmogorov-Smirnov (top) and
    Anderson-Darling (bottom) obtained by comparing the second
-   moments-based ellipticities for three the same three cases as in
-   Table~\ref{table:pvalues_all}.  \arun{Should I write only two
-     significant digits for higher $p$-values?} \rachel{Yes.  The same
-     comment applies to the previous table, too.}
+   moments-based ellipticities for the same three cases as in
+   Table~\ref{table:pvalues_all}. 
            The Anderson-Darling $p$-values are computed only up to 5 decimal places. }
  \label{table:pvalues_momentbased_all}
 \end{table}

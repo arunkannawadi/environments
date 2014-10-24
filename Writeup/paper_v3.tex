@@ -497,8 +497,8 @@ conclusion that it is underdense.
 Once we volume-limit our sample (explained in Sec.~\ref{sub:volumelimiting}), we again compare the histogram to the models.
 If there is no qualitative change in the overdensities, we stick with the preliminary decision. If the overdensity values
 flip in sign or become too small, then we classify the redshift bin as `neutral'.
-
-\arun{New:}The naive Poisson uncertainty of the counts
+%\arun{New:}
+The naive Poisson uncertainty of the counts
 in each bin is much lesser compared the difference between the actual number of galaxies present
 and the number predicted by the models. For this reason, errorbars have been completely ignored.
 
@@ -656,13 +656,14 @@ and software described by \cite{2009ApJ...700..221K}, using a set of models
 with exponentially declining star formation history \citep{2003MNRAS.344.1000B} assuming a
 Chabrier IMF \citep{ChabrierIMF}.  (\rachel{What do you mean by a single stellar population?} \arun{I had lifted that term from the paper since I thought it was important to highlight that. 
 They consider those stars that have metallicity of that of the sun
-formed at redshift $z=5$.} \rachel{No, look more carefully: they used
-that only to estimate completeness.  Their description of the stellar
-mss estimation process says they used a set of BC03
-models.  This would never work for a single population!  I left this
-conversation here to correct this misimpression, but since I
-fixed the text already, please remove this conversation once you've
-read it - there are no further action items.}) 
+formed at redshift $z=5$.} 
+% \rachel{No, look more carefully: they used
+% that only to estimate completeness.  Their description of the stellar
+% mss estimation process says they used a set of BC03
+% models.  This would never work for a single population!  I left this
+% conversation here to correct this misimpression, but since I
+% fixed the text already, please remove this conversation once you've
+% read it - there are no further action items.}) 
 We plot their SMF for \emph{all} galaxies in Fig.~\ref{fig:smf} for
 reference. Their SMF is higher than ours since they reach a $K_s$-band
 $5\sigma$ depth of 24.9. 
@@ -747,9 +748,9 @@ believe that our conclusions are not affected by this bias.
 The functional forms for the (flux-limited) redshift distribution that
 we used in Sec.~\ref{sub:overdensities} are not well-motivated for a
 volume-limited sample. If we fit them to the 
-redshift distribution of the volume-limited sample ($M_I < -22$
-\rachel{without or with evolution correction?}), then 
-due to the absence of an exponential tail in the histogram, the
+redshift distribution of the volume-limited sample ($M_I < -22$) that doesn't take into account the evolution of the luminosity function,
+%\rachel{without or with evolution correction?}\arun{without} 
+then due to the absence of an exponential tail in the histogram, the
 parameters that set the scale for the redshift ($z_1$ and $z_2$)
 become very large.  As a result, both  $p_1(z)$ and $p_2(z)$ defined
 in Eqs.~\eqref{E:pz1} and~\eqref{E:pz2} essentially become the same power law.
@@ -827,20 +828,22 @@ discussed in the text.
           The shape of the distribution depends on the way the volume-limiting process is carried out. \s$0$ refers to the flux-limited ($m_\text{F814}\le23.5$) sample
           and \s$1$, \s$2$ and \s$3$ refer to the volume-limited
           samples, as discussed in
-          Sec.~\ref{sub:volumelimiting}. \rachel{I am confused by the
-            top line: first, distortion is $(1-q^2)/(1+q^2)$, not
-            $(1-q)/(1+q)$.  Second, I am not sure which shapes you are
-          plotting - from Claire or from re-Gaussianization.  It seems
-        redundant to have two plots of the same thing, so I hope that
-        one is from Claire and one from re-Gaussianization, but these
-        needs to be indicated clearly.  Finally, we have the option of
-      deliberately plotting different things (like $q$ from Claire
-      vs. distortion from re-Gaussianization) or explicitly choosing
-      to plot the same thing (like total distortion from Claire
-      vs. total distortion from re-Gaussianization).  I'm not sure
-      which is best; the latter would allow a comparison between the
-      two types of shape estimates, which could be interesting, so I'm
-      inclined to say you should do that.}}
+          Sec.~\ref{sub:volumelimiting}. 
+%           \rachel{I am confused by the
+%             top line: first, distortion is $(1-q^2)/(1+q^2)$, not
+%             $(1-q)/(1+q)$.  Second, I am not sure which shapes you are
+%           plotting - from Claire or from re-Gaussianization.  It seems
+%         redundant to have two plots of the same thing, so I hope that
+%         one is from Claire and one from re-Gaussianization, but these
+%         needs to be indicated clearly.  Finally, we have the option of
+%       deliberately plotting different things (like $q$ from Claire
+%       vs. distortion from re-Gaussianization) or explicitly choosing
+%       to plot the same thing (like total distortion from Claire
+%       vs. total distortion from re-Gaussianization).  I'm not sure
+%       which is best; the latter would allow a comparison between the
+%       two types of shape estimates, which could be interesting, so I'm
+%       inclined to say you should do that.}} \arun{Done.}
+  }
   \label{fig:sample_histograms}
 \end{figure*}
 
@@ -1167,8 +1170,8 @@ estimate.
 \subsubsection{RMS ellipticites}
 \begin{figure}
  \centering
- \includegraphics[width=1.0\columnwidth]{rms_ellip1_noevolution.eps} \\
- \includegraphics[width=1.0\columnwidth]{rms_ellip1_Bbandevolution.eps} \\
+ \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
+ \includegraphics[width=1.0\columnwidth]{rms_ellip2_Bbandevolution.eps} \\
 % \includegraphics[width=1.0\columnwidth]{rms_ellip2_noevolution.eps} \\
  \caption{RMS ellipticities as a function of redshift. The horizontal errorbars indicate
           the width of the redshift bin, while the vertical ones
@@ -1350,9 +1353,9 @@ galaxies.
  \includegraphics[width=1.0\columnwidth]{redshift_vollimited_wide}
  \caption{Plot of $\delta_{g,\text{1D}} =  N/N_{\text{mod}}-1$ with each functional form as the model
            for each of our new wide redshift bins discussed in Sec.~\ref{sec:mitigation}, for flux-limited (top) and
-           volume-limited (bottom) samples. \rachel{Remove $p_2(z)$
-             in bottom panel since it's hidden anyway so seeing it in the legend is
-             just confusing.}}
+           volume-limited (bottom) samples.
+           %\rachel{Remove $p_2(z)$             in bottom panel since it's hidden anyway so seeing it in the legend is             just confusing.} \arun{Instead, thickened the line.}
+          }
  \label{fig:redshift_wide}          
 \end{figure}
 
@@ -1422,8 +1425,8 @@ the wider bins, $\delta_{g,\text{1D}}$.
 %that are shown in Figs.~\ref{fig:redshift_fluxlimited_wide} and ~\ref{fig:redshift_vollimited_wide}. 
 Although the $\left[ 0.7 - 0.85\right]$ bin seems to be overdense in
 the top panel of Fig.~\ref{fig:redshift_wide}, it appears to be
-environmentally neutral when we volume-limit the sample (\rachel{how?
-  Should say here and in caption whether this is \s1, \s2, or \s3}).
+environmentally neutral when we volume-limit the sample to be complete upto $z=1$.
+%(\rachel{how?  Should say here and in caption whether this is \s1, \s2, or \s3}).
 Since the latter is what we use to study the galaxy morphology, we
 classify $\left[ 0.7 - 0.85\right]$ bin as `neutral'.
 What is surprising is the fact that the lowest and middle redshift

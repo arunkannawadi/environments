@@ -137,51 +137,23 @@ Claire Lackner$^2$
 \maketitle
 
 \begin{abstract}
-Upcoming weak lensing surveys will survey large cosmological volumes
-in order to measure the growth of cosmological structure with time and
-thereby constrain dark energy.  One major systematic uncertainty in
-this process is the calibration of the weak lensing shape distortions,
-or shears.  Nearly all upcoming surveys plan to test their shear
-estimation algorithms using sophisticated image simulations that
-attempt to mimick real data as closely as possible, including
-realistic galaxy populations based on high-resolution data from the
-Hubble Space Telescope ({\em HST}).  However, the existing datasets
-from the {\em HST} cover very small cosmological volumes, such that
-cosmic variance could cause the galaxy population in them
-to be atypical.  This is particularly the case when selecting galaxy
-populations in limited redshift slices, which could be dominated by a
-single large overdensity or underdensity.  In that case, the
-morphology-density relation could cause changes in the local galaxy
-populations that would result in incorrect conclusions to be drawn
-about the calibration of shear estimates as a function of redshift.
-We directly test this scenario using the COSMOS survey, which is the
-largest-area {\em HST} survey to date, and show how the
-statistical properties of shape (axis ratio or ellipticity) and
-morphological parameters such as \sersicn or the bulge-to-total ratio
-are influenced by redshift-dependent cosmic variance in this survey. This
-study requires a careful distinction between environment effects from
-large-scale structure, which we do not wish to include in simulations,
-and general trends in the galaxy population with redshift. We conclude
-that this effect is large enough to exceed the systematic error budget
-in future surveys, but can be mitigated with careful choice of
-training dataset and sufficiently large redshift binning. 
-\claire{
 Upcoming weak lensing surveys will survey large cosmological volumes to measure the growth of cosmological structure with time and
 thereby constrain dark energy.  One major systematic uncertainty in
 this process is the calibration of the weak lensing shape distortions,
 or shears.  Most upcoming surveys plan to test their shear
 estimation algorithms using sophisticated image simulations that
-attempt to mimick real data by including
+include 
 realistic galaxy populations based on high-resolution data from the
 Hubble Space Telescope ({\em HST}).  However, existing datasets
-from the {\em HST} cover very small cosmological volumes and cosmic variance could cause the galaxy populations in them
+from the {\em HST} cover very small cosmological volumes, so cosmic variance could cause the galaxy populations in them
 to be atypical. A narrow redshift slice from such surveys could be dominated by a single large overdensity or underdensity.  In that case, the
 morphology-density relation could alter the local galaxy
 populations and yield an incorrect calibration of shear estimates as a function of redshift. We directly test this scenario using the COSMOS survey, the largest-area {\em HST} survey to date, and show how the
-statistical properties of shape (axis ratio or ellipticity) and
-morphological parameters (\sersicn and bulge-to-total ratio)
-are influenced by redshift-dependent cosmic variance. We must distinguish between environment effects from large-scale structure, which we do not wish to include in simulations, and general trends in the galaxy population with redshift. The typical variation in RMS ellipticity due to environmental effects is XXX for redshift bins of width 0.05. We conclude that the cosmic variance effects are large enough to exceed the systematic error budget of future surveys, but can be mitigated with careful choice of training dataset and sufficiently large redshift binning.}
-\rachel{Say something quantitative here once we find space.}
+statistical distributions of galaxy shapes and
+morphological parameters (e.g., S\'{e}rsic $n$)
+are influenced by redshift-dependent cosmic variance. 
+% We must distinguish between environment effects from large-scale structure, which we do not wish to include in simulations, and general trends in the galaxy population with redshift. 
+The typical variation in RMS ellipticity due to environmental effects is 5 per cent for redshift bins of width $\Delta z=0.05$, which could result in uncertain shear calibration at the 1 per cent level. We conclude that the cosmic variance effects are large enough to exceed the systematic error budget of future surveys, but can be mitigated with careful choice of training dataset and sufficiently large redshift binning.
 \end{abstract}
 
 \begin{keywords}

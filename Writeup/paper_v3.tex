@@ -179,8 +179,8 @@ Systematic error budgets for weak lensing surveys typically include
 astrophysical effects, such as intrinsic alignments of galaxy shapes
 with large scale density fields \citep[e.g.,][]{2014arXiv1407.6990T} and the effect of baryons on the
 matter power spectrum \citep[e.g.,][]{2011MNRAS.415.3649V}, as well as observational uncertainties such as
-the ability to robustly infer shears from galaxy observed\claire{strike} shapes or
-photometric redshifts from their observed\claire{strike} colors. (\arun{I don't see any problems with `observed'. Maybe just say observed galaxy shapes?}\claire{nothing wrong per se, I just don't think it's necessary, and was looking to shorten the sentence. It should definitely be 'observed galaxy shapes', not 'galaxy observed shapes'.})
+the ability to robustly infer shears from observed galaxy shapes or
+photometric redshifts from their observed colors.
 Given the expected sub-per cent statistical errors on upcoming surveys, systematic errors must be reduced from
  their typical level in the current state-of-the-art
  measurements that typically achieve $\sim 5$ per cent statistical
@@ -212,9 +212,9 @@ viewed by some lower resolution telescope.  Examples of training samples from th
 the COSMOS survey \citep[used by the GREAT3 challenge,][]{great3} or the
  Ultra Deep Field \citep[UDF, used by][]{2013ApJ...765...74J}.  These
  two examples serve as the extremes in the {\em HST} samples used as
- the basis for image simulation, with COSMOS being shallower but
-representing\claire{strike; COSMOS \emph{is} the widest survey, it doesn't just represent it} the current widest contiguous area surveyed by the {\em HST}, and the
- latter being extremely deep but narrow.
+ the basis for image simulation, with COSMOS being 
+the widest contiguous area surveyed by the {\em HST} currently and hence representive, and the 
+latter being extremely deep but narrow.
 
 For a variety of physical reasons, some of which are still not fully
 understood, the shape and morphology of
@@ -562,8 +562,6 @@ photometry catalog.
 %The joint distribution of $m_\text{F814W}$ and $M_I$ is shown in Fig.~\ref{fig:2Dhist}. 
 Since the parent sample contains fainter galaxies and is quite
 complete to $m_\text{F814W}=25.2$,
-(\claire{I'm not sure how the parent sample comes into play here} 
- \arun{The catalog is upto 25.2. We restrict to 23.5 since fainter ones have bad Sersic fits.But we use the $M_I$ values for 23.5 sample and 25.2 sample to see where the incompleteness kicks in. }\claire{I understand this much better without the old Figure 2, so I think it's fine now.})
 we compare the $M_I$ distribution
 of the $m_\text{F814W}=23.5$ sample with flux-limited samples that
 have fainter flux limits, to see where the $m_\text{F814W}<23.5$
@@ -620,8 +618,8 @@ redshift (evaluated using the bin centers).  Because of the sign of
 redshift evolution, \s$2$ includes  more galaxies. (\claire{How many?}\arun{Table. ~\ref{table:GalaxyCounts} gives the numbers bin-wise. Do you think we should mention the total number of relative increase here? }\claire{Yes, I do, even just in parentheses at the end of the sentence.})
 
 One might wonder why we cannot use the luminosity function in F814W
-based on the COSMOS observations to directly determine the luminosity
-function(\claire{the LF as a function of redshift, right?} \arun{I think we should say `determine the rate of evolution'?}\claire{your suggestion sounds fine}) for our sample, thus simplifying this exercise.  However,
+based on the COSMOS observations to directly determine the rate of evolution of the luminosity
+function for our sample, thus simplifying this exercise.  However,
 this turns out to be highly non-trivial for two reasons.  First, the
 F814W observations are relatively shallow compared to the deep
 ground-based observations used in many other works for determination
@@ -643,6 +641,7 @@ this work.
 %If we restrict to galaxies with masses $M$ such that $\log(M/M_\odot) \ge 10.15$, then we have at least {\bf 95.0\% } completeness.
 Finally, we can circumvent the problem of redshift evolution of the
 luminosity by imposing cuts on stellar mass instead. In Fig.~\ref{fig:smf}, we show the stellar mass function (SMF) of our sample for various F814W flux limits.
+The shapes of the SMF curves we obtain are consistent with those in \cite{Tomczak_SMF} at the high stellar-mass end.
 \cite{Tomczak_SMF} report the SMFs for the ZFOURGE survey, which
 includes COSMOS. They calculated stellar masses using the procedure
 and software described by \cite{2009ApJ...700..221K}, using a set of models
@@ -655,12 +654,10 @@ Chabrier IMF \citep{ChabrierIMF}.
 % conversation here to correct this misimpression, but since I
 % fixed the text already, please remove this conversation once you've
 % read it - there are no further action items.}) 
-We plot their SMF for \emph{all} galaxies in Fig.~\ref{fig:smf} for
-reference. Their SMF is higher than ours since they reach a $K_s$-band
-$5\sigma$ depth of 24.9. (\claire{I think that's only true at the low mass end. Overall, your normalizations are different, which leads to the curve offsets. I'm not sure I would show the Tomczak curve since you don't really use it, and explaining the differences isn't so important.
-Also, I don't understand what you mean by all the galaxies are plotted in Figure 4. The figure shows the volume density.} 
-\arun{Tomczak et. al had curves separately for the blue and the red galaxies and then one for both these combined together. That's what I meant by \emph{all}.
-I don't see how the normalizations are different. Our selection criteria are different and hence the differences. }\claire{I think you can drop the \emph{all}, as a reader unfamilar with Tomczak's work, I find it confusing as you never mention that in the text. And the differences in your curves can't just be selection. Take the leftmost bin, where Tomczak is always above your curve, yet you are claiming that your sample is complete for the highest mass galaxies in this redshift bin, so you shouldn't be missing any galaxies at the high mass end even compared to a deeper study. I am more confused as to why you find so many more massive galaxies at high redshift. Getting all the details of mass functions correct isn't easy, and I don't think necessary for this work, so I would take the comparison in the plots out. Maybe mention in the text that the functions are reasonably similar?}) (\rachel{Yes, I think we should take it out.  We don't determine stellar masses in precisely the same way, which could be responsible for these differences.  I had suggested plotting this comparison early on when we were much less certain of our methodology.  At this point I think it would be valid to say that the shapes of the curves at the high-mass end are consistent with those in Tomczak et al., without including it as the plot (where it's really a distraction from what we're trying to do)}.)
+% (\claire{I think that's only true at the low mass end. Overall, your normalizations are different, which leads to the curve offsets. I'm not sure I would show the Tomczak curve since you don't really use it, and explaining the differences isn't so important.
+% Also, I don't understand what you mean by all the galaxies are plotted in Figure 4. The figure shows the volume density.} 
+% \arun{Tomczak et. al had curves separately for the blue and the red galaxies and then one for both these combined together. That's what I meant by \emph{all}.
+%I don't see how the normalizations are different. Our selection criteria are different and hence the differences. }\claire{I think you can drop the \emph{all}, as a reader unfamilar with Tomczak's work, I find it confusing as you never mention that in the text. And the differences in your curves can't just be selection. Take the leftmost bin, where Tomczak is always above your curve, yet you are claiming that your sample is complete for the highest mass galaxies in this redshift bin, so you shouldn't be missing any galaxies at the high mass end even compared to a deeper study. I am more confused as to why you find so many more massive galaxies at high redshift. Getting all the details of mass functions correct isn't easy, and I don't think necessary for this work, so I would take the comparison in the plots out. Maybe mention in the text that the functions are reasonably similar?}) (\rachel{Yes, I think we should take it out.  We don't determine stellar masses in precisely the same way, which could be responsible for these differences.  I had suggested plotting this comparison early on when we were much less certain of our methodology.  At this point I think it would be valid to say that the shapes of the curves at the high-mass end are consistent with those in Tomczak et al., without including it as the plot (where it's really a distraction from what we're trying to do)}.)
 As for $M_I$, we compare the stellar mass function of the $m_\text{F814W}\le23.5$ sample with that of the $m_\text{F814W}\le25.2$ sample. 
 The sample with $\log(M/M_\odot) > 10.15$ is $\sim 95$ per cent
 complete in the redshift bin $0.75 \le z< 0.85$ and has 10~341
@@ -711,10 +708,6 @@ $M_*$, and are not observed.
           range. The curves begin to deviate at low masses due to
           incompleteness coming from the flux limit.  The point at
           which the deviation exceeds our threshold determines where the mass cutoff should be to volume-limit the sample.
-          (\claire{Why does your mass function go above Tomczak at higher redshift? If you aren't comparing to it directly, maybe just leave it out and do an internal comparison. Would including errors bars make the agreement better?}
-           \arun{I guess Rachel wanted the Tomczak plot 
-because it was in the same field of view. Agreed, it doesn't play any crucial role. Errorbars doesn't help. They appear very small in log-log plot.}\claire{see my extra notes in the text about this figure.}
-          )
           }
  \label{fig:smf}
 \end{figure*}
@@ -1268,7 +1261,8 @@ seen using the entire axis ratio distributions in Sec.~\ref{subsubsec:compdist}.
 For the morphological parameters that we described in
 Sec.~\ref{sub:axisratio}, the \sersic index and bulge-to-total ratio,
 we do not compare the distributions directly.  Doing so is relatively
-tricky\claire{highlight, I'd use a different word only because I think tricky is too informal. Unless the journal complains, its a personal taste thing. } \rachel{(agree, let's go with ``difficult'' or something like that)} because both distributions have hard cutoffs that are enforced
+difficult %\claire{highlight, I'd use a different word only because I think tricky is too informal. Unless the journal complains, its a personal taste thing. } \rachel{(agree, let's go with ``difficult'' or something like that)} 
+because both distributions have hard cutoffs that are enforced
 in the fitting process (\sersic $n$ in the range $[0.25, 6]$ and
 $0.05<B/T<0.95$). See Fig.~\ref{fig:sample_histograms}.
 The KS statistical test is sensitive to exactly what happens at these hard boundaries in the distributions.
@@ -1424,7 +1418,7 @@ the wider bins, $\delta_{g,\text{1D}}$.
 %that are shown in Figs.~\ref{fig:redshift_fluxlimited_wide} and ~\ref{fig:redshift_vollimited_wide}. 
 Although the $\left[ 0.7 - 0.85\right]$ bin seems to be overdense in
 the top panel of Fig.~\ref{fig:redshift_wide}, it appears to be
-environmentally neutral when we volume-limit the sample to be complete upto\claire{highlight} \arun{should we use `till'}\claire{'up to' is two words, otherwise it's fine} $z=1$.
+environmentally neutral when we volume-limit the sample to be complete up to
 %(\rachel{how?  Should say here and in caption whether this is \s1, \s2, or \s3}).
 Since the latter is what we use to study the galaxy morphology, we
 classify $\left[ 0.7 - 0.85\right]$ bin as `neutral'.
@@ -1501,10 +1495,9 @@ future surveys are unlikely to pick just a single survey to serve as
 the basis for their image simulation training sample, but rather
 will combine as many as possible.  Combining multiple surveys will
 reduce the cosmic variance and therefore the significance of the
-effects discussed in this work.  However, with COSMOS being so
-dominant in its size, the combination with (\claire{of} \arun{I guess this was meant to say COSMOS + other surveys?} \claire{how about this: However, as COSMOS is significantly larger than other \emph{HST} surveys, combining COSMOS with smaller fields is unlikely to ameliorate this effect.} \rachel{Sounds good to me.} )other much smaller fields
-is unlikely to fully ameliorate this effect.  Thus, it will be
-important to carefully choose the size of redshift slices used to
+effects discussed in this work.
+However, as COSMOS is significantly larger than other \emph{HST} surveys, combining COSMOS with smaller fields is unlikely to ameliorate this effect.
+Thus, it will be important to carefully choose the size of redshift slices used to
 derive properties of the galaxy population so as to be minimally
 affected by this issue.
 
@@ -1617,7 +1610,7 @@ program HST-AR-12857.01-A, provided by NASA through a grant from the
 Space Telescope Science Institute, which is operated by the
 Association of Universities for Research in Astronomy, Incorporated,
 under NASA contract NAS5-26555. RM acknowledges the support of an Alfred P. Sloan Research Fellowship. 
-\claire{Kavli IPMU is supported by World Premier International Research Center Initiative (WPI), MEXT, Japan.}
+Kavli IPMU is supported by World Premier International Research Center Initiative (WPI), MEXT, Japan.
 We thank Alexie Leauthaud for 
 many useful discussions.
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{52}
+\begin{thebibliography}{54}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -17,6 +17,12 @@
 
 \bibitem[{{Bernstein} \& {Jarvis}(2002)}]{BJ02}
 {Bernstein} G.~M., {Jarvis} M., 2002, \aj, 123, 583
+
+\bibitem[{{Blanton} {et~al}\mbox{.}(2003){Blanton}, {Hogg}, {Bahcall},
+  {Brinkmann}, {Britton}, {Connolly}, {Csabai}, {Fukugita}, {Loveday},
+  {Meiksin}, {Munn}, {Nichol}, {Okamura}, {Quinn}, {Schneider}, {Shimasaku},
+  {Strauss}, {Tegmark}, {Vogeley}, \& {Weinberg}}]{2003ApJ...592..819B}
+{Blanton} M.~R. {et~al.}, 2003, \apj, 592, 819
 
 \bibitem[{{Bridle} {et~al}\mbox{.}(2010){Bridle}, {Balan}, {Bethge}, {Gentile},
   {Harmeling}, {Heymans}, {Hirsch}, {Hosseini}, {Jarvis}, {Kirk}, {Kitching},
@@ -186,6 +192,11 @@
   F{\`e}vre}, {Mellier}, {R{\'e}fr{\'e}gier}, {Robin}, {Scoville}, {Tasca},
   {Taylor}, \& {Van Waerbeke}}]{COSMOS_Alexie}
 {Leauthaud} A. {et~al.}, 2007, \apjs, 172, 219
+
+\bibitem[{{Lin} {et~al}\mbox{.}(1999){Lin}, {Yee}, {Carlberg}, {Morris},
+  {Sawicki}, {Patton}, {Wirth}, \& {Shepherd}}]{1999ApJ...518..533L}
+{Lin} H., {Yee} H.~K.~C., {Carlberg} R.~G., {Morris} S.~L., {Sawicki} M.,
+  {Patton} D.~R., {Wirth} G., {Shepherd} C.~W., 1999, \apj, 518, 533
 
 \bibitem[{{LSST Science Collaboration} {et~al}\mbox{.}(2009){LSST Science
   Collaboration}, {Abell}, {Allison}, {Anderson}, {Andrew}, {Angel}, {Armus},

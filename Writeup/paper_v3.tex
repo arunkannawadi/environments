@@ -1519,19 +1519,20 @@ and the methods presented by \cite{2014MNRAS.438.1880B} require
 accurate intrinsic ellipticity distributions as inputs, and
 uncertainty in the distribution was one source of
 systematic uncertainty in the CFHTLenS weak lensing results
-\citep{2013MNRAS.432.2433H,2013MNRAS.429.2858M}.  In others, the role
-is implicit.  For example, the re-Gaussianization method and several
+\citep{2013MNRAS.432.2433H,2013MNRAS.429.2858M}.  The intrinsic
+ellipticity distribution enters the calculation for other methods in
+other ways.  For example, the re-Gaussianization method and several
 other moment-based methods require calculation of a shear responsivity
 \citep{BJ02,HS03} that describes how the galaxy population overall
 responds to a shear, based on its intrinsic ellipticity distribution.
 The responsivity can be calculated based on the observed shape
 distribution, assuming that the uncertainties in the shears are known
-enough that their contribution to that distribution can be removed.
+well enough that their contribution to that distribution can be removed.
 If a simulated sample in some redshift slice has a different intrinsic
 ellipticity distribution and therefore responsivity, it could lead to
 incorrect conclusions about shear calibration.  The responsivity
 scales roughly like $1-e_\text{RMS}^2$, which means that deviations in
-RMS ellipticity at the level of 0.01 (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
+RMS ellipticity at the level of 0.01 due to local environments (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
 errors of
 \begin{equation}
 \frac{\Delta\gamma}{\gamma} \approx \frac{2 e_\text{RMS} \Delta
@@ -1557,7 +1558,7 @@ the calibration bias would therefore be $\sim 2.5\times 10^{-3}$, or
 $0.25$ per cent shear calibration uncertainty.  For existing datasets
 this is not very problematic, but for surveys like LSST, Euclid, and
 WFIRST-AFTA, this would be a dominant part of the systematic error
-budget.  To give another example, for re-Gaussianization, figure 9 of
+budget.  As another example, for re-Gaussianization, figure 9 of
 \cite{2012MNRAS.420.1518M} shows that as \sersic $n$ goes from $1$ to
 $6$, the shear calibration bias varies by $2$ per cent.  In this case,
 since we have shown that the median value of \sersic $n$ can vary by

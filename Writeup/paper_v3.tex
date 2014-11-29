@@ -140,7 +140,7 @@ Claire Lackner$^2$
 Upcoming weak lensing surveys will survey large cosmological volumes to measure the growth of cosmological structure with time and
 thereby constrain dark energy.  One major systematic uncertainty in
 this process is the calibration of the weak lensing shape distortions,
-or shears.  Most upcoming surveys plan to test their shear
+or shears.  Most upcoming surveys plan to test \rachel{several aspects of} their shear
 estimation algorithms using sophisticated image simulations that
 include 
 realistic galaxy populations based on high-resolution data from the
@@ -187,6 +187,22 @@ Given the expected sub-per cent statistical errors on upcoming surveys, systemat
  errors at best
  \citep[e.g.,][]{2010A&A...516A..63S,2013MNRAS.432.2433H,2013ApJ...765...74J,2013MNRAS.432.1544M}.
 
+ \rachel{Some types of information about and tests of shear estimation
+   for ongoing and future weak lensing surveys will rely on data from
+   the Hubble Space Telescope ({\em HST}).  For example, data from
+   {\em HST} can be used to derive basic statistics of galaxy light
+   profiles, such as joint distributions of size and the morphology.
+   It can be used to infer the intrinsic distribution of galaxy
+   shapes, which enters the shear estimation process either implicitly
+ or explicitly depending on the method used for shear estimation.
+ Going beyond basic information about the light profile, {\em HST} can
+be used to quantify the detailed morphology of galaxies, due to its
+higher resolution compared to any current or planned weak lensing
+survey.  Finally, it can be used to address systematics due to colour
+gradients within galaxies, which are particularly problematic when
+combined with a wavelength-dependent diffraction-limited PSF
+\citep[e.g.,][]{2012MNRAS.421.1385V,2013MNRAS.432.2385S}.}
+
 One method that is commonly used to test for the presence of
 systematic errors in the shear estimation process is image simulation,
 where we can cleanly test whether our methods of shear estimation
@@ -202,9 +218,8 @@ vs. ellipticals), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.4
 A general requirement for simulations used to test shear recovery is
 that they should be as realistic as possible.
  
- Realistic simulations may use samples based on images from the Hubble
- Space Telescope ({\em HST}).
-Software packages like
+ Realistic simulations may use samples based on images from the 
+ ({\em HST}). Software packages like
 {\sc GalSim}\footnote{\url{https://github.com/GalSim-developers/GalSim}}
 \citep{2014arXiv1407.7676R} can generate images of galaxies from the
 {\em HST} as they would appear with an additional lensing shear and
@@ -911,6 +926,13 @@ profile fits.  This ratio is defined in terms of bulge and disk fluxes as
 \begin{equation}
 \frac{B}{T} = \frac{f_\text{bulge}}{f_\text{bulge}+f_\text{disk}}.
 \end{equation}
+\rachel{The bulge-to-total flux ratio can be used as a proxy for
+  colour gradients, since the bulge and disk will tend to have
+  different spectral energy distributions, and hence any galaxy with
+  $B/T\ne 0$ or $1$ will have some level of colour gradients.  If two
+  galaxy samples have different values for the typical $B/T$, this is
+  likely to indicate not only differences in morphology, but also in
+  the level of colour gradients.}
  
 We also consider an alternative method for estimating the galaxy
 ellipticity or distortion.  This method is based on using the observed weighted
@@ -1293,7 +1315,7 @@ indices of the stellar mass-selected samples (\s$3$) are
 systematically greater than those of the luminosity selected samples
 (\s$1$, \s$2$).  
 This is because \s3 is restricted to galaxies with masses above $\log(M/M_\odot) > 10.15$, whereas in \s1 and \s2, the mass distribution of galaxies extends to $\log(M/M_\odot) \sim 9.0$,
-with about 44 per cent of the galaxies in \s2 below the stellar mass cut placed for \s3.
+with about 44 per cent of the galaxies in \s2 having a stellar mass below the cut for \s3.
 It is therefore not surprising that \s3 has a higher median \sersic $n$.  Finally, even for
 the stellar mass-selected sample there is some sign of redshift
 evolution.  The sign of this evolution is as expected, with lower
@@ -1449,7 +1471,165 @@ known structure in the calibration fields, or (b) attempting some kind of
 reweighting of the galaxy populations in redshift slices affected by
 known structure.
 
-\section{Conclusions and implications}
+
+\section{\rachel{Implications for future surveys}}\label{S:implications}
+
+\rachel{As mentioned previously, {\em HST} data will be used by future weak
+lensing surveys to characterize the galaxy population in several
+ways.  In this section, we estimate how the results shown in
+Sec.~\ref{S:results} can affect estimates of shear calibration when
+using {\em HST} to characterize the galaxy population.  We also
+discuss the situations in which this is likely to be important for
+current and future surveys from the space and ground.}
+
+\subsection{\rachel{Magnitude of shear calibration bias}}
+
+\rachel{Here we consider the impact of the findings in
+  Sec.~\ref{S:results} on weak lensing shear calibration assuming that
+  the COSMOS sample is used as a parent sample for simulations that
+  are used to derive redshift-dependent shear calibrations.  This
+  could be done either directly using the galaxy images themselves, or
+  by fitting for parametric distributions of \sersic $n$, size, and
+  shape in redshift slices, and then using those parametric
+  distributions to make simulated images containing galaxies with
+  \sersic light profiles that match those distributions.  We consider a few simple cases of how the
+  above results affect shear calibration estimates.  It is likely that
+  the answer to this question varies quite significantly with the type
+  of shear estimation method used.  Some will be sensitive to the
+  variations in morphology, others to the variation in the intrinsic
+  ellipticity distribution, and many will be sensitive to both at some
+  level.  We consider both of these issues in turn.}
+
+\rachel{The intrinsic ellipticity distribution plays a role in nearly all
+shear estimators.  In some, the role is explicit: for example, LensFit
+\citep{2007MNRAS.382..315M,2008MNRAS.390..149K,2013MNRAS.429.2858M}
+and the methods presented by \cite{2014MNRAS.438.1880B} require
+accurate intrinsic ellipticity distributions as inputs, and
+uncertainty in the distribution was one source of
+systematic uncertainty in the CFHTLenS weak lensing results
+\citep{2013MNRAS.432.2433H,2013MNRAS.429.2858M}.  The intrinsic
+ellipticity distribution enters the calculation for other methods in
+other ways.  For example, the re-Gaussianization method and several
+other moment-based methods require calculation of a shear responsivity
+\citep{BJ02,HS03} that describes how the galaxy population overall
+responds to a shear, based on its intrinsic ellipticity distribution.
+The responsivity can be calculated based on the observed shape
+distribution, assuming that the uncertainties in the shears are known
+well enough that their contribution to that distribution can be removed.
+If a simulated sample in some redshift slice has a different intrinsic
+ellipticity distribution and therefore responsivity, it could lead to
+incorrect conclusions about shear calibration.  The responsivity
+scales roughly like $1-e_\text{RMS}^2$, which means that deviations in
+RMS ellipticity at the level of 0.01 due to local environments (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
+errors of}
+\begin{equation}
+\frac{\Delta\gamma}{\gamma} \approx \frac{2 e_\text{RMS} \Delta
+  e_\text{RMS} }{1-e_\text{RMS}^2} \approx 0.01.
+\end{equation}
+\rachel{In the context of upcoming lensing surveys that seek to constrain
+shears to better than the per cent level, a systematic error of this
+magnitude in shear calibration is quite serious.}
+
+\rachel{Regarding possible biases in the morphological mixtures of galaxies
+due to overdensities or underdensities in the training sample, there
+are results in the literature for several methods that show how shear
+biases vary with morphology.  For example, for the maximum likelihood
+fitting code {\sc im3shape}, figure 2 in \cite{2012MNRAS.427.2711K}
+shows multiplicative biases for two-component \sersic profile galaxies
+as a function of their bulge-to-total ratios (denoted there as
+$F_b/(F_b+F_d)$, which we will equate with our $B/T$).  The shear
+calibration bias scales roughly like $0.04 - 0.05(B/T)$ as $B/T$ goes
+from $0$ to $1$.  Our results suggest that typical (median) $B/T$
+values may be influenced by cosmic variance in the COSMOS field,
+leading to fluctuations of order $0.05$.  The resulting variation in
+the shear calibration  would therefore be $\sim 2.5\times 10^{-3}$, or
+$0.25$ per cent shear calibration uncertainty.  For existing datasets
+this is not very problematic, but for surveys like LSST, Euclid, and
+WFIRST-AFTA, this would be a dominant part of the systematic error
+budget.  As another example, for re-Gaussianization, figure 9 of
+\cite{2012MNRAS.420.1518M} shows that as \sersic $n$ goes from $1$ to
+$6$, the shear calibration bias varies by $2$ per cent.  In this case,
+since we have shown that the median value of \sersic $n$ can vary by
+$\sim 0.4$ due to morphology-density correlations, this suggests that
+the shear calibration for re-Gaussianization could be misestimated by
+$\sim 2\times 10^{-3}$, or 0.2 per cent.  This too is acceptable in
+existing datasets, but not those that will be used for shear
+estimation in the next decade.}
+
+\rachel{The estimates in this subsection are rough illustrations of
+  the magnitudes of these effects.  Other aspects of shear calibration
+  that could be affected relate to the use of {\em HST} data to
+  estimate the impact of detailed galaxy morphology, or to calibrate
+  the effect of colour gradients
+  \citep{2012MNRAS.421.1385V,2013MNRAS.432.2385S}.  In the latter
+  case, what is most relevant in this work is our finding that $B/T$
+  exhibits environmental dependence, which likely translates into
+  environmental dependence of colour gradients.  Unfortunately, we
+  cannot directly test the strength of any colour gradient variations
+  with environment using COSMOS data, due to the fact that there is
+  only single-band coverage in much of its area.  We note that our
+  findings may seem to be at odds with the conclusions in
+  \cite{2013MNRAS.432.2385S} based on synthetic galaxy models that the
+  existing area of {\em HST} coverage with $\ge 2$ bands is sufficient
+  for calibration of colour
+  gradients\footnote{\rachel{\cite{2012MNRAS.421.1385V} showed that the
+    fluctuations in colour gradients within the source galaxy sample
+    in the Euclid weak lensing survey due to environmental effects
+    will not be a significant source of uncertainty.  However, the
+    question addressed in that work is different from the question
+    considered here, which is the impact of fluctuations in colour
+    gradients in the training sample used to derive the corrections,
+    rather than in the galaxy sample to which those corrections will
+    be applied.}}.  This is particularly striking given that, as shown
+  there, the dominant galaxy sample with $2$-band coverage is the
+  AEGIS dataset, which has substantially smaller area than COSMOS, and
+  therefore should exhibit a stronger influence of cosmic variance.  It seems that a future study using
+  an {\em HST} field with more than one band would be warranted, to
+  test whether the discrepancy between our findings and those of
+  \cite{2013MNRAS.432.2385S} arises from a weak connection between
+  colour gradients and $B/T$ (meaning that our results do not imply a
+  problem with colour gradient calibration), or from some unrealistic
+  aspect to the synthetic models used in that work.}
+
+\subsection{\rachel{Effective impact on future surveys}}
+
+\rachel{In addition to the order of magnitude of these effects
+  presented in the previous subsection, it is important to bear in
+  mind how future surveys plan to use {\em HST} data.}
+
+\rachel{For example, before the Euclid survey begins, when carrying
+  out tests of shear estimation methods, their simulated data will be
+  based on {\em HST} in many ways: estimation of simple aspects of
+  morphology (\sersic $n$, bulge fraction), intrinsic ellipticity
+  distribution, colour gradient calibration, and higher order moments
+  (detailed morphology).  Our results suggest that care should be
+  taken to ensure that those simulations are not overly influenced by
+  environment effects in the {\em HST} data, so that incorrect
+  conclusions will not be drawn about the redshift-dependence of shear
+  calibration for shear estimation methods to be used by the survey.}
+
+\rachel{However, once the Euclid survey is
+  underway, the derivation of simple galaxy morphology and the
+  intrinsic ellipticity distribution will be based on the 40~deg$^2$
+  Euclid deep field, which goes two magnitudes fainter than the rest of
+  the survey.  With that data in hand, the Euclid weak lensing
+  results will be less reliant on the much smaller and more
+  cosmic variance-limited {\em HST} fields, using them only for colour
+  gradient calibration and estimates of the impact of detailed galaxy
+  morphology (since the {\em HST} resolution is higher than that
+  of Euclid).}
+
+\rachel{In contrast, for current and future ground-based surveys such
+  as LSST, high-resolution space data will play a more important role
+  in the understanding of the galaxy 
+  intrinsic ellipticity and morphology distributions, since even a deep
+  field in a ground-based survey faces fundamental resolution limits
+  that prevent the derivation of detailed information about the faint
+  galaxy population.  Galaxies that are near the resolution limit for
+  a ground-based survey are still very well-resolved in {\em HST},
+  making it the best resource for detailed information about them.}
+
+\section{Conclusions}
 \label{S:summary}
 
 In this study, we have shown that the shape distributions of galaxies
@@ -1481,7 +1661,14 @@ our results suggest that even $\Delta z=0.2$ may not be wide enough
 (and this is becoming dangerously close to the size of tomographic
 redshift bins to be used for weak lensing analysis in upcoming
 surveys).  Thus, more complex schemes may become necessary to fully
-overcome this issue.
+overcome this issue\rachel{, depending on exactly how the {\em HST}
+  data is to be used.  As discussed in Sec.~\ref{S:implications},
+  particular care may be needed in ground-based surveys that will use
+  the {\em HST} data to model many aspects of the galaxy population.
+  In contrast,  for Euclid, use of the relatively large area Euclid deep
+  data to constrain many aspects of the galaxy population means that
+  these issues with {\em HST} data are less important, though still
+  not completely ignorable.}
 
 It is important to keep in mind the nature of COSMOS with respect to
 other possible {\em HST} training samples.  COSMOS represents the
@@ -1505,69 +1692,6 @@ Thus, it will be important to carefully choose the size of redshift slices used 
 derive properties of the galaxy population so as to be minimally
 affected by this issue.
 
-It is natural to ask the question of how relevant are variations in
-the galaxy population of the size found here for shear calibration
-bias estimates.  It is likely that the answer to this question varies
-quite significantly with the type of shear estimation method used.
-Some will be sensitive to the variations in morphology, others to the
-variation in the intrinsic ellipticity distribution, and many will be
-sensitive to both at some level.  We consider each in turn.
-
-The intrinsic ellipticity distribution plays a role in nearly all
-shear estimators.  In some, the role is explicit: for example, LensFit
-\citep{2007MNRAS.382..315M,2008MNRAS.390..149K,2013MNRAS.429.2858M}
-and the methods presented by \cite{2014MNRAS.438.1880B} require
-accurate intrinsic ellipticity distributions as inputs, and
-uncertainty in the distribution was one source of
-systematic uncertainty in the CFHTLenS weak lensing results
-\citep{2013MNRAS.432.2433H,2013MNRAS.429.2858M}.  The intrinsic
-ellipticity distribution enters the calculation for other methods in
-other ways.  For example, the re-Gaussianization method and several
-other moment-based methods require calculation of a shear responsivity
-\citep{BJ02,HS03} that describes how the galaxy population overall
-responds to a shear, based on its intrinsic ellipticity distribution.
-The responsivity can be calculated based on the observed shape
-distribution, assuming that the uncertainties in the shears are known
-well enough that their contribution to that distribution can be removed.
-If a simulated sample in some redshift slice has a different intrinsic
-ellipticity distribution and therefore responsivity, it could lead to
-incorrect conclusions about shear calibration.  The responsivity
-scales roughly like $1-e_\text{RMS}^2$, which means that deviations in
-RMS ellipticity at the level of 0.01 due to local environments (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
-errors of
-\begin{equation}
-\frac{\Delta\gamma}{\gamma} \approx \frac{2 e_\text{RMS} \Delta
-  e_\text{RMS} }{1-e_\text{RMS}^2} \approx 0.01.
-\end{equation}
-In the context of upcoming lensing surveys that seek to constrain
-shears to the per cent level or better, a systematic error of this
-magnitude in shear calibration is quite serious.
-
-Regarding possible biases in the morphological mixtures of galaxies
-due to overdensities or underdensities in the training sample, there
-are results in the literature for several methods that show how shear
-biases vary with morphology.  For example, for the maximum likelihood
-fitting code {\sc im3shape}, figure 2 in \cite{2012MNRAS.427.2711K}
-shows multiplicative biases for two-component \sersic profile galaxies
-as a function of their bulge-to-total ratios (denoted there as
-$F_b/(F_b+F_d)$, which we will equate with our $B/T$).  The shear
-calibration bias scales roughly like $0.04 - 0.05(B/T)$ as $B/T$ goes
-from $0$ to $1$.  Our results suggest that typical (median) $B/T$
-values may be influenced by cosmic variance in the COSMOS field
-leading to fluctuations of order $0.05$.  The resulting variation in
-the calibration bias would therefore be $\sim 2.5\times 10^{-3}$, or
-$0.25$ per cent shear calibration uncertainty.  For existing datasets
-this is not very problematic, but for surveys like LSST, Euclid, and
-WFIRST-AFTA, this would be a dominant part of the systematic error
-budget.  As another example, for re-Gaussianization, figure 9 of
-\cite{2012MNRAS.420.1518M} shows that as \sersic $n$ goes from $1$ to
-$6$, the shear calibration bias varies by $2$ per cent.  In this case,
-since we have shown that the median value of \sersic $n$ can vary by
-$\sim 0.4$ due to morphology-density correlations, this suggests that
-the shear calibration for re-Gaussianization could be misestimated by
-$\sim 2\times 10^{-3}$, or 0.2 per cent.  This too is acceptable in
-existing datasets, but not those that will be used for shear
-estimation in the next decade.
 
 A final consideration is the question of how applicable these results
 using volume-limited samples are to simulations of upcoming weak
@@ -1610,6 +1734,8 @@ systematic error budget of major upcoming lensing surveys.
 
 \section*{Acknowledgments}
 
+\rachel{The authors would like to thank Thomas Kitching and Henk
+  Hoekstra for their helpful comments on this work.}
 AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and
 program HST-AR-12857.01-A, provided by NASA through a grant from the
 Space Telescope Science Institute, which is operated by the

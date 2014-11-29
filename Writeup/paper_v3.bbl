@@ -1,4 +1,4 @@
-\begin{thebibliography}{54}
+\begin{thebibliography}{56}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -272,6 +272,12 @@
   {Tyson}}]{COSMOS_overview}
 {Scoville} N. {et~al.}, 2007, \apjs, 172, 1
 
+\bibitem[{{Semboloni} {et~al}\mbox{.}(2013){Semboloni}, {Hoekstra}, {Huang},
+  {Cardone}, {Cropper}, {Joachimi}, {Kitching}, {Kuijken}, {Lombardi}, {Maoli},
+  {Mellier}, {Miller}, {Rhodes}, {Scaramella}, {Schrabback}, \&
+  {Velander}}]{2013MNRAS.432.2385S}
+{Semboloni} E. {et~al.}, 2013, \mnras, 432, 2385
+
 \bibitem[{{The Dark Energy Survey Collaboration}(2005)}]{DESC}
 {The Dark Energy Survey Collaboration}, 2005, preprint (arXiv:astro-ph/0510346)
 
@@ -291,6 +297,11 @@
 
 \bibitem[{{Voigt} \& {Bridle}(2010)}]{2010MNRAS.404..458V}
 {Voigt} L.~M., {Bridle} S.~L., 2010, \mnras, 404, 458
+
+\bibitem[{{Voigt} {et~al}\mbox{.}(2012){Voigt}, {Bridle}, {Amara}, {Cropper},
+  {Kitching}, {Massey}, {Rhodes}, \& {Schrabback}}]{2012MNRAS.421.1385V}
+{Voigt} L.~M., {Bridle} S.~L., {Amara} A., {Cropper} M., {Kitching} T.~D.,
+  {Massey} R., {Rhodes} J., {Schrabback} T., 2012, \mnras, 421, 1385
 
 \bibitem[{{Weinberg} {et~al}\mbox{.}(2013){Weinberg}, {Mortonson},
   {Eisenstein}, {Hirata}, {Riess}, \& {Rozo}}]{2013PhR...530...87W}

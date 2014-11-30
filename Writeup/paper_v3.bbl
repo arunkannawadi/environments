@@ -1,4 +1,4 @@
-\begin{thebibliography}{56}
+\begin{thebibliography}{57}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -277,6 +277,11 @@
   {Mellier}, {Miller}, {Rhodes}, {Scaramella}, {Schrabback}, \&
   {Velander}}]{2013MNRAS.432.2385S}
 {Semboloni} E. {et~al.}, 2013, \mnras, 432, 2385
+
+\bibitem[{{Semboloni} {et~al}\mbox{.}(2011){Semboloni}, {Hoekstra}, {Schaye},
+  {van Daalen}, \& {McCarthy}}]{2011MNRAS.417.2020S}
+{Semboloni} E., {Hoekstra} H., {Schaye} J., {van Daalen} M.~P., {McCarthy}
+  I.~G., 2011, \mnras, 417, 2020
 
 \bibitem[{{The Dark Energy Survey Collaboration}(2005)}]{DESC}
 {The Dark Energy Survey Collaboration}, 2005, preprint (arXiv:astro-ph/0510346)

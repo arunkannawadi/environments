@@ -1,4 +1,4 @@
-\begin{thebibliography}{57}
+\begin{thebibliography}{58}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -246,6 +246,19 @@
 {Miyazaki} S. {et~al.}, 2006, in Society of Photo-Optical Instrumentation
   Engineers (SPIE) Conference Series, Vol. 6269, Society of Photo-Optical
   Instrumentation Engineers (SPIE) Conference Series
+
+\bibitem[{{Newman} {et~al}\mbox{.}(2015){Newman}, {Abate}, {Abdalla}, {Allam},
+  {Allen}, {Ansari}, {Bailey}, {Barkhouse}, {Beers}, {Blanton}, {Brodwin},
+  {Brownstein}, {Brunner}, {Carrasco Kind}, {Cervantes-Cota}, {Cheu},
+  {Chisari}, {Colless}, {Comparat}, {Coupon}, {Cunha}, {de la Macorra},
+  {Dell'Antonio}, {Frye}, {Gawiser}, {Gehrels}, {Grady}, {Hagen}, {Hall},
+  {Hearin}, {Hildebrandt}, {Hirata}, {Ho}, {Honscheid}, {Huterer},
+  {Ivezi{\'c}}, {Kneib}, {Kruk}, {Lahav}, {Mandelbaum}, {Marshall}, {Matthews},
+  {M{\'e}nard}, {Miquel}, {Moniez}, {Moos}, {Moustakas}, {Myers}, {Papovich},
+  {Peacock}, {Park}, {Rahman}, {Rhodes}, {Ricol}, {Sadeh}, {Slozar}, {Schmidt},
+  {Stern}, {Anthony Tyson}, {von der Linden}, {Wechsler}, {Wood-Vasey}, \&
+  {Zentner}}]{2015APh....63...81N}
+{Newman} J.~A. {et~al.}, 2015, Astroparticle Physics, 63, 81
 
 \bibitem[{{Refregier} {et~al}\mbox{.}(2012){Refregier}, {Kacprzak}, {Amara},
   {Bridle}, \& {Rowe}}]{2012MNRAS.425.1951R}

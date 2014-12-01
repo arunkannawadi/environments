@@ -1499,6 +1499,67 @@ known structure in the calibration fields, or (b) attempting some kind of
 reweighting of the galaxy populations in redshift slices affected by
 known structure.
 
+\rachel{As a test of the second option, we consider whether we can use some division of the
+galaxies by color or $B/T$ (as a proxy for color) in order to
+determine the structural parameters of galaxies as a function of
+redshift for each of them separately.  If the effects we are seeing
+can be cleanly described in terms of overdense (underdense) regions
+being dominated by bulge- (disk-)dominated galaxies, then division
+into samples based on $B/T$ may help reduce the effects that we have
+described in previous subsections.  We test this idea by dividing the
+sample into bulge- and disk-dominated galaxies based on requiring
+$B/T\ge $ or $<0.4$.  The resulting bulge fraction $f_\text{bulge}$,
+shown as a function of redshift in Fig.~\ref{fig:fbulge_z}, 
+shows a mild effect from the large-scale structures in the COSMOS field.
+}
+\begin{figure}
+ \centering
+ \includegraphics[width=1.0\columnwidth]{fbulge_z} 
+ \caption{\rachel{The fraction of galaxies in \s1 (open symbols) and
+     \s3 (solid symbols) that are classified as bulge-dominated as a
+     function of redshift, including the correlation with redshift
+     slices classified as overdense or underdense as indicated by the
+     symbol shape and color.}
+         }
+ \label{fig:fbulge_z}
+\end{figure}
+
+\rachel{Fig.~\ref{fig:rmsellip_bulge_disk} shows the RMS distortion as
+  a function of redshift for the full \s1 sample (as shown previously) and
+  for the separate bulge- and disk-dominated samples.  As shown,
+  the deviations in the values due to large-scale structure are
+  clearly evident in all three cases, though slightly more prominent
+  for the full sample and less so for the bulge-dominated sample.  For
+comparison with the results for the full sample shown in
+Table~\ref{table:pvalues_all}, we compute the KS (AD) test $p$-values
+for consistency of axis ratios between overdense and underdense
+regions for bulge- and disk-dominated samples.  For \s1, these
+$p$-values are 0.16 (0.08) for bulge-dominated galaxies and 0.005
+(0.001) for disk-dominated galaxies.  For \s3, these $p$-values are
+0.03 (0.03) and $10^{-4}$ ($3\times 10^{-4}$), respectively.  With the
+possible exception of bulge-dominated galaxies, it seems that
+separation into two morphological samples is not enough to remove the
+effect of the local environment on the ensemble properties like the
+intrinsic ellipticity distribution.   Due to the limited sample size,
+we did not explore the possibility of an even finer morphological
+division of the sample, but with deeper {\em HST} datasets, this may
+be a promising path to pursue.  However, if the nature of the bulges
+or disks themselves is altered by the local environment, then division
+purely into bulge- or disk-dominated sample will not be helpful in
+mitigating environmental effects.
+}
+\begin{figure}
+ \centering
+ \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_S1_bulgedisk} 
+ \caption{\rachel{The RMS distortion as a function of redshift for the
+     full volume-limited galaxy sample \s3 (partially-full symbols), the
+     disk-dominated galaxy sample (open symbols), and the
+     bulge-dominated galaxy sample (full symbols).  The fact that the
+     bulge-dominated sample has a lower RMS distortion than the
+     disk-dominated sample is consistent with expectations.}
+         }
+ \label{fig:rmsellip_bulge_disk}
+\end{figure}
 
 \section{\rachel{Implications for future surveys}}\label{S:implications}
 
@@ -1601,7 +1662,7 @@ estimation in the next decade.}
   \cite{2013MNRAS.432.2385S} based on synthetic galaxy models that the
   existing area of {\em HST} coverage with $\ge 2$ bands is sufficient
   for calibration of colour
-  gradients\footnote{\rachel{\cite{2012MNRAS.421.1385V} showed that the
+  gradients as a function of galaxy type\footnote{\rachel{\cite{2012MNRAS.421.1385V} showed that the
     fluctuations in colour gradients within the source galaxy sample
     in the Euclid weak lensing survey due to environmental effects
     will not be a significant source of uncertainty.  However, the
@@ -1798,8 +1859,8 @@ systematic error budget of major upcoming lensing surveys.
 
 \section*{Acknowledgments}
 
-\rachel{The authors would like to thank Thomas Kitching and Henk
-  Hoekstra for their helpful comments on this work.}
+\rachel{The authors would like to thank Thomas Kitching, Henk
+  Hoekstra, and Tim Schrabback for their helpful comments on this work.}
 AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and
 program HST-AR-12857.01-A, provided by NASA through a grant from the
 Space Telescope Science Institute, which is operated by the

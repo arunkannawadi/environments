@@ -216,7 +216,7 @@ shear estimates
 \citep{2012MNRAS.427.2711K,2012MNRAS.424.2757M,2012MNRAS.425.1951R},
 and ellipticity gradients \citep{2010MNRAS.406.2793B}.  These biases
 often differ for galaxies with different morphologies (e.g., disks
-vs. ellipticals), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.423.3163K}. 
+vs.\ ellipticals), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.423.3163K}. 
 A general requirement for simulations used to test shear recovery is
 that they should be as realistic as possible.
  
@@ -847,9 +847,9 @@ discussed in the text.
 %         one is from Claire and one from re-Gaussianization, but these
 %         needs to be indicated clearly.  Finally, we have the option of
 %       deliberately plotting different things (like $q$ from Claire
-%       vs. distortion from re-Gaussianization) or explicitly choosing
+%       vs.\ distortion from re-Gaussianization) or explicitly choosing
 %       to plot the same thing (like total distortion from Claire
-%       vs. total distortion from re-Gaussianization).  I'm not sure
+%       vs.\ total distortion from re-Gaussianization).  I'm not sure
 %       which is best; the latter would allow a comparison between the
 %       two types of shape estimates, which could be interesting, so I'm
 %       inclined to say you should do that.}} \arun{Done.}
@@ -1075,7 +1075,7 @@ redshift (at fixed mass).
   %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
   Redshift bins & \s$1$ & \s$2$ & \s$3$ \\
   \hline
-  All overdense vs.  & \scinot{1.1}{-4} & \scinot{2.6}{-5} & \scinot{1.9}{-6} \\
+  All overdense vs.\  & \scinot{1.1}{-4} & \scinot{2.6}{-5} & \scinot{1.9}{-6} \\
   All underdense     & \scinot{1}{-5} & $<\scinot{1}{-5}$ & $<\scinot{1}{-5}$ \\ \hline 
   $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.61 & 0.43 & 0.23 \\
   $[0.80,0.85]$ (OD) & 0.49 & 0.24 & 0.13 \\ \hline
@@ -1085,7 +1085,7 @@ redshift (at fixed mass).
  \caption{$p$-values from the Kolmogorov-Smirnov (top) and
    Anderson-Darling (bottom) tests obtained by comparing the
    distributions of axis ratios for three cases: \emph{all} overdense
-   (OD) vs. \emph{all} underdense (UD), two overdense bins that are
+   (OD) vs.\ \emph{all} underdense (UD), two overdense bins that are
    not very separated in redshift, and a pair of adjacent overdense
    and underdense bins. \s$1$, \s$2$, \s$3$ refer to the three
    different types of volume-limited samples.
@@ -1104,7 +1104,7 @@ redshift (at fixed mass).
   %\parbox[t]{0.15\columnwidth}{Redshift bins} & \parbox[t]{0.15\columnwidth}{Tests} & \parbox[t]{0.15\columnwidth}{Luminosity-selected} & \parbox[t]{0.15\columnwidth}{Luminosity-selected with B-band evolution} & \parbox[t]{0.15\columnwidth}{Stellar-mass-selected} \\
   Redshift bins & \s$1$ & \s$2$ & \s$3$ \\
   \hline
-  All overdense vs. & \scinot{5.6}{-4} & \scinot{1.0}{-4} & \scinot{3.3}{-6} \\
+  All overdense vs.\ & \scinot{5.6}{-4} & \scinot{1.0}{-4} & \scinot{3.3}{-6} \\
   All underdense    & \scinot{3}{-5} & \scinot{1}{-5} & $<\scinot{1}{-5}$ \\ \hline 
   $[0.65,0.75]$ (OD) vs.$\!\!\!$ & 0.96 & 0.75 & 0.54 \\
   $[0.80,0.85]$ (OD) & 0.52 & 0.34 & 0.23 \\ \hline
@@ -1502,7 +1502,8 @@ known structure.
 
 \section{\rachel{Implications for future surveys}}\label{S:implications}
 
-\rachel{As mentioned previously, {\em HST} data will be used by future weak
+\rachel{As mentioned previously, {\em HST} data will be used by
+  current and future weak
 lensing surveys to characterize the galaxy population in several
 ways.  In this section, we estimate how the results shown in
 Sec.~\ref{S:results} can affect estimates of shear calibration when
@@ -1629,11 +1630,11 @@ estimation in the next decade.}
   problem with colour gradient calibration), or from some unrealistic
   aspect to the synthetic models used in that work.}
 
-\subsection{\rachel{Effective impact on future surveys}}
+\subsection{\rachel{Effective impact on current and future surveys}}
 
 \rachel{In addition to the order of magnitude of these effects
   presented in the previous subsection, it is important to bear in
-  mind how future surveys plan to use {\em HST} data.}
+  mind how current and future surveys plan to use {\em HST} data.}
 
 \rachel{For example, before the Euclid survey begins, when carrying
   out tests of shear estimation methods, their simulated data will be
@@ -1660,7 +1661,7 @@ estimation in the next decade.}
   the intrinsic ellipticity distribution at the accuracy required for
   shear calibration purposes for the Euclid survey.}
 
-\rachel{In contrast, for current and future ground-based surveys such
+\rachel{In contrast, for ground-based surveys such
   as LSST, high-resolution space data will play a more important role
   in the understanding of the galaxy 
   intrinsic ellipticity and morphology distributions, since even a deep
@@ -1672,6 +1673,20 @@ estimation in the next decade.}
   Once the Euclid deep field is publicly available, the information
   from it will be beneficial to ground-based surveys as well.}
 
+\rachel{Finally, our results for the effect on the intrinsic
+  ellipticity distributions suggest that even current surveys should
+  be careful to avoid this effect.  While use of COSMOS without
+  accounting for the effect that we have identified will cause a bias
+  that is similar to the final requirements on the shear systematic
+  errors for Stage III surveys, there are other elements in the
+  systematic error budget, so ideally this effect should be mitigated
+  somewhat using, for example, the wider redshift binning strategy
+  that we tested in Sec.~\ref{sec:mitigation}.  Use of significantly smaller fields
+  than COSMOS, while possibly helpful in building up a deeper galaxy
+  sample, should naturally increase the impact of cosmic
+  variance on the training dataset, which should be quantified as part
+  of the systematic error budget.}
+
 \section{Conclusions}
 \label{S:summary}
 
@@ -1682,7 +1697,7 @@ the local environments when dividing up the COSMOS sample into
 redshift slices along the line of sight.  The redshift slices used for
 our primary analysis had
 a width of $\Delta z=0.05$.  Our findings are robust to the choice of
-shape estimator from \sersic profile fits vs. using centrally weighted
+shape estimator from \sersic profile fits vs.\ using centrally weighted
 moments-based shear estimates.
 
 These findings are relevant to attempts to use {\em HST}-based galaxy

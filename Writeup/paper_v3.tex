@@ -15,8 +15,9 @@
 \topmargin-1cm
 
 
-\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
-%\newcommand{\rachel}[1]{}
+%\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
+\newcommand{\rachel}[1]{}
+\newcommand{\rachelnew}[1]{{\textcolor{red}{#1}}}
 \newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
 %\newcommand{\arun}[1]{}
 \newcommand{\claire}[1]{{\textcolor{magenta}{#1}}}
@@ -154,7 +155,7 @@ morphological parameters (e.g., S\'{e}rsic $n$)
 are influenced by redshift-dependent cosmic variance. 
 % We must distinguish between environment effects from large-scale structure, which we do not wish to include in simulations, and general trends in the galaxy population with redshift. 
 The typical variation in RMS ellipticity due to environmental effects
-is 5 per cent \rachel{(absolute, not relative)} for redshift bins of width $\Delta z=0.05$, which could result in uncertain shear calibration at the 1 per cent level. We conclude that the cosmic variance effects are large enough to exceed the systematic error budget of future surveys, but can be mitigated with careful choice of training dataset and sufficiently large redshift binning.
+is 5 per cent \rachelnew{(absolute, not relative)} for redshift bins of width $\Delta z=0.05$, which could result in uncertain shear calibration at the 1 per cent level. We conclude that the cosmic variance effects are large enough to exceed the systematic error budget of future surveys, but can be mitigated with careful choice of training dataset and sufficiently large redshift binning.
 \end{abstract}
 
 \begin{keywords}
@@ -179,7 +180,7 @@ For the upcoming surveys to achieve their promise, their systematic error budget
 Systematic error budgets for weak lensing surveys typically include
 astrophysical effects, such as intrinsic alignments of galaxy shapes
 with large scale density fields \citep[e.g.,][]{2014arXiv1407.6990T} and the effect of baryons on the
-matter power spectrum \rachel{\citep[e.g.,][]{2011MNRAS.415.3649V,2011MNRAS.417.2020S}}, as well as observational uncertainties such as
+matter power spectrum \rachelnew{\citep[e.g.,][]{2011MNRAS.415.3649V,2011MNRAS.417.2020S}}, as well as observational uncertainties such as
 the ability to robustly infer shears from observed galaxy shapes or
 photometric redshifts from their observed colors.
 Given the expected sub-per cent statistical errors on upcoming surveys, systematic errors must be reduced from
@@ -196,7 +197,7 @@ Given the expected sub-per cent statistical errors on upcoming surveys, systemat
    It can be used to infer the intrinsic distribution of galaxy
    shapes, which enters the shear estimation process either implicitly
  or explicitly depending on the method used for shear estimation
- \citep[see, e.g.,][]{2014MNRAS.439.1909V}.
+ \rachelnew{\citep[see, e.g.,][]{2014MNRAS.439.1909V}.}
  Going beyond basic information about the light profile, {\em HST} can
 be used to quantify the detailed morphology of galaxies, due to its
 higher resolution compared to any current or planned weak lensing
@@ -258,7 +259,7 @@ the data that we use for this study.  In Sec.~\ref{S:methods}, we
 describe our methods for deriving the relevant galaxy properties
 like environment, morphology, and shape.  
 Using these ingredients, we present our results in Sec.~\ref{S:results}
-and discuss their implications \rachel{in Sec.~\ref{S:implications},
+and discuss their implications \rachelnew{in Sec.~\ref{S:implications},
 concluding in} Sec.~\ref{S:summary}.
 \section{Data}
 \label{S:data}
@@ -512,7 +513,7 @@ and the number predicted by the models. For this reason, errorbars have been com
 
 We thus identify the regions $z=0.30-0.40$, $0.65-0.75$, and
 $0.80-0.85$ as overdense; $z=0.55-0.65$ and $0.75-0.80$ as underdense;
-\rachel{and we defer classication of the somewhat ambiguous range from
+\rachelnew{and we defer classication of the somewhat ambiguous range from
   $z=0.40-0.55$ until Sec.~\ref{sub:volumelimiting}. }
 %Although, the $z=0.40-0.55$ bin appears to be underdense, for reasons mentioned in \S\ref{sub:volumelimiting}, we will not call them underdense.
 
@@ -1282,7 +1283,7 @@ trends in this section using a single statistic of the shape
 distribution (the RMS) is less than the significance of the trends
 seen using the entire axis ratio distributions in Sec.~\ref{subsubsec:compdist}.
 
-\rachel{Finally, we comment on whether the trends we
+\rachelnew{Finally, we comment on whether the trends we
   have found could be caused by measurement noise rather than
   variations in the intrinsic shape distributions.  Measurement error
   tends to cause an increase in the RMS ellipticity due to the
@@ -1471,7 +1472,7 @@ the wider bins, $\delta_{g,\text{1D}}$.
 %that are shown in Figs.~\ref{fig:redshift_fluxlimited_wide} and ~\ref{fig:redshift_vollimited_wide}. 
 Although the $\left[ 0.7 - 0.85\right]$ bin seems to be overdense in
 the top panel of Fig.~\ref{fig:redshift_wide}, it appears to be
-environmentally neutral when we \rachel{volume-limit the sample 
+environmentally neutral when we \rachelnew{volume-limit the sample 
 using the methods from Sec.~\ref{sub:volumelimiting}.}  
 %(\rachel{how?  Should say here and in caption whether this is \s1, \s2, or \s3}).
 Since the latter is what we use to study the galaxy morphology, we
@@ -1499,7 +1500,7 @@ known structure in the calibration fields, or (b) attempting some kind of
 reweighting of the galaxy populations in redshift slices affected by
 known structure.
 
-\rachel{As a test of the second option, we consider whether we can use some division of the
+\rachelnew{As a test of the second option, we consider whether we can use some division of the
 galaxies by color or $B/T$ (as a proxy for color) in order to
 determine the structural parameters of galaxies as a function of
 redshift for each of them separately.  If the effects we are seeing
@@ -1515,7 +1516,7 @@ shows a mild effect from the large-scale structures in the COSMOS field.
 \begin{figure}
  \centering
  \includegraphics[width=1.0\columnwidth]{fbulge_z} 
- \caption{\rachel{The fraction of galaxies in \s1 (open symbols) and
+ \caption{\rachelnew{The fraction of galaxies in \s1 (open symbols) and
      \s3 (solid symbols) that are classified as bulge-dominated as a
      function of redshift, including the correlation with redshift
      slices classified as overdense or underdense as indicated by the
@@ -1524,7 +1525,7 @@ shows a mild effect from the large-scale structures in the COSMOS field.
  \label{fig:fbulge_z}
 \end{figure}
 
-\rachel{Fig.~\ref{fig:rmsellip_bulge_disk} shows the RMS distortion as
+\rachelnew{Fig.~\ref{fig:rmsellip_bulge_disk} shows the RMS distortion as
   a function of redshift for the full \s1 sample (as shown previously) and
   for the separate bulge- and disk-dominated samples.  As shown,
   the deviations in the values due to large-scale structure are
@@ -1551,7 +1552,7 @@ mitigating environmental effects.
 \begin{figure}
  \centering
  \includegraphics[width=1.0\columnwidth]{rms_ellip_momentbased_S1_bulgedisk} 
- \caption{\rachel{The RMS distortion as a function of redshift for the
+ \caption{\rachelnew{The RMS distortion as a function of redshift for the
      full volume-limited galaxy sample \s3 (partially-full symbols), the
      disk-dominated galaxy sample (open symbols), and the
      bulge-dominated galaxy sample (full symbols).  The fact that the
@@ -1564,7 +1565,7 @@ mitigating environmental effects.
 \section{\rachel{Implications for future surveys}}\label{S:implications}
 
 \rachel{As mentioned previously, {\em HST} data will be used by
-  current and future weak
+\rachelnew{  current and} future weak
 lensing surveys to characterize the galaxy population in several
 ways.  In this section, we estimate how the results shown in
 Sec.~\ref{S:results} can affect estimates of shear calibration when
@@ -1662,7 +1663,7 @@ estimation in the next decade.}
   \cite{2013MNRAS.432.2385S} based on synthetic galaxy models that the
   existing area of {\em HST} coverage with $\ge 2$ bands is sufficient
   for calibration of colour
-  gradients as a function of galaxy type\footnote{\rachel{\cite{2012MNRAS.421.1385V} showed that the
+  gradients \rachelnew{ as a function of galaxy type}\footnote{\rachel{\cite{2012MNRAS.421.1385V} showed that the
     fluctuations in colour gradients within the source galaxy sample
     in the Euclid weak lensing survey due to environmental effects
     will not be a significant source of uncertainty.  However, the
@@ -1674,11 +1675,11 @@ estimation in the next decade.}
   there, the dominant galaxy sample with $2$-band coverage is the
   AEGIS dataset, which has substantially smaller area than COSMOS, and
   therefore should exhibit a stronger influence of cosmic variance.
-  \rachel{The presence of other fields besides AEGIS (e.g., GOODS)
+  \rachelnew{The presence of other fields besides AEGIS (e.g., GOODS)
     should help mitigate this effect given that the large-scale
     structure in the two fields will be completely uncorrelated, but
     the number of fields is still not large and the area is dominated
-    by a small number of them\footnote{\rachel{For context,
+    by a small number of them\footnote{\rachelnew{For context,
         \cite{2015APh....63...81N} 
         showed that for tests of photometric redshift quality, the
         number of spectroscopic fields of this size that would be
@@ -1691,11 +1692,11 @@ estimation in the next decade.}
   problem with colour gradient calibration), or from some unrealistic
   aspect to the synthetic models used in that work.}
 
-\subsection{\rachel{Effective impact on current and future surveys}}
+\subsection{\rachel{Effective impact on \rachelnew{current and} future surveys}}
 
 \rachel{In addition to the order of magnitude of these effects
   presented in the previous subsection, it is important to bear in
-  mind how current and future surveys plan to use {\em HST} data.}
+  mind how \rachelnew{current and} future surveys plan to use {\em HST} data.}
 
 \rachel{For example, before the Euclid survey begins, when carrying
   out tests of shear estimation methods, their simulated data will be
@@ -1717,10 +1718,10 @@ estimation in the next decade.}
   cosmic variance-limited {\em HST} fields, using them only for colour
   gradient calibration and estimates of the impact of detailed galaxy
   morphology (since the {\em HST} resolution is higher than that
-  of Euclid).  The findings of \cite{2014MNRAS.439.1909V} demonstrate that the area of
+  of Euclid). \rachelnew{ The findings of \cite{2014MNRAS.439.1909V} demonstrate that the area of
   this deep field is sufficient to accomplish the goal of determining
   the intrinsic ellipticity distribution at the accuracy required for
-  shear calibration purposes for the Euclid survey.}
+  shear calibration purposes for the Euclid survey.}}
 
 \rachel{In contrast, for ground-based surveys such
   as LSST, high-resolution space data will play a more important role
@@ -1730,11 +1731,11 @@ estimation in the next decade.}
   that prevent the derivation of detailed information about the faint
   galaxy population.  Galaxies that are near the resolution limit for
   a ground-based survey are still very well-resolved in {\em HST},
-  making it the best resource for detailed information about them.
-  Once the Euclid deep field is publicly available, the information
+  making it the best resource for detailed information about them.}
+  \rachelnew{Once the Euclid deep field is publicly available, the information
   from it will be beneficial to ground-based surveys as well.}
 
-\rachel{Finally, our results for the effect on the intrinsic
+\rachelnew{Finally, our results for the effect on the intrinsic
   ellipticity distributions suggest that even current surveys should
   be careful to avoid this effect.  While use of COSMOS without
   accounting for the effect that we have identified will cause a bias
@@ -1793,7 +1794,7 @@ It is important to keep in mind the nature of COSMOS with respect to
 other possible {\em HST} training samples.  COSMOS represents the
 largest contiguous field surveyed by the {\em HST}, with the sizes of
 other major {\em HST} fields such as GOODS and AEGIS lagging by at least a
-\rachel{factor of 9 (for AEGIS, and more for GOODS).  The GEMS field
+\rachelnew{factor of 9 (for AEGIS, and more for GOODS).  The GEMS field
   comes the closest to that of COSMOS, but is still a factor of 6
   smaller and may be less useful for determination of colour gradients
   given that one of the bands, F850LP, is relatively shallow.}.
@@ -1833,7 +1834,7 @@ higher redshift where only intrinsically bright galaxies can be seen,
 the effect should be present at a level similar to what we have found
 here.  Since higher redshift galaxies tend to dominate cosmological
 shear estimates (due to their higher shears), our findings will be
-important to take into account.  \rachel{It would also be advisable to
+important to take into account.  \rachelnew{It would also be advisable to
   carry out a future study of this effect at higher redshift (beyond
   $0.85$), using for example the data from the CANDELS survey.}
 

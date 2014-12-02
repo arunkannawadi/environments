@@ -15,9 +15,10 @@
 \topmargin-1cm
 
 
-%\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
-\newcommand{\rachel}[1]{#1}
-\newcommand{\rachelnew}[1]{{\textcolor{red}{#1}}}
+\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
+%\newcommand{\rachel}[1]{#1}
+%\newcommand{\rachelnew}[1]{{\textcolor{red}{#1}}}
+\newcommand{\rachelnew}[1]{#1}
 \newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
 %\newcommand{\arun}[1]{}
 \newcommand{\claire}[1]{{\textcolor{magenta}{#1}}}
@@ -154,7 +155,7 @@ statistical distributions of galaxy shapes and
 morphological parameters (e.g., S\'{e}rsic $n$)
 are influenced by redshift-dependent cosmic variance. 
 % We must distinguish between environment effects from large-scale structure, which we do not wish to include in simulations, and general trends in the galaxy population with redshift. 
-The typical variation in RMS ellipticity \arun{distortion?} due to environmental effects
+The typical variation in RMS ellipticity \arun{distortion?}\rachel{(no, too jargony for an abstract)} due to environmental effects
 is 5 per cent \rachelnew{(absolute, not relative)} for redshift bins of width $\Delta z=0.05$, which could result in uncertain shear calibration at the 1 per cent level. We conclude that the cosmic variance effects are large enough to exceed the systematic error budget of future surveys, but can be mitigated with careful choice of training dataset and sufficiently large redshift binning.
 \end{abstract}
 
@@ -194,7 +195,8 @@ Some types of information about and tests of shear estimation
    for ongoing and future weak lensing surveys will rely on data from
    the Hubble Space Telescope ({\em HST}). 
    \arun{I found this a little confusing. Rephrase it as ``Some types of information about the shear estimation and its tests for ongoing ... '', maybe?}   
-   For example, data from
+\rachel{I find ``its tests'' confusing and very atypical usage.  The tests don't really belong to it; they are our tests OF shear estimation, hence the original phrasing.} 
+    For example, data from
    {\em HST} can be used to derive basic statistics of galaxy light
    profiles, such as joint distributions of size and the morphology.
    It can be used to infer the intrinsic distribution of galaxy
@@ -221,7 +223,7 @@ shear estimates
 \citep{2012MNRAS.427.2711K,2012MNRAS.424.2757M,2012MNRAS.425.1951R},
 and ellipticity gradients \citep{2010MNRAS.406.2793B}.  These biases
 often differ for galaxies with different morphologies (e.g., disks
-vs.\ ellipticals \arun{ellipticals refer to `bulge' here?}), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.423.3163K}. 
+vs.\ ellipticals \arun{ellipticals refer to `bulge' here?} \rachel{yes, when you're talking about different galaxy morphologies, the standard terminology is disk vs.\ elliptical, whereas when you're talking about separate galaxy components, it's more common to say ``bulge''}), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.423.3163K}. 
 A general requirement for simulations used to test shear recovery is
 that they should be as realistic as possible.
  
@@ -934,7 +936,7 @@ As an alternative morphological indicator (instead of \sersic index)
 we use a bulge-to-total ratio derived from the double \sersic
 profile fits.  This ratio is defined in terms of bulge and disk fluxes as
 \begin{equation}
-\frac{B}{T} = \frac{f_\text{bulge}}{f_\text{bulge}+f_\text{disk}}.
+\frac{B}{T} = \frac{F_\text{bulge}}{F_\text{bulge}+F_\text{disk}}.
 \end{equation}
 \rachel{The bulge-to-total flux ratio can be used as a proxy for
   colour gradients, since the bulge and disk will tend to have
@@ -957,13 +959,13 @@ estimate of $I'$ even if we use an approximate form for $f$. The form
 assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I
 - M_g$, where $M_I$ and $M_g$ are the elliptical Gaussian-weighted adaptive
 covariances of the measured object and PSF respectively, described in
-section~2.1 of \cite{HS03} and \cite{BJ02}. \arun{($M_I$ is being reused.)}We refer to the
+section~2.1 of \cite{HS03} and \cite{BJ02}. \arun{($M_I$ is being reused.)} \rachel{You could slightly change the notation for moments, to $M_{(I)}$ and $M_{(g)}$, so that the symbol is different.} We refer to the
 re-Gaussianization estimates of the PSF-corrected distortion as
 ``moments-based shape estimates''.  The value in including them in
 this analysis is that they have quite different radial weighting from
 the \sersic profile fits, with the outer regions being quite
 downweighted when calculating adaptive moments.  Thus, if ellipticity
-gradients \arun{color gradients?} are important, we could get different results using these
+gradients \arun{color gradients?}\rachel{No, not at all, I mean ellipticity gradients.  If you have a flattened disk and a roundish bulge then the ellipticity you measure will change with the effective radius of the measurement.  See, for example, Bernstein (2010) for more info.}  are important, we could get different results using these
 two shape estimators.
 
 Fig.~\ref{fig:sample_histograms} shows the distribution of these morphological and shape parameters for the flux-limited sample \s$0$ and the three
@@ -1263,8 +1265,8 @@ of the distortions.
 
 The sign of the dependence on the local environment is reasonable when
 compared with previous work on the morphology-density
-relation \arun{citation not necessary?}. Overdense regions typically contain many old, elliptical
-galaxies which are close to \arun{being} round (large axis ratio and low RMS ellipticity/distortion). 
+relation \citep[see, e.g.][]{2010ApJ...714.1779V}. Overdense regions typically contain many old, elliptical
+galaxies which are close to \arun{being} (\rachel{no, not grammatically correct; either ``close to round'' or ``close to round in shape'', but definitely not ``close to being round''}) round (large axis ratio and low RMS ellipticity/distortion). 
 In contrast, the underdense regions typically contain a larger
 population of younger, disk galaxies, which have lower axis ratios and
 higher RMS ellipticity/distortion.
@@ -1516,7 +1518,7 @@ sample into bulge- and disk-dominated galaxies based on requiring
 $B/T\ge $ or \arun{$<0.5$} .  The resulting bulge fraction $f_\text{bulge}$,
 shown as a function of redshift in Fig.~\ref{fig:fbulge_z}, 
 shows a mild effect from the large-scale structures in the COSMOS field.
-} \arun{$f_\text{bulge}$ was already used in a different context!}
+} \arun{$f_\text{bulge}$ was already used in a different context!} \rachel{Not any more.}
 \begin{figure}
  \centering
  \includegraphics[width=1.0\columnwidth]{fbulge_z} 
@@ -1615,7 +1617,7 @@ If a simulated sample in some redshift slice has a different intrinsic
 ellipticity distribution and therefore responsivity, it could lead to
 incorrect conclusions about shear calibration.  The responsivity
 scales roughly like $1-e_\text{RMS}^2$, which means that deviations in
-RMS ellipticity \arun{distortion?} at the level of 0.01 due to local environments (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
+RMS distortion at the level of 0.01 due to local environments (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
 errors of}
 \begin{equation}
 \frac{\Delta\gamma}{\gamma} \approx \frac{2 e_\text{RMS} \Delta
@@ -1667,7 +1669,7 @@ estimation in the next decade.}
   \cite{2013MNRAS.432.2385S} based on synthetic galaxy models that the
   existing area of {\em HST} coverage with $\ge 2$ bands is sufficient
   for calibration of colour
-  gradients\footnote{\rachel{\cite{2012MNRAS.421.1385V} showed that the
+  gradients\footnote{\cite{2012MNRAS.421.1385V} showed that the
     fluctuations in colour gradients within the source galaxy sample
     in the Euclid weak lensing survey due to environmental effects
     will not be a significant source of uncertainty.  However, the
@@ -1675,7 +1677,7 @@ estimation in the next decade.}
     considered here, which is the impact of fluctuations in colour
     gradients in the training sample used to derive the corrections,
     rather than in the galaxy sample to which those corrections will
-    be applied.}}.  This is particularly striking given that, as shown
+    be applied.}.  This is particularly striking given that, as shown
   there, the dominant galaxy sample with $2$-band coverage is the
   AEGIS dataset, which has substantially smaller area than COSMOS, and
   therefore should exhibit a stronger influence of cosmic variance.
@@ -1688,7 +1690,7 @@ estimation in the next decade.}
         showed that for tests of photometric redshift quality, the
         number of spectroscopic fields of this size that would be
         required for future surveys to avoid the influence of cosmic
-        variance ranges from many tens to hundreds.}}.}  
+        variance ranges from many tens to hundreds.}}.}}
 
 \rachelnew{However, it is important to bear in mind that the method
   proposed in \cite{2013MNRAS.432.2385S} involves determining not just
@@ -1712,7 +1714,7 @@ complicated analysis that is beyond the scope of this work.} It seems that a fut
   problem with colour gradient calibration, or that 
     division into several galaxy types or colours is truly enough to remove the colour
     gradient effect due to its being a higher order effect, consistent with the findings of 
-    \cite{2013MNRAS.432.2385S} using synthetic galaxy models}.}
+    \cite{2013MNRAS.432.2385S} using synthetic galaxy models}.
 
 \subsection{\rachel{Effective impact on \rachelnew{current and} future surveys}}
 

@@ -1,4 +1,4 @@
-\begin{thebibliography}{59}
+\begin{thebibliography}{60}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 
 \bibitem[{{Albrecht} {et~al}\mbox{.}(2006){Albrecht}, {Bernstein}, {Cahn},
@@ -312,6 +312,11 @@
   {Dalla Vecchia}}]{2011MNRAS.415.3649V}
 {van Daalen} M.~P., {Schaye} J., {Booth} C.~M., {Dalla Vecchia} C., 2011,
   \mnras, 415, 3649
+
+\bibitem[{{van der Wel} {et~al}\mbox{.}(2010){van der Wel}, {Bell}, {Holden},
+  {Skibba}, \& {Rix}}]{2010ApJ...714.1779V}
+{van der Wel} A., {Bell} E.~F., {Holden} B.~P., {Skibba} R.~A., {Rix} H.-W.,
+  2010, \apj, 714, 1779
 
 \bibitem[{{Viola}, {Kitching} \& {Joachimi}(2014){Viola}, {Kitching}, \&
   {Joachimi}}]{2014MNRAS.439.1909V}

@@ -189,9 +189,12 @@ Given the expected sub-per cent statistical errors on upcoming surveys, systemat
  errors at best
  \citep[e.g.,][]{2010A&A...516A..63S,2013MNRAS.432.2433H,2013ApJ...765...74J,2013MNRAS.432.1544M}.
 
- \rachel{Some types of information about and tests of shear estimation
+% \rachel{
+Some types of information about and tests of shear estimation
    for ongoing and future weak lensing surveys will rely on data from
-   the Hubble Space Telescope ({\em HST}).  For example, data from
+   the Hubble Space Telescope ({\em HST}). 
+   \arun{I found this a little confusing. Rephrase it as ``Some types of information about the shear estimation and its tests for ongoing ... '', maybe?}   
+   For example, data from
    {\em HST} can be used to derive basic statistics of galaxy light
    profiles, such as joint distributions of size and the morphology.
    It can be used to infer the intrinsic distribution of galaxy
@@ -204,7 +207,8 @@ higher resolution compared to any current or planned weak lensing
 survey.  Finally, it can be used to address systematics due to colour
 gradients within galaxies, which are particularly problematic when
 combined with a wavelength-dependent diffraction-limited PSF
-\citep[e.g.,][]{2012MNRAS.421.1385V,2013MNRAS.432.2385S}.}
+\citep[e.g.,][]{2012MNRAS.421.1385V,2013MNRAS.432.2385S}.
+%}
 
 One method that is commonly used to test for the presence of
 systematic errors in the shear estimation process is image simulation,
@@ -217,7 +221,7 @@ shear estimates
 \citep{2012MNRAS.427.2711K,2012MNRAS.424.2757M,2012MNRAS.425.1951R},
 and ellipticity gradients \citep{2010MNRAS.406.2793B}.  These biases
 often differ for galaxies with different morphologies (e.g., disks
-vs.\ ellipticals), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.423.3163K}. 
+vs.\ ellipticals \arun{ellipticals refer to `bulge' here?}), sizes, $S/N$, and shape \citep{2010MNRAS.405.2044B,2012MNRAS.423.3163K}. 
 A general requirement for simulations used to test shear recovery is
 that they should be as realistic as possible.
  
@@ -242,7 +246,7 @@ Hence, local overdensities or underdensities along the line of sight
 observed in these {\em HST} fields may (given the small size of the field)
 cause the properties of the galaxy population in redshift slices to be
 atypical depending on the environment in that slice.  This has
-the undesired consequence of including variation in galaxy properties
+the undesired consequence of including \arun{a} variation in galaxy properties
 due to the COSMOS (or other) survey cosmic variance in the simulated galaxy sample in that redshift slice, rather than
 only including ensemble effects that would appear in a large cosmological volume, such as true redshift evolution of
 galaxy properties.  Our goal is to quantify the degree to which the
@@ -323,7 +327,7 @@ magnitude fainter than 23.5. However, we will use the
 $m_\text{F814W}\le 25.2$ sample that was generated for the GREAT3
 challenge to estimate the completeness, which is useful when
 generating a volume-limited sample (Sec.~\ref{sub:volumelimiting}).
-We first use the $z<1$ flux-limited sample to fit parametric redshift
+We first use the $z\le1$ flux-limited sample to fit parametric redshift
 distribution models (Sec.~\ref{sub:overdensities}), and then
 restrict ourselves to $z\le1$ sample for all further analysis. 
 % ($S/N \sim 50$ {\bf ?} )
@@ -556,7 +560,7 @@ leaking into our $z=0.80-0.85$ slice.
 \label{sub:volumelimiting}
  
 COSMOS is a flux-limited survey and is therefore affected by Malmquist
-bias, with the galaxy samples at higher redshift being intrinsically
+bias, with the galaxy samples at higher redshifts being intrinsically
 brighter on average.  
 Our analysis involves comparing galaxies in different redshift slices
 to identify significant differences in morphology that arise due to
@@ -678,7 +682,7 @@ Chabrier IMF \citep{ChabrierIMF}.
 % Also, I don't understand what you mean by all the galaxies are plotted in Figure 4. The figure shows the volume density.} 
 % \arun{Tomczak et. al had curves separately for the blue and the red galaxies and then one for both these combined together. That's what I meant by \emph{all}.
 %I don't see how the normalizations are different. Our selection criteria are different and hence the differences. }\claire{I think you can drop the \emph{all}, as a reader unfamilar with Tomczak's work, I find it confusing as you never mention that in the text. And the differences in your curves can't just be selection. Take the leftmost bin, where Tomczak is always above your curve, yet you are claiming that your sample is complete for the highest mass galaxies in this redshift bin, so you shouldn't be missing any galaxies at the high mass end even compared to a deeper study. I am more confused as to why you find so many more massive galaxies at high redshift. Getting all the details of mass functions correct isn't easy, and I don't think necessary for this work, so I would take the comparison in the plots out. Maybe mention in the text that the functions are reasonably similar?}) (\rachel{Yes, I think we should take it out.  We don't determine stellar masses in precisely the same way, which could be responsible for these differences.  I had suggested plotting this comparison early on when we were much less certain of our methodology.  At this point I think it would be valid to say that the shapes of the curves at the high-mass end are consistent with those in Tomczak et al., without including it as the plot (where it's really a distraction from what we're trying to do)}.)
-As for $M_I$, we compare the stellar mass function of the $m_\text{F814W}\le23.5$ sample with that of the $m_\text{F814W}\le25.2$ sample. 
+As \arun{done} for $M_I$, we compare the stellar mass function of the $m_\text{F814W}\le23.5$ sample with that of the $m_\text{F814W}\le25.2$ sample. 
 The sample with $\log(M/M_\odot) > 10.15$ is $\sim 95$ per cent
 complete in the redshift bin $0.75 \le z< 0.85$ and has 8953
 galaxies in total across all redshifts.
@@ -738,7 +742,7 @@ for identifying
 overdensities and for the completeness calculations that motivated our
 definitions of volume-limited samples.  However, everywhere else in the paper, we consider only those galaxies for which there are postage stamp
 images used to create weak lensing simulations, in part because this is the
-sample for which fits to \sersic\ profiles were carried out, which is a
+sample for which fits to \sersic profiles were carried out, which is a
 requirement for our morphology analysis.  
 12 per cent of the galaxies that pass our cuts do not have an
 associated postage stamp image.
@@ -899,7 +903,7 @@ software from \cite{Claire_Fits} to fit the images to the following profiles:
 where \begin{align*} R^2(x,y) = & ((x-x_0)\cos\Phi+(y-y_0)\sin\Phi)^2
   \\ & + ((y-y_0)\cos\Phi-(x-x_0)\sin\Phi)^2/q^2, \end{align*}
 $R_{\text{eff}}$ is the half-light radius of the profile defined along
-the major axis, $I_0$ is the surface brightness at $R=R_{\text{eff}}$, $(x_0,y_0)$ is the centroid of the image,
+the major axis, $I_{1/2}$ is the surface brightness at $R=R_{\text{eff}}$, $(x_0,y_0)$ is the centroid of the image,
 $\Phi$ is the position angle, $n$ is the \sersic index, $k$ is a
 $n$-dependent normalization factor required to ensure that half the
 light is enclosed within the half-light radius, and $q$ is the axis
@@ -944,8 +948,8 @@ We also consider an alternative method for estimating the galaxy
 ellipticity or distortion.  This method is based on using the observed weighted
 moments of the galaxy and PSF, and correcting those of the galaxy for
 those of the PSF.  This PSF correction scheme is the
-re-Gaussianization method described in section~2.4 of \cite{HS03}
-(hereafter HS03) as implemented in the {\sc GalSim} software package
+re-Gaussianization method described in section~2.4 of \cite{HS03} 
+as implemented in the {\sc GalSim} software package
 (with implementation details described in \citealt{2014arXiv1407.7676R}).
 This method models the true PSF $g({\bf x})$ as a Gaussian $G({\bf x})$ and the residual $\epsilon({\bf x}) = g({\bf x}) - G({\bf x})$ is assumed to be small. Thus, the Gaussian-convolved
 intrinsic image, $f$, can be modeled as $I' = G\otimes f = I - \epsilon \otimes f$, where $I$ is the observed image. The crucial idea here is that, when $\epsilon$ is small, we get a reasonably accurate
@@ -953,13 +957,13 @@ estimate of $I'$ even if we use an approximate form for $f$. The form
 assumed for $f$ is that of a Gaussian with covariance $M_f^{(0)} = M_I
 - M_g$, where $M_I$ and $M_g$ are the elliptical Gaussian-weighted adaptive
 covariances of the measured object and PSF respectively, described in
-section~2.1 of HS03 and \cite{BJ02}. We refer to the
+section~2.1 of \cite{HS03} and \cite{BJ02}. \arun{($M_I$ is being reused.)}We refer to the
 re-Gaussianization estimates of the PSF-corrected distortion as
 ``moments-based shape estimates''.  The value in including them in
 this analysis is that they have quite different radial weighting from
 the \sersic profile fits, with the outer regions being quite
 downweighted when calculating adaptive moments.  Thus, if ellipticity
-gradients are important, we could get different results using these
+gradients \arun{color gradients?} are important, we could get different results using these
 two shape estimators.
 
 Fig.~\ref{fig:sample_histograms} shows the distribution of these morphological and shape parameters for the flux-limited sample \s$0$ and the three
@@ -992,7 +996,7 @@ substantial evidence in the literature that we should see variation of
 properties with the environment.  Our test is necessary to see
 whether such morphology-density correlations are evident in the kind
 of 1D redshift slices that would be used for constructing weak lensing
-simulations, or whether our use of an area the size of COSMOS will
+simulations, or whether our use of an area \arun{as large as} the size of COSMOS will
 wash out these trends (which would be good news for weak lensing
 simulations based on that dataset).
 
@@ -1145,8 +1149,8 @@ smaller than that).  We can therefore reject the null hypothesis that
 the overdense and underdense regions have the same underlying axis
 ratio distributions at high significance.
 
-One might imagine that the disagreement between the distributions is
-at least partly due to the fact that the overdense and underdense
+One might imagine that the disagreement between the distributions is,
+at least partly, due to the fact that the overdense and underdense
 sample have different redshift distributions and there could be some
 evolution of ellipticity/distortion distributions with redshift. 
 To show that this redshift evolution effect is subdominant to
@@ -1259,8 +1263,8 @@ of the distortions.
 
 The sign of the dependence on the local environment is reasonable when
 compared with previous work on the morphology-density
-relation. Overdense regions typically contain many old, elliptical
-galaxies which are close to round (large axis ratio and low RMS ellipticity/distortion). 
+relation \arun{citation not necessary?}. Overdense regions typically contain many old, elliptical
+galaxies which are close to \arun{being} round (large axis ratio and low RMS ellipticity/distortion). 
 In contrast, the underdense regions typically contain a larger
 population of younger, disk galaxies, which have lower axis ratios and
 higher RMS ellipticity/distortion.
@@ -1313,7 +1317,7 @@ we do not compare the distributions directly.  Doing so is relatively
 difficult %\claire{highlight, I'd use a different word only because I think tricky is too informal. Unless the journal complains, its a personal taste thing. } \rachel{(agree, let's go with ``difficult'' or something like that)} 
 because both distributions have hard cutoffs that are enforced
 in the fitting process (\sersic $n$ in the range $[0.25, 6]$ and
-$0.05<B/T<0.95$). See Fig.~\ref{fig:sample_histograms}.
+$0.05<B/T<0.95$), as can be seen in Fig.~\ref{fig:sample_histograms}.
 The KS statistical test is sensitive to exactly what happens at these hard boundaries in the distributions.
 %\arun{AD test is actually not so sensitive to the boundaries.}
 So, instead of using the full distributions, we will study the
@@ -1509,15 +1513,15 @@ being dominated by bulge- (disk-)dominated galaxies, then division
 into samples based on $B/T$ may help reduce the effects that we have
 described in previous subsections.  We test this idea by dividing the
 sample into bulge- and disk-dominated galaxies based on requiring
-$B/T\ge $ or $<0.4$.  The resulting bulge fraction $f_\text{bulge}$,
+$B/T\ge $ or \arun{$<0.5$} .  The resulting bulge fraction $f_\text{bulge}$,
 shown as a function of redshift in Fig.~\ref{fig:fbulge_z}, 
 shows a mild effect from the large-scale structures in the COSMOS field.
-}
+} \arun{$f_\text{bulge}$ was already used in a different context!}
 \begin{figure}
  \centering
  \includegraphics[width=1.0\columnwidth]{fbulge_z} 
- \caption{\rachelnew{The fraction of galaxies in \s1 (open symbols) and
-     \s3 (solid symbols) that are classified as bulge-dominated as a
+ \caption{\rachelnew{The fraction of galaxies in \s1 (\arun{solid} symbols) and
+     \s3 (\arun{open} symbols) that are classified as bulge-dominated as a
      function of redshift, including the correlation with redshift
      slices classified as overdense or underdense as indicated by the
      symbol shape and color.}
@@ -1611,7 +1615,7 @@ If a simulated sample in some redshift slice has a different intrinsic
 ellipticity distribution and therefore responsivity, it could lead to
 incorrect conclusions about shear calibration.  The responsivity
 scales roughly like $1-e_\text{RMS}^2$, which means that deviations in
-RMS ellipticity at the level of 0.01 due to local environments (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
+RMS ellipticity \arun{distortion?} at the level of 0.01 due to local environments (Figs.~\ref{fig:rms_ellip} and~\ref{fig:rms_ellip_momentbased}) would become fractional shear
 errors of}
 \begin{equation}
 \frac{\Delta\gamma}{\gamma} \approx \frac{2 e_\text{RMS} \Delta
@@ -1684,7 +1688,7 @@ estimation in the next decade.}
         showed that for tests of photometric redshift quality, the
         number of spectroscopic fields of this size that would be
         required for future surveys to avoid the influence of cosmic
-        variance ranges from many tens to hundreds}}.}  
+        variance ranges from many tens to hundreds.}}.}  
 
 \rachelnew{However, it is important to bear in mind that the method
   proposed in \cite{2013MNRAS.432.2385S} involves determining not just
@@ -1816,7 +1820,7 @@ other major {\em HST} fields such as GOODS and AEGIS lagging by at least a
   of CANDELS with existing datasets may ultimately be as large as
   $1/6$ the COSMOS area.}.
 Hence, if cosmic variance due to structures along 
-the line-of-sight in COSMOS are problematic for its use as a training
+the line of sight in COSMOS are problematic for its use as a training
 sample for weak lensing simulations, studies that use even smaller
 area training samples are even more prone to errors, with the UDF
 serving as an extreme case.  If the size of the {\em HST} survey is

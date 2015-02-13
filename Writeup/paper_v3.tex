@@ -8,12 +8,13 @@
 \usepackage{float}
 \usepackage{color}
 \usepackage{hyperref}
+%\usepackage[T1]{fontenc} 
+%\usepackage{aecompl}
 \graphicspath{{Figures/}}
 \topmargin-1cm
 
 % For correct printing on US Letter, while still working on A4
 \topmargin-1cm
-
 
 \newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
 %\newcommand{\rachel}[1]{#1}
@@ -180,7 +181,7 @@ astrophysical effects, such as intrinsic alignments of galaxy shapes
 with large scale density fields \citep[e.g.,][]{2014arXiv1407.6990T} and the effect of baryons on the
 matter power spectrum \citep[e.g.,][]{2011MNRAS.415.3649V,2011MNRAS.417.2020S}, as well as observational uncertainties such as
 the ability to robustly infer shears from observed galaxy shapes or
-photometric redshifts from their observed colors.
+photometric redshifts from their observed colours.
 Given the expected sub-per cent statistical errors on upcoming surveys, systematic errors must be reduced from
  their typical level in the current state-of-the-art
  measurements that typically achieve $\sim 5$ per cent statistical
@@ -346,7 +347,7 @@ In this section we will describe how these steps were carried out.
 \label{sub:overdensities}
 \begin{figure}
  \centering
-  \includegraphics[width=\columnwidth]{redshift_fluxlimited}
+  \includegraphics[width=\columnwidth]{redshift_fluxlimited_type1}
   \caption{Upper panel: Redshift distribution of flux-limited
     ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins
     that are 0.05 wide. The vertical line at $z=0.3$ indicates the delineation between lower redshifts that we do not use for our analysis, and higher redshifts that are used. Fits to two analytical functions, $p_1(z)$ and $p_2(z)$, defined in Eqs.~\ref{E:pz1} and~\ref{E:pz2}, are also shown, with best-fitting parameters $a=2.53\pm0.98$, $z_1=0.32\pm0.16$, $b=2.70\pm0.50$ and $z_2=0.63\pm0.13$.  We also show the distributions from \protect\cite{2004ApJ...617..765C} from Eqs.~\ref{E;pz3} and~\ref{E;pz4}. 
@@ -507,7 +508,7 @@ ourselves to galaxies that are bright enough that they would be
 observed at all redshifts that we consider, which is achieved by
 volume-limiting the sample.  We consider three different ways of
 carrying out this process, which results in three different galaxy
-sample selections, all of which we will use in the remainder of the
+sample selections, all of which we will use in the remainder of the												
 analysis.
 
 Call the flux-limited ($m_\text{F814W} \le 23.5$) sample \s$0$. Our first approach is to generate a volume-limited sample that is
@@ -872,8 +873,8 @@ redshift (at fixed mass).
  \centering
  \includegraphics[width=2.2\columnwidth]{axis_ratio_odod}
  \caption{Galaxy axis ratio
-   distributions in two overdense redshift bins, $z=0.65-0.75$ (blue) and
-   $z=0.80-0.85$ (red), to check for consistency in the case that the
+   distributions in two overdense redshift bins, $z=0.65-0.75$ (blue, dotted) and
+   $z=0.80-0.85$ (red, solid), to check for consistency in the case that the
    environment is the same even if the redshift differs. The
    $p$-values from the KS and AD tests are given in
    Table.~\ref{table:pvalues_all}.}
@@ -884,8 +885,8 @@ redshift (at fixed mass).
  \centering
  \includegraphics[width=2.2\columnwidth]{axis_ratio_odud}
  \caption{Galaxy axis ratio distributions in a single underdense redshift
-   slice, $z=0.55-0.65$ (blue), and a single overdense redshift slice,
-   $z=0.65-0.75$ (red). The $p$-values from the
+   slice, $z=0.55-0.65$ (blue, dotted), and a single overdense redshift slice,
+   $z=0.65-0.75$ (red, solid). The $p$-values from the
    KS and AD tests are given in Table.~\ref{table:pvalues_all}. }
  \label{fig:axisratio_contrasting}
 \end{figure*}
@@ -1010,7 +1011,7 @@ estimate.
  \caption{RMS distortions as a function of redshift. The horizontal errorbars indicate
           the width of the redshift bin, while the vertical ones
           are $1\sigma$ errorbars obtained by
-          bootstrapping. The colors and shapes of the points indicate their
+          bootstrapping. The colours and shapes of the points indicate their
           environmental classification, as shown in the legend. Points with open centers and thick errorbars correspond to the stellar-mass selected sample \s$3$
           and points with filled centers and thin errorbars correspond to the luminosity-selected samples \s$1$ and \s$2$.             
           }
@@ -1041,7 +1042,7 @@ in Fig.~\ref{fig:rms_ellip}. In each case, the RMS distortions from the mass-sel
 When the $B$-band luminosity evolution is taken into account in selecting the sample, a systematic increase in the distortion values at
 lower redshifts can be observed (bottom panel).The stellar-mass selected sample exhibits a similar trend.
 
-For figures up to Fig.~\ref{fig:median_dvcbtt}, the colors of the points were selected to easily differentiate between galaxies in overdense, neutral, and underdense redshift slices.
+For figures up to Fig.~\ref{fig:median_dvcbtt}, the colours of the points were selected to easily differentiate between galaxies in overdense, neutral, and underdense redshift slices.
 Points with unfilled centers and thicker errorbars correspond to the \s$3$ sample and points with filled centers and thinner errorbars correspond to the luminosity-selected samples (\s$1$ or \s$2$).
 
 As shown in Fig.~\ref{fig:rms_ellip}, the underdense regions have higher values for RMS distortions when compared to the
@@ -1249,7 +1250,7 @@ reweighting of the galaxy populations in redshift slices affected by
 known structure.
 
 As a test of the second option, we consider whether we can use some division of the
-galaxies by color or $B/T$ (as a proxy for color) in order to
+galaxies by colour or $B/T$ (as a proxy for colour) in order to
 determine the structural parameters of galaxies as a function of
 redshift for each of them separately.  If the effects we are seeing
 can be cleanly described in terms of overdense (underdense) regions
@@ -1268,7 +1269,7 @@ shows a mild effect from the large-scale structures in the COSMOS field.
      \s3 (open symbols) that are classified as bulge-dominated as a
      function of redshift, including the correlation with redshift
      slices classified as overdense or underdense as indicated by the
-     symbol shape and color.}
+     symbol shape and colour.}
  \label{fig:fbulge_z}
 \end{figure}
 

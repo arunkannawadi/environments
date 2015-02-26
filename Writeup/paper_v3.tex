@@ -16,7 +16,7 @@
 % For correct printing on US Letter, while still working on A4
 \topmargin-1cm
 
-\newcommand{\rachel}[1]{{\textcolor{red}{#1}}}
+\newcommand{\rachel}[1]{{\textcolor{blue}{#1}}}
 %\newcommand{\rachel}[1]{#1}
 %\newcommand{\rachelnew}[1]{{\textcolor{red}{#1}}}
 \newcommand{\rachelnew}[1]{#1}
@@ -1180,18 +1180,25 @@ galaxies.
 \end{figure}
 
 \new{
-Naively, one might expect the points corresponding to neutral regions to lie in between the points for overdense and underdense regions. 
-But from Figs.~\ref{fig:rms_ellip} - ~\ref{fig:median_dvcbtt}, it doesn't appear to be the case. 
-It is possible that a redshift bin may have an overdensity in one part of the field and underdense in another. 
-In such a scenario, the redshift slice might appear to be `neutral' in our histogram-based method of finding overdensities. 
-But in reality, it would consist of an unusual morphological mixture and the situation can be more complicated. This indeed turns out to be the case
+One might expect the points corresponding to neutral regions to lie in between the points for overdense and underdense regions. 
+In Figs.~\ref{fig:rms_ellip}--\ref{fig:median_dvcbtt}, this does not appear to be the case. 
+It is possible that a redshift bin may have an overdensity in one part of the field and an
+underdense region in another. 
+In such a scenario, the redshift slice might appear to be `neutral' in our histogram-based method of
+finding overdensities, while still having significant large-scale structure affecting the
+morphological mix of galaxies that complicates the situation. 
+This indeed turns out to be the case
 in the `neutral' regions of the COSMOS field.
-Using X-ray information in the COSMOS field, ~\cite{COSMOS_XRAY} have detected a galaxy group in the redshift range $z=0.425-0.575$. 
-~\cite{Kovac_Density10k} report structures that are large and extended (in RA-DEC) within this redshift range. 
+Using X-ray information in the COSMOS field, \cite{COSMOS_XRAY} have detected a galaxy group in the
+redshift range $z=0.425-0.575$.} \rachel{I thought it was more than one galaxy group there?}
+\new{\cite{Kovac_Density10k} report structures that are large and extended (in RA-DEC) within this redshift range. 
 %Thus, $z=0.4-0.55$ range indeed is a mixture of overdense and underdense regions. 
-It is a challenge to make strong and definitive statements regarding the relationship between environment and morphology in neutral regions. 
-In addition, the redshift evolution, albeit weak, can make the neutral bins look like overdense or underdense regions, as in Fig.~\ref{fig:median_dvcbtt}
-However, when the overdensity (or underdensity) is prominent, we observe that the environment in which a galaxy resides affects its morphology.
+It is a challenge to make definitive statements regarding the relationship between environment and
+morphology in neutral regions that are composed of mixtures of multiple overdense and underdense regions. 
+In addition, the redshift evolution, albeit weak, can make the neutral bins look like overdense or underdense regions, as in Fig.~\ref{fig:median_dvcbtt}.
+However, when the overdensity (or underdensity) is prominent, we observe that the environment in
+which a galaxy resides affects its morphology, so the appearance of the neutral bins does not
+undermine the main conclusions of this paper.
 }
 
 To test the possibility that our choice of bins starting at $z=0.3$ with $\Delta z = 0.05$ is particularly unlucky in enhancing the effects we see, 
@@ -1201,7 +1208,8 @@ The environmental trends still are observed in the enhanced bins and hence our c
 
 \new{The number of galaxies in overdense bins is typically higher than the number in underdense bins by about a factor of 2. (See Table ~\ref{table:GalaxyCounts}). 
 To eliminate the plausibility (with great confidence) that this varying sample size is not responsible for the trend observed, we repeated our analysis with only 50 per cent of overdense galaxies that were selected randomly. 
-The vertical errorbars for overdense regions get bigger due to reduced sample size, but otherwise, no significant changes to alter the conclusions are observed.}
+The vertical errorbars for overdense regions get bigger due to reduced sample size, but  the
+statistical significance of our conclusions is still nearly as high as in the original analysis.}
 
 \subsection{Mitigating the effects of line of sight fluctuations}\label{sec:mitigation}
 
@@ -1646,7 +1654,7 @@ systematic error budget of major upcoming lensing surveys.
 \section*{Acknowledgments}
 
 The authors would like to thank Thomas Kitching, Henk
-  Hoekstra, Tim Schrabback \new{and the referee} for their helpful comments on this work.
+  Hoekstra, Tim Schrabback \new{and the anonymous referee} for their helpful comments on this work.
 AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and
 program HST-AR-12857.01-A, provided by NASA through a grant from the
 Space Telescope Science Institute, which is operated by the

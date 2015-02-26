@@ -1,0 +1,248 @@
+\documentclass[english]{letter}
+\usepackage[dvipsnames]{color}
+\usepackage{framed}
+\definecolor{shadecolor}{named}{GreenYellow}
+\usepackage{babel}
+
+
+\newcommand{\rachel}[1]{\textrm{\textbf{Rachel: #1}}}
+\newcommand{\arun}[1]{\textrm{\textcolor{red}{Arun: #1}}}
+\newcommand{\claire}[1]{\textrm{\textcolor{blue}{Claire: #1}}}
+
+\begin{document}
+
+
+\date{\today}
+
+
+\begin{letter}{Ms. Anna Evripidou\\ Assistant Editor\\ 'Monthly Notices' and 'Geophysical Journal International' \\
+Royal Astronomical Society}
+
+\opening{Ms. Evripidou:}
+
+We are very grateful to the referee for the careful reading of the manuscript.
+We resubmit a modified version taking care of the comments and criticisms of the referee; we have also
+used this opportunity to make a careful reading and fix typos and clarify potentially confusing sentences. 
+Please find below a point-by-point response to the referee report.
+
+\closing{Sincerely,}
+Arun Kannawadi, Rachel Mandelbaum, and Claire Lackner.
+\end{letter}
+\vspace{20pt}
+{\bf Reply to the Referee}
+
+We thank the referee for carefully reading our manuscript and for the acknowledgment that our work is of interest
+and suitable for MNRAS and for finding our approach appropriate. We are grateful for the detailed pointers for improving the presentation; and for the clarifications. Below we address the specific issues raised.
+
+\begin{shaded}
+It is not clear in b/w which histogram is which in the top panels of figs. 6 and beyond. One appears to be lighter than the other, but it isn't stated in the figures which linetype corresponds to which samples.
+\end{shaded}
+\noindent
+We agree with the referee that in black \& white print, there is potential for the reader to get confused in Figs. 6
+and beyond. We have now rectified it by having different linestyles whenever more than one curves are present in the panel. In fact, we have extended this to Fig. 1 to Fig. 5 as well. We believe that the legends in the plots are self-explanatory after changing the linestyles.
+
+\begin{shaded}
+The number of galaxies in OD or UD bins is often quite different (factor of 2-4?). It would be useful to comment on whether this difference can account for some of the differences in mean quantities plotted. I think the effect due to differences in the number of galaxies should be small for rms(e), but a specific comment on the relative effect would be useful. A straightforward way to verify this is to repeat the calculation on a selection of the same number of galaxies from both populations.
+\end{shaded}
+\noindent 
+We guess the referee got the factor of 4 from Table 1. We would like to point out that the number of galaxies in overdense bins is higher by roughly a factor of 2 in all the plots we have made. Table 1 is now updated and considers $z=0.65-0.7$ and $z=0.7-0.75$ as two separate overdense bins. 
+
+We performed the analysis again, with a random subset containing 50 per cent of the galaxies in overdense regions, keeping the underdense bins intact. The uncertainities in the overdense bins increase due to smaller sample size. However, the difference is not significant enough to atler our conclusions. We have included this in the text as well.
+
+\begin{shaded}
+2) It should be defined in the text the limit values of the PR and
+Avg-Conc. and their effects on the localization and entanglement to
+make more comprehensible the discussions to the reader. Moreover, are
+really useful such low values of Avg-Conc for quantum information
+applications as is it mentioned in the text?
+\end{shaded}
+
+PR goes from $1$ to $N$ and Concurrence from 0 to 1. We have included
+these details now.
+It is true that concurrence is small, but we have a case
+where concurrence is also spread around: almost all pairs are
+entangled with one another. Compare with say an nearest neighbor Heisenberg chain where 
+nearest neighbors are entangled to order 1 (Connor and Wootters, 
+"entangled rings"), non-nearest neighbors have {\it no} entanglement.
+
+ Also, small concurrence in general results
+in large mulipartite entanglement (such as measured by block entropy).
+Such measures have to be explored in detail in these classes of
+states. Too much entanglement as in random states  have been shown
+to be not useful for computation; we are not aware if an optimal entanglement is specified.
+Thus states such as these that are not truly random, yet are very intricate are interesting.
+ Of course it is of intrinsic interest to quantify inter-spin entanglement in "complex systems" such as spin glass states.
+
+\begin{shaded}
+3) All the Section III is too long and it is hard to get the main
+points of it. I think that redaction should be really improved, as
+well as some non-relevant info can be removed or included in an
+Appendix. Additionally,
+
+3.1 First paragraph of Sec. III is unclear.
+
+3.2 Sec.III B is devoted to state explanations but I find it more
+confusing than clarifying.
+
+3.3 Sec. III discuss that the promote states in 3-particle states
+“tend to be distinct”, Can you be more specific?
+\end{shaded}
+\noindent
+%\auditya{Arun: please respond to each of the sub-points above.}
+We believe that Section III forms the core of this paper and lays the fundamentals for understanding the promoted states.
+%So we think that none of the material in that section deserves to go to an Appendix.
+To address points  3.1 and 3.2, these parts have been extensively rewritten to make for ease of reading.
+Indeed we see the difficulty faced by the referee and this section needed this treatment, and we hope that it
+is in good shape now.
+
+To address point 3.3, on a similar plot of concurrence vs PR and Log-Negativity vs PR (Log-Negativity is not a
+measure that we introduce in this work, so we just called it 3-qubit entanglement), the 3-particle states that
+were promoted from the 1-particle and 2-particle sectors also stand out from the non-promoted 3-particle states.
+This sentence has now been rephrased to avoid any confusion.
+
+\begin{shaded}
+4) In Fig.5, I find that choosing 4 from the 6 figures that were there
+displayed is more that enough to show the behavior/transition from one
+regime to the other (e.g. (a),(c),(d) and (f)).
+\end{shaded}
+\noindent
+We have retained the earlier (a),(c),(e),(f). 
+
+\begin{shaded}
+5) When the authors refer to that the promoted states occupy “the
+higher Av-Conc - higher PR region”, can the authors be more precise?
+For example, when one quantity is fixed, the promote states occupy the
+region where the other quantity is larger. It can be also
+characterized by defining some geometric distance such us the region
+given by the higher values of $sqrt( Av-Conc^2 + PR^2)$.
+\end{shaded}
+\noindent
+This is an interesting suggestion, however there is no metric known to us
+ in the Concurrence-PR space, and the suggested one may not be natural. We simply mean
+significantly higher concurrence than average concurrence and higher PR than average PR.
+
+\begin{shaded}
+6) The experimental proposal is for one-particle flips but the
+$\sigma^{+}$ operator is global. It is then not clear what is the
+connection of the proposed technique with the author’s result. This
+proposal has be more seriously discussed.
+\end{shaded}
+\noindent 
+The $\sigma^+$ operator is local in the sense that it does not involve inter-spin operators.
+$\sigma^+$ operation can be achieved by exposing the system to a uniform magnetic field for a specified amount of time. This increases the particle number by one. We agree that the experimental aspects need further threshing that is immediately outside our scope and ability.
+
+\begin{shaded}
+7) I find some redundant notation, text and information. I will just
+mention some examples, but I suggest to carefully read the text
+simplifying it and clarifying the manuscript. Moreover, as a general
+comment, be more conclusive and reduce/avoid the use of phrases such
+as “this suggest”, “may be”, “tend to be”, etc.
+\end{shaded}
+\noindent
+The non-conclusive phrases mentioned are so because they have not been rigorously checked. Those are just our guesses/hypothesis.
+However, we accept the spirit of the referee's comment, and have attempted to make sharper points when possible.
+\begin{shaded}
+8.1 The “definite particle state” is defined several times mixing
+notation between N↑ and m. Please emend that. Some e.g.:
+
+Intro: “A m−particle state lies in the subspace of the Hilbert space
+which is spanned by the basis vectors that have m-number of ‘1’s (or
+equivalently ‘0’s) when expressed in spin-z basis.”
+
+Intro: In one-particle states (one spin up or one spin down)
+
+Intro: m−particle number (m>0)
+
+Intro: the ‘N↑ = 2’ sector
+
+Sec. I: definite “particle number” N↑ , which is nothing but the total
+number of spins up in the z direction.
+\end{shaded}
+\noindent Thank you for spotting this. We have used only the notation $N_{\uparrow}$ now.
+
+\begin{shaded}
+8.2 In the introduction the description of Fig. 1 sound to be out of
+place. Moreover, some notation is there used that was not yet defined,
+e.g. N↑.
+\end{shaded}
+\noindent We have fixed this. 
+
+\begin{shaded}
+8.3 After Eq. 1, the explanation that the dynamic evolves in a
+subspace characterized by m due to $[H,\sigma^z] =0$ can be shortened.
+\end{shaded}
+\noindent We have done so.
+
+\begin{shaded}
+8.4 I don't find relevant to mention the unpublished work [21]. The
+observations that motivate the current paper are already stated in the
+paper (in text and Fig. 1)
+\end{shaded}
+\noindent All references to this work has now been removed.
+
+\begin{shaded}
+8.5 In Sec. II B only PR is used, so I find convenient to just define
+this. Then in Sec. III A IPR=1/PR can be defined.
+\end{shaded}
+\noindent Sec. II B is where we define all the quantities and we feel it is natural to define IPR first and then
+define PR as its inverse.
+
+\begin{shaded}
+8.6 In Sec. II B it is not defined the “averaged concurrence”
+displayed in the figures.
+\end{shaded}
+\noindent We have made a formal definition of average concurrence. 
+
+\begin{shaded}
+8.7 In Sec. II B sounds weird how Fig.1 is referred.
+\end{shaded}
+\noindent We did not realise it earlier. We have made the reference to Fig. 1 sound more natural and have also
+rephrased parts of the paragraph that contained this reference.
+%\auditya{Arun, please rewrite the paragraph starting `During our study of entanglement in ...'}
+%\arun{I changed the way Fig. 1 was referred. Why exactly should the whole thing be re-written?}
+
+\begin{shaded}
+8.8 In Sec. III, when the random states are mentioned, it can be more
+helpful to the reader to give more information about them. For
+example: Are the author doing some assumptions as in Ref [20]? How is
+the Avg-Concurrence calculated for such states? as in Ref [20]?
+\end{shaded}
+\noindent More information about random states is now added in Sec III, part A, in the
+paragraph preceding Eq. 6. However, the point is simple: considering the dimensionality
+of the Hilbert space is large (in practice $>8$ say) the coefficients can be chosen to be from 
+iid Normal distributions with zero mean and variance such that the normalization works out.
+Nothing more than this is used. 
+
+\begin{shaded}
+8.9 Note that many times it is mentioned just “concurrence” while the
+correct word should be “averaged concurrence”
+\end{shaded}
+\noindent We have taken care of this.
+
+\begin{shaded}
+8.10 Make clear distinction when referring to states or eigenstate
+\end{shaded}
+\noindent We have taken care of this. 
+
+\begin{shaded}
+8.11 In Eq. (5) the value of $a_ij$ instead of being “similar to” should
+be “proportional to”.
+\end{shaded}
+\noindent We have taken care of this.
+
+\begin{shaded}
+8.12 The notation for $\sigma$ when refer to Ref. [17] in Sec. IV is
+confusing. It should be $\sigma$ “$\in$” instead of “=”, shouldn't be?
+\end{shaded}
+\noindent We have taken care of this. 
+
+\begin{shaded}
+8.13 Use a spell-checker for emend small typos like “perdioic”
+\end{shaded}
+\noindent We have taken care of this.
+
+
+
+
+
+\end{document}

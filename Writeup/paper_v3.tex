@@ -23,6 +23,7 @@
 \newcommand{\arun}[1]{{\textcolor{blue}{#1}}}
 %\newcommand{\arun}[1]{}
 \newcommand{\claire}[1]{{\textcolor{magenta}{#1}}}
+\newcommand{\new}[1]{{\textcolor{red}{#1}}}
 \def\a{\alpha}
 \def\reff@jnl#1{{\rm#1\/}}
 
@@ -350,7 +351,7 @@ In this section we will describe how these steps were carried out.
   \includegraphics[width=\columnwidth]{redshift_fluxlimited_type1}
   \caption{Upper panel: Redshift distribution of flux-limited
     ($m_\text{F814W}\le 23.5$) sample with photometric redshift bins
-    that are 0.05 wide. The vertical line at $z=0.3$ indicates the delineation between lower redshifts that we do not use for our analysis, and higher redshifts that are used. Fits to two analytical functions, $p_1(z)$ and $p_2(z)$, defined in Eqs.~\ref{E:pz1} and~\ref{E:pz2}, are also shown, with best-fitting parameters $a=2.53\pm0.98$, $z_1=0.32\pm0.16$, $b=2.70\pm0.50$ and $z_2=0.63\pm0.13$.  We also show the distributions from \protect\cite{2004ApJ...617..765C} from Eqs.~\ref{E;pz3} and~\ref{E;pz4}. 
+    that are 0.05 wide. The vertical line at $z=0.3$ indicates the delineation between lower redshifts that we do not use for our analysis, and higher redshifts that are used. Fits to two analytical functions, $p_1(z)$ and $p_2(z)$, defined in Eqs.~\ref{E:pz1} and~\ref{E:pz2}, are also shown, with best-fitting parameters $a=2.53\pm0.98$, $z_1=0.32\pm0.16$, $b=1.70\pm0.50$ and $z_2=0.63\pm0.13$.  We also show the distributions from \protect\cite{2004ApJ...617..765C} from Eqs.~\ref{E;pz3} and~\ref{E;pz4}. 
            Lower panel: Plot of $\delta_{g,\text{1D}} =
            N/N_{\text{mod}}-1$ with each functional form as the model
            for each redshift bin.
@@ -614,7 +615,9 @@ $M_*$, and are not observed.
  0.4-0.475 & Neutral & 988 & 1312 & 708 \\
  0.475-0.55 & Neutral & 1410 & 1793 & 904 \\
  0.55-0.65 & Underdense & 1797 & 2193 & 1183 \\
- 0.65-0.75 & Overdense & 4059 & 4476 & 2593 \\
+ \new{0.65-0.7} & \new{Overdense} & \new{2096} & \new{2321} & \new{1354} \\
+ \new{0.7-0.75} & \new{Overdense} & \new{1963} & \new{2155} & \new{1239} \\
+ % 0.65-0.75 & Overdense & 4059 & 4476 & 2593 \\
  0.75-0.8 & Underdense & 1159 & 1196 & 675 \\
  0.8-0.85 & Overdense & 2428 & 2428 & 1630 \\
  \hline
@@ -1167,6 +1170,19 @@ galaxies.
  \label{fig:median_sersicn}
 \end{figure}
 
+\new{
+Naively, one might expect the points corresponding to neutral regions to lie in between the points for overdense and underdense regions. 
+But from Fig.~\ref{fig:median_sersicn} and Fig.~\ref{fig:median_dvcbtt}, it doesn't appear to be the case. 
+It is possible that a redshift bin may have an overdensity in one part of the field and underdense in another. 
+In such a scenario, the redshift slice might appear to be `neutral' in our histogram-based method of finding overdensities. 
+But in reality, it consists of an unusual morphological mixture and the situation can be more complicated. 
+Using X-ray information in the COSMOS field, ~\cite{COSMOS_XRAY} have detected a galaxy group in the redshift range $z=0.425-0.575$. 
+~\cite{Kovac_Density10k} report structures that are large and extended (in RA-DEC) within this redshift range. 
+Thus, $z=0.4-0.55$ range indeed is a mixture of overdense and underdense regions. 
+It is a challenge to make strong and definitive statements regarding the relationship between environment and morphology in neutral regions. 
+However, when the overdensity (or underdensity) is prominent, we observe that the environment in which a galaxy resides affects its morphology.
+}
+
 \begin{figure}
   \includegraphics[width=1.0\columnwidth]{median_dvcbtt} \
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt2}
@@ -1180,6 +1196,10 @@ To test the possibility that our choice of bins starting at $z=0.3$ with $\Delta
 we carried out the same analysis using bins of the same width but shifted by $\Delta z/2$. We recomputed the overdensities keeping the parameters of the redshift distributions same as before.
 Shifting the bins enhances the overdensities and underdensities in some cases and in other cases, it mixes the overdense and underdense regions to make them more neutral-like. 
 The environmental trends still are observed in the enhanced bins and hence our conclusions are still applicable. 
+
+\new{The number of galaxies in overdense bins is typically higher than the number in underdense bins by about a factor of 2. (See Table ~\ref{table:GalaxyCounts}). 
+To eliminate the plausibility (with great confidence) that this varying sample size is not responsible for the trend observed, we repeated our analysis with only 50 per cent of overdense galaxies that were selected randomly. 
+The vertical errorbars for overdense regions get bigger due to reduced sample size, but otherwise, no significant changes to alter the conclusions are observed.}
 
 \subsection{Mitigating the effects of line of sight fluctuations}\label{sec:mitigation}
 
@@ -1624,7 +1644,7 @@ systematic error budget of major upcoming lensing surveys.
 \section*{Acknowledgments}
 
 The authors would like to thank Thomas Kitching, Henk
-  Hoekstra, and Tim Schrabback for their helpful comments on this work.
+  Hoekstra, Tim Schrabback \new{and the referee} for their helpful comments on this work.
 AK and RM acknowledge the support of NASA ROSES 12-EUCLID12-0004, and
 program HST-AR-12857.01-A, provided by NASA through a grant from the
 Space Telescope Science Institute, which is operated by the

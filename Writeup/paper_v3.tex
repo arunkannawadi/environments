@@ -1170,19 +1170,6 @@ galaxies.
  \label{fig:median_sersicn}
 \end{figure}
 
-\new{
-Naively, one might expect the points corresponding to neutral regions to lie in between the points for overdense and underdense regions. 
-But from Fig.~\ref{fig:median_sersicn} and Fig.~\ref{fig:median_dvcbtt}, it doesn't appear to be the case. 
-It is possible that a redshift bin may have an overdensity in one part of the field and underdense in another. 
-In such a scenario, the redshift slice might appear to be `neutral' in our histogram-based method of finding overdensities. 
-But in reality, it consists of an unusual morphological mixture and the situation can be more complicated. 
-Using X-ray information in the COSMOS field, ~\cite{COSMOS_XRAY} have detected a galaxy group in the redshift range $z=0.425-0.575$. 
-~\cite{Kovac_Density10k} report structures that are large and extended (in RA-DEC) within this redshift range. 
-Thus, $z=0.4-0.55$ range indeed is a mixture of overdense and underdense regions. 
-It is a challenge to make strong and definitive statements regarding the relationship between environment and morphology in neutral regions. 
-However, when the overdensity (or underdensity) is prominent, we observe that the environment in which a galaxy resides affects its morphology.
-}
-
 \begin{figure}
   \includegraphics[width=1.0\columnwidth]{median_dvcbtt} \
  \includegraphics[width=1.0\columnwidth]{median_dvcbtt2}
@@ -1191,6 +1178,21 @@ However, when the overdensity (or underdensity) is prominent, we observe that th
           The horizontal errorbars simply correspond to the binwidth while the vertical ones are $1\sigma$ errorbars obtained by bootstrapping.}
  \label{fig:median_dvcbtt}
 \end{figure}
+
+\new{
+Naively, one might expect the points corresponding to neutral regions to lie in between the points for overdense and underdense regions. 
+But from Figs.~\ref{fig:rms_ellip} - ~\ref{fig:median_dvcbtt}, it doesn't appear to be the case. 
+It is possible that a redshift bin may have an overdensity in one part of the field and underdense in another. 
+In such a scenario, the redshift slice might appear to be `neutral' in our histogram-based method of finding overdensities. 
+But in reality, it would consist of an unusual morphological mixture and the situation can be more complicated. This indeed turns out to be the case
+in the `neutral' regions of the COSMOS field.
+Using X-ray information in the COSMOS field, ~\cite{COSMOS_XRAY} have detected a galaxy group in the redshift range $z=0.425-0.575$. 
+~\cite{Kovac_Density10k} report structures that are large and extended (in RA-DEC) within this redshift range. 
+%Thus, $z=0.4-0.55$ range indeed is a mixture of overdense and underdense regions. 
+It is a challenge to make strong and definitive statements regarding the relationship between environment and morphology in neutral regions. 
+In addition, the redshift evolution, albeit weak, can make the neutral bins look like overdense or underdense regions, as in Fig.~\ref{fig:median_dvcbtt}
+However, when the overdensity (or underdensity) is prominent, we observe that the environment in which a galaxy resides affects its morphology.
+}
 
 To test the possibility that our choice of bins starting at $z=0.3$ with $\Delta z = 0.05$ is particularly unlucky in enhancing the effects we see, 
 we carried out the same analysis using bins of the same width but shifted by $\Delta z/2$. We recomputed the overdensities keeping the parameters of the redshift distributions same as before.
